@@ -1,2 +1,1 @@
-# diaspora
-Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics)
+# T3.3: Innovative prediction methods for genomes with low annotation level
