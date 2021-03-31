@@ -1,2 +1,1 @@
-# diaspora
-Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics)
+# WP5: Community engagement and dissemination
