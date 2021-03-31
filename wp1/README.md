@@ -1,1 +1,1 @@
-# WP3: Extending the database through inference of phenotypic data from bacterial genomes sequences
+# WP1: Mobilization and curation of phenotypic trait data
