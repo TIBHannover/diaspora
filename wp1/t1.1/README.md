@@ -1,2 +1,1 @@
-# diaspora
-Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics)
+# T1.1: Extraction of phenotypic descriptions from literature
