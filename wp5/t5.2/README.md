@@ -1,2 +1,1 @@
-# diaspora
-Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics)
+# T5.2: Dissemination and follow-up development strategy
