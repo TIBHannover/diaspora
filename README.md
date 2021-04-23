@@ -1,5 +1,5 @@
 # DiASPora 
-Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics)
+Digital Approaches for the Synthesis of Poorly Accessible Biodiversity Information (BacDive &amp; Semantics) from DSMZ https://bacdive.dsmz.de/
 
 For this project we have multiple venue where we maintain the files
 
