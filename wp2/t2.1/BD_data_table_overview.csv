@@ -1,0 +1,98 @@
+BD_table,"Priority 
+(10 is high)",short description,Foreign Keys
+cell_morphology,10,morphology data like size/shape/gram stain and motility,ID_strains/ID_reference
+colony_morphology,10,"Colony shape and colour, incubation time, hemolysis",ID_strains/ID_reference
+culture_pH,10,data on pH values,ID_strains/ID_reference
+culture_temp,10,data on temperature values,ID_strains/ID_reference
+halophily,10,halophilic data,ID_strains/ID_reference
+strains,10,"central table on strain data including species name, culture collection numbers and type strain status",
+enzymes,8,data on enzyme activity,ID_strains/ID_reference
+met_antibiotica,8,Antibiotica data,ID_strains/ID_reference
+met_production,8,Metabolite production data,ID_strains/ID_reference
+met_util,8,Metabolite utilization data,ID_strains/ID_reference
+origin,8,"data on the origin and enrichment of a culture, sample type is the basis for the Isolation Source TAGS",ID_strains/ID_reference
+oxygen_tolerance,8,data on oxygen relation,ID_strains/ID_reference
+reference,8,Metadata for the references,
+risk_assessment,8,data on pathogenicity and risk assessment,ID_strains/ID_reference
+spore_formation,8,data on spore formation ability of the bacteria,ID_strains/ID_reference
+culture_medium,7,"Medium data for cultivation, not standardized data",ID_strains/ID_reference
+met_test,7,"Metabolite test data: methyl red, Voges-Proskauer, Indole and Citrate",ID_strains/ID_reference
+nutrition_type,7,"Nutrition type, rather general data on the nutrition of a bacterium",ID_strains/ID_reference
+GC_content,6,GC content of the DNA,ID_strains/ID_reference
+multicellular_morphology,6,"data on multicellular complex building ability, not standardized",ID_strains/ID_reference
+pigmentation,6,data on pigmentation of the bacteria,ID_strains/ID_reference
+sequence,6,metadata on sequences > might be split into Genome and 16S sequence in the near future,ID_strains/ID_reference
+FA_meta,5,metadata for fatty acid profiles,
+FA_profile,5,"fatty acid profiles, connect metadata with FK_FA_META >PK FA_meta",FK_FA_META/ID_strains/ID_reference
+IS_cat1,5,Vocabulary of the Isolation Source TAGS Cat1 (highest),
+IS_cat2,5,Vocabulary of the Isolation Source TAGS Cat2 (middle),FK_Cat1
+IS_cat3,5,Vocabulary of the Isolation Source TAGS Cat3 (lowest),FK_Cat2
+IS_link,5,Isolation Source Tag data,Cat1_link/Cat2_link/Cat3_link/ID_strains/ID_origin
+met_antibiogram,4,Antibiogram test data,ID_strains/ID_reference
+met_antibiogram_meta,4,Metadata for antibiogram tests,
+murein,4,Murein (cell wall) data,ID_strains/ID_reference
+tolerance,4,"Data on tolerances against compounds, non standardized data",ID_strains/ID_reference
+strain_history,4,data on the history of a strain,ID_strains/ID_reference
+compound_production,3,"not so well structured data on compound production, can be later moved to metabolite and enzyme tables",ID_strains/ID_reference
+kit_api_20A,3,Test data from API 20A,ID_strains/ID_reference
+kit_api_20A_meta,3,Metadata for API 20A,
+kit_api_20E,3,Test data from API 20E,ID_strains/ID_reference
+kit_api_20E_meta,3,Metadata for API 20E,
+kit_api_20NE,3,Test data from API 20NE,ID_strains/ID_reference
+kit_api_20NE_meta,3,Metadata for API 20NE ,
+kit_api_20STR,3,Test data from API 20STR,ID_strains/ID_reference
+kit_api_20STR_meta,3,Metadata for API 20STR ,
+kit_api_50CHac,3,Test data from API 50CHac,ID_strains/ID_reference
+kit_api_50CHac_meta,3,Metadata for API 50CHac ,
+kit_api_50CHas,3,Test data from API 50CHas,ID_strains/ID_reference
+kit_api_50CHas_meta,3,Metadata for API 50CHas,
+kit_api_CAM,3,Test data from API CAM,ID_strains/ID_reference
+kit_api_CAM_meta,3,Metadata for API CAM ,
+kit_api_coryne,3,Test data from API Coryne,ID_strains/ID_reference
+kit_api_coryne_meta,3,Metadata for API Coryne,
+kit_api_ID32E,3,Test data from API ID32E,ID_strains/ID_reference
+kit_api_ID32E_meta,3,Metadata for API ID32E,
+kit_api_ID32STA,3,Test data from API ID32STA,ID_strains/ID_reference
+kit_api_ID32STA_meta,3,Metadata for API ID32STA,
+kit_api_LIST,3,Test data from API LIST,ID_strains/ID_reference
+kit_api_LIST_meta,3,Metadata for API LIST,
+kit_api_NH,3,Test data from API NH,ID_strains/ID_reference
+kit_api_NH_meta,3,Metadata for API NH,
+kit_api_rID32A,3,Test data from API rID32A,ID_strains/ID_reference
+kit_api_rID32A_meta,3,Metadata for API rID32A,
+kit_api_rID32STR,3,Test data from API rID32STR,ID_strains/ID_reference
+kit_api_rID32STR_meta,3,Metadata for API rID32STR,
+kit_api_STA,3,Test data from API STA,ID_strains/ID_reference
+kit_api_STA_meta,3,Metadata for API STA,
+kit_api_zym,3,Test data from API ZYM,ID_strains/ID_reference
+kit_api_zym_ec,3,Metadata for API ZYM,
+ncbi_all,3,Help table for matching to NCBI,ID_strains
+observation,3,"Unstructured, not standardized data that does not fit into other data fields",ID_strains/ID_reference
+biosample,2,NCBI Biosample data,ID_strains
+countries,1,help table for translating ISO/Country,
+culture_collection,1,help table for structuring and analysing culture collection numbers,
+annotation_core,0,outdated,
+annotation_event,0,outdated,
+annotation_user,0,outdated,
+culture_condition,0,"outdated table, formerly was used for media, oxygen, pH > now dedicated tables ",ID_strains/ID_reference
+django_admin_log,0,help table for API,
+django_content_type,0,help table for API,
+django_session,0,help table for API,
+django_site,0,help table for API,
+DSM_no_catalog,0,help table for valid DSM culture collection numbers,
+field_basic_definition,0,help table for data field administration,
+lpsn_link_matching,0,help table for matching to LPSN,
+lpsn_taxon_names,0,help table for taxon names from LPSN,
+lpsn_type_strains,0,help table for type strains from LPSN,
+metabolites,0,"outdated table, formerly was used for metabolites> now dedicated tables ",ID_strains
+meta_api,0,help table for API test tool,ID_strains
+multimedia,0,Metadata on multimedia content (pictures),ID_strains/ID_reference
+ncbi_taxonomy,0,external NCBI data,
+ncbi_tax_id,0,NCBI TAX ID  matching,ID_strains
+pdf,0,help table PDF archive,
+registration_registrationprofile,0,help table for API,
+section,0,help table for sections,
+static_content,0,outdated data,
+straininfo_link,0,outdated data to straininfo,ID_strains/ID_reference
+strains_taxplorer,0,help table for TAXplorer tool,
+strain_synonyms,0,help table for matching synonyms,ID_strains/ID_reference
