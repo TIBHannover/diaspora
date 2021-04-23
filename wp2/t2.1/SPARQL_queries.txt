@@ -1,0 +1,75 @@
+Give me the list of bacteria having cell shape rod-shapped
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bd: <http://www.tib.eu/bd/#> 
+
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject ?predicate ?object
+} LIMIT 5
+
+give the strains
+SELECT ?motility
+WHERE {
+  ?x <http://www.tib.eu/bd/motility> ?motility
+} LIMIT 5
+
+
+SELECT ?cellShape
+WHERE {
+  ?x <http://www.tib.eu/bd/shapeOfCell> ?cellShape
+} LIMIT 5
+
+Give me the list of bacteria whose cellShape is rod-shaped
+
+SELECT ?x
+WHERE {
+  ?x <http://www.tib.eu/bd/shapeOfCell> "rod-shaped"
+} LIMIT 5
+
+
+
+Give me the list of bacteria whose motility is boolean
+
+SELECT ?strains
+WHERE {
+  ?strains <http://www.tib.eu/bd/motility> "1"^^xsd:boolean
+} LIMIT 5
+
+Give me the list of bacteria whose motility is boolean and cellShape is rod-shaped
+
+SELECT ?strains
+WHERE {
+  ?strains <http://www.tib.eu/bd/motility> "1"^^xsd:boolean .
+  ?strains <http://www.tib.eu/bd/shapeOfCell> "rod-shaped" .
+} LIMIT 5
+
+without # in the prefix
+SELECT ?strains
+WHERE {
+  ?strains bd:motility "1"^^xsd:boolean .
+  ?strains bd:shapeOfCell "rod-shaped" .
+} LIMIT 5
+
+Count of the strains having rod-shaped and motility true
+SELECT (COUNT(?x) AS ?triples)
+WHERE {
+  ?x bd:motility "1"^^xsd:boolean .
+  ?x bd:shapeOfCell "rod-shaped" .
+} LIMIT 5
+
+Ask motility yes or no
+
+ASK
+{
+  <http://www.tib.eu/bd/18157> bd:motility "1"^^xsd:boolean .
+} 
+
+Give the list of cell length which has start length and end length in the rangeof (1,2)
+SELECT ?strain ?startrange ?endrange
+WHERE   { ?strain bd:rangeOfStartLength ?startrange . FILTER (?startrange >= 1.0)
+  			?strain bd:rangeOfEndLength ?endrange . FILTER (?endrange <= 2.0)
+        } LIMIT 10
