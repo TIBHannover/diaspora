@@ -6,3 +6,5 @@ also link to the issue number #1(look for it)
 Explain all the files here and provide the respective the link(external file)
 
 Put everything produced by us
+
+Name file wich makes sense like Bacdive_sparql_queries
