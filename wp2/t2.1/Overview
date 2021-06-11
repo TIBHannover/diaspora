@@ -24,3 +24,4 @@ For data mapping, we have used the SDM RDFIzer, which creates a mapping rule for
 - Run the rdifzer using python rdfizer/run\_rdfizer.py C:\Gautam\TIB\SDM-RDFizer-master\example\config.ini
 - Result- the obtained result will be store in t
 
+d
