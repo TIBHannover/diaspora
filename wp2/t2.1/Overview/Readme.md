@@ -1,4 +1,4 @@
-#In this folder, we dicusss about the concept of creation of Knowldege graph from the relational database. 
+# In this folder, we dicusss about the concept of creation of Knowldege graph from the relational database. 
 
 In this step, we map from multiples sources using the developed ontology. Then we generated an RDF file and stores it as a knowledge graph.
 
