@@ -1,0 +1,1319 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.tib.eu/bd/"
+     xml:base="http://www.tib.eu/bd/"
+     xmlns:bd="http://www.tib.eu/bd"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bd1="http://www.tib.eu/bd/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-43="http://www.semanticweb.org/gautam/ontologies/2020/5/untitled-ontology-43#">
+    <owl:Ontology rdf:about="http://www.tib.eu/bd/">
+        <dc:creator>Gautam Kishore Shahi</dc:creator>
+        <dc:title xml:lang="en">13:04:2021 14:52</dc:title>
+        <dc:title xml:lang="en">Bacdive Ontology</dc:title>
+        <bd1:browsingUI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.tib.eu/bd</bd1:browsingUI>
+        <rdfs:comment xml:lang="en">Ontology for capturing, describing, distributing and publishing of Bacterial Information.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.tib.eu/bd/date">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#browsingUI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.tib.eu/bd/#browsingUI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tib.eu/bd/cellHas -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/cellHas">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Cell"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/Morphology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasCell -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasCell">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasColony -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasColony">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasHalophily -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasHalophily">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/Halophile"/>
+        <rdfs:comment xml:lang="en">Organism which has halophile in nature</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasMorphology -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasMorphology">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/Morphology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasPh -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasPh">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/PH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasTemperature -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasTemperature">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/phTestType -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/phTestType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Halophile"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/PH"/>
+        <rdfs:comment xml:lang="en">Kind of pH test</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/sampledFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/sampledFrom">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">origin of bacteria</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#city -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#city">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#location"/>
+        <rdfs:comment xml:lang="en">a large and densely populated urban area; may include several independent administrative districts</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#country -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#country">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#location"/>
+        <rdfs:comment xml:lang="en">A politically organized body of people under a single government.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#district -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#district">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#location"/>
+        <rdfs:comment xml:lang="en">A region marked off for administrative or other purposes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#location">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">A point or extent in space</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#state -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#location"/>
+        <rdfs:comment xml:lang="en">The territory occupied by one of the constituent administrative districts of a nation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#village -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#village">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#location"/>
+        <rdfs:comment xml:lang="en">A community of people smaller than a town.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tib.eu/bd/IncubationPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/IncubationPeriod">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Incubation period is the time elapsed between exposure to a pathogenic organism, a chemical, or radiation, and when symptoms and signs are first apparent</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/cellLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/cellLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:comment xml:lang="en">Length of the cell</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/cellWidthUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/cellWidthUnit">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:comment xml:lang="en">Unit of cell width.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/className -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/className">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Class"/>
+        <rdfs:comment xml:lang="en">Class name (taxonomic rank).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/colonyColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/colonyColor">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">color of the colony</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/colonyLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/colonyLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">The diameter of a representative colony may be measured in millimeters or described in relative terms such as pinpoint, small, medium, large.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/colonyShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/colonyShape">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">basic shape of the colony</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/colonyWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/colonyWidth">
+        <rdfs:comment xml:lang="en">Different types of bacteria will produce different-looking colonies, some colonies may be coloured, some colonies are circular in shape, and others are irregular</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/cultivationTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/cultivationTemperature">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">temperature for bacteria cultivation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/domainName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/domainName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Domain"/>
+        <rdfs:comment xml:lang="en">Domain name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/endOfColonyWidthRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/endOfColonyWidthRange">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">End of the colony width range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/familyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/familyName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Family"/>
+        <rdfs:comment xml:lang="en">Family name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/fullScientificName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/fullScientificName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">Species name, author(s) and year of the valid publication of the species name.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/genusName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/genusName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Genus"/>
+        <rdfs:comment xml:lang="en">Genus name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/gramStain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/gramStain">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Possibility of gram staining</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/halophily -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/halophily">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">Halophiles are organisms that require salt for growth, inhabiting hypersaline environments in which salinity usually exceeds the sea one up to saturation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hemolysisAbility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/hemolysisAbility">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Hemolysis is an event that causes hemoglobin release in blood due to red blood cell lysis.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hemolysisType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/hemolysisType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">There are three types of hemolysis, designated alpha, beta and gamma.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idBacdive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idBacdive">
+        <rdfs:comment xml:lang="en">Id to bacdive entry</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idCellMorphology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idCellMorphology">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:comment xml:lang="en">ID of the cell morphology table in BacDive database.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idColonyMorphology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idColonyMorphology">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idCulturePH -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idCulturePH">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/PH"/>
+        <rdfs:comment xml:lang="en">Ph value of the bacteria</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idCultureTemp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idCultureTemp">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">Id of the culture temperature table</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idHalophily -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idHalophily">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Halophile"/>
+        <rdfs:comment xml:lang="en">id to halophily table</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idMedium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idMedium">
+        <rdfs:comment xml:lang="en">id to the medium table</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idReference">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:comment xml:lang="en">Reference id used in the Bacdive table.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/idStrains -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idStrains">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:comment xml:lang="en">Id of the strains in the table.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/lastChange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/lastChange">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Last change in the database of bacdive</rdfs:comment>
+        <rdfs:comment xml:lang="en">date of change in the system.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/manualAnnotation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/manualAnnotation">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:comment xml:lang="en">If the data is annotated manually</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/mediumComposition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediumComposition">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Some of the ingredients of culture media include water, agar, peptone, casein hydrolysate, meat extract, yeast extract and malt extract. Classification: Bacterial culture media can be classified in at least three ways; Based on consistency, based on nutritional component and based on its functional use.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/mediumName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediumName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Culture media is the food used to grow and control microbes.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/orderName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/orderName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Order"/>
+        <rdfs:comment xml:lang="en">name of order. taxonomic rank.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/phylumName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/phylumName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Phylum"/>
+        <rdfs:comment xml:lang="en">Phylum name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rangeOfColonyEndLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rangeOfColonyEndLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">End of the colony cell length range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rangeOfColonyStartLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rangeOfColonyStartLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Start of the colony cell length range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rangeOfEndLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rangeOfEndLength">
+        <rdfs:comment xml:lang="en">need to verify</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rangeOfStartLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rangeOfStartLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">needtoVerify</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rgEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rgEnd">
+        <rdfs:comment xml:lang="en">need to verify</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/rgStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rgStart">
+        <rdfs:comment xml:lang="en">need to verify</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/salt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/salt">
+        <rdfs:comment xml:lang="en">type of salt fused for bacterial growth</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/saltConcentration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/saltConcentration">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Halophile"/>
+        <rdfs:comment xml:lang="en">concetration of the salt</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/speciesEpithetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/speciesEpithetName">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/speciesName"/>
+        <rdfs:comment xml:lang="en">Second part of species name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/speciesName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/speciesName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Species"/>
+        <rdfs:comment xml:lang="en">Species name, which includes genus, species and subspecies epithet (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/subspeciesEpithetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/subspeciesEpithetName">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/speciesName"/>
+        <rdfs:comment xml:lang="en">Third part of species name, where applicable</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/temperatureRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/temperatureRange">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">temperature required for growth of  bacteria</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/testType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/testType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/PH"/>
+        <rdfs:comment xml:lang="en">Type of testing medium</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/unitOfColonyLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/unitOfColonyLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Unit to measure the length of colony</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/unitOfColonyWidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/unitOfColonyWidth">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Unit to measure the width of colony</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/unitOfSaltConcentration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/unitOfSaltConcentration">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/Halophile"/>
+        <rdfs:comment xml:lang="en">unit to measure the salt concetration</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/widthOfCell -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/widthOfCell">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:comment xml:lang="en">width of cell of bacteria.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#address">
+        <rdfs:comment xml:lang="en">the place where a person or organization can be found or communicated with.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#addressLocality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#addressLocality">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#address"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The locality in which the street address in and which is in the region.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#atGeoLocationLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#atGeoLocationLatitude">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">atGeoLocationLatitude is a data property used to link location or &quot;Where&quot; with specific latitude in the form of decimal degree.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#atGeoLocationLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#atGeoLocationLongitude">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">GeoLocationLatitude is a data property used to link location or &quot;Where&quot; with specific longitude in the form of decimal degree.</rdfs:comment>
+        <rdfs:label xml:lang="en">Longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#cellLengthUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#cellLengthUnit">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Unit of cell length.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#idOfCellMorphology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#idOfCellMorphology">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Unique Identifier.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#motility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#motility">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">ability of motility.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#postalCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#address"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">A code of letters and digits added to a postal address to aid in the sorting of mail.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#rangeOfEndLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#rangeOfEndLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Start of the cell length range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#rangeOfStartLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#rangeOfStartLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Start of the cell length range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#shapeOfCell -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#shapeOfCell">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Description of the cell shape.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#startOfColonyWidthRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#startOfColonyWidthRange">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Start of the colony width range</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#streetAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#streetAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#address"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">the address where a person or organization can be found.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#unitOfCellLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#unitOfCellLength">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">unit of measurement for cell length</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/#widthOfCell -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/#widthOfCell">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">width of the cell.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
+        <rdfs:comment xml:lang="en">A spatial region or named place. For Darwin Core, a set of terms describing a place, whether named or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Cell -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Cell"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Class -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Class"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Domain -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Domain"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Family -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Family"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Genus -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Genus"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Halophile -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Halophile">
+        <rdfs:comment xml:lang="en">an organism, especially a microorganism, that grows in or can tolerate saline conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Morphology -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Morphology"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Order -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Order"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/PH -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/PH">
+        <rdfs:comment xml:lang="en">Details about the PH conditions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Phylum -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Phylum"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Species -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Species"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Temperature -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Temperature">
+        <rdfs:comment xml:lang="en">Temperature condition of Bacteria</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/cellMorphology -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/cellMorphology">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Morphology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/colonyMorphology -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/colonyMorphology">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Morphology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Archaea -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Archaea">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Prokaryotes"/>
+        <rdfs:comment xml:lang="en">microorganisms which are similar to bacteria in size and simplicity of structure but radically different in molecular organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Bacteria -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Bacteria">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Prokaryotes"/>
+        <rdfs:comment xml:lang="en">a member of a large group of unicellular microorganisms which have cell walls but lack organelles and an organized nucleus, including some which can cause disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#City -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#City">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">a large and densely populated urban area; may include several independent administrative districts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Class -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Class">
+        <rdfs:comment xml:lang="en">Class was the most general rank proposed by Linnaeus before the introduction of the phyla.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Country -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Country">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">a politically organized body of people under a single government</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#District -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#District">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">An administrative area spanning regions or countries.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Embryophyte -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Embryophyte">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#MulticelluarOrganism"/>
+        <rdfs:comment xml:lang="en">Embryophytes are complex multicellular eukaryotes with specialized reproductive organs.</rdfs:comment>
+        <rdfs:label>Land Plants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Eukaryotes -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Eukaryotes">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:comment xml:lang="en">Eukaryotic cells contain membrane bound organelles, such as mitochondria, a nucleus, and chloroplasts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Family -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Family">
+        <rdfs:comment xml:lang="en">Family is, in turn, more specific. Some families in the order Carnivora, for example, are Canidae (dogs, wolves, foxes)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Genus -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Genus">
+        <rdfs:comment xml:lang="en">Genus (plural: genera) is even more specific than family. It is the first part of an organism’s scientific name using binomial nomenclature; the second part is the species name.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Metazoa -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Metazoa">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#MulticelluarOrganism"/>
+        <rdfs:comment xml:lang="en">Metazoa (also called Animals) are multicellular eukaryotic organisms that form the biological kingdom Animalia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#MulticelluarOrganism -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#MulticelluarOrganism">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">Multicellular organisms are organisms that consist of more than one cell, in contrast to unicellular organisms.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Order -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Order">
+        <rdfs:comment xml:lang="en">Order is more specific than class. Some of Linnaeus’ orders are still used today, such as Lepidoptera (the order of butterflies and moths)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Organism -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Organism">
+        <rdfs:comment xml:lang="en">a living thing that has (or can develop) the ability to act or function independently.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Phylum -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Phylum">
+        <rdfs:comment xml:lang="en">Phylum (plural: phyla) is the next rank after kingdom; it is more specific than kingdom, but less specific than class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Prokaryotes -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Prokaryotes">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
+        <rdfs:comment xml:lang="en">Prokaryotes lack membrane-bound organelles, such as mitochondria or a nucleus.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Protozoa -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Protozoa">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Eukaryotes"/>
+        <rdfs:comment xml:lang="en">Protozoa are largely defined by their method of locomotion, including flagella, cilia, and pseudopodia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Province -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Province">
+        <owl:equivalentClass rdf:resource="http://www.tib.eu/bd/#State"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">the territory occupied by one of the constituent administrative districts of a nation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Species -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Species">
+        <rdfs:comment xml:lang="en">Species is the most specific major taxonomic rank; species are sometimes divided into subspecies, but not all species have multiple forms that are different enough to be called subspecies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#State -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#State">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">the territory occupied by one of the constituent administrative districts of a nation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Town -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Town">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">An urban area with a fixed boundary that is smaller than a city.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#UnicellularAlgae -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#UnicellularAlgae">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Eukaryotes"/>
+        <rdfs:comment xml:lang="en">Unicellular algae are plant-like autotrophs and contain chlorophyll.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#UnicellularFungi -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#UnicellularFungi">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Eukaryotes"/>
+        <rdfs:comment xml:lang="en">Unicellular fungi include the yeasts. Fungi are found in most habitats, although most are found on land.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#UnicellularOrganism -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#UnicellularOrganism">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:comment xml:lang="en">A unicellular organism, also known as a single-celled organism, is an organism that consists of a single cell.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/#Village -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/#Village">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tib.eu/bd/2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/2">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <lastChange rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">42758.41271990741</lastChange>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/3">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <lastChange rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">42528.45400462963</lastChange>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60</bd1:cellLengthUnit>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/39">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10959</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</bd1:motility>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3-1.6</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/46 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/46">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.80</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/47 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/47">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.30</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3-0.4</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/48 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/48">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.30</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3-0.4</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/49 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/49">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6-1.0</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/5">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/52">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.70</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7-0.9</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/7758 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/7758">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40</bd1:cellLengthUnit>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4-0.8</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tib.eu/bd/7759 -->
+
+    <owl:NamedIndividual rdf:about="http://www.tib.eu/bd/7759">
+        <rdf:type rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <gramStain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negative</gramStain>
+        <bd1:cellLengthUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60</bd1:cellLengthUnit>
+        <bd1:motility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bd1:motility>
+        <bd1:shapeOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rod-shaped</bd1:shapeOfCell>
+        <bd1:unitOfCellLength rdf:datatype="http://www.w3.org/2001/XMLSchema#string">¬µm</bd1:unitOfCellLength>
+        <bd1:widthOfCell rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6-1.2</bd1:widthOfCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:label xml:lang="en">Latitude</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
