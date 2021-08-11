@@ -406,6 +406,14 @@
     
 
 
+    <!-- http://www.tib.eu/bd/colonyWidthUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/colonyWidthUnit">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/cultivationTemperature -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/cultivationTemperature">
