@@ -1079,7 +1079,9 @@
 
     <!-- http://www.tib.eu/bd/Taxon -->
 
-    <owl:Class rdf:about="http://www.tib.eu/bd/Taxon"/>
+    <owl:Class rdf:about="http://www.tib.eu/bd/Taxon">
+        <rdfs:comment xml:lang="en">In biological classification, taxonomic rank is the relative level of a group of organisms (a taxon) in a taxonomic hierarchy</rdfs:comment>
+    </owl:Class>
     
 
 
