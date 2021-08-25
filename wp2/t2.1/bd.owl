@@ -1029,6 +1029,7 @@
     <!-- http://www.tib.eu/bd/Domain -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Domain">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Taxon"/>
         <rdfs:comment xml:lang="en">The two prokaryote domains, Bacteria and Archaea, split from each other early in the evolution of life. Bacteria are very diverse, ranging from disease-causing pathogens to beneficial photosynthesizers and symbionts. Archaea are also diverse, but none are pathogenic and many live in extreme environments</rdfs:comment>
     </owl:Class>
     
@@ -1045,6 +1046,7 @@
     <!-- http://www.tib.eu/bd/Kingdom -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Kingdom">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Domain"/>
         <rdfs:comment xml:lang="en">In biology, kingdom is the second highest taxonomic rank, just below domain. Kingdoms are divided into smaller groups called phyla.</rdfs:comment>
     </owl:Class>
     
@@ -1072,6 +1074,12 @@
         <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/environmentalCondition"/>
         <rdfs:comment xml:lang="en">Details about the PH conditions</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Taxon -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Taxon"/>
     
 
 
@@ -1231,6 +1239,7 @@
     <!-- http://www.tib.eu/bd/#Class -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Class">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Phylum"/>
         <rdfs:comment xml:lang="en">Class was the most general rank proposed by Linnaeus before the introduction of the phyla.</rdfs:comment>
     </owl:Class>
     
@@ -1276,6 +1285,7 @@
     <!-- http://www.tib.eu/bd/#Family -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Family">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Class"/>
         <rdfs:comment xml:lang="en">Family is, in turn, more specific. Some families in the order Carnivora, for example, are Canidae (dogs, wolves, foxes)</rdfs:comment>
     </owl:Class>
     
@@ -1284,6 +1294,7 @@
     <!-- http://www.tib.eu/bd/#Genus -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Genus">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Family"/>
         <rdfs:comment xml:lang="en">Genus (plural: genera) is even more specific than family. It is the first part of an organism’s scientific name using binomial nomenclature; the second part is the species name.</rdfs:comment>
     </owl:Class>
     
@@ -1326,6 +1337,7 @@
     <!-- http://www.tib.eu/bd/#Phylum -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Phylum">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Kingdom"/>
         <rdfs:comment xml:lang="en">Phylum (plural: phyla) is the next rank after kingdom; it is more specific than kingdom, but less specific than class.</rdfs:comment>
     </owl:Class>
     
@@ -1362,6 +1374,7 @@
     <!-- http://www.tib.eu/bd/#Species -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Species">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Genus"/>
         <rdfs:comment xml:lang="en">Species is the most specific major taxonomic rank; species are sometimes divided into subspecies, but not all species have multiple forms that are different enough to be called subspecies.</rdfs:comment>
     </owl:Class>
     
