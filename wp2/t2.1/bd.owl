@@ -402,6 +402,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/chebiiD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/chebiiD">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">External ID for metabolytes from Chebi database</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/className -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/className">
@@ -698,12 +708,32 @@
     
 
 
+    <!-- http://www.tib.eu/bd/metaboliteTestType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/metaboliteTestType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metaboliteTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Test type is describing what is actually observed or tested</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/metabolite_prod -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/metabolite_prod">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Name of the metabolite</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/metabolite_util -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/metabolite_util">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">small molecules that are catalyst for enzyme</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1222,7 +1252,17 @@
 
     <!-- http://www.tib.eu/bd/metabolite -->
 
-    <owl:Class rdf:about="http://www.tib.eu/bd/metabolite"/>
+    <owl:Class rdf:about="http://www.tib.eu/bd/metabolite">
+        <rdfs:comment xml:lang="en">A metabolite is any substance produced during metabolism</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/metaboliteTest -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/metaboliteTest">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+    </owl:Class>
     
 
 
