@@ -227,6 +227,22 @@
     
 
 
+    <!-- http://www.tib.eu/bd/metaboliteExcrete -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/metaboliteExcrete">
+        <rdfs:comment xml:lang="en">If the metabolite is detected outside the cell</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/metaboliteProduction -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/metaboliteProduction">
+        <rdfs:comment xml:lang="en">If bacteriym is able to this metabolite is produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/phTestType -->
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/phTestType">
@@ -678,6 +694,16 @@
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Culture media is the food used to grow and control microbes.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/metabolite_prod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/metabolite_prod">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the metabolite</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1191,6 +1217,12 @@
     <owl:Class rdf:about="http://www.tib.eu/bd/enzyme">
         <rdfs:comment xml:lang="en">Enzymes are proteins that act as biological catalysts (biocatalysts)</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/metabolite -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/metabolite"/>
     
 
 
