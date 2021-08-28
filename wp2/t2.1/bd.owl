@@ -78,6 +78,14 @@
     
 
 
+    <!-- http://www.tib.eu/bd/continent -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/continent">
+        <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#hasLocation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/enzymeProduction -->
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/enzymeProduction">
@@ -276,6 +284,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#country">
         <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/#hasLocation"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/#Country"/>
         <rdfs:comment xml:lang="en">A politically organized body of people under a single government.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -532,6 +542,16 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/genusName">
         <rdfs:comment xml:lang="en">Genus name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/geoLocationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/geoLocationName">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Location where the bacteria is located</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1114,6 +1134,15 @@
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Cell">
         <rdfs:comment>A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membran</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Continent -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Continent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment xml:lang="en">A continent is one of several large landmasses.</rdfs:comment>
     </owl:Class>
     
 
