@@ -339,6 +339,35 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/DOI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/DOI">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">digital object Indentifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/ISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/ISBN">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">International Standard Book Number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/IdOxygenTolerance -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/IdOxygenTolerance">
@@ -353,6 +382,16 @@
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/IncubationPeriod">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
         <rdfs:comment xml:lang="en">Incubation period is the time elapsed between exposure to a pathogenic organism, a chemical, or radiation, and when symptoms and signs are first apparent</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/authors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/authors">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a person or group of persons who writes a publication</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -618,6 +657,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/idCrossReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idCrossReference">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Helps us to cross refrence</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/idCulturePH -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idCulturePH">
@@ -811,6 +860,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/pubmedId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pubmedId">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is the PubMed Unique Identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/rangeOfColonyEndLength -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/rangeOfColonyEndLength">
@@ -955,6 +1014,15 @@
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/widthOfCell">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
         <rdfs:comment xml:lang="en">width of cell of bacteria.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/year">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -1107,6 +1175,36 @@
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/cellMorphology"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">width of the cell.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/bibo:pageEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:pageEnd">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">last page of the publication</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/bibo:pageStart -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:pageStart">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">first page of the publicaton</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/bibo:volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:volume">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">volumne of the publication</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1581,6 +1679,12 @@
     
 
 
+    <!-- http://www.tib.eu/bd/bibo:Article -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/bibo:Article"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1740,6 +1844,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment xml:lang="en">Title will be a name by which the resource is formally known</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.tib.eu/bd/cultivationTemperature">
         <rdfs:comment xml:lang="en">temperature for bacteria cultivation</rdfs:comment>
     </rdf:Description>
