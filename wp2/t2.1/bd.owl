@@ -69,6 +69,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/ability -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/ability">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/sporeAbility"/>
+        <rdfs:comment xml:lang="en">Ability of organism against some test</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/cellHas -->
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/cellHas">
@@ -271,6 +281,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/type -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/type">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/sporeType"/>
+        <rdfs:comment xml:lang="en">result of the test done to the check the ability of the Bacteria against a particular test</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/#city -->
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/#city">
@@ -386,21 +406,11 @@
     
 
 
-    <!-- http://www.tib.eu/bd/authors -->
-
-    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/authors">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">a person or group of persons who writes a publication</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.tib.eu/bd/biosafetyLevel -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/biosafetyLevel">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
-        <rdfs:comment xml:lang="en">Biosafety level</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/RiskAssesment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:DatatypeProperty>
     
 
@@ -408,9 +418,26 @@
     <!-- http://www.tib.eu/bd/biosafetyLevelComment -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/biosafetyLevelComment">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/RiskAssesment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Biosafety level comment</rdfs:comment>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/bookTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bookTitle">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">title of the book</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/catalogueInstitution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/catalogueInstitution"/>
     
 
 
@@ -523,6 +550,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/docType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/docType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type or format of the pubication</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/domainName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/domainName">
@@ -536,6 +573,16 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/ec_number">
         <rdfs:comment>Official identifier to classify enzyme</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/editor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/editor">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">editor of the book or journal</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -737,6 +784,25 @@
     
 
 
+    <!-- http://www.tib.eu/bd/journalAbbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/journalAbbreviation">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Journal Abbreviation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/journalFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/journalFullName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/lastChange -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/lastChange">
@@ -828,7 +894,8 @@
     <!-- http://www.tib.eu/bd/pathogenicityAnimal -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pathogenicityAnimal">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/RiskAssesment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment xml:lang="en">Pathogenicity (animal)</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -837,7 +904,8 @@
     <!-- http://www.tib.eu/bd/pathogenicityHuman -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pathogenicityHuman">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/RiskAssesment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment xml:lang="en">Pathogenicity (human)</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -846,7 +914,8 @@
     <!-- http://www.tib.eu/bd/pathogenicityPlant -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pathogenicityPlant">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/RiskAssesment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment xml:lang="en">Pathogenicity (plant)</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -856,6 +925,16 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/phylumName">
         <rdfs:comment xml:lang="en">Phylum name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/publisher">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">publisher of the journal</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -951,6 +1030,15 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/speciesName">
         <rdfs:comment xml:lang="en">Species name, which includes genus, species and subspecies epithet (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/sporeDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/sporeDescription">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1179,6 +1267,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/bibo:authorList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:authorList">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a person or group of persons who writes a publication</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/bibo:pageEnd -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:pageEnd">
@@ -1195,6 +1293,16 @@
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment xml:lang="en">first page of the publicaton</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/bibo:uri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/bibo:uri">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">URI to the publication</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1224,6 +1332,14 @@
 
     <owl:Class rdf:about="http://purl.org/dc/terms/Location">
         <rdfs:comment xml:lang="en">A spatial region or named place. For Darwin Core, a set of terms describing a place, whether named or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Ability -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Ability">
+        <rdfs:comment xml:lang="en">Test to determine the particular ability of the organism</rdfs:comment>
     </owl:Class>
     
 
@@ -1296,6 +1412,12 @@
     
 
 
+    <!-- http://www.tib.eu/bd/RiskAssesment -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/RiskAssesment"/>
+    
+
+
     <!-- http://www.tib.eu/bd/Taxon -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Taxon">
@@ -1317,6 +1439,14 @@
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Test">
         <rdfs:comment xml:lang="en">test conducted to measure the enviormental condition of bacteria</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Type -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Type">
+        <rdfs:comment xml:lang="en">Type of result obtianed from a test</rdfs:comment>
     </owl:Class>
     
 
@@ -1408,6 +1538,23 @@
 
     <owl:Class rdf:about="http://www.tib.eu/bd/prefix">
         <rdfs:comment xml:lang="en">prefix for any entity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/sporeAbility -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/sporeAbility">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Ability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/sporeType -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/sporeType">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Type"/>
+        <rdfs:comment xml:lang="en">Type of the result coming from ability test</rdfs:comment>
     </owl:Class>
     
 
@@ -1681,7 +1828,9 @@
 
     <!-- http://www.tib.eu/bd/bibo:Article -->
 
-    <owl:Class rdf:about="http://www.tib.eu/bd/bibo:Article"/>
+    <owl:Class rdf:about="http://www.tib.eu/bd/bibo:Article">
+        <rdfs:comment xml:lang="en">Details of the article mentionin or discussing about the Bacteria</rdfs:comment>
+    </owl:Class>
     
 
 
