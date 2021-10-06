@@ -40,15 +40,16 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.tib.eu/bd/date -->
 
-    <owl:AnnotationProperty rdf:about="http://www.tib.eu/bd/date">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.tib.eu/bd/date"/>
     
 
 
@@ -189,6 +190,15 @@
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasMorphology">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
         <rdfs:range rdf:resource="http://www.tib.eu/bd/Morphology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/hasNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/hasNutrition">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/Nutrition"/>
     </owl:ObjectProperty>
     
 
@@ -361,10 +371,7 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/bibo:Article"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -546,6 +553,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/cultivationTemperature">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/date">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
     </owl:DatatypeProperty>
     
 
@@ -823,12 +838,29 @@
     
 
 
+    <!-- http://www.tib.eu/bd/mediaLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediaLink">
+        <rdfs:comment xml:lang="en">Link to the external sources(database)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/mediumComposition -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediumComposition">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cultivationCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Some of the ingredients of culture media include water, agar, peptone, casein hydrolysate, meat extract, yeast extract and malt extract. Classification: Bacterial culture media can be classified in at least three ways; Based on consistency, based on nutritional component and based on its functional use.</rdfs:comment>
+        <rdfs:comment xml:lang="en">How is the cultivation medium for Bacteria enrichment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/mediumGrowth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediumGrowth">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cultivationCondition"/>
+        <rdfs:comment xml:lang="en">Binary value, if the bacteria is able to grow in this medium</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -836,9 +868,9 @@
     <!-- http://www.tib.eu/bd/mediumName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/mediumName">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/cultivationCondition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Culture media is the food used to grow and control microbes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Substance that is used for enrichment of Bacteria- name of the medium</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -869,6 +901,22 @@
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">small molecules that are catalyst for enzyme</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/methylRed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/methylRed">
+        <rdfs:comment xml:lang="en">Test with methyl_red test</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/nutritionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/nutritionType">
+        <rdfs:comment xml:lang="en">Well defined nutrition type- how the bacteria lives(eating)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1387,10 +1435,11 @@
     
 
 
-    <!-- http://www.tib.eu/bd/Metabolite -->
+    <!-- http://www.tib.eu/bd/LabTest -->
 
-    <owl:Class rdf:about="http://www.tib.eu/bd/Metabolite">
-        <rdfs:comment xml:lang="en">A substance made or used when the body breaks down food, drugs or chemicals,</rdfs:comment>
+    <owl:Class rdf:about="http://www.tib.eu/bd/LabTest">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+        <rdfs:comment>Test conducted in the laboratory</rdfs:comment>
     </owl:Class>
     
 
@@ -1399,6 +1448,20 @@
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Morphology">
         <rdfs:comment xml:lang="en">Indicates the shape, size etc of the Bacteria.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/Nutrition -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Nutrition"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/Order -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Order">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Class"/>
     </owl:Class>
     
 
@@ -1496,7 +1559,16 @@
     <!-- http://www.tib.eu/bd/environmentalCondition -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/environmentalCondition">
-        <rdfs:comment xml:lang="en">It describes the enviromental condition for cultivation or isolation of the bacteria</rdfs:comment>
+        <rdfs:comment xml:lang="en">It describes the enviromental condition for the growth of  bacteria</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/environmentalTest -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/environmentalTest">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+        <rdfs:comment xml:lang="en">Test conducted while sampling the bacteria</rdfs:comment>
     </owl:Class>
     
 
@@ -1512,7 +1584,7 @@
     <!-- http://www.tib.eu/bd/metabolite -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/metabolite">
-        <rdfs:comment xml:lang="en">A metabolite is any substance produced during metabolism</rdfs:comment>
+        <rdfs:comment xml:lang="en">A metabolite is any substance consumed or produced during metabolism of an organism.</rdfs:comment>
     </owl:Class>
     
 
@@ -1520,7 +1592,7 @@
     <!-- http://www.tib.eu/bd/metaboliteTest -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/metaboliteTest">
-        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/LabTest"/>
     </owl:Class>
     
 
@@ -1528,7 +1600,7 @@
     <!-- http://www.tib.eu/bd/phTest -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/phTest">
-        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/LabTest"/>
         <rdfs:comment xml:lang="en">test to observe the sustainability of bacteria on the given range of  PH</rdfs:comment>
     </owl:Class>
     
@@ -1562,7 +1634,7 @@
     <!-- http://www.tib.eu/bd/temperatureTest -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/temperatureTest">
-        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Test"/>
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/LabTest"/>
         <rdfs:comment xml:lang="en">test to observe the sustainability of bacteria on the given range of Temperature</rdfs:comment>
     </owl:Class>
     
@@ -1678,7 +1750,7 @@
     <!-- http://www.tib.eu/bd/#Family -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/#Family">
-        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/#Class"/>
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Order"/>
         <rdfs:comment xml:lang="en">Family is, in turn, more specific. Some families in the order Carnivora, for example, are Canidae (dogs, wolves, foxes)</rdfs:comment>
     </owl:Class>
     
