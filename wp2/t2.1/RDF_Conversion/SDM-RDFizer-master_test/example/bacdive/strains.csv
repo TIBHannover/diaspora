@@ -1,0 +1,11 @@
+ID_strains,domain,motility,cellLength,rangeOfStartLength,rangeOfEndLength,unitOfCellLength,widthOfCell,startOfColonyWidthRange,endOfColonyWidthRange,cell_width_unit,shapeOfCell,temp_opt,sample_type
+1,Bacteria,1,1.1-2.3,1.1,2.3,µm,,,,,rod-shaped,40,beer
+2,Bacteria,1,1.4,1.4,1.4,µm,0.6,0.6,0.6,µm,,40,soil
+3,Bacteria,,0.8-1.2,0.8,1.2,µm,1.3-1.6,1.3,1.6,µm,,20,cider making
+4,Bacteria,0,,,,,,,,,,20,beer (ale) in storage
+5,Bacteria,0,1.4,1.4,1.4,µm,0.8,0.8,0.8,µm,rod-shaped,20,soil
+6,Bacteria,0,5.5-6,5.5,6,µm,,,,µm,,,"fruit of Malay rose apple, <I>Syzygium malaccense</I>"
+7,Bacteria,1,1-1.2,1,1.2,µm,0.5-0.7,0.5,0.7,µm,,20,"fruit of montain soursop, <I>Annona montanae</I>"
+8,Bacteria,1,10-Mar,3,10,µm,,,,µm,,30,"canna flower, <I>Canna hybrida</I>"
+9,Bacteria,1,,,,,,,,,,26,"coconut juice, <I>Cioccos nucifera</I>"
+10,Bacteria,,,,,,,,,,rod-shaped,30,soil

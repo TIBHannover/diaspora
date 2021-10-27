@@ -1,0 +1,84 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://tib.de/ontario/mapping#> .
+@prefix bd: <hhttp://www.tib.eu/bd/> .
+
+<TriplesMap1>	
+	rml:logicalSource [ rml:source "C:/Gautam/TIB/SDM-RDFizer-master/example/bacdive/BacDive_cell_morphology.csv";
+						rml:referenceFormulation ql:CSV
+						];
+	rr:subjectMap [
+		rr:template "http://www.tib.eu/bd/{ID_strains}";
+		rr:class bd:Bacteria
+	] ;
+	
+	 rr:predicateObjectMap [
+    rr:predicate bd:motility;
+    rr:objectMap [
+      rml:reference "motility";
+	  rr:datatype xsd:boolean
+      ]
+    ] ;
+
+
+ rr:predicateObjectMap [
+    rr:predicate bd:rangeOfStartLength;
+    rr:objectMap [
+      rml:reference "rangeOfStartLength";
+	  rr:datatype xsd:decimal  
+      ]
+    ] ;
+
+ rr:predicateObjectMap [
+    rr:predicate bd:rangeOfEndLength;
+    rr:objectMap [
+      rml:reference "rangeOfEndLength";
+	  rr:datatype xsd:decimal
+      ]
+    ];
+rr:predicateObjectMap [
+    rr:predicate bd:unitOfCellLength;
+    rr:objectMap [
+      rml:reference "unitOfCellLength";
+	  rr:datatype xsd:string
+      ]
+    ];
+	
+	
+	rr:predicateObjectMap [
+    rr:predicate bd:widthOfCell;
+    rr:objectMap [
+      rml:reference "widthOfCell";
+	  rr:datatype xsd:string
+      ]
+    ];
+	
+	rr:predicateObjectMap [
+    rr:predicate bd:startOfColonyWidthRange;
+    rr:objectMap [
+      rml:reference "startOfColonyWidthRange";
+	  rr:datatype xsd:string
+      ]
+    ];
+	
+	rr:predicateObjectMap [
+    rr:predicate bd:endOfColonyWidthRange;
+    rr:objectMap [
+      rml:reference "endOfColonyWidthRange";
+	  rr:datatype xsd:string
+      ]
+    ];
+	
+	rr:predicateObjectMap [
+    rr:predicate bd:shapeOfCell;
+    rr:objectMap [
+      rml:reference "shapeOfCell";
+	  rr:datatype xsd:string
+      ]
+    ].	
