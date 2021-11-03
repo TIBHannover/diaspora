@@ -34,5 +34,7 @@ For documentation of project https://www.overleaf.com/project/5f3664f53a5b120001
 ## Project Meeting Notes
 https://wiki.tib.eu/confluence/display/entwicklung/Meeting+notes
 
+The project also uses our internally built tool by SDM group for converting the relational table to the RDF file https://github.com/SDM-TIB/SDM-RDFizer
+
 
 
