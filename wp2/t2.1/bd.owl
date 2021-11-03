@@ -70,6 +70,16 @@
     
 
 
+    <!-- http://www.tib.eu/bd/IdentifiesGcMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/IdentifiesGcMethod">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/gcMethod"/>
+        <rdfs:range rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies the GC methods</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/ability -->
 
     <owl:ObjectProperty rdf:about="http://www.tib.eu/bd/ability">
@@ -495,6 +505,14 @@
     
 
 
+    <!-- http://www.tib.eu/bd/citrateTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/citrateTest">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/citrateTest"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/className -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/className">
@@ -635,6 +653,14 @@
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/fullScientificName">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Organism"/>
         <rdfs:comment xml:lang="en">Species name, author(s) and year of the valid publication of the species name.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/gcContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/gcContent">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percentage of overall DNA- % of GC content in DNA</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -799,6 +825,15 @@
     
 
 
+    <!-- http://www.tib.eu/bd/indoleTestSubstance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/indoleTestSubstance">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/indoleTest"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">substance with Indole test</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/journalAbbreviation -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/journalAbbreviation">
@@ -916,6 +951,7 @@
     <!-- http://www.tib.eu/bd/nutritionType -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/nutritionType">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
         <rdfs:comment xml:lang="en">Well defined nutrition type- how the bacteria lives(eating)</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -973,6 +1009,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/phylumName">
         <rdfs:comment xml:lang="en">Phylum name (taxonomic rank)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/providedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/providedBy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To get the information from where medium comes form</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1141,6 +1185,14 @@
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/unitOfSaltConcentration">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/Halophile"/>
         <rdfs:comment xml:lang="en">unit to measure the salt concetration</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/voges_proskauer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/voges_proskauer">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test with voges_proskauer test</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1444,6 +1496,14 @@
     
 
 
+    <!-- http://www.tib.eu/bd/Method -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/Method">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method to identify the details of the bacteria and it&apos;s related property</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.tib.eu/bd/Morphology -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/Morphology">
@@ -1523,6 +1583,14 @@
     
 
 
+    <!-- http://www.tib.eu/bd/citrateTest -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/citrateTest">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/LabTest"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.tib.eu/bd/colonyMorphology -->
 
     <owl:Class rdf:about="http://www.tib.eu/bd/colonyMorphology">
@@ -1577,6 +1645,22 @@
 
     <owl:Class rdf:about="http://www.tib.eu/bd/enzyme">
         <rdfs:comment xml:lang="en">Enzymes are proteins that act as biological catalysts (biocatalysts)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/gcMethod -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/gcMethod">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tib.eu/bd/indoleTest -->
+
+    <owl:Class rdf:about="http://www.tib.eu/bd/indoleTest">
+        <rdfs:subClassOf rdf:resource="http://www.tib.eu/bd/LabTest"/>
     </owl:Class>
     
 
@@ -2067,6 +2151,9 @@
 
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
         <rdfs:comment xml:lang="en">Title will be a name by which the resource is formally known</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.tib.eu/bd/citrateTest">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substance with citrate test</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.tib.eu/bd/cultivationTemperature">
         <rdfs:comment xml:lang="en">temperature for bacteria cultivation</rdfs:comment>
