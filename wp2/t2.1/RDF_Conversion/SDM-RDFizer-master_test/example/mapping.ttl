@@ -12,7 +12,7 @@
   a rr:TriplesMap;
     
   rml:logicalSource [
-    rml:source "C:/Gautam/TIB/SDM-RDFizer-master/example/files/sampleSource1.csv";
+    rml:source "C:/Gautam/Gautam_Working/diaspora_Github/wp2/t2.1/RDF_Conversion/SDM-RDFizer-master_test/example/files/sampleSource1.csv";
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [
@@ -34,7 +34,7 @@
   a rr:TriplesMap;
     
   rml:logicalSource [
-    rml:source "C:/Gautam/TIB/SDM-RDFizer-master/example/files/sampleSource2.csv";
+    rml:source "C:/Gautam/Gautam_Working/diaspora_Github/wp2/t2.1/RDF_Conversion/SDM-RDFizer-master_test/example/files/sampleSource2.csv";
     rml:referenceFormulation ql:CSV
   ];
   rr:subjectMap [

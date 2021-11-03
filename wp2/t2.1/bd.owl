@@ -864,11 +864,29 @@
     
 
 
+    <!-- http://www.tib.eu/bd/linkToExternalDatabase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/linkToExternalDatabase">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Link to the external database like genebase</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/manualAnnotation -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/manualAnnotation">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
         <rdfs:comment xml:lang="en">If the data is annotated manually</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/matchedWithSilva -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/matchedWithSilva">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If we have match(sequence_acc) with silva database then yes.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1013,6 +1031,33 @@
     
 
 
+    <!-- http://www.tib.eu/bd/pigmentColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pigmentColor">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">color of the pignemt name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/pigmentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pigmentName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If bacteria is able to pigment(color), name  of the pignemt name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/pigmentProduction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/pigmentProduction">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ability to build pigment or not</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/providedBy -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/providedBy">
@@ -1109,6 +1154,32 @@
     
 
 
+    <!-- http://www.tib.eu/bd/sequenceAcc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/sequenceAcc">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">importance part of genome sequence to identify a bacteria/ presistent sequence accesstion number to linked to the 3 big database INSEC</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/sequenceLenght -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/sequenceLenght">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How long the sequece was?</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/sourceDB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/sourceDB">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database from where it is retrived</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/speciesEpithetName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/speciesEpithetName">
@@ -1135,11 +1206,29 @@
     
 
 
+    <!-- http://www.tib.eu/bd/squenceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/squenceName">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of sequecne</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/subspeciesEpithetName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/subspeciesEpithetName">
         <rdfs:subPropertyOf rdf:resource="http://www.tib.eu/bd/speciesName"/>
         <rdfs:comment xml:lang="en">Third part of species name, where applicable</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/taxonomyId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/taxonomyId">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/#Bacteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxonomic ID done by the database</rdfs:comment>
     </owl:DatatypeProperty>
     
 
