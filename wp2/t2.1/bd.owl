@@ -414,15 +414,6 @@
     
 
 
-    <!-- http://www.tib.eu/bd/IncubationPeriod -->
-
-    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/IncubationPeriod">
-        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
-        <rdfs:comment xml:lang="en">Incubation period is the time elapsed between exposure to a pathogenic organism, a chemical, or radiation, and when symptoms and signs are first apparent</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.tib.eu/bd/biosafetyLevel -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/biosafetyLevel">
@@ -821,6 +812,15 @@
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/idStrains">
         <rdfs:domain rdf:resource="http://www.tib.eu/bd/#UnicellularOrganism"/>
         <rdfs:comment xml:lang="en">Id of the strains in the table.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tib.eu/bd/incubationPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/incubationPeriod">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/colonyMorphology"/>
+        <rdfs:comment xml:lang="en">Incubation period is the time elapsed between exposure to a pathogenic organism, a chemical, or radiation, and when symptoms and signs are first apparent</rdfs:comment>
     </owl:DatatypeProperty>
     
 
