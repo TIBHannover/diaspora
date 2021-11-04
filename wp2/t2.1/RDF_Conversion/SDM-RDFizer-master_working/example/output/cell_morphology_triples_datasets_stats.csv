@@ -1,0 +1,7 @@
+"Dataset","Number of the triple","Time"
+"cell_morphology_triples","10000","0.9732532501220703"
+"cell_morphology_triples","20000","1.0442571640014648"
+"cell_morphology_triples","30000","1.113293170928955"
+"cell_morphology_triples","40000","1.1822574138641357"
+"cell_morphology_triples","50000","1.251295566558838"
+"cell_morphology_triples","60000","1.35786771774292"
