@@ -19,7 +19,15 @@ Restricted access among all project members(currently inactive)
 # TIB Members
 
 ## Google Drive
+
 https://drive.google.com/drive/folders/1acmyg9k7YG3EyilV7yKIfOFByTrwF7XD?usp=sharing
+
+The Google drive folder contains all the files used in the project which is created using Google Sheet, Google Docs. Some of the important files are
+Term Matching- Update on KG Development (https://drive.google.com/drive/folders/1g6nz1aJ6HptdABd0TFmgXSU81a7GpjDX?usp=sharing)
+Diaspora Work Package (https://docs.google.com/spreadsheets/d/12_m7IwqZFp2qC_TtsjSV6SpLQJ5QRDRJy2-lOzgDMOk/edit?usp=sharing)
+Instruction to run software (https://drive.google.com/drive/folders/1g6nz1aJ6HptdABd0TFmgXSU81a7GpjDX?usp=sharing)
+Project Meeting Slides (https://drive.google.com/drive/folders/1g6nz1aJ6HptdABd0TFmgXSU81a7GpjDX?usp=sharing)
+List of database for integration or Ontology intergation (https://docs.google.com/spreadsheets/d/1zDbC6ulAlympBZimyGk02dq_ymmUDSbCV5-36F7bxM4/edit?usp=sharing)
 
 Restricted access among TIB members
 
