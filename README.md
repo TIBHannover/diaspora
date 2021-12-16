@@ -31,6 +31,12 @@ The Google drive folder contains all the files used in the project which is crea
 
 Restricted access among TIB members
 
+## TIB Server
+
+https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=171568183
+https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
+https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
+
 ## GIT TIB
 https://git.tib.eu/lab-rds/diaaspora
 
