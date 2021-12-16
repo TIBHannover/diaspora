@@ -39,6 +39,10 @@ Weekly security updates need to be checked.
 - https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
 - https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
 
+- Jump server is just a proxy server to jump into the TIB network from the personal network shahig@exchange.research.tib.eu
+- Diapora Server is diaspora21.service.tib.eu
+- 
+
 ## GIT TIB
 https://git.tib.eu/lab-rds/diaaspora
 
