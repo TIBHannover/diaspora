@@ -33,9 +33,11 @@ Restricted access among TIB members
 
 ## TIB Server
 
-https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=171568183
-https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
-https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
+Weekly security updates need to be checked.
+
+- https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=171568183
+- https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
+- https://wiki.tib.eu/confluence/pages/viewpage.action?pageId=156385273
 
 ## GIT TIB
 https://git.tib.eu/lab-rds/diaaspora
