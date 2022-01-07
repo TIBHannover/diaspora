@@ -1,0 +1,5 @@
+"Dataset","Number of the triple","Time"
+"culture_ph_triples","10000","1.4654903411865234"
+"culture_ph_triples","20000","1.572028636932373"
+"culture_ph_triples","30000","1.7189669609069824"
+"culture_ph_triples","40000","1.7989633083343506"

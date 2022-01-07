@@ -1,0 +1,95 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix bd: <http://www.tib.eu/bd/> .
+@base <http://www.tib.eu/> .
+
+
+<TripleMap1>
+  a rr:TriplesMap;
+    
+  rml:logicalSource [
+    rml:source "C:/Gautam/Gautam_Working/diaspora_Github/wp2/t2.1/RDF_Conversion/SDM-RDFizer-master_working/example/files/strains_filtered.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+  
+  rr:subjectMap [
+		rr:template "http://www.tib.eu/bd/{ID_strains}";
+		rr:class bd:Bacteria
+	] ;
+	
+	 rr:predicateObjectMap [
+    rr:predicate bd:domainName;
+    rr:objectMap [
+      rml:reference "domain";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+
+ rr:predicateObjectMap [
+    rr:predicate bd:phylumName;
+    rr:objectMap [
+      rml:reference "phylum";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+	
+		 rr:predicateObjectMap [
+    rr:predicate bd:class;
+    rr:objectMap [
+      rml:reference "className";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+
+ rr:predicateObjectMap [
+    rr:predicate bd:orderName;
+    rr:objectMap [
+      rml:reference "ordo";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+	
+		 rr:predicateObjectMap [
+    rr:predicate bd:familyName;
+    rr:objectMap [
+      rml:reference "family";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+
+ rr:predicateObjectMap [
+    rr:predicate bd:genusName;
+    rr:objectMap [
+      rml:reference "genus";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+	
+		 rr:predicateObjectMap [
+    rr:predicate bd:speciesName;
+    rr:objectMap [
+      rml:reference "species";
+	  rr:datatype xsd:string
+      ]
+    ] ;
+
+ rr:predicateObjectMap [
+    rr:predicate bd:speciesEpithetName;
+    rr:objectMap [
+      rml:reference "designation";
+	  rr:datatype xsd:string
+      ]
+    ] 
+ .  
+
+
+
+	
+	
+	
+	
+	
