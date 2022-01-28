@@ -621,6 +621,18 @@
     
 
 
+    <!-- http://www.tib.eu/bd/enzymeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/enzymeName"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/eznmyeActivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/eznmyeActivity"/>
+    
+
+
     <!-- http://www.tib.eu/bd/familyName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/familyName">
