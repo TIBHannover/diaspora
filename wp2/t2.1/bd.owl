@@ -395,6 +395,15 @@
     
 
 
+    <!-- http://www.tib.eu/bd/IDMetProduction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/IDMetProduction">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.tib.eu/bd/ISBN -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/ISBN">
@@ -624,6 +633,15 @@
     <!-- http://www.tib.eu/bd/enzymeName -->
 
     <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/enzymeName"/>
+    
+
+
+    <!-- http://www.tib.eu/bd/excreted -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tib.eu/bd/excreted">
+        <rdfs:domain rdf:resource="http://www.tib.eu/bd/metabolite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
