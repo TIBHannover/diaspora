@@ -1,7 +1,2 @@
 <http://www.tib.eu/bd/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.tib.eu/bd/Bacteria>.
-<http://www.tib.eu/bd/1> <http://www.tib.eu/bd/speciesName> "Acetobacter aceti"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.tib.eu/bd/1> <http://www.tib.eu/bd/orderName> "Rhizobiales"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.tib.eu/bd/1> <http://www.tib.eu/bd/speciesEpithetName> "B 4114"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.tib.eu/bd/1> <http://www.tib.eu/bd/familyName> "Acetobacteraceae"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://www.tib.eu/bd/1> <http://www.tib.eu/bd/genusName> "Acetobacter"^^<http://www.w3.org/2001/XMLSchema#string>.
 <http://www.tib.eu/bd/1> <http://www.tib.eu/bd/phylumName> "Proteobacteria"^^<http://www.w3.org/2001/XMLSchema#string>.
