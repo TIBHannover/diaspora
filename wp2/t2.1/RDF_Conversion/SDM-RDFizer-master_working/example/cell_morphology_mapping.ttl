@@ -22,7 +22,7 @@
 	] ;
 	
 	 rr:predicateObjectMap [
-    rr:predicate bd:cellLength;
+    rr:predicate bd:cellLength_aaaaabbc;
     rr:objectMap [
       rml:reference "cell_len";
 	  rr:datatype xsd:string
