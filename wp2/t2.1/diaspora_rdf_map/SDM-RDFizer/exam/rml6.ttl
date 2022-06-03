@@ -1,0 +1,99 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/halophily.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/halophily/{ID_strains}"; 
+    rr:class bacdive:Halophily ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_salt;
+        rr:objectMap [ rml:reference "salt"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_salt_concentration;
+        rr:objectMap [ rml:reference "salt_concentration" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgEnd;
+        rr:objectMap [ rml:reference "rgEnd" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_salt_concentration_unit;
+    rr:objectMap [ rml:reference "salt_concentration_unit" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_ability;
+    rr:objectMap [ rml:reference "ability" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_test_type;
+    rr:objectMap [ rml:reference "test_type" ]
+    ] .
+
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_rgStart_wid;
+    # rr:objectMap [ rml:reference "rgStart_wid" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_rgEnd_wid;
+    # rr:objectMap [ rml:reference "rgEnd_wid" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_width_unit;
+    # rr:objectMap [ rml:reference "cell_width_unit" ]
+    # ] ;
+    
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_id_strains;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap2>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ].
+
+
+
+
+# <TripleMap2>
+#     a rr:TriplesMap;
+
+#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strains.csv";
+#     rml:referenceFormulation ql:CSV
+#     ];
+
+#     rr:subjectMap [
+#         rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}";
+#         rr:class bacdive:Strain
+#     ].

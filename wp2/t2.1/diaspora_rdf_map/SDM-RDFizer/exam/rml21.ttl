@@ -1,0 +1,100 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/sequence/{ID_strains}"; 
+    rr:class bacdive:Sequence ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_DB_sequence;
+        rr:objectMap [ rml:reference "DB_sequence"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_sequence_accession_title;
+        rr:objectMap [ rml:reference "Sequence_accession_title"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_URL_sequence;
+        rr:objectMap [ rml:reference "URL_sequence"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_seq_acc_num;
+        rr:objectMap [ rml:reference "seq_acc_num"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_NCBI_tax_ID;
+        rr:objectMap [ rml:reference "NCBI_tax_ID"]
+    ] ;
+
+           rr:predicateObjectMap [
+        rr:predicate  bacdive:has_NCBI_Gi;
+        rr:objectMap [ rml:reference "NCBI_Gi"]
+    ] ;
+
+    
+           rr:predicateObjectMap [
+        rr:predicate  bacdive:has_16S_seq;
+        rr:objectMap [ rml:reference "16S_seq"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sequence_length;
+    rr:objectMap [ rml:reference "sequence_length"]
+    ] .
+
+
+
+    
+    
+    
+   
+  
+#     rr:predicateObjectMap [
+#     rr:predicate  bacdive:is_culture_medium_of;
+#     rr:objectMap[
+#         rr:parentTriplesMap <TripleMap2>;
+#         rr:joinCondition [
+#             rr:child "ID_colony_morphology";
+#             rr:parent "ID_colony_morphology";
+#         ];
+#     ] ;
+#     ].
+
+
+
+
+# <TripleMap2>
+#     a rr:TriplesMap;
+
+#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+#     rml:referenceFormulation ql:CSV
+#     ];
+
+#     rr:subjectMap [
+#         rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
+#         rr:class bacdive:Colony_morphology
+#     ].

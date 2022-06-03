@@ -1,0 +1,124 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_strains}"; 
+    rr:class bacdive:Colony_morphology ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgStart_len;
+        rr:objectMap [ rml:reference "rgStart_len" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgEnd_len;
+        rr:objectMap [ rml:reference "rgEnd_len" ]
+    ] .
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_len_unit;
+    # rr:objectMap [ rml:reference "cell_len_unit" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_width;
+    # rr:objectMap [ rml:reference "cell_width" ]
+    # ] ;
+
+
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_rgStart_wid;
+    # rr:objectMap [ rml:reference "rgStart_wid" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_rgEnd_wid;
+    # rr:objectMap [ rml:reference "rgEnd_wid" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_width_unit;
+    # rr:objectMap [ rml:reference "cell_width_unit" ]
+    # ] ;
+    
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_shape;
+    # rr:objectMap [ rml:reference "cell_shape" ]
+    # ] .
+
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_motility;
+    # rr:objectMap [ rml:reference "motility" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_flagellum_arrangement;
+    # rr:objectMap [ rml:reference "flagellum_arrangement" ]
+    # ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_gram_stain;
+    # rr:objectMap [ rml:reference "gram_stain" ]
+    # ] ;
+
+
+
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_id_strains;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap2>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ].
+
+
+
+
+<TripleMap2>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+        rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
+        rr:class bacdive:Colony_morphology
+    ];
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgStart_len;
+        rr:objectMap [ rml:reference "rgStart_len" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgEnd_len;
+        rr:objectMap [ rml:reference "rgEnd_len" ]
+    ] .
+
