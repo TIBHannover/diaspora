@@ -20,7 +20,6 @@
 ## Diaspora_store_to_graph Folder
     1. Contains python script to store generated rdf files into the graph database. 
     
-   Go the graph database instance to see the files in it "http://194.95.157.29:7201/"
     
 ## Query_diaspora Folder
     1. Contains script to query the rdf files store in the graph database. 
