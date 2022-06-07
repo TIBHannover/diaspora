@@ -1,7 +1,7 @@
 
 
 
-# Steps to transform [Hybrid data](https://materials.hybrid3.duke.edu/) into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
+# Steps to transform Diaspora database into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
  
    
 ## diaspora_to_csv Folder:
