@@ -24,7 +24,7 @@ GC_content,6,GC content of the DNA,ID_strains/ID_reference,yes
 multicellular_morphology,6,"data on multicellular complex building ability, not standardized",ID_strains/ID_reference,yes
 pigmentation,6,data on pigmentation of the bacteria,ID_strains/ID_reference,yes
 sequence,6,metadata on sequences > might be split into Genome and 16S sequence in the near future,ID_strains/ID_reference,yes
-FA_meta,5,metadata for fatty acid profiles,yes
+FA_meta,5,metadata for fatty acid profiles,,yes
 FA_profile,5,"fatty acid profiles, connect metadata with FK_FA_META >PK FA_meta",FK_FA_META/ID_strains/ID_reference,yes
 IS_link,5,Isolation Source Tag data,Cat1_link/Cat2_link/Cat3_link/ID_strains/ID_origin,yes
 is_link_log,,,ID_strains,no
