@@ -37,25 +37,25 @@ tolerance,4,"Data on tolerances against compounds, non standardized data",ID_str
 strain_history,4,data on the history of a strain,ID_strains/ID_reference,yes
 compound_production,3,"not so well structured data on compound production, can be later moved to metabolite and enzyme tables",ID_strains/ID_reference,yes
 kit_api_20A,3,Test data from API 20A,ID_strains/ID_reference,yes
-kit_api_20A_meta,3,Metadata for API 20A,yes
+kit_api_20A_meta,3,Metadata for API 20A,,yes
 kit_api_20E,3,Test data from API 20E,ID_strains/ID_reference,yes
-kit_api_20E_meta,3,Metadata for API 20E,yes
+kit_api_20E_meta,3,Metadata for API 20E,,yes
 kit_api_20NE,3,Test data from API 20NE,ID_strains/ID_reference,yes
-kit_api_20NE_meta,3,Metadata for API 20NE ,yes
+kit_api_20NE_meta,3,Metadata for API 20NE ,,yes
 kit_api_20STR,3,Test data from API 20STR,ID_strains/ID_reference,yes
-kit_api_20STR_meta,3,Metadata for API 20STR ,yes
+kit_api_20STR_meta,3,Metadata for API 20STR ,,yes
 kit_api_50CHac,3,Test data from API 50CHac,ID_strains/ID_reference,yes
-kit_api_50CHac_meta,3,Metadata for API 50CHac ,yes
+kit_api_50CHac_meta,3,Metadata for API 50CHac ,,yes
 kit_api_50CHas,3,Test data from API 50CHas,ID_strains/ID_reference,yes
-kit_api_50CHas_meta,3,Metadata for API 50CHas,yes
+kit_api_50CHas_meta,3,Metadata for API 50CHas,,yes
 kit_api_CAM,3,Test data from API CAM,ID_strains/ID_reference,yes
-kit_api_CAM_meta,3,Metadata for API CAM ,yes
+kit_api_CAM_meta,3,Metadata for API CAM ,,yes
 kit_api_coryne,3,Test data from API Coryne,ID_strains/ID_reference,yes
-kit_api_coryne_meta,3,Metadata for API Coryne,yes
+kit_api_coryne_meta,3,Metadata for API Coryne,,yes
 kit_api_ID32E,3,Test data from API ID32E,ID_strains/ID_reference,yes
 kit_api_ID32E_meta,3,Metadata for API ID32E,,yes
 kit_api_ID32STA,3,Test data from API ID32STA,ID_strains/ID_reference,yes
-kit_api_ID32STA_meta,3,Metadata for API ID32STA,yes
+kit_api_ID32STA_meta,3,Metadata for API ID32STA,,yes
 kit_api_LIST,3,Test data from API LIST,ID_strains/ID_reference,yes
 kit_api_LIST_meta,3,Metadata for API LIST,,yes
 kit_api_NH,3,Test data from API NH,ID_strains/ID_reference,yes
