@@ -11,7 +11,7 @@ met_production,8,Metabolite production data,ID_strains/ID_reference,yes
 met_util,8,Metabolite utilization data,ID_strains/ID_reference,yes
 origin,8,"data on the origin and enrichment of a culture, sample type is the basis for the Isolation Source TAGS",ID_strains/ID_reference,yes
 origin_iso_countries,,,,no
-origin_tool,,ID_strains/ID_reference,no
+origin_tool,,,ID_strains/ID_reference,no
 oxygen_tolerance,8,data on oxygen relation,ID_strains/ID_reference,yes
 reference,8,Metadata for the references,,yes
 reference_lit,,,,no
