@@ -31,7 +31,7 @@ is_link_log,,,ID_strains,no
 jgi_iso_src,,,ID_strains,no
 jgi_iso_src_v2,,,,no
 met_antibiogram,4,Antibiogram test data,ID_strains/ID_reference,yes
-met_antibiogram_meta,4,Metadata for antibiogram tests,yes
+met_antibiogram_meta,4,Metadata for antibiogram tests,,yes
 murein,4,Murein (cell wall) data,ID_strains/ID_reference,yes
 tolerance,4,"Data on tolerances against compounds, non standardized data",ID_strains/ID_reference,yes
 strain_history,4,data on the history of a strain,ID_strains/ID_reference,yes
