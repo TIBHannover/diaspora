@@ -3,8 +3,11 @@
 
 # Steps to transform Diaspora database into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
  
+ ## Inside v1.0 Folder, we have two folders
+      1. mappings: contains all the mapping files. 
+      2. pipeline: 
    
-## diaspora_to_csv Folder:
+### diaspora_to_csv Folder:
      1. Contains python script that will connect to the mysql workbench and then will transform its tables into csv format, there is also a separate config file 
         to add the table names and querties that we want. 
      2. Contains some of the generated csv files based on the table names. 
