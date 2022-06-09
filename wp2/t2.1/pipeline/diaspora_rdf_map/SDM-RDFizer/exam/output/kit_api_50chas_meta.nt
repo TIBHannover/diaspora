@@ -1,0 +1,544 @@
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_cupule> "1".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "Q".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_name_bacdive> "Q".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_reaction_name> "Control".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "control_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/1> <http://kg.bacdive.dsmz.de/has_substrate> "Control".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_cupule> "2".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GLY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GLY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of glycerol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00116".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GLY_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_substrate> "Glycerol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17754.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_CAS> "56-81-5".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/2> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "135.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_cupule> "3".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "ERY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_name_bacdive> "ERY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of erythritol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00503".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "ERY_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_substrate> "Erythritol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17113.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_CAS> "149-32-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/3> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2337.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_cupule> "4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "DARA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_name_bacdive> "DARA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-arabinose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00216".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "DARA_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_substrate> "D-arabinose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17108.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_CAS> "10323-20-3".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/4> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "565.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_cupule> "5".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LARA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LARA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-arabinose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00259".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LARA_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_substrate> "L-arabinose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "30849.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_CAS> "147-81-9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/5> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "206.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_cupule> "6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "RIB".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_name_bacdive> "RIB".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-ribose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00121".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "RIB_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_substrate> "D-ribose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16988.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_CAS> "50-69-1".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/6> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "292.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_cupule> "7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "DXYL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_name_bacdive> "DXYL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-xylose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00181".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "DXYL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_substrate> "D-xylose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "65327.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_CAS> "58-86-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/7> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "115.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_cupule> "8".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LXYL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LXYL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-xylose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01510".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LXYL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_substrate> "L-xylose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "65328.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_CAS> "0609-06-03".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/8> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1927.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_cupule> "9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "ADO".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_name_bacdive> "ADO".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-adonitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00474".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "ADO_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_substrate> "D-adonitol (D-ribitol)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "15963.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_CAS> "488-81-3".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/9> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "43962.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_cupule> "10".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MDX".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MDX".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of methyl beta-D-xylopyranoside".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:74863".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MDX_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_substrate> "Methyl beta-D-xylopyranoside".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "74863.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_CAS> "0612-05-05".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/10> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "21316.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_cupule> "11".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-galactose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00124".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GAL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_substrate> "D-galactose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "12936.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_CAS> "59-23-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/11> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "71.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_cupule> "12".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GLU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GLU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-glucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00031".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GLU_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_substrate> "D-glucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17634.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_CAS> "50-99-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/12> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "35.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_cupule> "13".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "FRU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_name_bacdive> "FRU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-fructose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00095".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "FRU_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_substrate> "D-fructose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "15824.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_CAS> "57-48-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/13> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "117.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_cupule> "14".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MNE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MNE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-mannose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00159".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MNE_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_substrate> "D-mannose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16024.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_CAS> "3458-28-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/14> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "216.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_cupule> "15".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "SBE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_name_bacdive> "SBE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-sorbose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00247".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "SBE_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_substrate> "L-sorbose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17266.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_CAS> "87-79-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/15> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "685.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_cupule> "16".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "RHA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_name_bacdive> "RHA".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-rhamnose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00507".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "RHA_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_substrate> "L-rhamnose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "62345.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_CAS> "73-34-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/16> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "703.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_cupule> "17".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "DUL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_name_bacdive> "DUL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of dulcitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01697".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "DUL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_substrate> "Dulcitol (galactitol)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16813.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_CAS> "608-66-2".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/17> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "10650.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_cupule> "18".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "INO".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_name_bacdive> "INO".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of inositol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00137".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "INO_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_substrate> "Inositol (myo-inositol)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17268.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_CAS> "87-89-8".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/18> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "454.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_cupule> "19".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MAN".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MAN".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-mannitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00392".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MAN_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_substrate> "D-mannitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16899.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_CAS> "69-65-8".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/19> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "495.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_cupule> "20".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "SOR".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_name_bacdive> "SOR".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of sorbitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00794".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "SOR_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_substrate> "D-sorbitol (D-glucitol)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17924.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_CAS> "50-70-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/20> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2651.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_cupule> "21".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MDM".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MDM".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of methyl alpha-D-mannopyranoside".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43943".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MDM_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_substrate> "Methyl alpha-D-mannopyranoside (methyl alpha-".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "43943.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_CAS> "25281-48-5".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/21> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "8363.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_cupule> "22".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MDG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MDG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of  methyl alpha-D-glucopyranoside".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:320061".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MDG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_substrate> "Methyl alpha-D-glucopyranoside".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "320061.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_CAS> "709-50-2".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/22> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "7494.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_cupule> "23".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "NAG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_name_bacdive> "NAG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of N-acetyl-glucosamine".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00140".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "NAG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_substrate> "N-acetyl-D-glucosamine".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "506227.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_CAS> "7512-17-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/23> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "300.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_cupule> "24".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "AMY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_name_bacdive> "AMY".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of amygdalin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C08325".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "AMY_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_substrate> "Amygdalin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "27613.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_CAS> "29883-15-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/24> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2397.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_cupule> "25".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "ARB".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_name_bacdive> "ARB".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of arbutin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C06186".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "ARB_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_substrate> "Arbutin (hydroquinone O-beta-D-glucopyranosid".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "18305.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_CAS> "497-76-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/25> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1101.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_cupule> "26".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "ESC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_name_bacdive> "ESC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of esculin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C09264".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "ESC_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_substrate> "Esculin ferric citrate".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "4853.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_CAS> "531-75-9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/26> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "3339.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_cupule> "27".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "SAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_name_bacdive> "SAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of salicin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01451".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "SAL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_substrate> "Salicin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17814.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_CAS> "138-52-3".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/27> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "828.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_cupule> "28".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "CEL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_name_bacdive> "CEL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of cellobiose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00185".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "CEL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_substrate> "D-cellobiose (cellobiose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17057.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_CAS> "528-50-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/28> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1716.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_cupule> "29".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MAL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of maltose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00208".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MAL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_substrate> "D-maltose (maltose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17306.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_CAS> "69-79-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/29> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1168.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_cupule> "30".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LAC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LAC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of lactose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00243".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LAC_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_substrate> "D-lactose (lactose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17716.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_CAS> "63-42-3".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/30> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "3242.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_cupule> "31".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MEL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MEL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of melibiose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C05402".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MEL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_substrate> "D-melibiose (melibiose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "28053.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_CAS> "585-99-9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/31> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "3999.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_cupule> "32".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "SAC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_name_bacdive> "SAC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of sucrose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00089".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "SAC_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_substrate> "D-saccharose (sucrose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17992.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_CAS> "57-50-1".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/32> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "55.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_cupule> "33".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "TRE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_name_bacdive> "TRE".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of trehalose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01083".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "TRE_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_substrate> "D-trehalose (trehalose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16551.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_CAS> "99-20-7".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/33> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "587.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_cupule> "34".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "INU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_name_bacdive> "INU".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of inulin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C03323".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "INU_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_substrate> "Inulin".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "15443.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_CAS> "9005-80-5".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/34> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "677.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_cupule> "35".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "MLZ".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_name_bacdive> "MLZ".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of melezitose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C08243".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "MLZ_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_substrate> "D-melezitose (melezitose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "6731.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_CAS> "0597-12-06".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/35> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "44398.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_cupule> "36".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "RAF".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_name_bacdive> "RAF".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of raffinose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00492".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "RAF_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_substrate> "D-raffinose (raffinose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16634.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_CAS> "512-69-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/36> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "48961.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_cupule> "37".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "AMD".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_name_bacdive> "AMD".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of starch".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00369".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "AMD_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_substrate> "Amidon (starch)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "28017.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_CAS> "9005-25-8".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/37> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "214.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_cupule> "38".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GLYG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GLYG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of glycogen".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00182".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GLYG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_substrate> "Glycogen".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "28087.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_CAS> "9005-79-2".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/38> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "506.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_cupule> "39".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "XLT".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_name_bacdive> "XLT".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of xylitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00503".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "XLT_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_substrate> "Xylitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17151.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_CAS> "149-32-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/39> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "416.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_cupule> "40".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GEN".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GEN".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of gentiobiose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C08240".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GEN_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_substrate> "Gentiobiose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "28066.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_CAS> "554-91-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/40> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "804.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_cupule> "41".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "TUR".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_name_bacdive> "TUR".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of turanose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C19636".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "TUR_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_substrate> "D-turanose (turanose)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "32528.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_CAS> "547-25-1".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/41> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2099.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_cupule> "42".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LYX".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LYX".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-lyxose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:62318".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LYX_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_substrate> "D-lyxose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "62318.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_CAS> "65-42-9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/42> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1589.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_cupule> "43".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "TAG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_name_bacdive> "TAG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-tagatose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00795".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "TAG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_substrate> "D-tagatose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16443.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_CAS> "87-81-1".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/43> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2197.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_cupule> "44".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "DFUC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_name_bacdive> "DFUC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-fucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28847".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "DFUC_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_substrate> "D-fucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "28847.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/44> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1256.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_cupule> "45".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LFUC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LFUC".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-fucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18287".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LFUC_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_substrate> "L-Fucose".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "18287.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_CAS> "2438-80-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/45> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "717.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_cupule> "46".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "DARL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_name_bacdive> "DARL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of D-arabitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01904".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "DARL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_substrate> "D-arabitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "18333.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_CAS> "488-82-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/46> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1786.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_cupule> "47".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "LARL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_name_bacdive> "LARL".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of L-arabitol".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00532".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "LARL_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_substrate> "L-arabitol (L-arabinitol)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "18403.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_CAS> "7643-75-6".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/47> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "1590.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_cupule> "48".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "GNT".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_name_bacdive> "GNT".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of gluconate".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C00257".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "GNT_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_substrate> "Gluconate (D-gluconic acid)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "33198.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_CAS> "526-95-4".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/48> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "4525.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_cupule> "49".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "2KG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_name_bacdive> "2KG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of 2-Ketogluconate".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C06473".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "2KG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_substrate> "2-Ketogluconate (2-dehydro-D-gluconate)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "16808.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_CAS> "669-90-9".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/49> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "2930.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Kit_api_50chas_meta>.
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_cupule> "50".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_cupule_Name_Kit> "5KG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_name_bacdive> "5KG".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_reaction_name> "Assimilation of 5-Ketogluconate".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_external_Link> "http://www.genome.jp/dbget-bin/www_bget?cpd:C01062".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_ID_microbiol> "5KG_50CHas".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_substrate> "5-Ketogluconate (5-dehydro-D-gluconate)".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_ID_CHEBI> "17426.0".
+<http://kg.bacdive.dsmz.de/kit_api_50chas_meta/50> <http://kg.bacdive.dsmz.de/has_brenda_ligand> "5500.0".

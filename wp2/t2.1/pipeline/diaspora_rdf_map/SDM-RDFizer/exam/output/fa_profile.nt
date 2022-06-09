@@ -1,0 +1,279 @@
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Penicillin G".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "PEN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "P".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "P_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "6".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/1> <http://kg.bacdive.dsmz.de/has_chebi_ID> "18208".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Oxacillin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "OXA".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "OX".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "OX_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "5".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/2> <http://kg.bacdive.dsmz.de/has_chebi_ID> "7809".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Ampicillin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "AMP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "AMP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "AMP_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/3> <http://kg.bacdive.dsmz.de/has_chebi_ID> "28971".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Ticarcillin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "TIC".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "TIC".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "TIC_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "75".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/4> <http://kg.bacdive.dsmz.de/has_chebi_ID> "9587".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Mezlocillin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "MZL".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "MEZ".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "MEZ_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/5> <http://kg.bacdive.dsmz.de/has_chebi_ID> "6919".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Cefalotin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "CTN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "KF".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "KF_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/6> <http://kg.bacdive.dsmz.de/has_chebi_ID> "124991".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Cefazolin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "CEZ".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "KZ".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "KZ_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/7> <http://kg.bacdive.dsmz.de/has_chebi_ID> "474053".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Cefotaxime".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "CTX".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "CTX".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "CTX_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/8> <http://kg.bacdive.dsmz.de/has_chebi_ID> "204928".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Aztreonam".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "AZT".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "ATM".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "ATM_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/9> <http://kg.bacdive.dsmz.de/has_chebi_ID> "161680".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Imipenem".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "IMP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "IPM".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "IPM_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/10> <http://kg.bacdive.dsmz.de/has_chebi_ID> "471744".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Tetracycline".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "TET".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "TE".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "TE_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/11> <http://kg.bacdive.dsmz.de/has_chebi_ID> "27902".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Chloramphenicol".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "CMP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "C".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "C_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/12> <http://kg.bacdive.dsmz.de/has_chebi_ID> "17698".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Gentamycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "GEN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "CN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "CN_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/13> <http://kg.bacdive.dsmz.de/has_chebi_ID> "17833".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Amikacin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "AMK".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "AK".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "AK_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/14> <http://kg.bacdive.dsmz.de/has_chebi_ID> "2637".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Vancomycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "VAN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "VA".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "VA_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/15> <http://kg.bacdive.dsmz.de/has_chebi_ID> "28001".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Erythromycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "ERY".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "E".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "E_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "15".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/16> <http://kg.bacdive.dsmz.de/has_chebi_ID> "48923".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Lincomycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "LIN".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "MY".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "MY_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "15".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/17> <http://kg.bacdive.dsmz.de/has_chebi_ID> "6472".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Ofloxacin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "OFX".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "OFX".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "OFX_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "5".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/18> <http://kg.bacdive.dsmz.de/has_chebi_ID> "7731".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Norfloxacin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "NOR".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "NOR".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "NOR_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/19> <http://kg.bacdive.dsmz.de/has_chebi_ID> "100246".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Colistin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "COL".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "CT".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "CT_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/20> <http://kg.bacdive.dsmz.de/has_chebi_ID> "37943".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Pipemidic acid".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "PIM".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "PIP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "PIP_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "20".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/21> <http://kg.bacdive.dsmz.de/has_chebi_ID> "75250".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Nitrofurantoin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "NFT".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "F".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "F_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "100".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/22> <http://kg.bacdive.dsmz.de/has_chebi_ID> "71415".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Bacitracin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "BAC".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "B".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "B_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "Unit".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/23> <http://kg.bacdive.dsmz.de/has_chebi_ID> "28669".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Polymyxin B".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "POL".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "PB".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "PB_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "300".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "Unit".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/24> <http://kg.bacdive.dsmz.de/has_chebi_ID> "8309".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Kanamycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "K".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "K".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "K_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/25> <http://kg.bacdive.dsmz.de/has_chebi_ID> "6104".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Neomycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "N".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "N".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "N_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/26> <http://kg.bacdive.dsmz.de/has_chebi_ID> "7507".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Doxycycline".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "DOC".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "DO".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "DO_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/27> <http://kg.bacdive.dsmz.de/has_chebi_ID> "50845".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Ceftriaxone".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "CRO".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "CRO_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/28> <http://kg.bacdive.dsmz.de/has_chebi_ID> "29007".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Clindamycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "CLI".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "DA".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "DA_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/29> <http://kg.bacdive.dsmz.de/has_chebi_ID> "3745".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Fosfomycin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "FOS".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "FOS_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "50".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/30> <http://kg.bacdive.dsmz.de/has_chebi_ID> "28915".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Moxifloxacin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "MXF".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "MXF_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "5".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/31> <http://kg.bacdive.dsmz.de/has_chebi_ID> "63611".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Linezolid".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "LZD".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "LZD_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "10".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/32> <http://kg.bacdive.dsmz.de/has_chebi_ID> "63607".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Nystatin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "NS".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "NS_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "100".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "Unit".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/33> <http://kg.bacdive.dsmz.de/has_chebi_ID> "7660".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Quinupristin/Dalfopristin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "QD".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "QD_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "15".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/34> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Teicoplanin".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "TEC".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "TEC_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "30".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/35> <http://kg.bacdive.dsmz.de/has_chebi_ID> "29687".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://kg.bacdive.dsmz.de/Met_antibiogram_meta>.
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_metabolite_antibiogram> "Piperacillin/Tazobactam".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_ID_DIN_antibiogram> "PIT".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_ID_OXOID_antibiogram> "TZP".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_column_met_antibiogram> "TZP_antibiogram".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_Quantity_antibiogram> "40".
+<http://kg.bacdive.dsmz.de/met_antibiogram_meta/36> <http://kg.bacdive.dsmz.de/has_Unit_antibiogram> "µg (disc)".

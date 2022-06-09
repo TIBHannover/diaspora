@@ -1,0 +1,67 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_medium.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/culture_medium/{ID_culture_medium}"; 
+    rr:class bacdive:Culture_medium ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_medium_name;
+        rr:objectMap [ rml:reference "medium_name"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_medium_composition;
+        rr:objectMap [ rml:reference "medium_composition" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_media_link;
+        rr:objectMap [ rml:reference "media_link" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_medium_growth;
+    rr:objectMap [ rml:reference "medium_growth" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_provided_by;
+    rr:objectMap [ rml:reference "provided_by" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_id_reference;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_ID_strains;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
+    ] .
+
+ 
+  
+
+
+
