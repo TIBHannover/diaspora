@@ -32,7 +32,30 @@ import time
 
 import mysql.connector
 
+import logging
 
+
+formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s',
+                              datefmt='%Y-%m-%d %H:%M:%S')
+
+
+def setup_logger(name, log_file, level=logging.DEBUG):
+    """To setup as many loggers as you want"""
+    logger = logging.getLogger(name)
+  
+    handler = logging.FileHandler(log_file)        
+    handler.setFormatter(formatter)
+
+  
+    logger.setLevel(level)
+    logger.handlers.clear()
+    logger.addHandler(handler)
+       
+    
+   
+    return logger
+
+log_one = setup_logger('first_logger', 'log1.log')
 
 
 """ reading the path from path.properties file,specify the path of path.properties file """
@@ -103,7 +126,26 @@ for each_section in config.sections():
             
             
             for col in result.columns:
+                # result[col].astype(str)
+               
+           
+                
+             
                 if result[col].dtype == np.object_:
+                    # print(type(col))
+                    if result[col].dtype == np.object_:
+                        
+                        a = (result[col].str.contains(r"\n"))
+                         
+                        if a.any() == True:
+                            print(col,'true')
+                            log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                    
+                  
+                     
+                  
+                    # if result[col].str.contains(r"\n"):
+                    #     print('hhhhh')
                     result[col] = result[col].str.replace('\n','')
             result.to_csv(each_key+".csv", index=False)
             
@@ -129,27 +171,34 @@ for each_section in config.sections():
                     
         #     result.to_csv(each_key+".csv", index=False)
             
-        # elif each_key == 'strains':
+        elif each_key == 'strains':
             
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r') as f:
-        #         data = f.read()
-        #         # print(data)
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
            
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
             
             
-        #     for col in result.columns:
-        #         if result[col].dtype == np.object_:
-            
-        #             result[col] = result[col].str.replace('  ','')
-        #             result[col] = result[col].str.replace('\n','')
+            for col in result.columns:
+                if result[col].dtype == np.object_:
                     
-        #     result.to_csv(each_key+".csv", index=False)
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                
+            
+                    result[col] = result[col].str.replace('  ','')
+                    result[col] = result[col].str.replace('\n','')
+                    
+            result.to_csv(each_key+".csv", index=False)
              
         if each_key == 'reference':
             
@@ -166,6 +215,12 @@ for each_section in config.sections():
             
             for col in result.columns:
                 if result[col].dtype == np.object_:
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                
                     # result[col] = result[col].str.replace('  ','')
                     result[col] = result[col].str.replace('\n','')
             result.to_csv(each_key+".csv", index=False)
@@ -185,12 +240,24 @@ for each_section in config.sections():
             
             
             for col in result.columns:
+         
+                
                 if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                        
+                        
                     result[col] = result[col].str.replace('\n','')
             result.to_csv(each_key+".csv", index=False)
         
 
-        
+logging.shutdown()       
 
             
 
