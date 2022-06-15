@@ -30,7 +30,7 @@ config1 = configparser.ConfigParser()
 
 config.add_section('default')
 
-main =   fileDirectory + '/SDM-RDFizer/exam'
+main =   fileDirectory 
 
 print(main)
 
@@ -44,7 +44,7 @@ config.add_section('datasets')
 
 number = str(50)
 
-output_folder = '${default:main_directory}/output' 
+output_folder = '${default:main_directory}/exam/output' 
 
 
 
@@ -90,7 +90,7 @@ for each_section in config1.sections():
         
         config.set(dataset,'name', names)
             
-        mappings = '${default:main_directory}/' + 'rml' + str(x) + '.ttl'
+        mappings = '${default:main_directory}/exam/mappings/' + names + '.ttl'
             
         config.set(dataset,'mapping', mappings)
         x+=1
