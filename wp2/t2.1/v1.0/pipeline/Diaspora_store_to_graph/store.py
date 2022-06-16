@@ -19,7 +19,7 @@ import os
 import natsort
 from pathlib import Path
 
-path = '../diaspora_rdf_map/SDM-RDFizer/exam/output'
+path = '../diaspora_rdf_map/exam/output'
 
 dirs = os.listdir(path)
 dirs = natsort.natsorted(dirs)

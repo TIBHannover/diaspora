@@ -23,7 +23,7 @@
     
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/GC_content/{ID_GC_content}"; 
-    rr:class bacdive:Nutrition_type ];
+    rr:class Gc_content ];
 
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_rgStart;
@@ -58,35 +58,31 @@
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_GC_content;
+    rr:objectMap [ rml:reference "GC_content" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FK_tbl_gc_values_micro;
+    rr:objectMap [ rml:reference "FK_tbl_gc_values_micro" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_GC_method_micro;
+    rr:objectMap [ rml:reference "GC_method_micro" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_timestamp_micro;
+    rr:objectMap [ rml:reference "timestamp_micro" ]
     ] .
+
 
     
     
     
    
   
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:is_culture_medium_of;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap2>;
-#         rr:joinCondition [
-#             rr:child "ID_colony_morphology";
-#             rr:parent "ID_colony_morphology";
-#         ];
-#     ] ;
-#     ].
-
-
-
-
-# <TripleMap2>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#     rr:subjectMap [
-#         rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
-#         rr:class bacdive:Colony_morphology
-#     ].

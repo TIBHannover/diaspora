@@ -12,7 +12,7 @@
 @prefix bacdive: <http://kg.bacdive.dsmz.de/>.
 
 
-
+ 
 
 <TripleMap1>
     a rr:TriplesMap;
@@ -87,9 +87,109 @@
     rr:objectMap [ rml:reference "sample_host" ]
     ] ;
 
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_isolation_source;
+    rr:objectMap [ rml:reference "sample_isolation_source" ]
+    ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_ID_strains;
+    rr:predicate  bacdive:has_sample_culture_collection;
+    rr:objectMap [ rml:reference "sample_culture_collection" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_rel_to_oxygen;
+    rr:objectMap [ rml:reference "sample_rel_to_oxygen" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_ph;
+    rr:objectMap [ rml:reference "sample_ph" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_trophic_level;
+    rr:objectMap [ rml:reference "sample_trophic_level" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_cell_shape;
+    rr:objectMap [ rml:reference "sample_cell_shape" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Type_material;
+    rr:objectMap [ rml:reference "sample_Type_material" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Temperature_Range;
+    rr:objectMap [ rml:reference "sample_Temperature_Range" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Temperature_Optimum;
+    rr:objectMap [ rml:reference "sample_Temperature_Optimum" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Subspecies;
+    rr:objectMap [ rml:reference "sample_Subspecies" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Sporulation;
+    rr:objectMap [ rml:reference "sample_Sporulation" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Sampl_Type;
+    rr:objectMap [ rml:reference "sample_Sampl_Type" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Repository;
+    rr:objectMap [ rml:reference "sample_Repository" ]
+    ] ;
+
+    
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Pathogenicity;
+    rr:objectMap [ rml:reference "sample_Pathogenicity" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Motility;
+    rr:objectMap [ rml:reference "sample_Motility" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Isolation_Site;
+    rr:objectMap [ rml:reference "sample_Isolation_Site" ]
+    ] ;
+
+    
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_Gram_staining;
+    rr:objectMap [ rml:reference "sample_Gram_staining" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_sample_bioproject;
+    rr:objectMap [ rml:reference "sample_bioproject" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] ;
+
+
+
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain;
     rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
     ] .
     
