@@ -44,7 +44,7 @@ where {
     ?s a bacdive:Cell_morphology;
        bacdive:has_cell_len ?cell_len;
        bacdive:has_cell_shape ?cell_shape;
-       bacdive:has_ID_strains ?st.
+       bacdive:has_strain ?st.
            ?st a bacdive:Strain;
                bacdive:has_domain ?strain_domain.
 }
