@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 30 15:28:29 2022
 
-@author: GuptaR
-
-"""
 
 import os 
 import sys
