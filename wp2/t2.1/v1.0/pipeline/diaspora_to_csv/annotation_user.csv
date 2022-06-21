@@ -1,0 +1,11 @@
+ID_annotation_user,user_id,pw,name,surname,mail,mail_verified,approval_rights,Created,Last_Login,Last_Changed,session_ID
+1,admin,admin,Admin,istrator,adp12@dsmz.de,1,1,2013-06-07 13:05:12,2013-06-07 13:05:12,2013-06-07 13:05:12,
+2,adp12,adam,Adam,Podstawka,adam.podstawka@dsmz.de,1,1,2013-06-07 13:05:12,2015-07-31 10:00:38,2015-07-31 10:06:18,NULL
+3,cas11,caro,Carola,Soehngen,cas11@dsmz.de,1,1,2013-06-07 13:05:39,2015-09-04 09:33:34,2015-09-04 09:38:16,NULL
+4,gsp,gundi,Gundula,Sprick,gsp13@helmholtz-hzi.de,0,0,2013-06-07 15:11:58,2013-10-31 06:51:22,2013-10-31 11:54:20,NULL
+5,vgo,viola,Viola,Goebel,viola_g@online.de,0,0,2013-06-14 14:59:18,2013-12-05 10:44:04,2013-12-05 17:30:01,NULL
+10,als14,alex,Alex,Schwinges,schwinges.a@gmail.com,0,0,2014-11-14 09:57:20,2015-01-30 10:44:35,2015-01-30 14:27:56,NULL
+9,jek14,jens,Jens,Koenig,jens.koenig1@web.de,0,0,2014-11-12 13:19:48,2015-02-24 09:10:08,2015-02-24 09:10:08,663cp6iig2j93ato59t4fe51t1
+11,csi14,christian,Christian,Sigismund,hst.sigismund@gmail.com,0,0,2015-01-07 12:03:55,2015-02-09 09:17:44,2015-02-09 09:17:44,1181v3s116cnmgvjckf36k2lo4
+12,lor15,R12345,Lorenz,Reimer,lor15@dsmz.de,1,0,2015-08-04 09:18:11,2016-02-24 14:37:39,2016-02-24 14:37:39,bc64igi93vu45qqui78e82gk15
+13,anv15,anna,Anna,Vetcininova,anv15@dsmz.de,1,1,2015-08-04 16:36:39,2015-08-04 16:36:39,2015-08-04 16:36:39,

@@ -1,0 +1,159 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/field_basic_definition.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/field_basic_definition/{field_id}"; 
+    rr:class bacdive:Field_basic_definition ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_source_table;
+        rr:objectMap [ rml:reference "source_table"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Structured_comment_name;
+        rr:objectMap [ rml:reference "Structured_comment_name"]
+    ] ;
+
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Package_item;
+        rr:objectMap [ rml:reference "Package_item"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Title_advsearch;
+        rr:objectMap [ rml:reference "Title_advsearch"]
+    ] ;
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Help_Text;
+        rr:objectMap [ rml:reference "Help_Text"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_requirement;
+        rr:objectMap [ rml:reference "Requirement"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Expected_value;
+        rr:objectMap [ rml:reference "Expected_value"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Value_syntax;
+        rr:objectMap [ rml:reference "Value_syntax"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_occurrence;
+        rr:objectMap [ rml:reference "Occurrence"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Position;
+        rr:objectMap [ rml:reference "Position"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Position_advsearch;
+        rr:objectMap [ rml:reference "Position_advsearch"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_section;
+        rr:objectMap [ rml:reference "Section"]
+    ] ;
+
+           
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_visible;
+        rr:objectMap [ rml:reference "Visible"]
+    ] ;
+
+               
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_searchable;
+        rr:objectMap [ rml:reference "searchable"]
+    ] ;
+
+                   
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_searchable_any;
+        rr:objectMap [ rml:reference "searchable_any"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_Exportable;
+        rr:objectMap [ rml:reference "Exportable"]
+    ] ;
+
+    
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_API_reachable;
+        rr:objectMap [ rml:reference "API_reachable"]
+    ] ;
+
+         rr:predicateObjectMap [
+        rr:predicate  bacdive:has_filled;
+        rr:objectMap [ rml:reference "filled"]
+    ] ;
+
+    
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_comment;
+        rr:objectMap [ rml:reference "Comment"]
+    ] ;
+
+        
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_last_change;
+        rr:objectMap [ rml:reference "last_change"]
+    ] ;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+    
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
+    ] ;
+
+ 
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] .
+

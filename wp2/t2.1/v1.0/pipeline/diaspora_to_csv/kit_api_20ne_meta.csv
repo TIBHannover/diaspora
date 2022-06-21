@@ -1,0 +1,22 @@
+ID_kit_api_20NE_meta,cupule,cupule_Name_Kit,name_bacdive,reaction_name,external_Link,ID_microbiol,substrate,ID_CHEBI,CAS,kegg_comp,brenda_ligand,enzyme,EC_number,last_change
+6,6,ESC,ESC,Esculin hydrolysis/beta-Glucosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.21,ESC_20NE,Esculin ferric citrate,4853,531-75-9,C09264,3339.0,beta-glucosidase,3.2.1.21,2016-03-22 14:46:30
+5,5,URE,URE,Urease/urea hydrolysis,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.1.5,URE_20NE,Urea,16199,57-13-6,C00086,116.0,Urease,3.5.1.5,2016-03-22 14:46:30
+4,4,ADH (Arg),ADH (Arg),Arginine dihydrolase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.3.6,ADH_20NE,L-arginine,16467,74-79-3 ,C00062,123.0,arginine deiminase,3.5.3.6,2016-03-22 14:46:30
+3,3,GLU_Ferm,GLU_ Ferm,Fermentation of D-glucose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00031,GLU_Ferm_20NE,D-glucose,17634,50-99-7,C00031,35.0,,,2016-03-22 14:46:30
+2,2,TRP,TRP,Indole production,http://www.brenda-enzymes.org/enzyme.php?ecno=4.1.99.1,TRP_20NE,L-tryptophan,16828,73-22-3,C00078,119.0,tryptophanase,4.1.99.1,2016-03-22 14:46:30
+1,1,NO3,NO3,Reduction of nitrates,,NO3_20NE,Potassium nitrate,63043,7757-79-1,,32713.0,,,2016-03-22 14:46:30
+7,7,GEL,GEL,Gelatinase/gelatin hydrolysis,http://www.genome.jp/dbget-bin/www_bget?cpd:C01498,GEL_20NE,Gelatin,5291,9000-70-8,C01498,,,,2016-03-22 14:46:30
+8,8,PNPG,PNPG,beta-Galactosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.23,PNPG_20NE,4-nitrophenyl-beta-D-galactoside,355715,3150-24-1,C04452,2595.0,beta-galactosidase,3.2.1.23,2016-03-22 14:46:30
+9,9,GLU_Assim,GLU_ Assim,Assimilation of D-glucose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00031,GLU_Assim_20NE,D-glucose,17634,50-99-7,C00031,35.0,,,2016-03-22 14:46:30
+10,10,ARA,ARA,Assimilation of L-arabinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00259,ARA_20NE,L-arabinose,30849,147-81-9,C00259,206.0,,,2016-03-22 14:46:30
+11,11,MNE,MNE,Assimilation of D-mannose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00159,MNE_20NE,D-mannose,16024,3458-28-4,C00159,216.0,,,2016-03-22 14:46:30
+12,12,MAN,MAN,Assimilation of D-mannitol,http://www.genome.jp/dbget-bin/www_bget?cpd:C00392,MAN_20NE,D-mannitol,16899,69-65-8,C00392,495.0,,,2016-03-22 14:46:30
+13,13,NAG,NAG,Assimilation of N-acetyl-glucosamine,http://www.genome.jp/dbget-bin/www_bget?cpd:C00140,NAG_20NE,N-acetyl-D-glucosamine,506227,7512-17-6 ,C00140,300.0,,,2016-03-22 14:46:30
+14,14,MAL,MAL,Assimilation of maltose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00208,MAL_20NE,D-maltose (maltose),17306,69-79-4,C00208,1168.0,,,2016-03-22 14:46:30
+15,15,GNT,GNT,Assimilation of gluconate,http://www.genome.jp/dbget-bin/www_bget?cpd:C00257,GNT_20NE,Gluconate (D-gluconic acid),33198,526-95-4,C00257,4525.0,,,2016-03-22 14:46:30
+16,16,CAP,CAP,Assimilation of capric acid,http://www.genome.jp/dbget-bin/www_bget?cpd:C01571,CAP_20NE,Capric acid (decanoic acid),30813,334-48-5,C01571,2551.0,,,2016-03-22 14:46:30
+17,17,ADI,ADI,Assimilation adipic acid,http://www.genome.jp/dbget-bin/www_bget?cpd:C06104,ADI_20NE,Adipic acid,30832,0124-04-09,C06104,3323.0,,,2016-03-22 14:46:30
+18,18,MLT,MLT,Assimilation of malic acid,http://www.genome.jp/dbget-bin/www_bget?cpd:C00711,MLT_20NE,Malic acid,6650,6915-15-7,C00711,15837.0,,,2016-03-22 14:46:30
+19,19,CIT,CIT,Assimilation of  citric acid,http://www.genome.jp/dbget-bin/www_bget?cpd:C00158,CIT_20NE,Citric acid,30769,77-92-9,C00158,1714.0,,,2016-03-22 14:46:30
+20,20,PAC,PAC,Assimilation of phenyl-acetic acid,http://www.genome.jp/dbget-bin/www_bget?cpd:C00548,PAC_20NE,Phenyl-acetic acid,8082,122-79-2,C00548,826.0,,,2016-03-22 14:46:30
+21,21,OX,OX,Cytochrome oxidase,http://www.brenda-enzymes.org/enzyme.php?ecno=1.9.3.1,OX_20NE,Oxygen,26689,,,1180.0,cytochrome-c oxidase,EC 1.9.3.1,2016-03-22 14:46:30

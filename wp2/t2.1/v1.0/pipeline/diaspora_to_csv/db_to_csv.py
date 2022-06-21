@@ -313,7 +313,7 @@ for each_section in config.sections():
                         
                         
                     result[col] = result[col].str.replace('\n','')
-                    result[col] = result[col].str.decode('unicode_escape')
+                    # result[col] = result[col].str.decode('unicode_escape')
             result.to_csv(each_key+".csv", index=False)
 
 
@@ -507,7 +507,7 @@ for each_section in config.sections():
                        
                        
                     result[col] = result[col].str.replace('\n','')
-                    result[col] = result[col].str.decode('unicode_escape')
+                    # result[col] = result[col].str.decode('unicode_escape')
             result.to_csv(each_key+".csv", index=False)
 
 

@@ -1,0 +1,25 @@
+ID_kit_api_20A_meta,cupule,cupule_Name_Kit,name_bacdive,reaction_name,external_Link,ID_microbiol,substrate,ID_CHEBI,CAS,kegg_comp,brenda_ligand,enzyme,EC_number,last_change
+1,1,IND,IND,Indole production,http://www.brenda-enzymes.org/enzyme.php?ecno=4.1.99.1,IND_20A,L-tryptophan,16828.0,73-22-3,C00078,119.0,tryptophanase,4.1.99.1,2016-03-22 14:45:16
+2,2,URE,URE,Urease/urea hydrolysis,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.1.5,URE_20A,Urea,16199.0,57-13-6,C00086,116.0,Urease,3.5.1.5,2016-03-22 14:45:16
+3,3,GLU,GLU,Acid from D-glucose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00031,GLU_20A,D-glucose,17634.0,50-99-7,C00031,35.0,,,2016-03-22 14:45:16
+4,4,MAN,MAN,Acid from D-mannitol,http://www.genome.jp/dbget-bin/www_bget?cpd:C00392,MAN_20A,D-mannitol,16899.0,69-65-8,C00392,495.0,,,2016-03-22 14:45:16
+5,5,LAC,LAC,Acid from lactose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00243,LAC_20A,D-lactose (lactose),17716.0,63-42-3,C00243,3242.0,,,2016-03-22 14:45:16
+6,6,SAC,SAC,Acid from sucrose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00089,SAC_20A,D-saccharose (sucrose),17992.0,57-50-1,C00089,55.0,,,2016-03-22 14:45:16
+7,7,MAL,MAL,Acid from maltose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00208,MAL_20A,D-maltose (maltose),17306.0,69-79-4,C00208,1168.0,,,2016-03-22 14:45:16
+8,8,SAL,SAL,Acid from salicin,http://www.genome.jp/dbget-bin/www_bget?cpd:C01451,SAL_20A,Salicin,17814.0,138-52-3,C01451,828.0,,,2016-03-22 14:45:16
+9,9,XYL,XYL,Acid from D-xylose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00181,XYL_20A,D-xylose,65327.0,58-86-6,C00181,115.0,,,2016-03-22 14:45:16
+10,10,ARA,ARA,Acid from L-arabinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00259,ARA_20A,L-arabinose,30849.0,147-81-9,C00259,206.0,,,2016-03-22 14:45:16
+11,11,GEL,GEL,Gelatinase/gelatin hydrolysis,http://www.genome.jp/dbget-bin/www_bget?cpd:C01498,GEL_20A,Gelatin,5291.0,9000-70-8,C01498,4912.0,,,2016-03-22 14:45:16
+12,12,ESC,ESC,Esculin hydrolysis/beta-glucosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.21,ESC_20A,Esculin ferric citrate,4853.0,531-75-9,C09264,3339.0,beta-glucosidase,3.2.1.21,2016-03-22 14:45:16
+13,13,GLY,GLY,Acid from glycerol,http://www.genome.jp/dbget-bin/www_bget?cpd:C00116,GLY_20A,Glycerol,17754.0,56-81-5,C00116,135.0,,,2016-03-22 14:45:16
+14,14,CEL,CEL,Acid from cellobiose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00185,CEL_20A,D-cellobiose (cellobiose),17057.0,528-50-7,C00185,1716.0,,,2016-03-22 14:45:16
+15,15,MNE,MNE,Acid from D-mannose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00159,MNE_20A,D-mannose,16024.0,3458-28-4,C00159,216.0,,,2016-03-22 14:45:16
+16,16,MLZ,MLZ,Acid from melezitose,http://www.genome.jp/dbget-bin/www_bget?cpd:C08243,MLZ_20A,D-melezitose (melezitose),6731.0,0597-12-06,C08243,44398.0,,,2016-03-22 14:45:16
+17,17,RAF,RAF,Acid from raffinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00492,RAF_20A,D-raffinose (raffinose),16634.0,512-69-6,C00492,48961.0,,,2016-03-22 14:45:16
+18,18,SOR,SOR,Acid from sorbitol,http://www.genome.jp/dbget-bin/www_bget?cpd:C00794,SOR_20A,D-sorbitol (D-glucitol),17924.0,50-70-4,C00794,2651.0,,,2016-03-22 14:45:16
+19,19,RHA,RHA,Acid from L-rhamnose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00507,RHA_20A,L-rhamnose,62345.0,73-34-7,C00507,703.0,,,2016-03-22 14:45:16
+20,20,TRE,TRE,Acid from trehalose,http://www.genome.jp/dbget-bin/www_bget?cpd:C01083,TRE_20A,D-trehalose (trehalose),16551.0,99-20-7,C01083,587.0,,,2016-03-22 14:45:16
+21,21,CAT,CAT,Catalase,http://www.brenda-enzymes.org/enzyme.php?ecno=1.11.1.6,CAT_20A,,,,,,catalase,1.11.1.6,2016-03-22 14:45:16
+22,22,SPOR,SPOR,Spores present,,SPOR_20A,,,,,,,,2016-03-22 14:45:16
+23,23,GRAM,GRAM,Gram,,GRAM_20A,,,,,,,,2016-03-22 14:45:16
+24,24,COCC,COCC,"Morphology coccus=""+"" rod=""-""",,COCC_20A,,,,,,,,2016-03-22 14:45:16
