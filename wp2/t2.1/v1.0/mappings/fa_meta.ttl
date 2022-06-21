@@ -1,0 +1,140 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/fa_meta.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/fa_meta/{FA_meta_ID}"; 
+    rr:class bacdive:Fa_meta_ID ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_type;
+        rr:objectMap [ rml:reference "FA_type"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_medium;
+        rr:objectMap [ rml:reference "FA_medium"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_agar_liquid;
+        rr:objectMap [ rml:reference "FA_agar_liquid"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_temp;
+        rr:objectMap [ rml:reference "FA_temp"]
+    ] ;
+
+        rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_time;
+        rr:objectMap [ rml:reference "FA_time"]
+    ] ;
+
+           rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_pH;
+        rr:objectMap [ rml:reference "FA_ph"]
+    ] ;
+
+    
+           rr:predicateObjectMap [
+        rr:predicate  bacdive:has_FA_oxygen;
+        rr:objectMap [ rml:reference "FA_oxygen"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_cond;
+    rr:objectMap [ rml:reference "FA_cond"]
+    ] ;
+    
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_soft;
+    rr:objectMap [ rml:reference "FA_soft"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_lib;
+    rr:objectMap [ rml:reference "FA_lib"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_system;
+    rr:objectMap [ rml:reference "FA_system"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_instrument;
+    rr:objectMap [ rml:reference "FA_instrument"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_method;
+    rr:objectMap [ rml:reference "FA_method"]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_FA_cutoff;
+    rr:objectMap [ rml:reference "FA_cutoff"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] .
+
+
+
+
+
+
+
+
+    
+    
+    
+   
+  
+#     rr:predicateObjectMap [
+#     rr:predicate  bacdive:is_culture_medium_of;
+#     rr:objectMap[
+#         rr:parentTriplesMap <TripleMap2>;
+#         rr:joinCondition [
+#             rr:child "ID_colony_morphology";
+#             rr:parent "ID_colony_morphology";
+#         ];
+#     ] ;
+#     ].
+
+
+
+
+# <TripleMap2>
+#     a rr:TriplesMap;
+
+#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+#     rml:referenceFormulation ql:CSV
+#     ];
+
+#     rr:subjectMap [
+#         rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
+#         rr:class bacdive:Colony_morphology
+#     ].
