@@ -42,7 +42,7 @@ config.set('default','main_directory', main )
 
 config.add_section('datasets')
 
-number = str(58)
+number = str(1)
 
 output_folder = '${default:main_directory}/exam/output' 
 

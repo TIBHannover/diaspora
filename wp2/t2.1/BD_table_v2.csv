@@ -84,11 +84,11 @@ section,0,help table for sections,,yes
 static_content,0,outdated data,,yes
 straininfo_link,0,outdated data to straininfo,ID_strains/ID_reference,yes
 strains_taxplorer,0,help table for TAXplorer tool,,yes
-strain_synonyms,0,help table for matching synonyms,ID_strains/ID_reference,yes
+strain_synonyms,4,help table for matching synonyms,ID_strains/ID_reference,yes
 strains_new,,,ID_strains/ID_reference,no
 strains_ref_teset,,,ID_strains/ID_reference,no
 strains_reference,,,ID_strains/ID_reference,no
-strains_synonyms_pnu,4,,ID_strains/ID_reference,no
+strains_synonyms_pnu,0,,ID_strains/ID_reference,no
 strains_tax_pnu,,,ID_strains/ID_reference,no
 update_helper,,,,no
 
