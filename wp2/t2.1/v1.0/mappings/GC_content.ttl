@@ -23,7 +23,7 @@
     
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/GC_content/{ID_GC_content}"; 
-    rr:class Gc_content ];
+    rr:class  bacdive:Gc_content ];
 
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_rgStart;

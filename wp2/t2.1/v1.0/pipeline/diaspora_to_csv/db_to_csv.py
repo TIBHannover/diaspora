@@ -306,13 +306,20 @@ for each_section in config.sections():
                     a = (result[col].str.contains(r"\n"))
                      
                     if a.any() == True:
-                        print(col,'true')
+                        # print(col,'true')
                         log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
 
+                    b =  (result[col].str.contains(r'\\'))
+                     
+                    if b.any() == True:
                         
+                         
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                          
                         
                         
                     result[col] = result[col].str.replace('\n','')
+                    result[col] = result[col].str.replace('\\','/')
                     # result[col] = result[col].str.decode('unicode_escape')
             result.to_csv(each_key+".csv", index=False)
 
@@ -493,24 +500,74 @@ for each_section in config.sections():
             
             
             for col in result.columns:
-         
+                
+                
+             
                 
                 if result[col].dtype == np.object_:
                     
                     a = (result[col].str.contains(r"\n"))
                      
                     if a.any() == True:
-                        print(col,'true')
+                        # print(col,'true')
                         log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
  
+                    b =  (result[col].str.contains(r'\\'))
+                    
+                    if b.any() == True:
+                        
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
                         
                        
                        
                     result[col] = result[col].str.replace('\n','')
+             
+                    result[col] = result[col].str.replace('\\','/')
                     # result[col] = result[col].str.decode('unicode_escape')
             result.to_csv(each_key+".csv", index=False)
 
 
+        elif each_key == 'biosample':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+                
+                
+             
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        # print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+ 
+                    b =  (result[col].str.contains(r'\\'))
+                    
+                    if b.any() == True:
+                        
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                        
+                       
+                       
+                    result[col] = result[col].str.replace('\n','')
+             
+                    result[col] = result[col].str.replace('\\','/')
+                    # result[col] = result[col].str.decode('unicode_escape')
+            result.to_csv(each_key+".csv", index=False)
+            
 
 logging.shutdown()       
 

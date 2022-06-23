@@ -96,24 +96,18 @@
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_dsmz_strain;
-    rr:objectMap [ rr:template "http://kg.bacdive.dsm.de/reference/{DSMZ_ID_Strain}" ]
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{DSMZ_ID_Strain}" ]
     ] ;
     
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_dsm_num;
-    rr:objectMap [ rr:template "http://kg.bacdive.dsm.de/reference/{DSM_num}" ]
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{DSM_num}" ]
     ] ;
     
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_bacdive;
     rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{BacDive_ID}" ]
     ] ;
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_reference_import;
-    rr:objectMap [ rml:reference "ID_reference_import" ]
-    ] ;
-
 
 
     rr:predicateObjectMap [

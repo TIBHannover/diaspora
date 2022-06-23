@@ -79,7 +79,7 @@ DSM_no_catalog,0,help table for valid DSM culture collection numbers,,yes
 field_basic_definition,0,help table for data field administration,,yes
 metabolites,0,"outdated table, formerly was used for metabolites> now dedicated tables ",ID_strains,yes
 meta_api,0,help table for API test tool,ID_strains,yes
-multimedia,0,Metadata on multimedia content (pictures),ID_strains/ID_reference,yes
+multimedia,4,Metadata on multimedia content (pictures),ID_strains/ID_reference,yes
 section,0,help table for sections,,yes
 static_content,0,outdated data,,yes
 straininfo_link,0,outdated data to straininfo,ID_strains/ID_reference,yes
@@ -88,7 +88,7 @@ strain_synonyms,0,help table for matching synonyms,ID_strains/ID_reference,yes
 strains_new,,,ID_strains/ID_reference,no
 strains_ref_teset,,,ID_strains/ID_reference,no
 strains_reference,,,ID_strains/ID_reference,no
-strains_synonyms_pnu,,,ID_strains/ID_reference,no
+strains_synonyms_pnu,4,,ID_strains/ID_reference,no
 strains_tax_pnu,,,ID_strains/ID_reference,no
 update_helper,,,,no
 
