@@ -1,0 +1,19 @@
+2022-06-24 16:58:52 WARNING line break problem , table_name:strains , col_name:full_scientific_name
+2022-06-24 16:58:52 WARNING line break problem , table_name:strains , col_name:strain_number
+2022-06-24 16:58:56 WARNING line break problem , table_name:reference , col_name:URL
+2022-06-24 16:58:57 WARNING line break problem , table_name:colony_morphology , col_name:medium_name
+2022-06-24 16:58:57 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition
+2022-06-24 16:58:57 WARNING line break problem , table_name:colony_morphology , col_name:colony_color
+2022-06-24 16:59:02 WARNING line break problem , table_name:origin , col_name:geo_loc_name
+2022-06-24 16:59:03 WARNING line break problem , table_name:origin , col_name:sample_type
+2022-06-24 16:59:03 WARNING Unescaped backslash , table_name:origin , col_name:sample_type
+2022-06-24 16:59:03 WARNING line break problem , table_name:origin , col_name:enrichment_cult_name
+2022-06-24 16:59:03 WARNING line break problem , table_name:origin , col_name:enrichment_cult_composition
+2022-06-24 16:59:03 WARNING line break problem , table_name:origin , col_name:procedure_origin
+2022-06-24 16:59:07 WARNING line break problem , table_name:culture_medium , col_name:medium_name
+2022-06-24 16:59:07 WARNING line break problem , table_name:culture_medium , col_name:medium_composition
+2022-06-24 16:59:15 WARNING line break problem , table_name:strain_history , col_name:history
+2022-06-24 16:59:18 WARNING line break problem , table_name:strain_synonyms , col_name:strain_synonym
+2022-06-24 16:59:20 WARNING Unescaped backslash , table_name:biosample , col_name:Sampledata
+2022-06-24 16:59:32 WARNING line break problem , table_name:sequence , col_name:DB_sequence
+2022-06-24 16:59:37 WARNING Unescaped backslash , table_name:multimedia , col_name:file_path
