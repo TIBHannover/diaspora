@@ -17,37 +17,52 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_production.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/halophily.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/met_production/{ID_met_production}"; 
-    rr:class bacdive:Met_production ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/halophily/{ID_halophily}"; 
+    rr:class bacdive:Halophily ];
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_halophily;
+        rr:objectMap [ rml:reference "halophily"]
+    ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_metabolite_prod;
-        rr:objectMap [ rml:reference "metabolite_prod"]
+        rr:predicate  bacdive:has_salt;
+        rr:objectMap [ rml:reference "salt"]
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_production;
-        rr:objectMap [ rml:reference "production" ]
+        rr:predicate  bacdive:has_salt_concentration;
+        rr:objectMap [ rml:reference "salt_concentration" ]
+    ] ;
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_rgStart;
+        rr:objectMap [ rml:reference "rgStart" ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_excreted;
-        rr:objectMap [ rml:reference "excreted" ]
+        rr:predicate  bacdive:has_rgEnd;
+        rr:objectMap [ rml:reference "rgEnd" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_chebi_ID;
-    rr:objectMap [ rml:reference "chebi_ID" ]
+    rr:predicate  bacdive:has_salt_concentration_unit;
+    rr:objectMap [ rml:reference "salt_concentration_unit" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_FK_metabolites;
-    rr:objectMap [ rml:reference "FK_metabolites" ]
+    rr:predicate  bacdive:has_ability;
+    rr:objectMap [ rml:reference "ability" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_test_type;
+    rr:objectMap [ rml:reference "test_type" ]
     ] ;
 
     rr:predicateObjectMap [
@@ -70,5 +85,7 @@
     rr:objectMap [ rml:reference "last_change" ]
     ] .
 
-    
+   
+
+
     

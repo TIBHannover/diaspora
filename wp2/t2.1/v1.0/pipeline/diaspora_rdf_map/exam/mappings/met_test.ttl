@@ -17,29 +17,40 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_production.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_test.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/met_production/{ID_met_production}"; 
-    rr:class bacdive:Met_production ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/met_test/{ID_met_test}"; 
+    rr:class bacdive:Met_test ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_metabolite_prod;
-        rr:objectMap [ rml:reference "metabolite_prod"]
+        rr:predicate  bacdive:has_metabolite_test;
+        rr:objectMap [ rml:reference "metabolite_test"]
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_production;
-        rr:objectMap [ rml:reference "production" ]
+        rr:predicate  bacdive:has_methyl_red;
+        rr:objectMap [ rml:reference "methyl_red" ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_excreted;
-        rr:objectMap [ rml:reference "excreted" ]
+        rr:predicate  bacdive:has_voges_proskauer;
+        rr:objectMap [ rml:reference "voges_proskauer" ]
     ] ;
 
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_indole_test;
+    rr:objectMap [ rml:reference "indole_test" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_citrate_test;
+    rr:objectMap [ rml:reference "citrate_test" ]
+    ] ;
+
+    
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_chebi_ID;
     rr:objectMap [ rml:reference "chebi_ID" ]
@@ -70,5 +81,30 @@
     rr:objectMap [ rml:reference "last_change" ]
     ] .
 
-    
-    
+ 
+  
+#     rr:predicateObjectMap [
+#     rr:predicate  bacdive:is_culture_medium_of;
+#     rr:objectMap[
+#         rr:parentTriplesMap <TripleMap2>;
+#         rr:joinCondition [
+#             rr:child "ID_colony_morphology";
+#             rr:parent "ID_colony_morphology";
+#         ];
+#     ] ;
+#     ].
+
+
+
+
+# <TripleMap2>
+#     a rr:TriplesMap;
+
+#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+#     rml:referenceFormulation ql:CSV
+#     ];
+
+#     rr:subjectMap [
+#         rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
+#         rr:class bacdive:Colony_morphology
+#     ].

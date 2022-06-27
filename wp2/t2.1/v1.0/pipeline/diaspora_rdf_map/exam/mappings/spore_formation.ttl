@@ -17,37 +17,27 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/spore_formation.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
-    rr:class bacdive:Culture_pH ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/spore_formation/{ID_spore_formation}"; 
+    rr:class bacdive:Spore_formation ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_ph;
-        rr:objectMap [ rml:reference "pH"]
+        rr:predicate  bacdive:has_ability;
+        rr:objectMap [ rml:reference "ability"]
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate  bacdive:rgStart;
-        rr:objectMap [ rml:reference "rgStart" ]
+        rr:predicate  bacdive:has_type;
+        rr:objectMap [ rml:reference "type" ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_rgEnd;
-        rr:objectMap [ rml:reference "rgEnd" ]
-    ] ;
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_test_type;
-    rr:objectMap [ rml:reference "test_type" ]
-    ] ;
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_ability;
-    rr:objectMap [ rml:reference "ability" ]
+    rr:predicate  bacdive:has_description;
+    rr:objectMap [ rml:reference "description" ]
     ] ;
 
     rr:predicateObjectMap [
@@ -69,9 +59,6 @@
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
     ] .
-
-
-
 
     # rr:predicateObjectMap [
     # rr:predicate  bacdive:has_rgStart_wid;

@@ -17,39 +17,20 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_production.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_history.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/met_production/{ID_met_production}"; 
-    rr:class bacdive:Met_production ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
+    rr:class bacdive:Strain_history ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_metabolite_prod;
-        rr:objectMap [ rml:reference "metabolite_prod"]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate  bacdive:has_production;
-        rr:objectMap [ rml:reference "production" ]
+        rr:predicate  bacdive:has_history;
+        rr:objectMap [ rml:reference "history"]
     ] ;
 
-    rr:predicateObjectMap [
-        rr:predicate  bacdive:has_excreted;
-        rr:objectMap [ rml:reference "excreted" ]
-    ] ;
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_chebi_ID;
-    rr:objectMap [ rml:reference "chebi_ID" ]
-    ] ;
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_FK_metabolites;
-    rr:objectMap [ rml:reference "FK_metabolites" ]
-    ] ;
-
+        
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_reference;
     rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}" ]
@@ -70,5 +51,5 @@
     rr:objectMap [ rml:reference "last_change" ]
     ] .
 
-    
-    
+
+

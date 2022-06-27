@@ -17,37 +17,37 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/risk_assessment.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
-    rr:class bacdive:Culture_pH ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
+    rr:class bacdive:Risk_assessment ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_ph;
-        rr:objectMap [ rml:reference "pH"]
+        rr:predicate  bacdive:has_biosafety_level;
+        rr:objectMap [ rml:reference "biosafety_level"]
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate  bacdive:rgStart;
-        rr:objectMap [ rml:reference "rgStart" ]
+        rr:predicate  bacdive:has_biosafety_level_comment;
+        rr:objectMap [ rml:reference "biosafety_level_comment" ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_rgEnd;
-        rr:objectMap [ rml:reference "rgEnd" ]
+        rr:predicate  bacdive:has_pathogenicity_human;
+        rr:objectMap [ rml:reference "pathogenicity_human" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_test_type;
-    rr:objectMap [ rml:reference "test_type" ]
+    rr:predicate  bacdive:has_pathogenicity_animal;
+    rr:objectMap [ rml:reference "pathogenicity_animal" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_ability;
-    rr:objectMap [ rml:reference "ability" ]
+    rr:predicate  bacdive:has_pathogenicity_plant;
+    rr:objectMap [ rml:reference "pathogenicity_plant" ]
     ] ;
 
     rr:predicateObjectMap [
@@ -69,8 +69,6 @@
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
     ] .
-
-
 
 
     # rr:predicateObjectMap [

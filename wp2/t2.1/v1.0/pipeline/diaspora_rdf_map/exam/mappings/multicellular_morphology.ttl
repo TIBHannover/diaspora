@@ -17,37 +17,42 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/multicellular_morphology.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
-    rr:class bacdive:Culture_pH ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/multicellular_morphology/{ID_multicellular_morphology}"; 
+    rr:class bacdive:Multicellular_morphology ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_ph;
-        rr:objectMap [ rml:reference "pH"]
-    ] ;
-    
-    rr:predicateObjectMap [
-        rr:predicate  bacdive:rgStart;
-        rr:objectMap [ rml:reference "rgStart" ]
+        rr:predicate  bacdive:has_multicell_name;
+        rr:objectMap [ rml:reference "multicell_name"]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_rgEnd;
-        rr:objectMap [ rml:reference "rgEnd" ]
+        rr:predicate  bacdive:has_multicell_color;
+        rr:objectMap [ rml:reference "multicell_color"]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_test_type;
-    rr:objectMap [ rml:reference "test_type" ]
+        rr:predicate  bacdive:has_multicell_size;
+        rr:objectMap [ rml:reference "multicell_size"]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_ability;
-    rr:objectMap [ rml:reference "ability" ]
+    rr:predicate  bacdive:has_multicell_size_unit;
+    rr:objectMap [ rml:reference "multicell_size_unit"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_medium_name;
+    rr:objectMap [ rml:reference "medium_name"]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_description;
+    rr:objectMap [ rml:reference "description"]
     ] ;
 
     rr:predicateObjectMap [
@@ -70,35 +75,22 @@
     rr:objectMap [ rml:reference "last_change" ]
     ] .
 
-
-
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_rgStart_wid;
-    # rr:objectMap [ rml:reference "rgStart_wid" ]
-    # ] ;
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_rgEnd_wid;
-    # rr:objectMap [ rml:reference "rgEnd_wid" ]
-    # ] ;
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_cell_width_unit;
-    # rr:objectMap [ rml:reference "cell_width_unit" ]
-    # ] ;
     
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_id_strains;
-    # rr:objectMap[
-    #     rr:parentTriplesMap <TripleMap2>;
-    #     rr:joinCondition [
-    #         rr:child "ID_strains";
-    #         rr:parent "ID_strains";
-    #     ];
-    # ] ;
-    # ].
+    
+    
+    
+   
+  
+#     rr:predicateObjectMap [
+#     rr:predicate  bacdive:is_culture_medium_of;
+#     rr:objectMap[
+#         rr:parentTriplesMap <TripleMap2>;
+#         rr:joinCondition [
+#             rr:child "ID_colony_morphology";
+#             rr:parent "ID_colony_morphology";
+#         ];
+#     ] ;
+#     ].
 
 
 
@@ -106,11 +98,11 @@
 # <TripleMap2>
 #     a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strains.csv";
+#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
 #     rml:referenceFormulation ql:CSV
 #     ];
 
 #     rr:subjectMap [
-#         rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}";
-#         rr:class bacdive:Strain
+#         rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}";
+#         rr:class bacdive:Colony_morphology
 #     ].
