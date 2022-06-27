@@ -46,7 +46,6 @@
     ] ;
 
 
-
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_genus;
     rr:objectMap [ rml:reference "genus" ]
@@ -109,11 +108,17 @@
     rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{BacDive_ID}" ]
     ] ;
 
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_reference_import;
+    # rr:objectMap [ rml:reference "ID_reference_import" ]
+    # ] ;
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
     ] .
+
+  
 
 
 
