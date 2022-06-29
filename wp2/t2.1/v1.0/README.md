@@ -1,6 +1,6 @@
 # Steps to transform Diaspora database into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
  
-# Inside v1.0 Folder, we have two folders
+# We have two folders here
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
  
@@ -8,19 +8,20 @@
    
 ## diaspora_to_csv Folder:
      1. Contains python script that will connect to the mysql workbench and then will transform its tables into csv format, there is also a separate config file 
-        to add the table names and querties that we want. 
-     2. Contains some of the generated csv files based on the table names. 
+        to add the table names.  
      
 ## diaspora_rdf_map Folder
      1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-     2. Inside SDM-RDFizer, there is a folder named exam  and inside this folder, we have some mapping rules files that is used to 
+     2. There is a folder named exam  and inside this folder, we have some mapping rules files that is used to 
         convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
-     3. rdf.py has a parameter "number_of_datasets", currently we are transforming six csv files that's why the parameter is set to six and can be changed accoring to the number of csv files.
+     3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed accoring to   the number of csv files.
     
  For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
 ## Diaspora_store_to_graph Folder
     1. Contains python script to store generated rdf files into the graph database. 
+       -> For installing GraphDB, follow the link:
+          - GraphDB (https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html). 
     
     
 ## Query_diaspora Folder
