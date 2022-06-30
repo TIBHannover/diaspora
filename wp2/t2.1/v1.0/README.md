@@ -29,7 +29,7 @@
 ## validate_diaspora Folder
     1. contains python script for the query validation, here we can validate the query results and the actual results. 
     
-## We have used [jenkins_pipeline] (https://www.jenkins.io/doc/book/installing/) for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created four jobs for that, one job for each step. 
+## We have used [jenkins_pipeline](https://www.jenkins.io/doc/book/installing/) for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created four jobs for that, one job for each step. 
     1. In the Jobs folder, there are config files for each job. 
     2. copy these config files to your job folder inside your jenkins directory respectively.
     3. Go to your jenkins local instance and click on manage jenkins there we have "reload configuration from disk" option, click on this option. 
