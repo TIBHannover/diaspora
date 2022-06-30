@@ -1,0 +1,63 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>call cd ../../..&#xd;
+&#xd;
+call cd desktop&#xd;
+&#xd;
+call cd diasp&#xd;
+&#xd;
+git clone https://github.com/TIBHannover/diaspora.git&#xd;
+&#xd;
+call cd diaspora/wp2/t2.1/v1.0/pipeline&#xd;
+&#xd;
+call xcopy diaspora_to_csv %jenkins_path%\diaspora_to_csv /I /H /C /E&#xd;
+&#xd;
+call xcopy diaspora_rdf_map %jenkins_path%\diaspora_rdf_map /I /H /C /E&#xd;
+&#xd;
+call xcopy  Diaspora_store_to_graph %jenkins_path%\Diaspora_store_to_graph /I /H /C /E&#xd;
+&#xd;
+&#xd;
+call xcopy  Query_diaspora %jenkins_path%\Query_diaspora /I /H /C /E&#xd;
+&#xd;
+call xcopy  validate_diaspora %jenkins_path%\validate_diaspora /I /H /C /E&#xd;
+&#xd;
+call cd %Desktop_path%&#xd;
+&#xd;
+call rmdir diaspora /S /Q&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -10,8 +10,8 @@ from jenkinsapi.jenkins import Jenkins
 # Jenkins Authentication URL
 
 JENKINS_URL = 'http://localhost:8080'
-JENKINS_USERNAME = "rohit"
-JENKINS_PASSWORD = "krishnamaa9$R"
+JENKINS_USERNAME = ""
+JENKINS_PASSWORD = ""
 
 
 import configparser
@@ -66,6 +66,7 @@ for each_section in config.sections():
             print('job is success', build_number)
         else:
             print('job is failure')
+            break
         
         print(server_build.get_build_console_output(each_val,build_number))
         
