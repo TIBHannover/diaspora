@@ -36,14 +36,14 @@
     
 ## Steps to create jenkins jobs: 
      1. Install jenkins and create six freestyle jobs:
-     
+            - clean_workspace
             - prepare_workspace
             - diaspora_to_csv
             - diaspora_rdf_map
             - Diaspora_store_to_graph
             - Query_diaspora
             - validate_diaspora
-            - clean_workspace
+         
            
      2. After installing jenkins; go the .jenkins folder in your directory where jenkins has been installed, now go the workspace folder inside the .jenkins folder, there you will see workspace has already been created for the 4 freestyle projects that you have created. 
      
