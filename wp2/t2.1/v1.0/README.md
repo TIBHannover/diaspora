@@ -8,6 +8,7 @@
    
 ## diaspora_to_csv Folder:
      1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format, there is also a separate config file to add the table names.  
+     2. This script will take bacdive database as an input and will convert its tables into csv for the rdf transformation. 
      
 ## diaspora_rdf_map Folder:
      1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
