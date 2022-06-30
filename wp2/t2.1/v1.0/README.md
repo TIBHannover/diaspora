@@ -36,10 +36,11 @@
     
 # SECTION 3 
     
-## We have used [jenkins_pipeline](https://www.jenkins.io/doc/book/installing/) for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created four jobs for that, one job for each step. 
+## We have used [jenkins_pipeline](https://www.jenkins.io/doc/book/installing/) for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created six jobs for that, one job for each step. 
     1. In the Jobs folder, there are config files for each job. 
-    2. copy these config files to your job folder inside your jenkins directory respectively.
-    3. Go to your jenkins local instance and click on manage jenkins there we have "reload configuration from disk" option, click on this option. 
+    2. copy these .xml files to your job folder inside your jenkins directory respectively.
+    3. Before copying these .xml files, change the names of each xml file to config otherwisw jenkins would not detect the files. 
+    4. Go to your jenkins local instance and click on manage jenkins there we have "reload configuration from disk" option, click on this option. 
     
 ## Steps to create jenkins jobs: 
      1. Install jenkins and create six freestyle jobs:
@@ -52,7 +53,7 @@
             - validate_diaspora - For the validation of the results that we got by querying the graph database
          
            
-     2. After installing jenkins; go the .jenkins folder in your directory where jenkins has been installed, now go the workspace folder inside the .jenkins folder, there you will see workspace has already been created for the 4 freestyle projects that you have created. 
+     2. After installing jenkins; go the .jenkins folder in your directory where jenkins has been installed, now go the workspace folder inside the .jenkins folder, there you will see workspace has already been created for the 6 freestyle projects that you have created. 
      
      3. Copy the contents of the above folders ( clean_workspace ,prepare_workspace, diaspora_to_csv, diaspora_rdf_map, Diaspora_store_to_graph, Query_diaspora, validate_diaspora, ) respectively. 
  
