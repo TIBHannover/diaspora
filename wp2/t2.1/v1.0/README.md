@@ -20,7 +20,7 @@
 ## Diaspora_store_to_graph Folder
     1. Contains python script to store generated rdf files into the graph database. 
        -> For installing GraphDB, follow the link:
-          - GraphDB (https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html). 
+          - GraphDB(https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html). 
     
     
 ## Query_diaspora Folder
