@@ -1,152 +1,19 @@
-2022-06-29 17:33:45 ERROR Space error , table_name: multicellular_morphology , col_name:medium_name
-2022-06-29 17:33:45 INFO Fixed
-2022-06-29 17:33:45 ERROR Line break problem , table_name: multicellular_morphology , col_name:description
-2022-06-29 17:33:45 INFO Fixed
-2022-06-29 17:33:46 ERROR Line break problem , table_name: spore_formation , col_name:description
-2022-06-29 17:33:46 INFO Fixed
-2022-06-29 17:33:46 ERROR Space error , table_name: spore_formation , col_name:description
-2022-06-29 17:33:46 INFO Fixed
-2022-06-29 17:33:47 ERROR Space error , table_name: biosample , col_name:Title
-2022-06-29 17:33:47 INFO Fixed
-2022-06-29 17:33:47 ERROR Unescaped backslash , table_name: biosample , col_name:Sampledata
-2022-06-29 17:33:47 INFO Fixed
-2022-06-29 17:33:47 ERROR Space error , table_name: biosample , col_name:Sampledata
-2022-06-29 17:33:49 INFO Fixed
-2022-06-29 17:33:49 ERROR Space error , table_name: biosample , col_name:sample_isolation_source
-2022-06-29 17:33:49 INFO Fixed
-2022-06-29 17:33:54 ERROR Line break problem , table_name: metabolites , col_name:metabolite
-2022-06-29 17:33:54 INFO Fixed
-2022-06-29 17:33:54 ERROR Space error , table_name: metabolites , col_name:metabolite
-2022-06-29 17:33:54 INFO Fixed
-2022-06-29 17:33:57 ERROR Line break problem , table_name: met_util , col_name:metabolite_util
-2022-06-29 17:33:57 INFO Fixed
-2022-06-29 17:33:57 ERROR Space error , table_name: met_util , col_name:metabolite_util
-2022-06-29 17:33:57 INFO Fixed
-2022-06-29 17:34:02 ERROR Line break problem , table_name: strain_synonyms , col_name:strain_synonym
-2022-06-29 17:34:02 INFO Fixed
-2022-06-29 17:34:02 ERROR Space error , table_name: strain_synonyms , col_name:strain_synonym
-2022-06-29 17:34:02 INFO Fixed
-2022-06-29 17:34:07 ERROR Line break problem , table_name: sequence , col_name:DB_sequence
-2022-06-29 17:34:07 INFO Fixed
-2022-06-29 17:34:07 ERROR Space error , table_name: sequence , col_name:DB_sequence
-2022-06-29 17:34:08 INFO Fixed
-2022-06-29 17:34:16 ERROR Space error , table_name: compound_production , col_name:compound_name
-2022-06-29 17:34:16 INFO Fixed
-2022-06-29 17:34:16 ERROR Space error , table_name: compound_production , col_name:remarks_micro
-2022-06-29 17:34:16 INFO Fixed
-2022-06-29 17:34:17 ERROR Line break problem , table_name: culture_condition , col_name:medium_name
-2022-06-29 17:34:17 INFO Fixed
-2022-06-29 17:34:17 ERROR Space error , table_name: culture_condition , col_name:medium_name
-2022-06-29 17:34:17 INFO Fixed
-2022-06-29 17:34:17 ERROR Line break problem , table_name: culture_condition , col_name:medium_composition
-2022-06-29 17:34:17 INFO Fixed
-2022-06-29 17:34:17 ERROR Space error , table_name: culture_condition , col_name:medium_composition
-2022-06-29 17:34:18 INFO Fixed
-2022-06-29 17:34:18 ERROR Unescaped backslash , table_name: multimedia , col_name:file_path
-2022-06-29 17:34:18 INFO Fixed
-2022-06-29 17:34:18 ERROR Space error , table_name: multimedia , col_name:caption
-2022-06-29 17:34:19 INFO Fixed
-2022-06-29 17:34:19 ERROR Line break problem , table_name: enzymes , col_name:enzyme
-2022-06-29 17:34:19 INFO Fixed
-2022-06-29 17:34:20 ERROR Line break problem , table_name: origin , col_name:geo_loc_name
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:geo_loc_name
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Line break problem , table_name: origin , col_name:sample_type
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Unescaped backslash , table_name: origin , col_name:sample_type
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:sample_type
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:Host_Species
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Line break problem , table_name: origin , col_name:enrichment_cult_name
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:enrichment_cult_name
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Line break problem , table_name: origin , col_name:enrichment_cult_composition
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:enrichment_cult_composition
-2022-06-29 17:34:20 INFO Fixed
-2022-06-29 17:34:20 ERROR Space error , table_name: origin , col_name:enrichment_cult_duration
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Line break problem , table_name: origin , col_name:procedure_origin
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Space error , table_name: origin , col_name:procedure_origin
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Line break problem , table_name: colony_morphology , col_name:medium_name
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Space error , table_name: colony_morphology , col_name:medium_name
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Line break problem , table_name: colony_morphology , col_name:medium_composition
-2022-06-29 17:34:21 INFO Fixed
-2022-06-29 17:34:21 ERROR Space error , table_name: colony_morphology , col_name:medium_composition
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:22 ERROR Line break problem , table_name: colony_morphology , col_name:colony_color
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:22 ERROR Space error , table_name: colony_morphology , col_name:colony_color
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:22 ERROR Space error , table_name: pigmentation , col_name:pigment_name
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:22 ERROR Line break problem , table_name: pigmentation , col_name:pigment_color
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:22 ERROR Space error , table_name: kit_api_50chas_meta , col_name:reaction_name
-2022-06-29 17:34:22 INFO Fixed
-2022-06-29 17:34:23 ERROR Line break problem , table_name: culture_medium , col_name:medium_name
-2022-06-29 17:34:23 INFO Fixed
-2022-06-29 17:34:23 ERROR Space error , table_name: culture_medium , col_name:medium_name
-2022-06-29 17:34:24 INFO Fixed
-2022-06-29 17:34:24 ERROR Line break problem , table_name: culture_medium , col_name:medium_composition
-2022-06-29 17:34:24 INFO Fixed
-2022-06-29 17:34:24 ERROR Space error , table_name: culture_medium , col_name:medium_composition
-2022-06-29 17:34:24 INFO Fixed
-2022-06-29 17:34:26 ERROR Space error , table_name: met_antibiogram_meta , col_name:ID_DIN_antibiogram
-2022-06-29 17:34:26 INFO Fixed
-2022-06-29 17:34:26 ERROR Space error , table_name: reference , col_name:title
-2022-06-29 17:34:26 INFO Fixed
-2022-06-29 17:34:27 ERROR Space error , table_name: reference , col_name:authors
-2022-06-29 17:34:27 INFO Fixed
-2022-06-29 17:34:28 ERROR Space error , table_name: reference , col_name:catalogue_ID
-2022-06-29 17:34:28 INFO Fixed
-2022-06-29 17:34:30 ERROR Line break problem , table_name: observation , col_name:attribute
-2022-06-29 17:34:30 INFO Fixed
-2022-06-29 17:34:30 ERROR Space error , table_name: observation , col_name:attribute
-2022-06-29 17:34:30 INFO Fixed
-2022-06-29 17:34:33 ERROR Space error , table_name: kit_api_20ne_meta , col_name:reaction_name
-2022-06-29 17:34:33 INFO Fixed
-2022-06-29 17:34:35 ERROR Space error , table_name: annotation_core , col_name:old_value
-2022-06-29 17:34:35 INFO Fixed
-2022-06-29 17:34:35 ERROR Line break problem , table_name: annotation_core , col_name:new_value
-2022-06-29 17:34:35 INFO Fixed
-2022-06-29 17:34:35 ERROR Space error , table_name: annotation_core , col_name:new_value
-2022-06-29 17:34:36 INFO Fixed
-2022-06-29 17:34:39 ERROR Space error , table_name: strains , col_name:designation
-2022-06-29 17:34:39 INFO Fixed
-2022-06-29 17:34:40 ERROR Line break problem , table_name: strains , col_name:full_scientific_name
-2022-06-29 17:34:40 INFO Fixed
-2022-06-29 17:34:40 ERROR Space error , table_name: strains , col_name:full_scientific_name
-2022-06-29 17:34:40 INFO Fixed
-2022-06-29 17:34:40 ERROR Line break problem , table_name: strains , col_name:strain_number
-2022-06-29 17:34:40 INFO Fixed
-2022-06-29 17:34:40 ERROR Space error , table_name: strains , col_name:strain_number
-2022-06-29 17:34:40 INFO Fixed
-2022-06-29 17:34:42 ERROR Line break problem , table_name: fa_profile , col_name:FA_name
-2022-06-29 17:34:42 INFO Fixed
-2022-06-29 17:34:42 ERROR Space error , table_name: fa_profile , col_name:FA_name
-2022-06-29 17:34:42 INFO Fixed
-2022-06-29 17:34:43 ERROR Space error , table_name: field_basic_definition , col_name:Package_item
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Space error , table_name: field_basic_definition , col_name:Title_advsearch
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Line break problem , table_name: field_basic_definition , col_name:Help_Text
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Space error , table_name: field_basic_definition , col_name:Help_Text
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Line break problem , table_name: field_basic_definition , col_name:Expected_value
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Line break problem , table_name: field_basic_definition , col_name:Comment
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Line break problem , table_name: strain_history , col_name:history
-2022-06-29 17:34:43 INFO Fixed
-2022-06-29 17:34:43 ERROR Space error , table_name: strain_history , col_name:history
-2022-06-29 17:34:44 INFO Fixed
+2022-06-27 13:53:29 WARNING line break problem , table_name:strains , col_name:full_scientific_name
+2022-06-27 13:53:29 WARNING line break problem , table_name:strains , col_name:strain_number
+2022-06-27 13:53:32 WARNING line break problem , table_name:reference , col_name:URL
+2022-06-27 13:53:34 WARNING line break problem , table_name:colony_morphology , col_name:medium_name
+2022-06-27 13:53:34 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition
+2022-06-27 13:53:34 WARNING line break problem , table_name:colony_morphology , col_name:colony_color
+2022-06-27 13:53:39 WARNING line break problem , table_name:origin , col_name:geo_loc_name
+2022-06-27 13:53:39 WARNING line break problem , table_name:origin , col_name:sample_type
+2022-06-27 13:53:39 WARNING Unescaped backslash , table_name:origin , col_name:sample_type
+2022-06-27 13:53:39 WARNING line break problem , table_name:origin , col_name:enrichment_cult_name
+2022-06-27 13:53:39 WARNING line break problem , table_name:origin , col_name:enrichment_cult_composition
+2022-06-27 13:53:39 WARNING line break problem , table_name:origin , col_name:procedure_origin
+2022-06-27 13:53:43 WARNING line break problem , table_name:culture_medium , col_name:medium_name
+2022-06-27 13:53:43 WARNING line break problem , table_name:culture_medium , col_name:medium_composition
+2022-06-27 13:53:51 WARNING line break problem , table_name:strain_history , col_name:history
+2022-06-27 13:53:53 WARNING line break problem , table_name:strain_synonyms , col_name:strain_synonym
+2022-06-27 13:53:56 WARNING Unescaped backslash , table_name:biosample , col_name:Sampledata
+2022-06-27 13:54:07 WARNING line break problem , table_name:sequence , col_name:DB_sequence
+2022-06-27 13:54:12 WARNING Unescaped backslash , table_name:multimedia , col_name:file_path

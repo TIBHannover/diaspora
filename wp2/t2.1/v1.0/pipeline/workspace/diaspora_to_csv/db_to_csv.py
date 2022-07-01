@@ -19,6 +19,7 @@ import pickle
 
 import configparser
 
+import unidecode
 
 import numpy as np
 
@@ -74,8 +75,8 @@ config.readfp(open('./tables.properties'))
 mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = 'knowledge123',
-    database= "diaspora")
+    passwd = '',
+    database= "")
 
 # print(mydb)
 
@@ -105,323 +106,44 @@ for each_section in config.sections():
         
     
             
-        # if each_key == 'cell_morphology':
+        if each_key == 'cell_morphology':
             
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r', encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r', encoding="utf8") as f:
+                data = f.read()
+                # print(data)
            
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
             
             
-        #     for col in result.columns:
-        #         # result[col].astype(str)
+            for col in result.columns:
+                # result[col].astype(str)
                
            
                 
              
-        #         if result[col].dtype == np.object_:
-        #             # print(type(col))
-        #             if result[col].dtype == np.object_:
+                if result[col].dtype == np.object_:
+                    # print(type(col))
+                    if result[col].dtype == np.object_:
                         
-        #                 a = (result[col].str.contains(r"\n"))
+                        a = (result[col].str.contains(r"\n"))
                          
-        #                 if a.any() == True:
-        #                     print(col,'true')
-        #                     log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                        if a.any() == True:
+                            print(col,'true')
+                            log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
                     
                   
                      
                   
-        #             # if result[col].str.contains(r"\n"):
-        #             #     print('hhhhh')
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
+                    # if result[col].str.contains(r"\n"):
+                    #     print('hhhhh')
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
             
-        # # elif each_key == 'culture_condition':
-            
-        # #     # results['method'].dtype == np.object_
-        # #     # results['method'] = results['method'].str.replace('\n','')
-          
-        # #     results.to_csv(each_key+".csv", index=False)
-        # #     # time.sleep(10)
-        # #     with open(each_key+".csv",'r') as f:
-        # #         data = f.read()
-        # #         # print(data)
-           
-        # #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        # #     for col in result.columns:
-        # #         if result[col].dtype == np.object_:
-            
-        # #             result[col] = result[col].str.replace('  ','')
-        # #             result[col] = result[col].str.replace('\n','')
-                    
-        # #     result.to_csv(each_key+".csv", index=False)
-            
-        # elif each_key == 'strains':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(each_key+".csv")
-            
-            
-        #     a = (result[col].str.contains(r"\n"))
-            
-        #     for col in result.columns:
-        #         if result[col].dtype == np.object_:
-                    
-                    
-        #             # result = result.replace('\n','', regex=True)
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
-                
-            
-        #             result[col] = result[col].str.replace('  ','')
-        #             result[col] = result[col].str.replace('\n','')
-                    
-        #     result.to_csv(each_key+".csv", index=False)
-             
-        # if each_key == 'reference':
-            
-            
-           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r', encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-        #         if result[col].dtype == np.object_:
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
-                
-        #             # result[col] = result[col].str.replace('  ','')
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
-        
-        # elif each_key == 'colony_morphology':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-                        
-                        
-                        
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
-            
-        
-        # elif each_key == 'culture_medium':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-                        
-                            
-                            
-        #                 result[col] = result[col].str.replace('\n','')
-        #         result.to_csv(each_key+".csv", index=False)
-        
-
-        # elif each_key == 'origin':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 # print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-        #             b =  (result[col].str.contains(r'\\'))
-                     
-        #             if b.any() == True:
-                        
-                         
-        #                 log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
-                          
-                        
-                        
-        #             result[col] = result[col].str.replace('\n','')
-        #             result[col] = result[col].str.replace('\\','/')
-        #             # result[col] = result[col].str.decode('unicode_escape')
-        #     result.to_csv(each_key+".csv", index=False)
-
-
-        # elif each_key == 'strain_history':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-                        
-                        
-                        
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
-
-
-        # elif each_key == 'sequence':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-                        
-                        
-                        
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
-
-
-        # elif each_key == 'strain_synonyms':
-            
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
-          
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
-           
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
-            
-            
-        #     for col in result.columns:
-         
-                
-        #         if result[col].dtype == np.object_:
-                    
-        #             a = (result[col].str.contains(r"\n"))
-                     
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
-
-                        
-                        
-                        
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
-
- 
         # elif each_key == 'culture_condition':
             
         #     # results['method'].dtype == np.object_
@@ -429,7 +151,7 @@ for each_section in config.sections():
           
         #     results.to_csv(each_key+".csv", index=False)
         #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
+        #     with open(each_key+".csv",'r') as f:
         #         data = f.read()
         #         # print(data)
            
@@ -437,138 +159,414 @@ for each_section in config.sections():
             
             
         #     for col in result.columns:
+        #         if result[col].dtype == np.object_:
+            
+        #             result[col] = result[col].str.replace('  ','')
+        #             result[col] = result[col].str.replace('\n','')
+                    
+        #     result.to_csv(each_key+".csv", index=False)
+            
+        elif each_key == 'strains':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                
+            
+                    result[col] = result[col].str.replace('  ','')
+                    result[col] = result[col].str.replace('\n','')
+                    
+            result.to_csv(each_key+".csv", index=False)
+             
+        if each_key == 'reference':
+            
+            
+           
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r', encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+                if result[col].dtype == np.object_:
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                
+                    # result[col] = result[col].str.replace('  ','')
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
+        
+        elif each_key == 'colony_morphology':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
          
                 
-        #         if result[col].dtype == np.object_:
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                        
+                        
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
+            
+        
+        elif each_key == 'culture_medium':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                            
+                            
+                        result[col] = result[col].str.replace('\n','')
+                result.to_csv(each_key+".csv", index=False)
+        
+
+        elif each_key == 'origin':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        # print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                    b =  (result[col].str.contains(r'\\'))
+                     
+                    if b.any() == True:
+                        
+                         
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                          
+                        
+                        
+                    result[col] = result[col].str.replace('\n','')
+                    result[col] = result[col].str.replace('\\','/')
+                    # result[col] = result[col].str.decode('unicode_escape')
+            result.to_csv(each_key+".csv", index=False)
+
+
+        elif each_key == 'strain_history':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                        
+                        
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
+
+
+        elif each_key == 'sequence':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                        
+                        
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
+
+
+        elif each_key == 'strain_synonyms':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
+                    
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+
+                        
+                        
+                        
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
+
+ 
+        elif each_key == 'culture_condition':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+         
+                
+                if result[col].dtype == np.object_:
                     
                  
-        #             a = (result[col].str.contains(r"\n"))
+                    a = (result[col].str.contains(r"\n"))
                      
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
  
                         
                        
-        #             result[col] = result[col].str.replace('  ','')    
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
+                    result[col] = result[col].str.replace('  ','')    
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
 
 
-        # elif each_key == 'field_basic_definition':
+        elif each_key == 'field_basic_definition':
             
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
            
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
             
             
-        #     for col in result.columns:
+            for col in result.columns:
          
                 
-        #         if result[col].dtype == np.object_:
+                if result[col].dtype == np.object_:
                     
-        #             a = (result[col].str.contains(r"\n"))
+                    a = (result[col].str.contains(r"\n"))
                      
-        #             if a.any() == True:
-        #                 print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
  
                         
                        
                        
-        #             result[col] = result[col].str.replace('\n','')
-        #     result.to_csv(each_key+".csv", index=False)
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
 
 
-        # elif each_key == 'multimedia':
+        elif each_key == 'multimedia':
             
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
            
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
             
             
-        #     for col in result.columns:
+            for col in result.columns:
                 
                 
              
                 
-        #         if result[col].dtype == np.object_:
+                if result[col].dtype == np.object_:
                     
-        #             a = (result[col].str.contains(r"\n"))
+                    a = (result[col].str.contains(r"\n"))
                      
-        #             if a.any() == True:
-        #                 # print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+                    if a.any() == True:
+                        # print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
  
-        #             b =  (result[col].str.contains(r'\\'))
+                    b =  (result[col].str.contains(r'\\'))
                     
-        #             if b.any() == True:
+                    if b.any() == True:
                         
-        #                 log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
                         
                        
                        
-        #             result[col] = result[col].str.replace('\n','')
+                    result[col] = result[col].str.replace('\n','')
              
-        #             result[col] = result[col].str.replace('\\','/')
-        #             # result[col] = result[col].str.decode('unicode_escape')
-        #     result.to_csv(each_key+".csv", index=False)
+                    result[col] = result[col].str.replace('\\','/')
+                    # result[col] = result[col].str.decode('unicode_escape')
+            result.to_csv(each_key+".csv", index=False)
 
 
-        # elif each_key == 'biosample':
+        elif each_key == 'biosample':
             
-        #     # results['method'].dtype == np.object_
-        #     # results['method'] = results['method'].str.replace('\n','')
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
           
-        #     results.to_csv(each_key+".csv", index=False)
-        #     # time.sleep(10)
-        #     with open(each_key+".csv",'r',encoding="utf8") as f:
-        #         data = f.read()
-        #         # print(data)
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r',encoding="utf8") as f:
+                data = f.read()
+                # print(data)
            
-        #     result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
             
             
-        #     for col in result.columns:
+            for col in result.columns:
                 
                 
              
                 
-        #         if result[col].dtype == np.object_:
+                if result[col].dtype == np.object_:
                     
-        #             a = (result[col].str.contains(r"\n"))
+                    a = (result[col].str.contains(r"\n"))
                      
-        #             if a.any() == True:
-        #                 # print(col,'true')
-        #                 log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
+                    if a.any() == True:
+                        # print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)	
  
-        #             b =  (result[col].str.contains(r'\\'))
+                    b =  (result[col].str.contains(r'\\'))
                     
-        #             if b.any() == True:
+                    if b.any() == True:
                         
-        #                 log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                        log_one.warning('Unescaped backslash' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
                         
                        
                        
-        #             result[col] = result[col].str.replace('\n','')
+                    result[col] = result[col].str.replace('\n','')
              
-        #             result[col] = result[col].str.replace('\\','/')
-        #             # result[col] = result[col].str.decode('unicode_escape')
-        #     result.to_csv(each_key+".csv", index=False)
+                    result[col] = result[col].str.replace('\\','/')
+                    # result[col] = result[col].str.decode('unicode_escape')
+            result.to_csv(each_key+".csv", index=False)
         
         # elif each_key == 'update_helper':
             
