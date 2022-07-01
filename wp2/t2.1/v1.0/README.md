@@ -13,10 +13,45 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
        4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
   
-  ## steps to install jenkins on windows: 
-    
-       
-# We have two folders here
+  ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/windows/) on windows: 
+   1. First of all, we need Java 8 or 11 to run Jenkins .
+   2. Go [here](https://www.jenkins.io/download/#downloading-jenkins) and install the Windows version
+   3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
+   4. Go to http://localhost:8080 and it will ask you for a password. To find it go to C:\Program Files\Jenkins\secrets and open the file initialAdminPassword, it contains the password.
+   5. Now selecct the suggested plugins option and you will be done.
+ 
+# Configuring the automation pipeline 
+
+1.Clone the repository:
+```
+git clone https://github.com/TIBHannover/diaspora.git
+```
+
+1. Acces repository:
+
+```
+cd disapora
+```
+
+3. Copy the files in the jenkins directory
+
+```
+xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
+xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
+```
+
+4. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
+
+
+# Running the pipeline
+
+Go to the automation file
+```
+cd wp2\t2.1\v1.0\pipeline\automate
+python automate.py
+```
+# Pipeline details and explanation 
+  Inside v1.0 there are two folders: 
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
  
