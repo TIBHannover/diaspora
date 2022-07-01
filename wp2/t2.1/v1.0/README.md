@@ -1,9 +1,11 @@
 # Transformation of Bacdive database into RDF by using one to one [RML](https://rml.io/specs/rml/#overview-0) mapping rules and [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) 
 
-For creating one to one rml mapping rules, CI/CD automation pipeline is used that will run all the steps from fetching the bacdive database, converting it into csv, cleaning it, transformaing it into rdf triples, storing the triples into the triple store, querying and validating the triples. For this automation, Python, Jenkins and GraphDB is required. Follow the below steps in order to install GraphDB and jenkins on windows. 
+For creating one to one rml mapping rules, CI/CD automation pipeline is used that will run all the steps from fetching the bacdive database, converting it into csv, cleaning it, transformaing it into rdf triples, storing the triples into the triple store, querying and validating the triples. For this automation, [Python](https://www.python.org/downloads/) , Jenkins and GraphDB is required. Follow the below steps in order to install GraphDB and jenkins on windows. 
 
       
 # Install prerequisites:
+
+  
 
   ## steps to install GraphDB as a desktop installation:
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
@@ -21,9 +23,9 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
    4. Go to http://localhost:8080 and it will ask you for a password. To find it go to C:\Program Files\Jenkins\secrets and open the file initialAdminPassword, it contains the password.
    5. Now selecct the suggested plugins option and you will be done.
  
-# Configuring the automation pipeline, currentky working with windows environment. 
+# Configuring the automation pipeline, currently working with windows environment. 
 
-1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\diasp. This will be used as local_repo_path in next steps:
+1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\Desktop\diasp. This will be used as local_repo_path in next steps:
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
@@ -85,7 +87,8 @@ python automate.py
               - validate_diaspora Folder
                  1. contains python script for the query validation, here we can validate the query results and the actual results. 
                         - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
-                        - automate folders contains python file that run all the jobs one by one, it also contains config file to specify which job we need to run and                            the order.
+                        - automate folders contains python file that run all the jobs one by one it also contains config file to specify which job we need to run and
+                          the order.
 
 
    
