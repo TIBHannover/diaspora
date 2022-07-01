@@ -26,7 +26,12 @@
     1. Contains python script to store generated rdf files into the graph database. 
   For installing GraphDB, follow the link:
           - [GraphDB](https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html)
-    
+          
+          After installing GraphDB, create a new repository with name Diaspora to store the generated rdf triples. 
+          
+          
+   ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
+
     
 ## Query_diaspora Folder
     1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
