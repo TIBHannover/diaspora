@@ -9,17 +9,17 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
 
   ## Steps to install GraphDB as a desktop installation:
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
-  2  For windows, follow the steps: 
+  2. For windows, follow the steps: 
        1. Download your GraphDB .exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
        4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
-     For Mac OS, follow the steps:
+  3. For Mac OS, follow the steps:
        1. Download the GraphDB .dmg file.
        2. Double click it and get a virtual disk on your desktop. Copy the program from the virtual disk to your hard disk applications folder, and you’re set.
        3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
-     For Linux, follow the steps:
+  4. For Linux, follow the steps:
        1. Download the GraphDB .rpm or .deb file.
        2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double click the package name.
        3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
