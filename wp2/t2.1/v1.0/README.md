@@ -4,11 +4,14 @@
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
       
-# Install prerequisites and dependencies:
-  ## steps to install Jenkins:
-     - For installing jenkins; you shoud have:
-       - 256 MB of RAM
-       - 1 GB of drive space (although 10 GB is a recommended minimum if running Jenkins as a Docker container)
+# Installation prerequisites and dependencies:
+  ## steps to install GraphDB as a desktop installation:
+  Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
+  For windows, follow the steps:
+     - Download your GraphDB .exe file.
+     - Double-click the application file and follow the on-screen installer prompts.
+     - Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
+    
        
   
  
