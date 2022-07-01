@@ -102,9 +102,9 @@ python automate.py
                           the order.
    
 
-     3. Apart from these five folders, which are basically our jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very     imperative for preparing and cleaning workspace:
-          - clean_workspace - It will clean the complete workspace, in case if contains something
-          - prepare_workspace - It will clean the repository from git and prepare the workspace for the rdf transformation direct mappings
+     3. Apart from these five folders, which are basically jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very  imperative for preparing and cleaning workspace:
+          - clean_workspace - It will clean the complete workspace, in case if it contains something.
+          - prepare_workspace - It will clone the git to our local repo path and after copying the jobs into jenkins workspace, will clean the local repo path. 
 
     
 
