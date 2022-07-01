@@ -23,12 +23,12 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
  
 # Configuring the automation pipeline, currentky working with windows environment. 
 
-1.Clone the repository into the Desktop folder with diasp:
+1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\diasp. This will be used as local_repo_path in next steps:
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
 
-2. Acces repository:
+2. Access repository:
 
 ```
 cd disapora
@@ -72,7 +72,7 @@ python automate.py
                     convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
                  3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed                       according to the number of csv files.
 
-             For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
+                 For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
               - Diaspora_store_to_graph Folder
                  1. Contains python script to store generated rdf files into the graph database. 
@@ -83,7 +83,7 @@ python automate.py
                  1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
     
               - validate_diaspora Folder
-                1. contains python script for the query validation, here we can validate the query results and the actual results. 
+                 1. contains python script for the query validation, here we can validate the query results and the actual results. 
                         - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
                         - automate folders contains python file that run all the jobs one by one, it also contains config file to specify which job we need to run and                            the order.
 
