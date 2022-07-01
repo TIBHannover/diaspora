@@ -15,15 +15,46 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
        4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
+  3. For Linux, follow the steps:
+       1. Download the GraphDB .rpm or .deb file.
+       2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double click the package name.
+       3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
 
       
-  ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/windows/) on windows: 
-   1. First of all, we need [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html) to run Jenkins .
-   2. Go [here](https://www.jenkins.io/download/#downloading-jenkins) and install the Windows version
-   3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
-   4. Go to http://localhost:8080 and it will ask you for a password. To find it go to C:\Program Files\Jenkins\secrets and open the file initialAdminPassword, it contains the password.
-   5. Now selecct the suggested plugins option and you will be done.
- 
+  ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/): 
+  1. For [windows](https://www.jenkins.io/doc/book/installing/windows/)
+       1. First of all, we need [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html) to run Jenkins .
+       2. Go [here](https://www.jenkins.io/download/#downloading-jenkins) and install the Windows version
+       3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
+       4. Go to http://localhost:8080 and it will ask you for a password. To find it go to C:\Program Files\Jenkins\secrets and open the file initialAdminPassword, it contains the password.
+       5. Now select the suggested plugins option and you will be done.
+  2. For [Linux](https://www.jenkins.io/doc/book/installing/linux/)
+       1. Install java with commands:
+
+          ```
+          sudo apt update
+          sudo apt install default-jdk
+          
+          ```
+       2. Install debian packages from here [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/):
+       3. Update the apt package list and install the latest version of Jenkins:
+          ```
+             sudo apt update
+             sudo apt install jenkins
+          
+          ```
+       4. Enable and start the Jenkins service by executing:
+          ```
+            sudo systemctl enable --now jenkins
+          ```
+       5. To start the setup process, go to http://localhost:8080/ and it will ask you for a password. To find the password go to: 
+            ```
+              sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+            ```
+       6. Now select the suggested plugins option and you will be done.
+
+
+       
 # Configuring the automation pipeline, currently working with windows environment. 
 
 1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\Desktop\diasp. This will be used as local_repo_path in next steps:
