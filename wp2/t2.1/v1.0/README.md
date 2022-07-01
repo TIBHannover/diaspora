@@ -15,17 +15,8 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
        4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
-  3. For Mac OS, follow the steps:
-       1. Download the GraphDB .dmg file.
-       2. Double click it and get a virtual disk on your desktop. Copy the program from the virtual disk to your hard disk applications folder, and you’re set.
-       3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
-  4. For Linux, follow the steps:
-       1. Download the GraphDB .rpm or .deb file.
-       2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double click the package name.
-       3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
+
       
-       
-  
   ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/windows/) on windows: 
    1. First of all, we need [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html) to run Jenkins .
    2. Go [here](https://www.jenkins.io/download/#downloading-jenkins) and install the Windows version
@@ -59,8 +50,8 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 ![path](https://user-images.githubusercontent.com/55106484/176935037-04442cb2-a133-4a08-8125-61df1053c58a.PNG)
 
+![p](https://user-images.githubusercontent.com/55106484/176946958-de23c907-575b-46e4-af55-265a34581ec1.PNG)
 
-![path2](https://user-images.githubusercontent.com/55106484/176921732-c61b989e-9c2a-49ed-8f4b-6e7229004eae.PNG)
 
 6. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
 
