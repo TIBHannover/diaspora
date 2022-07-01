@@ -3,6 +3,14 @@
 # We have two folders here
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
+      
+# Install prerequisites and dependencies:
+  ## steps to install Jenkins:
+     - For installing jenkins; you shoud have:
+       - 256 MB of RAM
+       - 1 GB of drive space (although 10 GB is a recommended minimum if running Jenkins as a Docker container)
+       
+  
  
 # pipeline Folder: 
 
