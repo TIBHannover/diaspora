@@ -23,7 +23,7 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
  
 # Configuring the automation pipeline, currentky working with windows environment. 
 
-1.Clone the repository:
+1.Clone the repository into the Desktop folder with diasp:
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
@@ -43,7 +43,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 4. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
 
-5. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to gloval properties and enable environment variables option and specify the paths, see below:
+5. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. specify the names of the path as mentioned below:
 
 ![path1](https://user-images.githubusercontent.com/55106484/176921715-b0aa112e-3798-4a5d-89ba-a69a4866c69e.PNG)
 
@@ -56,10 +56,10 @@ Go to the automation file
 cd wp2\t2.1\v1.0\pipeline\automate
 python automate.py
 ```
-# Pipeline details and explanation 
+# Pipeline details and explanation:
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
-         1. Inside pipeline folder,  
+         1. Inside pipeline folder, there are three folder automate, jobs and workspace.
 
    
 ## diaspora_to_csv Folder:
