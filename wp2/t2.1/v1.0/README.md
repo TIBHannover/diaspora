@@ -7,10 +7,10 @@
 # Installation prerequisites and dependencies:
   ## steps to install GraphDB as a desktop installation:
   Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
-  For windows, follow the steps:
-     - Download your GraphDB .exe file.
-     - Double-click the application file and follow the on-screen installer prompts.
-     - Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
+  For windows, follow the steps: 
+       1. Download your GraphDB .exe file.
+       2. Double-click the application file and follow the on-screen installer prompts.
+       3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
     
        
   
