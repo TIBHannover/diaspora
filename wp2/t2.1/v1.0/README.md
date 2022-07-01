@@ -75,7 +75,7 @@ python automate.py
          1. Inside pipeline folder, there are three folder automate, jobs and workspace.
             - Workspace folder contains the jobs that are required for the transformation of bacdive database into rdf.
               - diaspora_to_csv Folder:
-                 1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format, there is also a                           separate config file to add the table names.  
+                 1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format,there is also a  separate config file to add the table names.  
                  2. This script will take bacdive database as an input and will convert its tables into csv for the rdf transformation. 
 
 
@@ -83,7 +83,7 @@ python automate.py
                  1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
                  2. There is a folder named exam and inside this folder, we have some mapping rules files that is used to 
                     convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
-                 3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed                according to the number of csv files.
+                 3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed according to the number of csv files.
 
                  For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
@@ -102,7 +102,7 @@ python automate.py
                           the order.
    
 
-     3. Apart from these five folders, which are basically our jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very          imperative for preparing and cleaning workspace:
+     3. Apart from these five folders, which are basically our jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very     imperative for preparing and cleaning workspace:
           - clean_workspace - It will clean the complete workspace, in case if contains something
           - prepare_workspace - It will clean the repository from git and prepare the workspace for the rdf transformation direct mappings
 
