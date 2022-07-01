@@ -28,7 +28,7 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
 git clone https://github.com/TIBHannover/diaspora.git
 ```
 
-1. Acces repository:
+2. Acces repository:
 
 ```
 cd disapora
@@ -60,36 +60,35 @@ python automate.py
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
          1. Inside pipeline folder, there are three folder automate, jobs and workspace.
+            - Workspace folder contains the jobs that are required for the transformation of bacdive database into rdf.
+              - diaspora_to_csv Folder:
+                 1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format, there is also a                           separate config file to add the table names.  
+                 2. This script will take bacdive database as an input and will convert its tables into csv for the rdf transformation. 
+
+
+              - diaspora_rdf_map Folder:
+                 1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
+                 2. There is a folder named exam and inside this folder, we have some mapping rules files that is used to 
+                    convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
+                 3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed                       according to the number of csv files.
+
+             For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
+
+              - Diaspora_store_to_graph Folder
+                 1. Contains python script to store generated rdf files into the graph database. 
+
+
+    
+              - Query_diaspora Folder
+                 1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
+    
+              - validate_diaspora Folder
+                1. contains python script for the query validation, here we can validate the query results and the actual results. 
+                        - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
+                        - automate folders contains python file that run all the jobs one by one, it also contains config file to specify which job we need to run and                            the order.
+
 
    
-## diaspora_to_csv Folder:
-     1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format, there is also a separate config file to add the table names.  
-     2. This script will take bacdive database as an input and will convert its tables into csv for the rdf transformation. 
-     
-     
-## diaspora_rdf_map Folder:
-     1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-     2. There is a folder named exam and inside this folder, we have some mapping rules files that is used to 
-        convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
-     3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed accoring to   the number of csv files.
-    
- For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
-## Diaspora_store_to_graph Folder
-    1. Contains python script to store generated rdf files into the graph database. 
-  For installing GraphDB, follow the link:
-          - [GraphDB](https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html)
-          
-          After installing GraphDB, create a new repository with name Diaspora to store the generated rdf triples. 
-          
-          
-   ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
-
-    
-## Query_diaspora Folder
-    1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
-    
-## validate_diaspora Folder
-    1. contains python script for the query validation, here we can validate the query results and the actual results. 
     
 
