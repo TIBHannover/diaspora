@@ -47,11 +47,20 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 5. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. specify the names of the path as mentioned below:
 
-![path1](https://user-images.githubusercontent.com/55106484/176921715-b0aa112e-3798-4a5d-89ba-a69a4866c69e.PNG)
+![path](https://user-images.githubusercontent.com/55106484/176935037-04442cb2-a133-4a08-8125-61df1053c58a.PNG)
+
 
 ![path2](https://user-images.githubusercontent.com/55106484/176921732-c61b989e-9c2a-49ed-8f4b-6e7229004eae.PNG)
 
+6. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
+   ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
+   
+   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your local repo path and put your jenkins credentials.
+   ![jenkins](https://user-images.githubusercontent.com/55106484/176936641-cbdf7e20-fe02-43e4-81c5-9f7d432b9722.PNG)
+
 # Running the pipeline
+
+
 
 Go to the automation file
 ```
@@ -89,9 +98,11 @@ python automate.py
                         - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
                         - automate folders contains python file that run all the jobs one by one it also contains config file to specify which job we need to run and
                           the order.
-
-
    
+
+     3. Apart from these five folders, which are basically our jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very               imperative for preparing and cleaning workspace:
+          - clean_workspace - It will clean the complete workspace, in case if contains something
+          - prepare_workspace - It will clean the repository from git and prepare the workspace for the rdf transformation direct mappings
 
     
 
