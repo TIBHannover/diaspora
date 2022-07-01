@@ -4,13 +4,15 @@
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
       
-# Installation prerequisites and dependencies:
+# Install prerequisites:
   ## steps to install GraphDB as a desktop installation:
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
   2. For windows, follow the steps: 
        1. Download your GraphDB .exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
+       4. Create a repository in GraphDB for storing the generated rdf triples, see below:
+        - [GraphDB](https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html)
     
        
   
