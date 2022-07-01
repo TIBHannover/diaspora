@@ -1,8 +1,7 @@
-# Steps to transform Diaspora database into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
- 
-# We have two folders here
-      1. mappings: contains all the mapping files. 
-      2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
+# Transformation of Bacdive database into one to one [RML](https://rml.io/specs/rml/#overview-0) mapping rules using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) 
+
+For creating one to one rml mapping rules, CI/CD automation pipeline is used that will run all the steps from fetching the bacdive database, converting it into csv, cleaning it, transformaing it into rdf triples, storing the triples into the triple store, querying and validating the triples. For this automation, Jenkins and GraphDB is required. Follow the below steps in order to install GraphDB and jenkins on windows. 
+
       
 # Install prerequisites:
   ## steps to install GraphDB as a desktop installation:
@@ -11,11 +10,15 @@
        1. Download your GraphDB .exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
-       4. Create a repository in GraphDB for storing the generated rdf triples, see below:
-        - [GraphDB](https://graphdb.ontotext.com/documentation/free/free/run-desktop-installation.html)
+       4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
+       ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
+  
+  ## steps to install jenkins on windows: 
     
        
-  
+# We have two folders here
+      1. mappings: contains all the mapping files. 
+      2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
  
 # pipeline Folder: 
 
@@ -29,7 +32,7 @@
      
 ## diaspora_rdf_map Folder:
      1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-     2. There is a folder named exam  and inside this folder, we have some mapping rules files that is used to 
+     2. There is a folder named exam and inside this folder, we have some mapping rules files that is used to 
         convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
      3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed accoring to   the number of csv files.
     
