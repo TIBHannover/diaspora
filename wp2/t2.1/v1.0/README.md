@@ -1,4 +1,4 @@
-# Transformation of Bacdive database into one to one [RML](https://rml.io/specs/rml/#overview-0) mapping rules using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) 
+# Transformation of Bacdive database into RDF by using one to one [RML](https://rml.io/specs/rml/#overview-0) mapping rules and [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) 
 
 For creating one to one rml mapping rules, CI/CD automation pipeline is used that will run all the steps from fetching the bacdive database, converting it into csv, cleaning it, transformaing it into rdf triples, storing the triples into the triple store, querying and validating the triples. For this automation, Jenkins and GraphDB is required. Follow the below steps in order to install GraphDB and jenkins on windows. 
 
