@@ -84,7 +84,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 6. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
 
-7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. specify the names of the path as mentioned below:
+7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
 ![path](https://user-images.githubusercontent.com/55106484/176935037-04442cb2-a133-4a08-8125-61df1053c58a.PNG)
 
@@ -110,40 +110,35 @@ python automate.py
 ```
 # Pipeline details and explanation:
       1. mappings: contains all the mapping files. 
-      2. pipeline: contains all the codes, scripts used to transform the diaspora database into rdf.
-         1. Inside pipeline folder, there are three folder automate, jobs and workspace.
-            - Workspace folder contains the jobs that are required for the transformation of bacdive database into rdf.
-              - diaspora_to_csv Folder:
-                 1. Contains python script that will connect to the mysql workbench and then will transform its bacdive database into csv format,there is also a  separate config file to add the table names.  
-                 2. This script will take bacdive database as an input and will convert its tables into csv for the rdf transformation. 
+      2. pipeline: contains all the codes, scripts used to transform the diaspora database into RDF.
+         1. Inside the `pipeline` folder, there are three folders `automate`, `jobs` and `workspace`.
+            - The `workspace` folder contains the jobs that are required for the transformation of Bacdive database into RDF.
+              - The diaspora_to_csv folder:
+                 1. Contains python script that connects to the MySql database and transforms the Bacdive database into csv format. 
 
-
-              - diaspora_rdf_map Folder:
-                 1. Contains SDM-RDfizer tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-                 2. There is a folder named exam and inside this folder, we have some mapping rules files that is used to 
-                    convert the csv file into rdf transformations. There is one folder output which is used to store the rdf transformed files. 
-                 3. rdf.py has a parameter "number_of_datasets", currently we are transforming 68 csv files that's why the parameter is set to 68 and can be changed according to the number of csv files.
-
-                 For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
-
-              - Diaspora_store_to_graph Folder
+              - The diaspora_rdf_map folder contains:
+                 1. [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool and a python file to create config file that will be used to run the SDM-RDFizer. 
+                 2. The `exam` folder that contains the RML mapping files. 
+                 3. The `output` folder which is used to store the generated RDF files. 
+                 3. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
+                 
+              - The diaspora_store_to_graph folder:
                  1. Contains python script to store generated rdf files into the graph database. 
 
-
     
-              - Query_diaspora Folder
+              - The query_diaspora folder:
                  1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
     
-              - validate_diaspora Folder
+              - The validate_diaspora folder:
                  1. contains python script for the query validation, here we can validate the query results and the actual results. 
                         - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
                         - automate folders contains python file that run all the jobs one by one it also contains config file to specify which job we need to run and
                           the order.
    
 
-     3. Apart from these five folders, which are basically jenkins jobs. There are two more jobs that are not contributing in the rdf transformation but very  imperative for preparing and cleaning workspace:
-          - clean_workspace - It will clean the complete workspace, in case if it contains something.
-          - prepare_workspace - It will clone the git to our local repo path and after copying the jobs into jenkins workspace, will clean the local repo path. 
+     3. Before each run of the pipeline the following two jobs are executed to prepare the workspace:
+          - clean_workspace: It cleans the complete workspace so that multiple runs of the piep;line do not interefer with each other and always the lateset version of the mappaing and config files are used.
+          - prepare_workspace: It clones the git repository to the `local_repo_path` and then copies the jobs and mapping files into respecive folders in the jenkins workspace. 
 
     
 
