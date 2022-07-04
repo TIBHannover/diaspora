@@ -1,19 +1,21 @@
-# Transformation of Bacdive database into RDF by using one to one [RML](https://rml.io/specs/rml/#overview-0) mapping rules and [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) 
+# Semantic Transformation of the Bacdive Database 
 
-For creating one to one rml mapping rules, CI/CD automation pipeline is used that will run all the steps from fetching the bacdive database, converting it into csv, cleaning it, transformaing it into rdf triples, storing the triples into the triple store, querying and validating the triples. For this automation, [Python](https://www.python.org/downloads/) , Jenkins and GraphDB is required. Follow the below steps in order to install GraphDB and jenkins on windows. 
+This is version 1.0.0 of the RDF counter part of Backdive database produced by TIB in the context of the DIASPora project. Version 1.0.0 is a direct map of the database, meaning tit does not annotate the original data with external ontologies, instead it utilizes the structure of the database as its RDF graph structure. Future versions will iteratively add ontologies.
+Transformation is done using RML mappings and rules.
+
+In order to automate teh transformation process and contril over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is mainatained under the same cource control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), Jenkins and GraphDB are required, which should be insllaed as follows: 
 
       
-# Install prerequisites:
+# Installation prerequisites:
 
   
-
-  ## Steps to install GraphDB as a desktop installation:
+  ## install GraphDB (as a desktop installation):
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
   2. For windows, follow the steps: 
        1. Download your GraphDB .exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
-       4. Create a repository in GraphDB with the name "Diaspora" for storing the generated rdf triples, see below:
+       4. Create a repository in GraphDB with the name `Diaspora` for storing the generated RDF triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
   3. For Linux, follow the steps:
        1. Download the GraphDB .rpm or .deb file.
@@ -23,11 +25,11 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
       
   ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/): 
   1. For [windows](https://www.jenkins.io/doc/book/installing/windows/)
-       1. First of all, we need [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html) to run Jenkins .
-       2. Go [here](https://www.jenkins.io/download/#downloading-jenkins) and install the Windows version
+       1. Install [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html).
+       2. Visit the [Jenkins](https://www.jenkins.io/download/#downloading-jenkins) download page and choose the Windows version. Download the selected file.
        3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
-       4. Go to http://localhost:8080 and it will ask you for a password. To find it go to C:\Program Files\Jenkins\secrets and open the file initialAdminPassword, it contains the password.
-       5. Now select the suggested plugins option and you will be done.
+       4. Open http://localhost:8080 in your browser. Login using the initial password (you can find the initial password in C:\Program Files\Jenkins\secrets\initialAdminPassword file)
+       5. Select the suggested plugins option and you are done.
   2. For [Linux](https://www.jenkins.io/doc/book/installing/linux/)
        1. Install java with commands:
 
@@ -51,40 +53,45 @@ For creating one to one rml mapping rules, CI/CD automation pipeline is used tha
             ```
               sudo cat /var/lib/jenkins/secrets/initialAdminPassword
             ```
-       6. Now select the suggested plugins option and you will be done.
+       6. Now select the suggested plugins option and you are done.
 
 
        
-# Configuring the automation pipeline, currently working with windows environment. 
+# Configuring the automation pipeline (currently working on Windows only): 
 
-1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\Desktop\diasp. This will be used as local_repo_path in next steps:
+1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as local_repo_path in next steps:
+
+2. Chnage to local_repo_path 
+
+3. Clone the GitHb repository to local_repo_path 
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
 
-2. Access repository:
+4. Access repository:
 
 ```
 cd disapora
 ```
+Now, you should be in `C:\Users\<your_user>\github\projects\diaspora`
 
-3. Copy the files in the jenkins directory
+5. Copy the files in the jenkins directory
 
 ```
 xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
 xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
 ```
 
-4. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
+6. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
 
-5. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. specify the names of the path as mentioned below:
+7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable, for that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. specify the names of the path as mentioned below:
 
 ![path](https://user-images.githubusercontent.com/55106484/176935037-04442cb2-a133-4a08-8125-61df1053c58a.PNG)
 
 ![p](https://user-images.githubusercontent.com/55106484/176946958-de23c907-575b-46e4-af55-265a34581ec1.PNG)
 
 
-6. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
+8. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
