@@ -3,10 +3,15 @@
 This is version 1.0.0 of the RDF counter part of Backdive database produced by TIB in the context of the DIASPora project. Version 1.0.0 is a direct map of the database, meaning tit does not annotate the original data with external ontologies, instead it utilizes the structure of the database as its RDF graph structure. Future versions will iteratively add ontologies.
 Transformation is done using RML mappings and rules.
 
-In order to automate teh transformation process and contril over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is mainatained under the same cource control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), Jenkins and GraphDB are required, which should be insllaed as follows: 
+In order to automate teh transformation process and contril over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is mainatained under the same cource control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), SQL workbench, Jenkins and GraphDB are required, which should be insllaed as follows: 
 
       
 # Installation prerequisites:
+
+  ## Steps to install SQL Workbench for windows:
+  1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
+  2. After downloading the installer we can select the setup type, depending upon the requirement. 
+  3. Provide username and password and you are good to go. 
 
   
   ## install GraphDB (as a desktop installation):
