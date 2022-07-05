@@ -34,7 +34,7 @@ call xcopy  Query_diaspora %jenkins_path%\Query_diaspora /I /H /C /E&#xd;
 &#xd;
 call xcopy  validate_diaspora %jenkins_path%\validate_diaspora /I /H /C /E&#xd;
 &#xd;
-call cd %Desktop_path%&#xd;
+call cd %local_repo_path%&#xd;
 &#xd;
 call rmdir diaspora /S /Q&#xd;
 &#xd;

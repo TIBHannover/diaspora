@@ -75,8 +75,8 @@ config.readfp(open('./tables.properties'))
 mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = '8227',
-    database= "b'diaspora'")
+    passwd = '',
+    database= "")
 
 # print(mydb)
 
