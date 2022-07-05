@@ -21,7 +21,7 @@ call cd diasp&#xd;
 &#xd;
 git clone https://github.com/TIBHannover/diaspora.git&#xd;
 &#xd;
-call cd diaspora/wp2/t2.1/v1.0/pipeline&#xd;
+call cd diaspora/wp2/t2.1/v1.0/pipeline/workspace&#xd;
 &#xd;
 call xcopy diaspora_to_csv %jenkins_path%\diaspora_to_csv /I /H /C /E&#xd;
 &#xd;
