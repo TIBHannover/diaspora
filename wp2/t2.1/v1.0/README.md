@@ -55,12 +55,23 @@ In order to automate the transformation process and control over the input table
             ```
        6. Now select the suggested plugins option and you are done.
        
-  ## Steps to install SQL Workbench for windows:
-  1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
-  2. After downloading the installer we can select the setup type, depending upon the requirement. 
-  3. Provide username and password and you are good to go. 
-  4. Once everything is setup, load the database dump into the workbench:
-   
+  ## Steps to install SQL Workbench:
+  1. For windows:
+        1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
+        2. After downloading the installer we can select the setup type, depending upon the requirement. 
+        3. Provide username and password and you are good to go. 
+  2. For Linux:
+        1. The DEB package can be installed from [here](https://dev.mysql.com/downloads/workbench/).
+        2. After downloadoing the DEB file, go to terminal and write these commanda:
+         ```
+          sudo dpkg -i <path_to_deb_file>
+          sudo apt-get update
+          
+         ```
+        
+  
+  3. Once everything is setup, load the database dump into the workbench:
+
      - For that, copy the database dump into your jenkins workspace:
       ```
       xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
