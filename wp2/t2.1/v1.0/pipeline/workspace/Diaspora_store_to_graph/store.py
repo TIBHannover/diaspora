@@ -7,7 +7,7 @@ import time
 #### importing data into repositories
 
 
-'''insering data into repo hybrid'''
+'''insering data into repo diaspora'''
 # start = time.time()
 
 
@@ -15,7 +15,7 @@ import os
 import natsort
 from pathlib import Path
 
-path = '../diaspora_rdf_map/exam/output'
+path = '../diaspora_rdf_map/RML_Files/output'
 
 dirs = os.listdir(path)
 dirs = natsort.natsorted(dirs)
