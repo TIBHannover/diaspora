@@ -3,7 +3,7 @@
 This is version 1.0.0 of the RDF counter part of Backdive database produced by TIB in the context of the DIASPora project. Version 1.0.0 is a direct map of the database, meaning tit does not annotate the original data with external ontologies, instead it utilizes the structure of the database as its RDF graph structure. Future versions will iteratively add ontologies.
 Transformation is done using RML mappings and rules.
 
-In order to automate teh transformation process and contril over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is mainatained under the same cource control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), SQL workbench, Jenkins and GraphDB are required, which should be insllaed as follows: 
+In order to automate the transformation process and control over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is mainatained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), SQL workbench, Jenkins and GraphDB are required, which should be insllaed as follows: 
 
       
 # Installation prerequisites:
@@ -60,16 +60,18 @@ In order to automate teh transformation process and contril over the input table
   2. After downloading the installer we can select the setup type, depending upon the requirement. 
   3. Provide username and password and you are good to go. 
   4. Once everything is setup, load the database dump into the workbench:
-     - For that go on the server option and click data import and then import can be done, select import from self-contained file and load the database dump. 
-     - copy the database dump into your jenkins workspace:
+   
+     - For that, copy the database dump into your jenkins workspace:
       ```
       xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
       ```
      - The dump file is a zip, please unzip it before importing it into SQL workbench. 
+     - Go to the server option and click data import and then import can be done, select import from self-contained file and import the database dump, see below:
 
 
-  ![i8mport](https://user-images.githubusercontent.com/55106484/177311543-dde6ac6f-1ac8-491e-af20-51d7bad2c23f.PNG)
 
+
+![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
 
 
        
@@ -102,9 +104,11 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
-![path](https://user-images.githubusercontent.com/55106484/176935037-04442cb2-a133-4a08-8125-61df1053c58a.PNG)
 
-![p](https://user-images.githubusercontent.com/55106484/176946958-de23c907-575b-46e4-af55-265a34581ec1.PNG)
+![path3](https://user-images.githubusercontent.com/55106484/177315853-76884c03-183d-4dae-9b8a-356cdc2c8f6e.PNG)
+
+
+![path4](https://user-images.githubusercontent.com/55106484/177315862-af78f503-4673-4525-9100-adb62ca81a9e.PNG)
 
 
 8. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
@@ -134,7 +138,7 @@ python automate.py
 
               - The diaspora_rdf_map folder contains:
                  1. [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-                 2. The `exam` folder that contains the RML mapping files. 
+                 2. The `RML_Files` folder that contains the RML mapping files. 
                  3. The `output` folder which is used to store the generated RDF files. 
                  3. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
                  
