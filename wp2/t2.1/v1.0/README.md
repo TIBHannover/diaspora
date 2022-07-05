@@ -105,7 +105,8 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
 
-![path3](https://user-images.githubusercontent.com/55106484/177315853-76884c03-183d-4dae-9b8a-356cdc2c8f6e.PNG)
+![path5](https://user-images.githubusercontent.com/55106484/177336953-de05409b-45ca-4e6b-87db-6bc22ba7f177.PNG)
+
 
 
 ![path4](https://user-images.githubusercontent.com/55106484/177315862-af78f503-4673-4525-9100-adb62ca81a9e.PNG)
