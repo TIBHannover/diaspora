@@ -8,16 +8,7 @@ In order to automate teh transformation process and contril over the input table
       
 # Installation prerequisites:
 
-  ## Steps to install SQL Workbench for windows:
-  1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
-  2. After downloading the installer we can select the setup type, depending upon the requirement. 
-  3. Provide username and password and you are good to go. 
-  4. Once everything is setup, load the database dump into the workbench:
-     - For that go on the server option and click data import and then import can be done, select import from self-contained file and load the database dump. 
-
-
-  ![i8mport](https://user-images.githubusercontent.com/55106484/177311543-dde6ac6f-1ac8-491e-af20-51d7bad2c23f.PNG)
-
+ 
   ## install GraphDB (as a desktop installation):
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
   2. For windows, follow the steps: 
@@ -63,6 +54,22 @@ In order to automate teh transformation process and contril over the input table
               sudo cat /var/lib/jenkins/secrets/initialAdminPassword
             ```
        6. Now select the suggested plugins option and you are done.
+       
+  ## Steps to install SQL Workbench for windows:
+  1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
+  2. After downloading the installer we can select the setup type, depending upon the requirement. 
+  3. Provide username and password and you are good to go. 
+  4. Once everything is setup, load the database dump into the workbench:
+     - For that go on the server option and click data import and then import can be done, select import from self-contained file and load the database dump. 
+     - copy the database dump into your jenkins workspace:
+      ```
+      xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
+      ```
+     - The dump file is a zip, please unzip it before importing it into SQL workbench. 
+
+
+  ![i8mport](https://user-images.githubusercontent.com/55106484/177311543-dde6ac6f-1ac8-491e-af20-51d7bad2c23f.PNG)
+
 
 
        
