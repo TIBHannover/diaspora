@@ -142,11 +142,11 @@ python automate.py
                  3. The `output` folder which is used to store the generated RDF files. 
                  3. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
                  
-              - The diaspora_store_to_graph folder:
+              - The Diaspora_store_to_graph folder:
                  1. Contains python script to store generated rdf files into the graph database. 
 
     
-              - The query_diaspora folder:
+              - The Query_diaspora folder:
                  1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
     
               - The validate_diaspora folder:
