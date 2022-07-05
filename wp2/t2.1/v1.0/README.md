@@ -62,12 +62,13 @@ In order to automate the transformation process and control over the input table
         3. Provide username and password and you are good to go. 
   2. For Linux:
         1. The DEB package can be installed from [here](https://dev.mysql.com/downloads/workbench/).
-        2. After downloadoing the DEB file, go to terminal and write these commanda:
-         ```
-          sudo dpkg -i <path_to_deb_file>
-          sudo apt-get update
+        2. After downloadoing the DEB file, go to terminal and write these commands:
+        
+ ```
+             sudo dpkg -i <path_to_deb_file>
+             sudo apt-get update
           
-         ```
+ ```
         
   
   3. Once everything is setup, load the database dump into the workbench:
