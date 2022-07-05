@@ -44,7 +44,7 @@ config.add_section('datasets')
 
 number = str(16)
 
-output_folder = '${default:main_directory}/exam/output' 
+output_folder = '${default:main_directory}/RML_Files/output' 
 
 
 
@@ -90,7 +90,7 @@ for each_section in config1.sections():
         
         config.set(dataset,'name', names)
             
-        mappings = '${default:main_directory}/exam/mappings/' + names + '.ttl'
+        mappings = '${default:main_directory}/RML_Files/mappings/' + names + '.ttl'
             
         config.set(dataset,'mapping', mappings)
         x+=1
