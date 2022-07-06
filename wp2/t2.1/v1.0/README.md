@@ -145,7 +145,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
-   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your local repo path and put your jenkins credentials.
+   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your local_repo_path and put your jenkins credentials.
    
    ![jenkins](https://user-images.githubusercontent.com/55106484/176936641-cbdf7e20-fe02-43e4-81c5-9f7d432b9722.PNG)
 
