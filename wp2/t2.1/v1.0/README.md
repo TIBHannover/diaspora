@@ -71,13 +71,13 @@ In order to automate the transformation process and control over the input table
             ```
               sudo cat /var/lib/jenkins/secrets/initialAdminPassword
             ```
-       6. Now select the suggested plugins option and you are done.
+       6. Now select the suggested plugins option and jenkins is ready to use.
        
-  ## Steps to install SQL Workbench:
+  ## Steps to install MySQL Workbench:
   1. For windows:
         1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
         2. After downloading the installer the setup type can be selected, depending upon the requirement. 
-        3. Provide username and password and you are good to go. 
+        3. Provide username and password and it is ready to use. 
   2. For Linux:
         1. The DEB package can be installed from [here](https://dev.mysql.com/downloads/workbench/).
         2. After downloadoing the DEB file, go to terminal and write these commands:
@@ -161,16 +161,17 @@ python automate.py
 # Pipeline details and explanation:
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, scripts used to transform the diaspora database into RDF.
-         1. Inside the `pipeline` folder, there are three folders `automate`, `jobs` and `workspace`.
+         1. Inside the `pipeline` folder, there are four folders `database_dump`, `automate`, `jobs` and `workspace`.
             - The `workspace` folder contains the jobs that are required for the transformation of Bacdive database into RDF.
               - The diaspora_to_csv folder:
                  1. Contains python script that connects to the MySql database and transforms the Bacdive database into csv format. 
 
               - The diaspora_rdf_map folder contains:
                  1. [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-                 2. The `Mapping` folder that contains the RML mapping files. 
-                 3. The `output` folder which is used to store the generated RDF files. 
-                 3. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
+                 2. The `Mapping` folder that contains two folders `mappings`, `output`. 
+                 3. The `mappings` folder contains the RML mapping files.
+                 4. The `output` folder which is used to store the generated RDF files. 
+                 5. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
                  
               - The Diaspora_store_to_graph folder:
                  1. Contains python script to store generated rdf files into the graph database. 
@@ -181,13 +182,15 @@ python automate.py
     
               - The validate_diaspora folder:
                  1. contains python script for the query validation, here we can validate the query results and the actual results. 
-                        - Jobs folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
-                        - automate folders contains python file that run all the jobs one by one it also contains config file to specify which job we need to run and
-                          the order.
-   
+                 
+            - `jobs` folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
+            - `automate` folder contains python file that run all the jobs one by one it also contains config file to specify which job is needed to run and
+               the order.
+            - `database_dump` folder contains zip dump file which can be unzipped, and then can be imported into MySQL workbench.  
+
 
      3. Before each run of the pipeline the following two jobs are executed to prepare the workspace:
-          - clean_workspace: It cleans the complete workspace so that multiple runs of the piep;line do not interefer with each other and always the lateset version of the mappaing and config files are used.
+          - clean_workspace: It cleans the complete workspace so that multiple runs of the pipeline do not interefer with each other and always the latest version of the mappaing and config files are used.
           - prepare_workspace: It clones the git repository to the `local_repo_path` and then copies the jobs and mapping files into respecive folders in the jenkins workspace. 
 
     
