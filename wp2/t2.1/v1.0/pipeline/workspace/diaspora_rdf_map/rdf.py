@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  1 00:00:29 2022
 
-@author: GuptaR
-"""
 
 
 
@@ -44,7 +40,7 @@ config.add_section('datasets')
 
 number = str(16)
 
-output_folder = '${default:main_directory}/RML_Files/output' 
+output_folder = '${default:main_directory}/Mapping/output' 
 
 
 
@@ -90,7 +86,7 @@ for each_section in config1.sections():
         
         config.set(dataset,'name', names)
             
-        mappings = '${default:main_directory}/RML_Files/mappings/' + names + '.ttl'
+        mappings = '${default:main_directory}/Mapping/mappings/' + names + '.ttl'
             
         config.set(dataset,'mapping', mappings)
         x+=1
