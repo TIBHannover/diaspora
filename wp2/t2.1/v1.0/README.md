@@ -48,7 +48,7 @@ In order to automate the transformation process and control over the input table
                        /usr/share/keyrings/jenkins-keyring.asc > /dev/null
                   
               ```
-           Add repository:
+          - Add repository:
            
              ```
                        echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
