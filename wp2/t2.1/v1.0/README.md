@@ -128,9 +128,10 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 8. load the database dump into the workbench:
 
-     - For that, copy the database dump into your jenkins workspace:
+     - For that go the local_repo_path where the git repo is cloned, go to the location:
       ```
-      xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
+      diaspora\wp2\t2.1\v1.0\pipeline\database_dump 
+      
       ```
      - The dump file is a zip, please unzip it before importing it into SQL workbench. 
      - Go to the server option and click data import and then import can be done, select import from self-contained file and import the database dump, see below:
