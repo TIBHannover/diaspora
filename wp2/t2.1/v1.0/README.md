@@ -1,12 +1,12 @@
 # Semantic Transformation of the Bacdive Database 
 
 This is version 1.0.0 of the RDF counterpart of the Bacdive database produced by TIB in the context of the DIASPora project. 
-Version 1.0.0 is a direct map of the database, meaning TIB does not annotate the original data with external ontologies, instead it utilizes the structure of the database as the structure of the transformed RDF graph. Future versions will iteratively add ontologies.
+Version 1.0.0 is a direct map of the database, meaning TIB does not annotate the original data with external ontologies, instead, it utilizes the structure of the database as the structure of the transformed RDF graph. Future versions will iteratively add ontologies.
 Transformation is done using RML mappings and rules.
 
-In order to automate the transformation process and control over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline has been employed. 
+In order to automate the transformation process and control the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline has been employed. 
 The pipeline is maintained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. 
-The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples in the triple store of choice, and querying and validating the triples. 
+The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transforming into RDF triples, storing the triples in the triple store of choice, and querying and validating the triples. 
 In order to run the pipeline and the steps Python, MySQL workbench, Jenkins, and GraphDB are required.
 In the following sections the installation, configuration, and running of the tools as well as the pipeline are described: 
 
@@ -24,16 +24,16 @@ In the following sections the installation, configuration, and running of the to
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
   3. For Linux, follow these steps:
        1. Download the GraphDB .rpm or .deb file.
-       2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double click the package name.
+       2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double-click the package name.
        3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
 
       
-  ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/): 
+  ## Steps to install [Jenkins](https://www.jenkins.io/doc/book/installing/): 
   
-  1. For [windows](https://www.jenkins.io/doc/book/installing/windows/)
+  1. For [Windows](https://www.jenkins.io/doc/book/installing/windows/)
        1. Install [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html).
        2. Visit the [Jenkins](https://www.jenkins.io/download/#downloading-jenkins) download page and choose the Windows version. Download the selected file.
-       3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
+       3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for Jenkins.
        4. Open http://localhost:8080 in your browser. Login using the initial password (you can find the initial password in C:\Program Files\Jenkins\secrets\initialAdminPassword file)
        5. Select the suggested plugins option and you are done.
        
@@ -45,7 +45,7 @@ In the following sections the installation, configuration, and running of the to
           sudo apt install openjdk-11-jdk
           
           ```
-       2. Install debian packages from here [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/) or add key and repositories from below:
+       2. Install Debian packages from [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/) or add key and repositories from below:
           - Add key:
           
               ``` 
@@ -76,16 +76,16 @@ In the following sections the installation, configuration, and running of the to
             ```
               sudo cat /var/lib/jenkins/secrets/initialAdminPassword
             ```
-       6. Now select the suggested plugins option and jenkins is ready to use.
+       6. Now select the suggested plugins option and Jenkins is ready to use.
        
   ## Steps to install MySQL Workbench:
   1. For windows:
-        1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
+        1. The MySQL installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
         2. After downloading the installer the setup type can be selected, depending upon the requirement. 
         3. Provide username and password and it is ready to use. 
   2. For Linux:
         1. The DEB package can be installed from [here](https://dev.mysql.com/downloads/workbench/).
-        2. After downloadoing the DEB file, go to terminal and write these commands:
+        2. After downloading the DEB file, go to the terminal and issue these commands:
         
  ```
              sudo dpkg -i <path_to_deb_file>
@@ -97,11 +97,11 @@ In the following sections the installation, configuration, and running of the to
        
 # Configuring the automation pipeline (currently working on Windows only): 
 
-1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as `local_repo_path` in next steps:
+1. Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as `local_repo_path` in the next steps:
 
 2. Change to `local_repo_path` 
 
-3. Clone the GitHb repository to `local_repo_path` 
+3. Clone the GitHub repository to `local_repo_path` 
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
@@ -109,20 +109,20 @@ git clone https://github.com/TIBHannover/diaspora.git
 4. Access repository:
 
 ```
-cd disapora
+cd diaspora
 ```
 Now, you should be in `C:\Users\<your_user>\github\projects\diaspora`
 
-5. Copy the pipeline files into the jenkins workspace directory
+5. Copy the pipeline files into the Jenkins workspace directory
 
 ```
 xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
 xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
 ```
 
-6. In jenkins, click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
+6. In Jenkins, click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
 
-7. Specify the path of the python, jenkins workspace, xcopy and the cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
+7. Specify the path of the python, Jenkins workspace, xcopy, and the cloned repository in the Jenkins environment variable. For that inside the manage Jenkins option, go to configure the system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
 
 ![path5](https://user-images.githubusercontent.com/55106484/177336953-de05409b-45ca-4e6b-87db-6bc22ba7f177.PNG)
@@ -133,13 +133,13 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 8. load the database dump into the workbench:
 
-     - For that go the local_repo_path where the git repo is cloned, go to the location:
+     - Go to the `local_repo_path` folder where the git repo is cloned and then go to the location:
       ```
       diaspora\wp2\t2.1\v1.0\pipeline\database_dump 
       
       ```
      - The dump file is a zip, unzip it before importing it into MySQL workbench. 
-     - Go to the server option and click data import. Select import from self-contained file and import the database dump, see below:
+     - Go to the server option and click data import. Select import from the self-contained file and import the database dump, see below:
 
 
 
@@ -147,11 +147,11 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 ![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
 
 
-9. Once Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your recently imported MySQL database in order to connect to the database.    
+9. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of your recently imported MySQL database to connect to the database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
-   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your `local_repo_path` and put your jenkins credentials there.
+   Also to connect to the Jenkins instance, go to automate.py file inside automate folder in your `local_repo_path` and put your Jenkins credentials there.
    
    ![jenkins](https://user-images.githubusercontent.com/55106484/176936641-cbdf7e20-fe02-43e4-81c5-9f7d432b9722.PNG)
 
@@ -159,15 +159,15 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 
 
-Go to the the automate folder and run the automate.py Python file
+Go to the `automate` folder and run the automate.py Python file:
 ```
 cd wp2\t2.1\v1.0\pipeline\automate
 python automate.py
 ```
 # Pipeline details and explanation:
       1. mappings: contains all the mapping files. 
-      2. pipeline: contains all the codes, scripts used to transform the diaspora database into RDF.
-         1. Inside the `pipeline` folder, there are four folders `database_dump`, `automate`, `jobs` and `workspace`.
+      2. pipeline: contains all the codes, and scripts used to transform the diaspora database into RDF.
+         1. Inside the `pipeline` folder, there are four folders `database_dump`, `automate`, `jobs`, and `workspace`.
             - The `workspace` folder contains the jobs that are required for the transformation of Bacdive database into RDF.
               - The diaspora_to_csv folder:
                  1. Contains python script that connects to the MySql database and transforms the Bacdive database into csv format. 
@@ -177,27 +177,27 @@ python automate.py
                  2. The `Mapping` folder that contains two folders `mappings`, `output`. 
                  3. The `mappings` folder contains the RML mapping files.
                  4. The `output` folder which is used to store the generated RDF files. 
-                 5. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
+                 5. An rdf.py file that has a parameter "number_of_datasets". Currently, 68 tables are being transferred.
                  
               - The Diaspora_store_to_graph folder:
-                 1. Contains python script to store generated rdf files into the graph database. 
+                 1. Contains python script to store generated RDF files into the graph database. 
 
     
               - The Query_diaspora folder:
-                 1. Contains script to query the rdf files store in the graph database, and convert in into the rdf triples for the validation. 
+                 1. Contains script to query the RDF files store in the graph database, and convert in into the RDF triples for the validation. 
     
               - The validate_diaspora folder:
-                 1. contains python script for the query validation, here we can validate the query results and the actual results. 
+                 1. contains python script for the validation of the query results agianst predefined expected results. 
                  
-            - `jobs` folder contains config files of the jobs, these config files will have all the steps and configuration that is required to run the job.
-            - `automate` folder contains python file that run all the jobs one by one it also contains config file to specify which job is needed to run and
+            - `jobs` folder contains config files of the jobs, these config files have all the steps and configuration that are required to run the job.
+            - `automate` folder contains Python code that sequentially runs all the jobs. It also contains a config file to specify which job is needed to run and
                the order.
-            - `database_dump` folder contains zip dump file which can be unzipped, and then can be imported into MySQL workbench.  
+            - `database_dump` folder contains a zip dump file of the database.  
 
 
      3. Before each run of the pipeline the following two jobs are executed to prepare the workspace:
-          - clean_workspace: It cleans the complete workspace so that multiple runs of the pipeline do not interefer with each other and always the latest version of the mappaing and config files are used.
-          - prepare_workspace: It clones the git repository to the `local_repo_path` and then copies the jobs and mapping files into respecive folders in the jenkins workspace. 
+          - clean_workspace: It cleans the complete workspace so that multiple runs of the pipeline do not interfere with each other and always the latest version of the mapping and config files are used.
+          - prepare_workspace: It clones the git repository to the `local_repo_path` and then copies the jobs and mapping files into respective folders in the Jenkins workspace. 
 
     
 
