@@ -1,23 +1,28 @@
 # Semantic Transformation of the Bacdive Database 
 
-This is version 1.0.0 of the RDF counter part of Backdive database produced by TIB in the context of the DIASPora project. Version 1.0.0 is a direct map of the database, meaning tib does not annotate the original data with external ontologies, instead it utilizes the structure of the database as its RDF graph structure. Future versions will iteratively add ontologies.
+This is version 1.0.0 of the RDF counterpart of the Bacdive database produced by TIB in the context of the DIASPora project. 
+Version 1.0.0 is a direct map of the database, meaning TIB does not annotate the original data with external ontologies, instead it utilizes the structure of the database as the structure of the transformed RDF graph. Future versions will iteratively add ontologies.
 Transformation is done using RML mappings and rules.
 
-In order to automate the transformation process and control over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline is used. The pipeline is maintained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. The pipeline is composed of a series of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples into the triple store of choice, and querying and validating the triples. In order to run the pipeline and the steps [Python](https://www.python.org/downloads/), SQL workbench, Jenkins and GraphDB are required, which should be insllaed as follows: 
+In order to automate the transformation process and control over the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline has been employed. 
+The pipeline is maintained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. 
+The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transformaing into RDF triples, storing the triples in the triple store of choice, and querying and validating the triples. 
+In order to run the pipeline and the steps Python, MySQL workbench, Jenkins, and GraphDB are required.
+In the following sections the installation, configuration, and running of the tools as well as the pipeline are described: 
 
       
 # Installation prerequisites:
 
  
   ## install GraphDB (as a desktop installation):
-  1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
-  2. For windows, follow the steps: 
+  1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) and request a free GraphDB copy. You will receive an email with the download link. 
+  2. For windows, follow these steps: 
        1. Download your GraphDB.exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
        4. Create a repository in GraphDB with the name `Diaspora` for storing the generated RDF triples, see below:
        ![Graphdb](https://user-images.githubusercontent.com/55106484/176881416-3f39143e-6615-4e83-9f04-80338fc589dc.PNG)
-  3. For Linux, follow the steps:
+  3. For Linux, follow these steps:
        1. Download the GraphDB .rpm or .deb file.
        2. Install the package with sudo rpm -i or sudo dpkg -i and the name of the downloaded package. Alternatively, you can double click the package name.
        3. Start the database by clicking the application icon. The GraphDB Server and Workbench open at http://localhost:7200/.
@@ -92,11 +97,11 @@ In order to automate the transformation process and control over the input table
        
 # Configuring the automation pipeline (currently working on Windows only): 
 
-1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as local_repo_path in next steps:
+1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as `local_repo_path` in next steps:
 
-2. Change to local_repo_path 
+2. Change to `local_repo_path` 
 
-3. Clone the GitHb repository to local_repo_path 
+3. Clone the GitHb repository to `local_repo_path` 
 ```
 git clone https://github.com/TIBHannover/diaspora.git
 ```
@@ -108,16 +113,16 @@ cd disapora
 ```
 Now, you should be in `C:\Users\<your_user>\github\projects\diaspora`
 
-5. Copy the files in the jenkins directory
+5. Copy the pipeline files into the jenkins workspace directory
 
 ```
 xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
 xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
 ```
 
-6. In jenkins, click on Manage Jenkins and then in the bottom part of the page click "reload configuration from disk"
+6. In jenkins, click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
 
-7. Specify the path of the python, jenkins workspace, xcopy and cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
+7. Specify the path of the python, jenkins workspace, xcopy and the cloned repository in the jenkins environment variable. For that inside the manage jenkins option, go to configure system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
 
 ![path5](https://user-images.githubusercontent.com/55106484/177336953-de05409b-45ca-4e6b-87db-6bc22ba7f177.PNG)
@@ -133,8 +138,8 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
       diaspora\wp2\t2.1\v1.0\pipeline\database_dump 
       
       ```
-     - The dump file is a zip, please unzip it before importing it into SQL workbench. 
-     - Go to the server option and click data import and then import can be done, select import from self-contained file and import the database dump, see below:
+     - The dump file is a zip, unzip it before importing it into MySQL workbench. 
+     - Go to the server option and click data import. Select import from self-contained file and import the database dump, see below:
 
 
 
@@ -142,11 +147,11 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 ![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
 
 
-9. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
+9. Once Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your recently imported MySQL database in order to connect to the database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
-   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your local_repo_path and put your jenkins credentials.
+   Also in order to connect to the jenkins instance, go to automate.py file indise automate folder in your `local_repo_path` and put your jenkins credentials there.
    
    ![jenkins](https://user-images.githubusercontent.com/55106484/176936641-cbdf7e20-fe02-43e4-81c5-9f7d432b9722.PNG)
 
@@ -154,7 +159,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 
 
-Go to the automation file
+Go to the the automate folder and run the automate.py Python file
 ```
 cd wp2\t2.1\v1.0\pipeline\automate
 python automate.py
