@@ -94,7 +94,7 @@ In order to automate the transformation process and control over the input table
 
 1.Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as local_repo_path in next steps:
 
-2. Chnage to local_repo_path 
+2. Change to local_repo_path 
 
 3. Clone the GitHb repository to local_repo_path 
 ```
