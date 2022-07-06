@@ -147,7 +147,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 ![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
 
 
-9. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of your recently imported MySQL database to connect to the database.    
+9. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and chnage the host, username, password, and the database name to your recently imported MySQL database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
