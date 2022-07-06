@@ -12,7 +12,7 @@ In order to automate the transformation process and control over the input table
   ## install GraphDB (as a desktop installation):
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) Free and request your GraphDB copy. You will receive an email with the download link. 
   2. For windows, follow the steps: 
-       1. Download your GraphDB .exe file.
+       1. Download your GraphDB.exe file.
        2. Double-click the application file and follow the on-screen installer prompts.
        3. Locate the GraphDB application in the Windows Start menu and start the database. The GraphDB Server and Workbench open at http://localhost:7200/.
        4. Create a repository in GraphDB with the name `Diaspora` for storing the generated RDF triples, see below:
@@ -24,30 +24,48 @@ In order to automate the transformation process and control over the input table
 
       
   ## Steps to install [jenkins](https://www.jenkins.io/doc/book/installing/): 
+  
   1. For [windows](https://www.jenkins.io/doc/book/installing/windows/)
        1. Install [Java 8 or 11](https://www.java.com/en/download/help/windows_manual_download.html).
        2. Visit the [Jenkins](https://www.jenkins.io/download/#downloading-jenkins) download page and choose the Windows version. Download the selected file.
        3. Open the installer and follow the steps of the setup wizard. Use all default parameters unless creating the user and the password for jenkins.
        4. Open http://localhost:8080 in your browser. Login using the initial password (you can find the initial password in C:\Program Files\Jenkins\secrets\initialAdminPassword file)
        5. Select the suggested plugins option and you are done.
+       
   2. For [Linux](https://www.jenkins.io/doc/book/installing/linux/)
        1. Install java with commands:
 
           ```
           sudo apt update
-          sudo apt install default-jdk
+          sudo apt install openjdk-11-jdk
           
           ```
-       2. Install debian packages from here [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/):
-       3. Update the apt package list and install the latest version of Jenkins:
+       2. Install debian packages from here [Jenkins Debian Packages](https://pkg.jenkins.io/debian-stable/) or add key and repositories from below:
+          - Add key:
+          
+              ``` 
+                      curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+                       /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+                  
+              ```
+           Add repository:
+           
+             ```
+                       echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+                       https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+                       /etc/apt/sources.list.d/jenkins.list > /dev/null
+  
+              ```
+           
+       4. Update the apt package list and install the latest version of Jenkins:
           ```
-             sudo apt update
-             sudo apt install jenkins
+             sudo apt-get update
+             sudo apt-get install jenkins
           
           ```
        4. Enable and start the Jenkins service by executing:
           ```
-            sudo systemctl enable --now jenkins
+            sudo systemctl enable jenkins
           ```
        5. To start the setup process, go to http://localhost:8080/ and it will ask you for a password. To find the password go to: 
             ```
@@ -58,7 +76,7 @@ In order to automate the transformation process and control over the input table
   ## Steps to install SQL Workbench:
   1. For windows:
         1. The MySQL  installer download is available [here](https://dev.mysql.com/downloads/windows/installer/).
-        2. After downloading the installer we can select the setup type, depending upon the requirement. 
+        2. After downloading the installer the setup type can be selected, depending upon the requirement. 
         3. Provide username and password and you are good to go. 
   2. For Linux:
         1. The DEB package can be installed from [here](https://dev.mysql.com/downloads/workbench/).
@@ -70,21 +88,6 @@ In order to automate the transformation process and control over the input table
           
  ```
         
-  
-  3. Once everything is setup, load the database dump into the workbench:
-
-     - For that, copy the database dump into your jenkins workspace:
-      ```
-      xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
-      ```
-     - The dump file is a zip, please unzip it before importing it into SQL workbench. 
-     - Go to the server option and click data import and then import can be done, select import from self-contained file and import the database dump, see below:
-
-
-
-
-![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
-
 
        
 # Configuring the automation pipeline (currently working on Windows only): 
@@ -123,8 +126,22 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 ![path4](https://user-images.githubusercontent.com/55106484/177315862-af78f503-4673-4525-9100-adb62ca81a9e.PNG)
 
+8. load the database dump into the workbench:
 
-8. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
+     - For that, copy the database dump into your jenkins workspace:
+      ```
+      xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\database_dump  /I /H /C /E
+      ```
+     - The dump file is a zip, please unzip it before importing it into SQL workbench. 
+     - Go to the server option and click data import and then import can be done, select import from self-contained file and import the database dump, see below:
+
+
+
+
+![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
+
+
+9. Once Jenkins workspace is ready and all the jobs are inside the workspace, then go to the db_to_csv.py file inside diaspora_to_csv folder and put the credentials of    your sql workbench in order to connect to the database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
@@ -151,7 +168,7 @@ python automate.py
 
               - The diaspora_rdf_map folder contains:
                  1. [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool and a python file to create config file that will be used to run the SDM-RDFizer. 
-                 2. The `RML_Files` folder that contains the RML mapping files. 
+                 2. The `Mapping` folder that contains the RML mapping files. 
                  3. The `output` folder which is used to store the generated RDF files. 
                  3. An rdf.py file that has a parameter "number_of_datasets". Currently 68 tables are being transferred.
                  
