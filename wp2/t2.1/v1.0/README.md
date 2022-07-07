@@ -30,7 +30,7 @@ In the following sections the installation, configuration, and running of the to
   3. Once python is installed, install the following dependencies: 
   
        ```
-                    1. pip install SPARQLWrapper rdflib pandas os-sys requests mysql-connector-python numpy logging configparser
+                    1. pip install SPARQLWrapper rdflib pandas requests mysql-connector-python numpy logging configparser
        ```
    
 
