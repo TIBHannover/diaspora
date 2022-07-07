@@ -13,8 +13,46 @@ In the following sections the installation, configuration, and running of the to
       
 # Installation prerequisites:
 
+  ## Install Python and the following dependencies:
+  1. For windows: 
+     1. Visit Python(https://www.python.org/downloads/) and choose the python version and follow the steps. 
+  2. For Linux:
+     1. Install python with commands: 
+     
+          ```
+           sudo apt update && sudo apt upgrade -y
+           sudo apt install software-properties-common -y
+           sudo add-apt-repository ppa:deadsnakes/ppa
+           sudo apt install python3.10
+     
+          
+          ```
+  3. Once python is installed, install the following dependencies: 
+  
+       ```
+                    1. pip install SPARQLWrapper
+                    2. pip install rdflib
+                    3. pip install pandas
+                    4. pip install os-sys
+                    5. pip install requests
+                    6. pip install mysql-connector-python
+                    7. pip install numpy
+                    8. pip install logging
+                    9. pip install configparser
+
+          
+      ```
+   
+
+
+
+
+
+
+
+
  
-  ## install GraphDB (as a desktop installation):
+  ## Install GraphDB (as a desktop installation):
   1. Go to [GraphDB](https://www.ontotext.com/products/graphdb/graphdb-free/) and request a free GraphDB copy. You will receive an email with the download link. 
   2. For windows, follow these steps: 
        1. Download your GraphDB.exe file.
@@ -88,6 +126,7 @@ In the following sections the installation, configuration, and running of the to
         2. After downloading the DEB file, go to the terminal and issue these commands:
         
  ```
+             sudo apt --fix-broken install
              sudo dpkg -i <path_to_deb_file>
              sudo apt-get update
           
