@@ -15,7 +15,7 @@ In the following sections the installation, configuration, and running of the to
 
   ## Install Python and the following dependencies:
   1. For windows: 
-     1. Visit Python(https://www.python.org/downloads/) and choose the python version and follow the steps. 
+     1. Visit [Python](https://www.python.org/downloads/) and choose the python version and follow the steps. 
   2. For Linux:
      1. Install python with commands: 
      
