@@ -20,10 +20,10 @@ In the following sections the installation, configuration, and running of the to
      1. Install python with commands: 
      
           ```
-           sudo apt update && sudo apt upgrade -y
-           sudo apt install software-properties-common -y
+           sudo apt-get update && sudo apt-get upgrade -y
+           sudo apt-get install software-properties-common -y
            sudo add-apt-repository ppa:deadsnakes/ppa
-           sudo apt install python3.10
+           sudo apt-get install python3.10
      
           
           ```
