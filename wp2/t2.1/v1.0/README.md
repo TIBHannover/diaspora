@@ -201,6 +201,7 @@ python automate.py
             - The `workspace` folder contains the jobs that are required for the transformation of Bacdive database into RDF.
               - The diaspora_to_csv folder:
                  1. Contains python script that connects to the MySql database and transforms the Bacdive database into csv format. 
+                 2. Contains config file which specify the table names from Bacdive database that needs to be transformed into csv format.
 
               - The diaspora_rdf_map folder contains:
                  1. [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer) tool and a python file to create config file that will be used to run the SDM-RDFizer. 
