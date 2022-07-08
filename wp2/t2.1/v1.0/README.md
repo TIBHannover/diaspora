@@ -30,7 +30,7 @@ In the following sections the installation, configuration, and running of the to
   3. Once python is installed, install the following dependencies: 
   
        ```
-                    1. pip install SPARQLWrapper rdflib pandas requests mysql-connector-python numpy logging configparser natsort Unidecode
+              pip install SPARQLWrapper rdflib pandas requests mysql-connector-python numpy configparser natsort 
        ```
    
 
@@ -142,14 +142,14 @@ cd diaspora
 ```
 Now, you should be in `C:\Users\<your_user>\github\projects\diaspora`
 
-5. Copy the pipeline job config files into the Jenkins jobs directory
+5. Copy the pipeline files into the Jenkins directory:
 
       ```
       xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
       xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
       ```
       1. Click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
-      2. Once relaod configuration is done, go to dispora_to_csv job in the Jenkins Dashboard and then go to configure and change the path of  "diasp" to your "local_repo_path" in the windows batch command option see below:
+      2. Once relaod configuration is done, go to dispora_to_csv job in the Jenkins Dashboard and then go to configure and change the path of  "diasp" to the "local_repo_path" in the windows batch command option see below:
 
 
       ![ps](https://user-images.githubusercontent.com/55106484/178006003-2c3cfc99-376b-4dc2-b987-4a786b553281.PNG)
