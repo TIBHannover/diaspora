@@ -189,6 +189,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 
 Go to the `automate` folder and run the automate.py Python file:
+
 ```
 cd wp2\t2.1\v1.0\pipeline\automate
 python automate.py
