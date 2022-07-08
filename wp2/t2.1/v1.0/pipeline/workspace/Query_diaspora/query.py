@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jun  3 14:27:03 2022
 
-@author: GuptaR
-"""
 
 from SPARQLWrapper import SPARQLWrapper, XML, JSON, TURTLE, CSV
 import requests

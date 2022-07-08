@@ -20,7 +20,7 @@ import configparser
 
 
 import numpy as np
-import unidecode
+
 
 import time
 
@@ -74,8 +74,8 @@ config.readfp(open('./tables.properties'))
 mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = '',
-    database= "")
+    passwd = '8227',
+    database= "b'diaspora'")
 
 # print(mydb)
 
