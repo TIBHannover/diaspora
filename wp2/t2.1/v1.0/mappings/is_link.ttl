@@ -54,28 +54,3 @@
     ] .
     
 
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_id_strains;
-    # rr:objectMap[
-    #     rr:parentTriplesMap <TripleMap2>;
-    #     rr:joinCondition [
-    #         rr:child "ID_strains";
-    #         rr:parent "ID_strains";
-    #     ];
-    # ] ;
-    # ].
-
-
-
-
-# <TripleMap2>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strains.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#     rr:subjectMap [
-#         rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}";
-#         rr:class bacdive:Strain
-#     ].

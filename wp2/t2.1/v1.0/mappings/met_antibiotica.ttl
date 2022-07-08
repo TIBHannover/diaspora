@@ -97,7 +97,7 @@
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_ab_resistance_conc;
-    rr:objectMap [ rml:reference "ab_resistance_con" ]
+    rr:objectMap [ rml:reference "ab_resistance_conc" ]
     ] ;
 
     rr:predicateObjectMap [

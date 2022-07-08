@@ -515,23 +515,23 @@
 
     
         rr:predicateObjectMap [
-        rr:predicate  bacdive:has_k_res;
-        rr:objectMap [ rml:reference "k_res"]
+        rr:predicate  bacdive:has_K_res;
+        rr:objectMap [ rml:reference "K_res"]
     ] ;
 
          rr:predicateObjectMap [
-        rr:predicate  bacdive:has_k_antibiogram;
-        rr:objectMap [ rml:reference "k_antibiogram"]
+        rr:predicate  bacdive:has_K_antibiogram;
+        rr:objectMap [ rml:reference "K_antibiogram"]
     ] ;
 
         rr:predicateObjectMap [
-        rr:predicate  bacdive:has_k_rgStart;
-        rr:objectMap [ rml:reference "k_rgStart"]
+        rr:predicate  bacdive:has_K_rgStart;
+        rr:objectMap [ rml:reference "K_rgStart"]
     ] ;
 
         rr:predicateObjectMap [
-        rr:predicate  bacdive:has_k_rgEnd;
-        rr:objectMap [ rml:reference "k_rgEnd"]
+        rr:predicate  bacdive:has_K_rgEnd;
+        rr:objectMap [ rml:reference "K_rgEnd"]
     ] ;
 
      
@@ -756,8 +756,8 @@
     ] ;
 
          rr:predicateObjectMap [
-        rr:predicate  bacdive:has_medium_antibiogram;
-        rr:objectMap [ rml:reference "medium_antibiogram"]
+        rr:predicate  bacdive:has_Medium_antibiogram;
+        rr:objectMap [ rml:reference "Medium_antibiogram"]
     ] ;
 
     

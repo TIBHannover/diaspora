@@ -34,7 +34,9 @@
 
     rr:predicateObjectMap [
     rr:predicate  qudt:unit ;
-    rr:objectMap[rr:template "celcius"];
+    rr:objectMap[rr:template "Celcius";
+        rr:termType rr:Literal;
+        ];
     ];
 
 
