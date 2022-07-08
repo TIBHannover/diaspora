@@ -15,11 +15,9 @@ from rdflib import Graph
 
 from pathlib import Path
 
-import pickle
 
 import configparser
 
-import unidecode
 
 import numpy as np
 
