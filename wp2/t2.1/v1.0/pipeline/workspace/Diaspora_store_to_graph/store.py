@@ -15,7 +15,7 @@ import os
 import natsort
 from pathlib import Path
 
-path = '../diaspora_rdf_map/RML_Files/output'
+path = '../diaspora_rdf_map/Mapping/output'
 
 dirs = os.listdir(path)
 dirs = natsort.natsorted(dirs)
