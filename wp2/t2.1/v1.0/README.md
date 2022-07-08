@@ -142,16 +142,22 @@ cd diaspora
 ```
 Now, you should be in `C:\Users\<your_user>\github\projects\diaspora`
 
-5. Copy the pipeline files into the Jenkins workspace directory
+5. Copy the pipeline job config files into the Jenkins jobs directory
 
-```
-xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
-xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
-```
+      ```
+      xcopy wp2\t2.1\v1.0\pipeline\jobs C:\Users\<your_user>\.jenkins\jobs /I /H /C /E
+      xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /I /H /C /E
+      ```
+      1. Click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
+      2. Once relaod configuration is done, go to dispora_to_csv job in the Jenkins Dashboard and then go to configure and change the path of  "diasp" to your "local_repo_path" in the windows batch command option see below:
 
-6. In Jenkins, click on Manage Jenkins and then in the bottom part of the page, click "reload configuration from disk"
 
-7. Specify the path of the python, Jenkins workspace, xcopy, and the cloned repository in the Jenkins environment variable. For that inside the manage Jenkins option, go to configure the system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
+      ![ps](https://user-images.githubusercontent.com/55106484/178006003-2c3cfc99-376b-4dc2-b987-4a786b553281.PNG)
+
+
+      ![p2](https://user-images.githubusercontent.com/55106484/178006016-d8683d12-7ac9-48ee-bce2-e85a62de058e.PNG)
+
+6. Specify the path of the python, Jenkins workspace, xcopy, and the cloned repository in the Jenkins environment variable. For that inside the manage Jenkins option, go to configure the system and then go to global properties and enable environment variables option. Specify the names of the path as mentioned below:
 
 
 ![path5](https://user-images.githubusercontent.com/55106484/177336953-de05409b-45ca-4e6b-87db-6bc22ba7f177.PNG)
@@ -160,7 +166,7 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 ![path4](https://user-images.githubusercontent.com/55106484/177315862-af78f503-4673-4525-9100-adb62ca81a9e.PNG)
 
-8. load the database dump into the workbench:
+7. load the database dump into the workbench:
 
      - Go to the `local_repo_path` folder where the git repo is cloned and then go to the location:
       ```
@@ -184,7 +190,17 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 ![sql](https://user-images.githubusercontent.com/55106484/177996059-11db1332-c217-4137-b14e-0d8ace8a2ba5.PNG)
 
-9. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and change the host, username, password, and the database name to your recently imported MySQL database.    
+8. Cleaning and preparing the workspace:
+   1. Go to the `automate` folder" inside local_repo_path:
+      
+       1. Inside the automate folder, go to jobs.properties file then comment out job3 to job 7 and run the automate.py Python file:
+
+            ```
+            cd wp2\t2.1\v1.0\pipeline\automate
+            python automate.py
+            ```
+
+8. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and change the host, username, password, and the database name to your recently imported MySQL database.    
 
    ![db](https://user-images.githubusercontent.com/55106484/176936219-6b697cb6-89d6-41c3-ab88-04f3d5af4057.PNG)
    
@@ -192,16 +208,16 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
    
    ![jenkins](https://user-images.githubusercontent.com/55106484/176936641-cbdf7e20-fe02-43e4-81c5-9f7d432b9722.PNG)
 
-# Running the pipeline
+# Running the pipeline 
 
+1. Go to the `automate` folder"
+   1. Inside the automate folder, go to jobs.properties file then comment out job1 and job 2 and run the automate.py Python file:
 
-
-Go to the `automate` folder and run the automate.py Python file:
-
-```
-cd wp2\t2.1\v1.0\pipeline\automate
-python automate.py
-```
+      ```
+      cd wp2\t2.1\v1.0\pipeline\automate
+      python automate.py
+      ```
+   
 # Pipeline details and explanation:
       1. mappings: contains all the mapping files. 
       2. pipeline: contains all the codes, and scripts used to transform the diaspora database into RDF.
