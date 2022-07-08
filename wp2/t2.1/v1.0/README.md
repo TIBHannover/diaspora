@@ -174,7 +174,15 @@ xcopy wp2\t2.1\v1.0\pipeline\workspace C:\Users\<your_user>\.jenkins\workspace /
 
 
 ![import](https://user-images.githubusercontent.com/55106484/177316263-edb008f2-947e-4996-8fe7-49b28a440214.PNG)
+     - In case if there is import error, then write these commands, see below:
+     
+       ```
+          CREATE DATABASE diaspora;
+          USE diaspora
+      
+      ```
 
+![sql](https://user-images.githubusercontent.com/55106484/177996059-11db1332-c217-4137-b14e-0d8ace8a2ba5.PNG)
 
 9. Once the Jenkins workspace is ready and all the jobs are inside the workspace, go to the db_to_csv.py file inside diaspora_to_csv folder and change the host, username, password, and the database name to your recently imported MySQL database.    
 
