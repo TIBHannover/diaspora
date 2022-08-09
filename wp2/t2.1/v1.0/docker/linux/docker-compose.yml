@@ -1,0 +1,51 @@
+
+
+
+
+services:
+
+
+  jenkins:
+    build: ./jenkins
+
+    ports:
+      - "8080:8080"
+      - "50000:50000" 
+      
+    privileged: true
+    
+    user: root
+    # healthcheck:
+      # test: "exit 0"
+      #test: ["CMD", "curl", "-f", "http://jenkins:8080"]
+      #interval: 2m30s
+      #timeout: 20s
+      #retries: 3
+      #`start_period: 40s
+    
+
+    
+    volumes:
+      - C:/Users/GuptaR/Desktop/docker_applications/jenkins/.jen:/var/jenkins_home
+
+
+  graphdb:
+    build: ./graphdb
+    ports:
+      - "7200:7200"
+
+  db:
+    image: mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: diaspora
+        MYSQL_USER: user
+        MYSQL_PASSWORD: pass
+    ports:
+      - "42333:3306"
+    volumes:
+      - ./diaspora.sql:/docker-entrypoint-initdb.d/diaspora.sql
+
+  
+    
+

@@ -1,0 +1,28 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins8932339589285177356.sh
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:58: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection_cext.py", line 263, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Unknown database 'b'diaspora'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 79, in <module>
+    mydb = mysql.connector.connect(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/pooling.py", line 286, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection_cext.py", line 101, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/abstracts.py", line 1095, in connect
+    self._open_connection()
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection_cext.py", line 268, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1049 (42000): Unknown database 'b'diaspora'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
