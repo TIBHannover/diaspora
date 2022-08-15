@@ -26,7 +26,7 @@ services:
 
     
     volumes:
-      - C:/Users/GuptaR/Desktop/docker_applications/jenkins/.jen:/var/jenkins_home
+      - ./jenkins/.jen:/var/jenkins_home
 
 
   graphdb:
