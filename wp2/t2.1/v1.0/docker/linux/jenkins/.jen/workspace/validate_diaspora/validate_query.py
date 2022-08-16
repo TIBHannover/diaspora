@@ -16,11 +16,11 @@ base_path = Path(__file__).parent
 
 print(base_path)
 
-path = (base_path / '../Query_diaspora/expected_result/').resolve()
+path = (base_path / '../query_diaspora/expected_result/').resolve()
 
 print(path)
 
-path2 = (base_path / '../Query_diaspora/actual_result/').resolve()
+path2 = (base_path / '../query_diaspora/actual_result/').resolve()
 
 print(path2)
 

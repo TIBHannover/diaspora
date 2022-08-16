@@ -17,7 +17,7 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/GC_content.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/gc_content.csv";
     rml:referenceFormulation ql:CSV
     ];
     
