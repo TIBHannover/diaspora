@@ -35,7 +35,8 @@ services:
       - "7200:7200"
 
   db:
-    image: mysql
+    build: ./mysql
+    # image: mysql
     environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: diaspora
