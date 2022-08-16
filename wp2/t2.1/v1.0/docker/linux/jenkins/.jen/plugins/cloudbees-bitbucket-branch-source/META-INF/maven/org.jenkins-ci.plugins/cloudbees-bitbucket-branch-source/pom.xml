@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>cloudbees-bitbucket-branch-source</artifactId>
-  <version>784.v7fcdc7c670f6</version>
+  <version>785.ve724eb_44e286</version>
   <packaging>hpi</packaging>
   <name>Bitbucket Branch Source Plugin</name>
   <description>Discover and build Bitbucket Cloud and Bitbucket Server pull requests and branches and send status
@@ -36,9 +36,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/bitbucket-branch-source-plugin.git</connection>
+    <connection>scm:git:https://github.com/jenkinsci/bitbucket-branch-source-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/bitbucket-branch-source-plugin.git</developerConnection>
-    <tag>7fcdc7c670f69273cff575aa50135dd0204fe4a4</tag>
+    <tag>e724eb44e2866af003da7ee9bc40f564310d3b67</tag>
     <url>https://github.com/jenkinsci/bitbucket-branch-source-plugin</url>
   </scm>
   <distributionManagement>
@@ -55,25 +55,25 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>apache-httpcomponents-client-4-api</artifactId>
-      <version>4.5.13-1.0</version>
+      <version>4.5.13-138.v4e7d9a_7b_a_e61</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>structs</artifactId>
-      <version>318.va_f3ccb_729b_71</version>
+      <version>324.va_f5d6774f3a_d</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>scm-api</artifactId>
-      <version>608.vfa_f971c5a_a_e9</version>
+      <version>620.v0a_5b_1f8054c0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>git</artifactId>
-      <version>4.11.3</version>
+      <version>4.11.4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -85,7 +85,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>display-url-api</artifactId>
-      <version>2.3.5</version>
+      <version>2.3.6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -103,7 +103,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>plain-credentials</artifactId>
-      <version>1.8</version>
+      <version>139.ved2b_9cf7587b</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -121,7 +121,7 @@
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.303.3</version>
+      <version>2.332.4</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -168,7 +168,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.28</version>
+        <version>3.32</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>

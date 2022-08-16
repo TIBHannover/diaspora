@@ -43,6 +43,11 @@ RUN pip3 install PyMySQL[rsa]
 
 RUN pip3 install cryptography
 
+
+
+
+
+
 USER jenkins
 
 RUN jenkins-plugin-cli --plugins "blueocean:1.25.5 docker-workflow:1.28"

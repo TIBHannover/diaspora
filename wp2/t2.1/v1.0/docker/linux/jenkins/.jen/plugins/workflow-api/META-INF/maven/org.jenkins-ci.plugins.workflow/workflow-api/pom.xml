@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-api</artifactId>
-  <version>1188.v0016b_4f29881</version>
+  <version>1192.v2d0deb_19d212</version>
   <packaging>hpi</packaging>
   <name>Pipeline: API</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/workflow-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-api-plugin.git</developerConnection>
-    <tag>0016b4f2988157b32a5ddea2b98099d5819179e2</tag>
+    <tag>2d0deb19d212559742ac26851a2c40453af591bf</tag>
     <url>https://github.com/jenkinsci/workflow-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -118,7 +118,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.28</version>
+        <version>3.32</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>

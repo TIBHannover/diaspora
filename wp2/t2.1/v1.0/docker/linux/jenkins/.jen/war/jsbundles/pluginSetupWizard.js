@@ -23,9 +23,9 @@ function id(str) {
 // EXTERNAL MODULE: ./.yarn/cache/jquery-npm-3.6.0-ca7872bdbb-8fd5fef4aa.zip/node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(7601);
 var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
-// EXTERNAL MODULE: ./.yarn/cache/handlebars-npm-3.0.8-9f5246b0fd-79e80cfcd5.zip/node_modules/handlebars/runtime.js
-var runtime = __webpack_require__(3449);
-var runtime_default = /*#__PURE__*/__webpack_require__.n(runtime);
+// EXTERNAL MODULE: ./.yarn/cache/handlebars-npm-4.7.7-a9ccfabf80-1e79a43f5e.zip/node_modules/handlebars/dist/cjs/handlebars.runtime.js
+var handlebars_runtime = __webpack_require__(9856);
+var handlebars_runtime_default = /*#__PURE__*/__webpack_require__.n(handlebars_runtime);
 // EXTERNAL MODULE: ./.yarn/cache/window-handle-npm-1.0.1-369b8e9cbe-8f2c183a0d.zip/node_modules/window-handle/index.js
 var window_handle = __webpack_require__(30);
 ;// CONCATENATED MODULE: ./src/main/js/util/jenkins.js
@@ -179,7 +179,7 @@ jenkins.post = function (url, data, success, options) {
 
 
 jenkins.initHandlebars = function () {
-  return (runtime_default());
+  return (handlebars_runtime_default());
 };
 /**
  * Load translations for the given bundle ID, provide the message object to the handler.
@@ -1846,7 +1846,7 @@ var pluginSelectList_default = /*#__PURE__*/__webpack_require__.n(pluginSelectLi
  * Jenkins first-run install wizard
  */
 
-runtime_default().registerPartial('pluginSelectList', (pluginSelectList_default())); // TODO: see whether this is actually being used or if it can be removed
+handlebars_runtime_default().registerPartial('pluginSelectList', (pluginSelectList_default())); // TODO: see whether this is actually being used or if it can be removed
 
 window.zq = (jquery_default()); // Setup the dialog, exported
 
@@ -1854,7 +1854,7 @@ var createPluginSetupWizard = function (appendTarget) {
   var $bs = enhanceJQueryWithBootstrap((jquery_default())); // Necessary handlebars helpers:
   // returns the plugin count string per category selected vs. available e.g. (5/44)
 
-  runtime_default().registerHelper('pluginCountForCategory', function (cat) {
+  handlebars_runtime_default().registerHelper('pluginCountForCategory', function (cat) {
     var plugs = categorizedPlugins[cat];
     var tot = 0;
     var cnt = 0;
@@ -1874,7 +1874,7 @@ var createPluginSetupWizard = function (appendTarget) {
     return '(' + cnt + '/' + tot + ')';
   }); // returns the total plugin count string selected vs. total e.g. (5/44)
 
-  runtime_default().registerHelper('totalPluginCount', function () {
+  handlebars_runtime_default().registerHelper('totalPluginCount', function () {
     var tot = 0;
     var cnt = 0;
 
@@ -1894,13 +1894,13 @@ var createPluginSetupWizard = function (appendTarget) {
     return '(' + cnt + '/' + tot + ')';
   }); // determines if the provided plugin is in the list currently selected
 
-  runtime_default().registerHelper('inSelectedPlugins', function (val, options) {
+  handlebars_runtime_default().registerHelper('inSelectedPlugins', function (val, options) {
     if (selectedPluginNames.indexOf(val) >= 0) {
       return options.fn();
     }
   }); // executes a block if there are dependencies
 
-  runtime_default().registerHelper('hasDependencies', function (plugName, options) {
+  handlebars_runtime_default().registerHelper('hasDependencies', function (plugName, options) {
     var plug = availablePlugins[plugName];
 
     if (plug && plug.allDependencies && plug.allDependencies.length > 1) {
@@ -1909,7 +1909,7 @@ var createPluginSetupWizard = function (appendTarget) {
     }
   }); // get total number of dependencies
 
-  runtime_default().registerHelper('dependencyCount', function (plugName) {
+  handlebars_runtime_default().registerHelper('dependencyCount', function (plugName) {
     var plug = availablePlugins[plugName];
 
     if (plug && plug.allDependencies && plug.allDependencies.length > 1) {
@@ -1918,7 +1918,7 @@ var createPluginSetupWizard = function (appendTarget) {
     }
   }); // gets user friendly dependency text
 
-  runtime_default().registerHelper('eachDependency', function (plugName, options) {
+  handlebars_runtime_default().registerHelper('eachDependency', function (plugName, options) {
     var plug = availablePlugins[plugName];
 
     if (!plug) {
@@ -1943,7 +1943,7 @@ var createPluginSetupWizard = function (appendTarget) {
     return out;
   }); // executes a block if there are dependencies
 
-  runtime_default().registerHelper('ifVisibleDependency', function (plugName, options) {
+  handlebars_runtime_default().registerHelper('ifVisibleDependency', function (plugName, options) {
     if (visibleDependencies[plugName]) {
       return options.fn();
     }
@@ -3279,21 +3279,26 @@ jquery_default()(function () {
 /***/ 900:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression, alias3=helpers.helperMissing, alias4="function";
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), alias4=container.hooks.helperMissing, alias5="function", lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_addFirstUser_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_addFirstUser_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel security-panel\">\n		"
-    + ((stack1 = ((helper = (helper = helpers.message || (depth0 != null ? depth0.message : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"message","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"message") || (depth0 != null ? lookupProperty(depth0,"message") : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"message","hash":{},"data":data,"loc":{"start":{"line":6,"column":2},"end":{"line":6,"column":15}}}) : helper))) != null ? stack1 : "")
     + "\n\n		<iframe src=\""
-    + alias2(((helper = (helper = helpers.baseUrl || (depth0 != null ? depth0.baseUrl : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"baseUrl","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"baseUrl") || (depth0 != null ? lookupProperty(depth0,"baseUrl") : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"baseUrl","hash":{},"data":data,"loc":{"start":{"line":8,"column":15},"end":{"line":8,"column":26}}}) : helper)))
     + "/setupWizard/setupWizardConfigureInstance\" id=\"setup-configure-instance\"></iframe>\n	</div>\n</div>\n<div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-link skip-configure-instance\" disabled>\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_skipConfigureInstance : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_skipConfigureInstance") : stack1), depth0))
     + "\n    </button>\n	<button type=\"button\" class=\"btn btn-primary save-configure-instance\" disabled>\n		"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_saveConfigureInstance : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_saveConfigureInstance") : stack1), depth0))
     + "\n	</button>\n</div>\n";
 },"useData":true});
 
@@ -3302,19 +3307,24 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 4695:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_error_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_error_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"container error-container\" id=\"error-message\">\n		<h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_error_header : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_error_header") : stack1), depth0))
     + "</h1>\n		<div class=\"alert alert-danger fade in\">\n			"
-    + alias2(((helper = (helper = helpers.errorMessage || (depth0 != null ? depth0.errorMessage : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"errorMessage","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"errorMessage") || (depth0 != null ? lookupProperty(depth0,"errorMessage") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"errorMessage","hash":{},"data":data,"loc":{"start":{"line":8,"column":3},"end":{"line":8,"column":19}}}) : helper)))
     + "\n		</div>\n	</div>\n</div>\n<div class=\"modal-footer\">\n	<button type=\"button\" class=\"btn btn-primary start-over\">\n		"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_retry : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_retry") : stack1), depth0))
     + "\n	</button>\n</div>\n";
 },"useData":true});
 
@@ -3323,19 +3333,24 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 3123:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_addFirstUser_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_addFirstUser_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel security-panel\">\n		<iframe src=\""
-    + alias2(((helper = (helper = helpers.baseUrl || (depth0 != null ? depth0.baseUrl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"baseUrl","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"baseUrl") || (depth0 != null ? lookupProperty(depth0,"baseUrl") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"baseUrl","hash":{},"data":data,"loc":{"start":{"line":6,"column":15},"end":{"line":6,"column":26}}}) : helper)))
     + "/setupWizard/setupWizardFirstUser\" id=\"setup-first-user\"></iframe>\n	</div>\n</div>\n<div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-link skip-first-user\" disabled>\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_skipFirstUser : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_skipFirstUser") : stack1), depth0))
     + "\n    </button>\n	<button type=\"button\" class=\"btn btn-primary save-first-user\" disabled>\n		"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_saveFirstUser : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_saveFirstUser") : stack1), depth0))
     + "\n	</button>\n</div>\n";
 },"useData":true});
 
@@ -3344,33 +3359,43 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 4012:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "		<div class=\"selected-plugin "
-    + alias3(((helper = (helper = helpers.installStatus || (depth0 != null ? depth0.installStatus : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"installStatus","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"installStatus") || (depth0 != null ? lookupProperty(depth0,"installStatus") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"installStatus","hash":{},"data":data,"loc":{"start":{"line":12,"column":30},"end":{"line":12,"column":47}}}) : helper)))
     + "\" data-name=\""
-    + alias3(__default(__webpack_require__(553)).call(depth0,(depth0 != null ? depth0.name : depth0),{"name":"id","hash":{},"data":data}))
+    + alias4(__default(__webpack_require__(553)).call(alias1,(depth0 != null ? lookupProperty(depth0,"name") : depth0),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":12,"column":60},"end":{"line":12,"column":71}}}))
     + "\">"
-    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":12,"column":73},"end":{"line":12,"column":82}}}) : helper)))
     + "</div>\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installIncomplete_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installIncomplete_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel success-panel\">\n		<h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installIncomplete_banner : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installIncomplete_banner") : stack1), depth0))
     + "</h1>\n		<p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installIncomplete_message : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installIncomplete_message") : stack1), depth0))
     + "</p>\n	</div>\n\n	<div class=\"selected-plugin-progress success-panel\">\n"
-    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.installingPlugins : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"installingPlugins") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":11,"column":2},"end":{"line":13,"column":11}}})) != null ? stack1 : "")
     + "	</div>\n</div>\n<div class=\"modal-footer\">\n	<button type=\"button\" class=\"btn btn-link install-home\">\n		"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_goBack : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_goBack") : stack1), depth0))
     + "\n	</button>\n	<button type=\"button\" class=\"btn btn-primary resume-installation\">\n		"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installIncomplete_resumeInstallationButtonLabel : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installIncomplete_resumeInstallationButtonLabel") : stack1), depth0))
     + "\n	</button>\n</div>";
 },"useData":true});
 
@@ -3379,9 +3404,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 4076:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"loader\"></div>\n";
 },"useData":true});
 
@@ -3390,21 +3415,26 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 8661:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n    <h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_offline_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_offline_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n    <div class=\"jumbotron welcome-panel offline\">\n        <h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_offline_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_offline_title") : stack1), depth0))
     + "</h1>\n        <p>"
-    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_offline_message : stack1), depth0)) != null ? stack1 : "")
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_offline_message") : stack1), depth0)) != null ? stack1 : "")
     + "</p>\n        <p>\n            <button type=\"button\" class=\"btn btn-primary show-proxy-config\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_configureProxy_label : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_configureProxy_label") : stack1), depth0))
     + "</button>\n            <button type=\"button\" class=\"btn btn-primary skip-plugin-installs\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_skipPluginInstallations : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_skipPluginInstallations") : stack1), depth0))
     + "</button>\n        </p>\n    </div>\n</div>\n";
 },"useData":true});
 
@@ -3413,92 +3443,122 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 2585:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, helper, alias1=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<h2 id=\""
-    + alias1(__default(__webpack_require__(553)).call(depth0,(data && data.key),{"name":"id","hash":{},"data":data}))
+    + alias2(__default(__webpack_require__(553)).call(alias1,(data && lookupProperty(data,"key")),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":2,"column":8},"end":{"line":2,"column":19}}}))
     + "\" class=\"expanded\">"
-    + alias1(((helper = (helper = helpers.key || (data && data.key)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"key","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"key") || (data && lookupProperty(data,"key"))) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"key","hash":{},"data":data,"loc":{"start":{"line":2,"column":38},"end":{"line":2,"column":46}}}) : helper)))
     + " "
-    + alias1(helpers.pluginCountForCategory.call(depth0,(data && data.key),{"name":"pluginCountForCategory","hash":{},"data":data}))
+    + alias2(lookupProperty(helpers,"pluginCountForCategory").call(alias1,(data && lookupProperty(data,"key")),{"name":"pluginCountForCategory","hash":{},"data":data,"loc":{"start":{"line":2,"column":47},"end":{"line":2,"column":78}}}))
     + "</h2>\n<div class=\"plugins-for-category\">\n"
-    + ((stack1 = helpers.each.call(depth0,depth0,{"name":"each","hash":{},"fn":this.program(2, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,depth0,{"name":"each","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":2},"end":{"line":32,"column":11}}})) != null ? stack1 : "")
     + "</div>\n";
-},"2":function(depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, helper, alias1=this.escapeExpression, alias2=this.lambda, alias3=helpers.helperMissing;
+},"2":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.escapeExpression, alias3=container.lambda, alias4=container.hooks.helperMissing, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "  <div class=\"plugin "
-    + alias1(__default(__webpack_require__(553)).call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"id","hash":{},"data":data}))
+    + alias2(__default(__webpack_require__(553)).call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":5,"column":21},"end":{"line":5,"column":39}}}))
     + " "
-    + ((stack1 = helpers.inSelectedPlugins.call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"inSelectedPlugins","hash":{},"fn":this.program(3, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"inSelectedPlugins").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"inSelectedPlugins","hash":{},"fn":container.program(3, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":40},"end":{"line":5,"column":104}}})) != null ? stack1 : "")
     + " "
-    + ((stack1 = helpers.ifVisibleDependency.call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"ifVisibleDependency","hash":{},"fn":this.program(5, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"ifVisibleDependency").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"ifVisibleDependency","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":105},"end":{"line":5,"column":182}}})) != null ? stack1 : "")
     + "\" id=\"row-"
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "\">\n    <label>\n      <span class=\"title\">\n        <input type=\"checkbox\" id=\"chk-"
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "\" name=\""
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "\" value=\""
-    + alias1(((helper = (helper = helpers.searchTerm || (depth0 != null ? depth0.searchTerm : depth0)) != null ? helper : alias3),(typeof helper === "function" ? helper.call(depth0,{"name":"searchTerm","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"searchTerm") || (depth0 != null ? lookupProperty(depth0,"searchTerm") : depth0)) != null ? helper : alias4),(typeof helper === "function" ? helper.call(alias1,{"name":"searchTerm","hash":{},"data":data,"loc":{"start":{"line":8,"column":86},"end":{"line":8,"column":100}}}) : helper)))
     + "\" "
-    + ((stack1 = helpers.inSelectedPlugins.call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"inSelectedPlugins","hash":{},"fn":this.program(7, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"inSelectedPlugins").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"inSelectedPlugins","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":102},"end":{"line":8,"column":175}}})) != null ? stack1 : "")
     + "/>\n        "
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.title : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
     + "\n        <a href=\""
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.website : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"website") : stack1), depth0))
     + "\" target=\"_blank\" class=\"website-link\" rel=\"noopener noreferrer\" title=\""
-    + alias1(alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.title : stack1), depth0))
+    + alias2(alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"title") : stack1), depth0))
     + " "
-    + alias1(alias2(((stack1 = (depths[2] != null ? depths[2].translations : depths[2])) != null ? stack1.installWizard_websiteLinkLabel : stack1), depth0))
+    + alias2(alias3(((stack1 = (depths[2] != null ? lookupProperty(depths[2],"translations") : depths[2])) != null ? lookupProperty(stack1,"installWizard_websiteLinkLabel") : stack1), depth0))
     + "\"></a>\n      </span>\n"
-    + ((stack1 = (helpers.hasDependencies || (depth0 && depth0.hasDependencies) || alias3).call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"hasDependencies","hash":{},"fn":this.program(9, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = (lookupProperty(helpers,"hasDependencies")||(depth0 && lookupProperty(depth0,"hasDependencies"))||alias4).call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"hasDependencies","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":12,"column":6},"end":{"line":16,"column":26}}})) != null ? stack1 : "")
     + "      <span class=\"description\">\n        "
-    + ((stack1 = alias2(((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.excerpt : stack1), depth0)) != null ? stack1 : "")
+    + ((stack1 = alias3(((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"excerpt") : stack1), depth0)) != null ? stack1 : "")
     + "\n      </span>\n"
-    + ((stack1 = (helpers.hasDependencies || (depth0 && depth0.hasDependencies) || alias3).call(depth0,((stack1 = (depth0 != null ? depth0.plugin : depth0)) != null ? stack1.name : stack1),{"name":"hasDependencies","hash":{},"fn":this.program(11, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = (lookupProperty(helpers,"hasDependencies")||(depth0 && lookupProperty(depth0,"hasDependencies"))||alias4).call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"plugin") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"hasDependencies","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":20,"column":6},"end":{"line":29,"column":26}}})) != null ? stack1 : "")
     + "    </label>\n  </div>\n";
-},"3":function(depth0,helpers,partials,data) {
+},"3":function(container,depth0,helpers,partials,data) {
     return "selected";
-},"5":function(depth0,helpers,partials,data) {
+},"5":function(container,depth0,helpers,partials,data) {
     return "show-dependencies";
-},"7":function(depth0,helpers,partials,data) {
+},"7":function(container,depth0,helpers,partials,data) {
     return "checked=\"checked\"";
-},"9":function(depth0,helpers,partials,data,blockParams,depths) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"9":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "        <a href=\"#\" class=\"btn btn-link toggle-dependency-list\" type=\"button\" data-plugin-name=\""
-    + alias2(alias1(((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1), depth0))
+    + alias2(alias1(((stack1 = (depths[1] != null ? lookupProperty(depths[1],"plugin") : depths[1])) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "\" title=\""
-    + alias2(alias1(((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depths[1] != null ? lookupProperty(depths[1],"plugin") : depths[1])) != null ? lookupProperty(stack1,"title") : stack1), depth0))
     + " "
-    + alias2(alias1(((stack1 = (depths[3] != null ? depths[3].translations : depths[3])) != null ? stack1.installWizard_installIncomplete_dependenciesLabel : stack1), depth0))
+    + alias2(alias1(((stack1 = (depths[3] != null ? lookupProperty(depths[3],"translations") : depths[3])) != null ? lookupProperty(stack1,"installWizard_installIncomplete_dependenciesLabel") : stack1), depth0))
     + "\">\n          <span class=\"badge\">"
-    + alias2(helpers.dependencyCount.call(depth0,((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1),{"name":"dependencyCount","hash":{},"data":data}))
+    + alias2(lookupProperty(helpers,"dependencyCount").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depths[1] != null ? lookupProperty(depths[1],"plugin") : depths[1])) != null ? lookupProperty(stack1,"name") : stack1),{"name":"dependencyCount","hash":{},"data":data,"loc":{"start":{"line":14,"column":30},"end":{"line":14,"column":64}}}))
     + "</span>\n        </a>\n";
-},"11":function(depth0,helpers,partials,data,blockParams,depths) {
-    var stack1;
+},"11":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "        <div class=\"dep-list\">\n          <h3 class=\"dep-title\">"
-    + this.escapeExpression(this.lambda(((stack1 = (depths[3] != null ? depths[3].translations : depths[3])) != null ? stack1.installWizard_installIncomplete_dependenciesLabel : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depths[3] != null ? lookupProperty(depths[3],"translations") : depths[3])) != null ? lookupProperty(stack1,"installWizard_installIncomplete_dependenciesLabel") : stack1), depth0))
     + "</h3>\n"
-    + ((stack1 = helpers.eachDependency.call(depth0,((stack1 = (depths[1] != null ? depths[1].plugin : depths[1])) != null ? stack1.name : stack1),{"name":"eachDependency","hash":{},"fn":this.program(12, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"eachDependency").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depths[1] != null ? lookupProperty(depths[1],"plugin") : depths[1])) != null ? lookupProperty(stack1,"name") : stack1),{"name":"eachDependency","hash":{},"fn":container.program(12, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":23,"column":10},"end":{"line":27,"column":29}}})) != null ? stack1 : "")
     + "        </div>\n";
-},"12":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+},"12":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "          <a class=\"dep badge\" href=\""
-    + alias3(((helper = (helper = helpers.website || (depth0 != null ? depth0.website : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"website","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"website") || (depth0 != null ? lookupProperty(depth0,"website") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"website","hash":{},"data":data,"loc":{"start":{"line":24,"column":37},"end":{"line":24,"column":48}}}) : helper)))
     + "\" rel=\"noopener noreferrer\" target=\"_blank\">\n          "
-    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":25,"column":10},"end":{"line":25,"column":19}}}) : helper)))
     + "\n          </a>\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data,blockParams,depths) {
-    var stack1;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
-  return ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.categorizedPlugins : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0, blockParams, depths),"inverse":this.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"categorizedPlugins") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":34,"column":9}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true});
 
 /***/ }),
@@ -3506,46 +3566,51 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 5298:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
-    var alias1=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var alias1=container.escapeExpression;
 
   return "    <li><a href=\"#"
-    + alias1(__default(__webpack_require__(553)).call(depth0,depth0,{"name":"id","hash":{},"data":data}))
+    + alias1(__default(__webpack_require__(553)).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":8,"column":18},"end":{"line":8,"column":29}}}))
     + "\" class=\"select-category\">"
-    + alias1(this.lambda(depth0, depth0))
+    + alias1(container.lambda(depth0, depth0))
     + "</a></li>\n";
-},"3":function(depth0,helpers,partials,data) {
-    return this.escapeExpression(this.lambda(depth0, depth0))
+},"3":function(container,depth0,helpers,partials,data) {
+    return container.escapeExpression(container.lambda(depth0, depth0))
     + ",";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header closeable\">\n  <h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body plugin-selector\">\n  <div class=\"categories col-sm-3\">\n  <ul class=\"nav\">\n"
-    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.categories : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,(depth0 != null ? lookupProperty(depth0,"categories") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":4},"end":{"line":9,"column":13}}})) != null ? stack1 : "")
     + "  </ul>\n  </div>\n  <div class=\"plugins col-sm-9\">\n    <div class=\"plugin-select-controls\">\n      <span class=\"plugin-select-actions\">\n        <a href=\"#\" class=\"plugin-select-all\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_selectAll : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_selectAll") : stack1), depth0))
     + "</a>\n        <a href=\"#\" class=\"plugin-select-none\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_selectNone : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_selectNone") : stack1), depth0))
     + "</a>\n        <a href=\"#\" class=\"plugin-select-recommended\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_selectRecommended : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_selectRecommended") : stack1), depth0))
     + "</a>\n      </span>\n      <span class=\"plugin-search-controls\">\n        <input type=\"text\" name=\"searchbox\" class=\"form-control\" />\n        <a href=\"#\" class=\"clear-search\">&times;</a>\n      </span>\n      <span id=\"plugin-selected-info\" class=\"plugin-selected-info\" data-selected-plugins=\""
-    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.selectedPlugins : depth0),{"name":"each","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,(depth0 != null ? lookupProperty(depth0,"selectedPlugins") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":23,"column":90},"end":{"line":23,"column":133}}})) != null ? stack1 : "")
     + "\">\n        <a href=\"#\" class=\"plugin-show-selected\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_selected : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_selected") : stack1), depth0))
     + "</a> "
-    + alias2(helpers.totalPluginCount.call(depth0,{"name":"totalPluginCount","hash":{},"data":data}))
+    + alias2(lookupProperty(helpers,"totalPluginCount").call(alias3,{"name":"totalPluginCount","hash":{},"data":data,"loc":{"start":{"line":24,"column":107},"end":{"line":24,"column":127}}}))
     + "\n      </span>\n    </div>\n        <div class=\"plugin-list\">\n            <div class=\"plugin-list-description\">"
-    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installCustom_pluginListDesc : stack1), depth0)) != null ? stack1 : "")
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installCustom_pluginListDesc") : stack1), depth0)) != null ? stack1 : "")
     + "</div>\n"
-    + ((stack1 = this.invokePartial(__webpack_require__(2585),depth0,{"name":"pluginSelectList","data":data,"indent":"        ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(__webpack_require__(2585),depth0,{"name":"pluginSelectList","data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + "    </div>\n  </div>\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-link install-home\">\n    "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_goBack : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_goBack") : stack1), depth0))
     + "\n  </button>\n  <button type=\"button\" class=\"btn btn-primary install-selected\">\n    "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_goInstall : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_goInstall") : stack1), depth0))
     + "\n  </button>\n</div>\n";
 },"usePartial":true,"useData":true});
 
@@ -3554,9 +3619,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 2202:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"plugin-setup-wizard bootstrap-3\">\n	<div class=\"modal fade in\" style=\"display: block;\">\n		<div class=\"modal-dialog\">\n			<div class=\"modal-content\"></div>\n		</div>\n	</div>\n</div>";
 },"useData":true});
 
@@ -3565,33 +3630,43 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 4701:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "		<div class=\"selected-plugin "
-    + alias3(((helper = (helper = helpers.installStatus || (depth0 != null ? depth0.installStatus : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"installStatus","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"installStatus") || (depth0 != null ? lookupProperty(depth0,"installStatus") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"installStatus","hash":{},"data":data,"loc":{"start":{"line":16,"column":30},"end":{"line":16,"column":47}}}) : helper)))
     + "\" id=\"installing-"
-    + alias3(__default(__webpack_require__(553)).call(depth0,(depth0 != null ? depth0.name : depth0),{"name":"id","hash":{},"data":data}))
+    + alias4(__default(__webpack_require__(553)).call(alias1,(depth0 != null ? lookupProperty(depth0,"name") : depth0),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":16,"column":64},"end":{"line":16,"column":75}}}))
     + "\" data-tooltip=\""
-    + alias3(((helper = (helper = helpers.errorMessage || (depth0 != null ? depth0.errorMessage : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"errorMessage","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"errorMessage") || (depth0 != null ? lookupProperty(depth0,"errorMessage") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"errorMessage","hash":{},"data":data,"loc":{"start":{"line":16,"column":91},"end":{"line":16,"column":107}}}) : helper)))
     + "\">"
-    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":16,"column":109},"end":{"line":16,"column":118}}}) : helper)))
     + "</div>\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installing_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installing_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body installing-body\">\n	<div class=\"jumbotron welcome-panel installing-panel\">\n		<h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installing_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installing_title") : stack1), depth0))
     + "</h1>\n		<div class=\"progress\">\n		  <div class=\"progress-bar progress-bar-striped active\" role=\"progressbar\" aria-valuenow=\"60\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 0%;\">\n		    <span class=\"sr-only\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installing_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installing_title") : stack1), depth0))
     + "</span>\n		  </div>\n		</div>\n	</div>\n\n	<div class=\"selected-plugin-progress\">\n"
-    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.installingPlugins : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"installingPlugins") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":15,"column":2},"end":{"line":17,"column":11}}})) != null ? stack1 : "")
     + "	</div>\n\n	<div class=\"install-console\">\n	  <div class=\"install-console-scroll\">\n	    <div class=\"install-text\"></div>\n	  </div>\n	  <div class=\"dependency-legend\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installingConsole_dependencyIndicatorNote : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installingConsole_dependencyIndicatorNote") : stack1), depth0))
     + "</div>\n	</div>\n</div>\n";
 },"useData":true});
 
@@ -3600,19 +3675,24 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 7697:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n    <h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_configureProxy_label : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_configureProxy_label") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n    <div class=\"jumbotron welcome-panel security-panel\">\n        <iframe src=\""
-    + alias2(((helper = (helper = helpers.baseUrl || (depth0 != null ? depth0.baseUrl : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"baseUrl","hash":{},"data":data}) : helper)))
+    + alias2(((helper = (helper = lookupProperty(helpers,"baseUrl") || (depth0 != null ? lookupProperty(depth0,"baseUrl") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"baseUrl","hash":{},"data":data,"loc":{"start":{"line":6,"column":21},"end":{"line":6,"column":32}}}) : helper)))
     + "/setupWizard/proxy-configuration\"></iframe>\n    </div>\n</div>\n<div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-link install-home\">\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_goBack : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_goBack") : stack1), depth0))
     + "\n    </button>\n    <button type=\"button\" class=\"btn btn-primary save-proxy-config\" disabled>\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_configureProxy_save : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_configureProxy_save") : stack1), depth0))
     + "\n    </button>\n</div>\n";
 },"useData":true});
 
@@ -3621,57 +3701,92 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,"
 /***/ 4173:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
-    var stack1;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "		<h1>"
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_bannerRestart : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_bannerRestart") : stack1), depth0))
     + "</h1>\n";
-},"3":function(depth0,helpers,partials,data) {
-    var stack1;
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "		<h1>"
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_banner : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_banner") : stack1), depth0))
     + "</h1>\n";
-},"5":function(depth0,helpers,partials,data) {
-    var stack1;
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
-  return ((stack1 = helpers["if"].call(depth0,(depth0 != null ? depth0.restartSupported : depth0),{"name":"if","hash":{},"fn":this.program(6, data, 0),"inverse":this.program(8, data, 0),"data":data})) != null ? stack1 : "");
-},"6":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"restartSupported") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data,"loc":{"start":{"line":15,"column":3},"end":{"line":22,"column":10}}})) != null ? stack1 : "");
+},"6":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "			<p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_installComplete_restartRequiredMessage : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_installComplete_restartRequiredMessage") : stack1), depth0))
     + "</p>\n			<button type=\"button\" class=\"btn btn-primary install-done-restart\">\n				"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_restartLabel : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_restartLabel") : stack1), depth0))
     + "\n			</button>\n";
-},"8":function(depth0,helpers,partials,data) {
-    var stack1;
+},"8":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "			<p>"
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_installComplete_restartRequiredNotSupportedMessage : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_installComplete_restartRequiredNotSupportedMessage") : stack1), depth0))
     + "</p>\n";
-},"10":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "		<p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_message : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_message") : stack1), depth0))
     + "</p>\n		<button type=\"button\" class=\"btn btn-primary install-done\">\n			"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_finishButtonLabel : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_finishButtonLabel") : stack1), depth0))
     + "\n		</button>\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_installComplete_title : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_installComplete_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"jumbotron welcome-panel success-panel\">\n"
-    + ((stack1 = helpers["if"].call(depth0,(depth0 != null ? depth0.restartRequired : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"restartRequired") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":6,"column":2},"end":{"line":10,"column":9}}})) != null ? stack1 : "")
     + "		\n		"
-    + ((stack1 = ((helper = (helper = helpers.message || (depth0 != null ? depth0.message : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"message","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"message") || (depth0 != null ? lookupProperty(depth0,"message") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"message","hash":{},"data":data,"loc":{"start":{"line":12,"column":2},"end":{"line":12,"column":15}}}) : helper))) != null ? stack1 : "")
     + "\n\n"
-    + ((stack1 = helpers["if"].call(depth0,(depth0 != null ? depth0.restartRequired : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.program(10, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"restartRequired") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(10, data, 0),"data":data,"loc":{"start":{"line":14,"column":2},"end":{"line":28,"column":9}}})) != null ? stack1 : "")
     + "	</div>\n</div>\n";
 },"useData":true});
 
@@ -3680,53 +3795,78 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 8971:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"1":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "        <p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_pluginInstallFailure_message : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_pluginInstallFailure_message") : stack1), depth0))
     + "</p>\n        <button type=\"button\" class=\"btn btn-primary retry-failed-plugins\">\n            "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_retry : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_retry") : stack1), depth0))
     + "\n        </button>\n";
-},"3":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+},"3":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "        <div class=\"selected-plugin "
-    + alias3(((helper = (helper = helpers.installStatus || (depth0 != null ? depth0.installStatus : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"installStatus","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"installStatus") || (depth0 != null ? lookupProperty(depth0,"installStatus") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"installStatus","hash":{},"data":data,"loc":{"start":{"line":18,"column":36},"end":{"line":18,"column":53}}}) : helper)))
     + "\" data-name=\""
-    + alias3(__default(__webpack_require__(553)).call(depth0,(depth0 != null ? depth0.name : depth0),{"name":"id","hash":{},"data":data}))
+    + alias4(__default(__webpack_require__(553)).call(alias1,(depth0 != null ? lookupProperty(depth0,"name") : depth0),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":18,"column":66},"end":{"line":18,"column":77}}}))
     + "\">"
-    + alias3(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"title","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":18,"column":79},"end":{"line":18,"column":88}}}) : helper)))
     + "</div>\n";
-},"5":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "    <button type=\"button\" class=\"btn btn-link continue-with-failed-plugins\">\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_continue : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_continue") : stack1), depth0))
     + "\n    </button>\n    <button type=\"button\" class=\"btn btn-primary retry-failed-plugins\">\n        "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_retry : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_retry") : stack1), depth0))
     + "\n    </button>\n";
-},"7":function(depth0,helpers,partials,data) {
-    var stack1;
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "    <button type=\"button\" class=\"btn btn-primary continue-with-failed-plugins\">\n        "
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_continue : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_continue") : stack1), depth0))
     + "\n    </button>\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header\">\n    <h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n    <div class=\"jumbotron welcome-panel success-panel\">\n        <h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_pluginInstallFailure_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_pluginInstallFailure_title") : stack1), depth0))
     + "</h1>\n\n"
-    + ((stack1 = helpers["if"].call(depth0,(depth0 != null ? depth0.failedPlugins : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,(depth0 != null ? lookupProperty(depth0,"failedPlugins") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":8},"end":{"line":13,"column":15}}})) != null ? stack1 : "")
     + "    </div>\n\n    <div class=\"selected-plugin-progress success-panel\">\n"
-    + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.installingPlugins : depth0),{"name":"each","hash":{},"fn":this.program(3, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,(depth0 != null ? lookupProperty(depth0,"installingPlugins") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":17,"column":8},"end":{"line":19,"column":17}}})) != null ? stack1 : "")
     + "    </div>\n</div>\n<div class=\"modal-footer\">\n"
-    + ((stack1 = helpers["if"].call(depth0,(depth0 != null ? depth0.failedPlugins : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.program(7, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,(depth0 != null ? lookupProperty(depth0,"failedPlugins") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data,"loc":{"start":{"line":23,"column":4},"end":{"line":34,"column":11}}})) != null ? stack1 : "")
     + "</div>\n";
 },"useData":true});
 
@@ -3735,25 +3875,30 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(de
 /***/ 1301:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-var Handlebars = __webpack_require__(3449);
+var Handlebars = __webpack_require__(2280);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, alias1=this.lambda, alias2=this.escapeExpression;
+module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
 
   return "<div class=\"modal-header closeable\">\n	<h4 class=\"modal-title\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_title : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_title") : stack1), depth0))
     + "</h4>\n</div>\n<div class=\"modal-body\">\n  <i class=\"water-mark icon-service\"></i>\n  <div class=\"jumbotron welcome-panel\">\n		 <h1>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_banner : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_banner") : stack1), depth0))
     + "</h1>\n	<p>\n			"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_message : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_message") : stack1), depth0))
     + "\n		</p>\n		<p class=\"button-set\">\n			<a class=\"btn btn-primary btn-lg btn-huge install-recommended\" href=\"#\" role=\"button\">\n				<b>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_recommendedActionTitle : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_recommendedActionTitle") : stack1), depth0))
     + "</b>\n				<sub>\n					"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_recommendedActionDetails : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_recommendedActionDetails") : stack1), depth0))
     + "\n				</sub>\n				<i class=\"icon icon-signup\"></i>\n			</a>\n\n			<a class=\"btn btn-default btn-lg btn-huge install-custom\" href=\"#\" role=\"button\">\n				<b>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_customizeActionTitle : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_customizeActionTitle") : stack1), depth0))
     + "</b>\n				<sub>\n					"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_welcomePanel_customizeActionDetails : stack1), depth0))
+    + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"translations") : depth0)) != null ? lookupProperty(stack1,"installWizard_welcomePanel_customizeActionDetails") : stack1), depth0))
     + "\n				</sub>\n				<i class=\"icon icon-plug\"></i>\n			</a>\n		</p>\n	</div>\n\n</div>\n";
 },"useData":true});
 
