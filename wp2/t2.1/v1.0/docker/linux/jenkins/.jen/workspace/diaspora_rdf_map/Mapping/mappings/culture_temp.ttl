@@ -41,7 +41,7 @@
 
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:rgStart;
+        rr:predicate  bacdive:has_rgStart;
         rr:objectMap [ rml:reference "rgStart" ]
     ] ;
 
