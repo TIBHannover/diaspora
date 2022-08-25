@@ -20,7 +20,7 @@ import time
 
 
 
-# '''insering data into repo diaspora'''
+# '''insering data into repository diaspora'''
 start = time.time()
 
 
@@ -35,12 +35,14 @@ dirs = natsort.natsorted(dirs)
 
 # # print(dirs)
 
+## print(dirs)
+
 start = time.time()
 
 for i_path in dirs:
     
     a = (os.path.join(path,i_path))
-     # print(a)
+ 
     suff = (Path(a).suffixes)
     
 
