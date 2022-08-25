@@ -109,6 +109,7 @@ for each_section in config.sections():
         # query = 'select * from materials_dataset' 
         
         results = pd.read_sql_query(query, mydb)
+        results.to_csv(each_key+".csv", index=False)
         
      
         
