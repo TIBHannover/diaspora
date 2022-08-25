@@ -4,22 +4,24 @@
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.model.Cause_-UserIdCause/>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>rohit</userId>
+          </hudson.model.Cause_-UserIdCause>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>1038</queueId>
-  <timestamp>1654788335336</timestamp>
-  <startTime>1654788335343</startTime>
+  <queueId>52</queueId>
+  <timestamp>1659532994743</timestamp>
+  <startTime>1659532994778</startTime>
   <result>SUCCESS</result>
-  <duration>176082</duration>
-  <charset>windows-1252</charset>
+  <duration>180</duration>
+  <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph</workspace>
-  <hudsonVersion>2.332.1</hudsonVersion>
+  <workspace>/var/jenkins_home/workspace/diaspora_store_to_graph</workspace>
+  <hudsonVersion>2.362</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="java.util.Collections$UnmodifiableSet">
     <c class="sorted-set"/>

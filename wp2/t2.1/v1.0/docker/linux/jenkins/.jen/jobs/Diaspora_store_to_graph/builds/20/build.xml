@@ -12,16 +12,16 @@
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>1169</queueId>
-  <timestamp>1655284749445</timestamp>
-  <startTime>1655284749455</startTime>
+  <queueId>62</queueId>
+  <timestamp>1659538824867</timestamp>
+  <startTime>1659538824888</startTime>
   <result>FAILURE</result>
-  <duration>1546</duration>
-  <charset>windows-1252</charset>
+  <duration>50</duration>
+  <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph</workspace>
-  <hudsonVersion>2.332.1</hudsonVersion>
+  <workspace>/var/jenkins_home/workspace/diaspora_store_to_graph</workspace>
+  <hudsonVersion>2.362</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="java.util.Collections$UnmodifiableSet">
     <c class="sorted-set"/>

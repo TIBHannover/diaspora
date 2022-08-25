@@ -4,24 +4,38 @@
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.model.Cause_-UserIdCause>
-            <userId>rohit</userId>
-          </hudson.model.Cause_-UserIdCause>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>diaspora_rdf_map</upstreamProject>
+            <upstreamUrl>job/diaspora_rdf_map/</upstreamUrl>
+            <upstreamBuild>28</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>diaspora_to_csv</upstreamProject>
+                <upstreamUrl>job/diaspora_to_csv/</upstreamUrl>
+                <upstreamBuild>104</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UserIdCause>
+                    <userId>rohit</userId>
+                  </hudson.model.Cause_-UserIdCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>1246</queueId>
-  <timestamp>1655399301380</timestamp>
-  <startTime>1655399301384</startTime>
+  <queueId>3</queueId>
+  <timestamp>1660657429069</timestamp>
+  <startTime>1660657429090</startTime>
   <result>SUCCESS</result>
-  <duration>24710</duration>
-  <charset>windows-1252</charset>
+  <duration>32687</duration>
+  <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
-  <workspace>C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph</workspace>
-  <hudsonVersion>2.332.1</hudsonVersion>
+  <workspace>/var/jenkins_home/workspace/diaspora_store_to_graph</workspace>
+  <hudsonVersion>2.363</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>
   <culprits class="java.util.Collections$UnmodifiableSet">
     <c class="sorted-set"/>
