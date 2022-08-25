@@ -39,7 +39,6 @@
         ];
     ];
 
-
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_rgStart;
         rr:objectMap [ rml:reference "rgStart" ]
@@ -64,11 +63,6 @@
     rr:predicate  bacdive:has_temperature_range;
     rr:objectMap [ rml:reference "temperature_range" ]
     ] ;
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_ID_Medium;
-    # rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/medium/{ID_Medium}" ] # should be an IRI 
-    # ] ;
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_reference;

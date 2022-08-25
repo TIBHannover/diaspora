@@ -11,14 +11,13 @@
 @prefix ex: <http://example.com/ns/>.
 @prefix bacdive: <http://kg.bacdive.dsmz.de/>.
 
-# cc
 
 
 
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/gc_content.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/GC_content.csv";
     rml:referenceFormulation ql:CSV
     ];
     
