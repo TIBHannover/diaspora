@@ -1,0 +1,112 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[Diaspora_store_to_graph] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins8201531019232052829.bat
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>python store.py 
+../diaspora_rdf_map/SDM-RDFizer/exam/output\biosample.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\cell_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\colony_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\compound_production.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_collection.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_medium.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_ph.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_temp.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\enzymes.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\fa_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\fa_profile.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\gc_content.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\halophily.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20a.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20a_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20e.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20e_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20ne.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20ne_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20str.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_20str_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_50chac.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_50chac_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_50chas.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_50chas_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_cam.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_cam_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_coryne.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\kit_api_coryne_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_antibiogram.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_antibiogram_meta.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_antibiotica.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_production.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_test.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\met_util.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\multicellular_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\murein.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\nutrition_type.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\observation.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\origin.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\oxygen_tolerance.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\pigmentation.nt
+<Response [500]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\reference.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\risk_assessment.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\sequence.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\spore_formation.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\strain_history.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\strain_synonyms.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\strains.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\tolerance.nt
+<Response [204]>
+time taken to upload triples : 182.7635142803192
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>exit 0 
+Finished: SUCCESS

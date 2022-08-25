@@ -1,0 +1,37 @@
+Started by user [8mha:////4PcHjBgrWG0E1fxRNX+R9P5tz2uFEG3+jieYc2DKk7uAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mROHIT GUPTA
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[Diaspora_store_to_graph] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins7543185684688536321.bat
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>python store.py 
+../diaspora_rdf_map/SDM-RDFizer/exam/output\biosample.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\cell_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\colony_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\compound_production.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_collection.nt
+<Response [400]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_medium.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_ph.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\culture_temp.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\enzymes.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\fa_meta.nt
+<Response [204]>
+../diaspora_rdf_map/SDM-RDFizer/exam/output\fa_profile.nt
+Traceback (most recent call last):
+  File "C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph\store.py", line 44, in <module>
+    rdf = open(a,'r',encoding='utf-8').read()
+FileNotFoundError: [Errno 2] No such file or directory: '../diaspora_rdf_map/SDM-RDFizer/exam/output\\fa_profile.nt'
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

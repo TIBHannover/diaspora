@@ -1,0 +1,146 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph
+[Diaspora_store_to_graph] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins3504970264051628005.bat
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>python store.py 
+../diaspora_rdf_map/Mapping/output\biosample.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\cell_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\colony_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\compound_production.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_collection.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_medium.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_ph.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_temp.nt
+<Response [400]>
+../diaspora_rdf_map/Mapping/output\enzymes.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\fa_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\fa_profile.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\gc_content.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\halophily.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\is_link.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20a.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20a_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20e.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20e_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20ne.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20ne_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20str.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_20str_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_50chac.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_50chac_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_50chas.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_50chas_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_cam.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_cam_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_coryne.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_coryne_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_id32e.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_id32e_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_id32sta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_id32sta_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_list.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_list_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_nh.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_nh_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_rid32a.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_rid32a_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_rid32str.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_rid32str_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_sta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_sta_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_zym.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\kit_api_zym_ec.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_antibiogram.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_antibiogram_meta.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_antibiotica.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_production.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_test.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_util.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\multicellular_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\multimedia.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\murein.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\nutrition_type.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\observation.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\origin.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\oxygen_tolerance.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\pigmentation.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\reference.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\risk_assessment.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\sequence.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\spore_formation.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\strain_history.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\strain_synonyms.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\strains.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\tolerance.nt
+<Response [204]>
+time taken to upload triples : 208.70731401443481
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>exit 0 
+Finished: SUCCESS

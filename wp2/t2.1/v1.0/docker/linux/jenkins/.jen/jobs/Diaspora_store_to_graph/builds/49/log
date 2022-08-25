@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph
+[Diaspora_store_to_graph] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins7935637977522131379.bat
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>python store.py 
+Traceback (most recent call last):
+  File "C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph\store.py", line 20, in <module>
+    dirs = os.listdir(path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: '../diaspora_rdf_map/exam/output'
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,42 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph
+[Diaspora_store_to_graph] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins5971934170858545496.bat
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>python store.py 
+../diaspora_rdf_map/Mapping/output\cell_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\colony_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_medium.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_ph.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\culture_temp.nt
+<Response [400]>
+../diaspora_rdf_map/Mapping/output\enzymes.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\halophily.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_antibiotica.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_production.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\met_util.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\origin.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\oxygen_tolerance.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\reference.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\risk_assessment.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\spore_formation.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output\strains.nt
+<Response [204]>
+time taken to upload triples : 75.41917157173157
+
+C:\Users\GuptaR\.jenkins\workspace\Diaspora_store_to_graph>exit 0 
+Finished: SUCCESS
