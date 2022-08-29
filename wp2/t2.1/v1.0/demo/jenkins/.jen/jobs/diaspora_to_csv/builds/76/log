@@ -1,0 +1,27 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins5912068312456994425.sh
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:58: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 79, in <module>
+    mydb = mysql.connector.connect(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/__init__.py", line 179, in connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 95, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/abstracts.py", line 716, in connect
+    self._open_connection()
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 208, in _open_connection
+    self._do_auth(self._user, self._password,
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 144, in _do_auth
+    self._auth_switch_request(username, password)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 167, in _auth_switch_request
+    auth = get_auth_plugin(new_auth_plugin)(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/authentication.py", line 190, in get_auth_plugin
+    raise errors.NotSupportedError(
+mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

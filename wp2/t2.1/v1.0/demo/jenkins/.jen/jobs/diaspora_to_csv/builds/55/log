@@ -1,0 +1,36 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins6860595277126921803.sh
++ pip install pandas
+Requirement already satisfied: pandas in /usr/local/lib/python3.9/dist-packages (1.4.3)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2022.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: numpy>=1.18.5 in /usr/local/lib/python3.9/dist-packages (from pandas) (1.23.1)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:56: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 69, in <module>
+    mydb = mysql.connector.connect(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/__init__.py", line 179, in connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 95, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/abstracts.py", line 716, in connect
+    self._open_connection()
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 208, in _open_connection
+    self._do_auth(self._user, self._password,
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 137, in _do_auth
+    packet = self._protocol.make_auth(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/protocol.py", line 99, in make_auth
+    packet += self._auth_response(client_flags, username, password,
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/protocol.py", line 58, in _auth_response
+    auth = get_auth_plugin(auth_plugin)(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/authentication.py", line 190, in get_auth_plugin
+    raise errors.NotSupportedError(
+mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

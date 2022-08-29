@@ -1,0 +1,50 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/query_diaspora
+[query_diaspora] $ /bin/sh -xe /tmp/jenkins1161652756950092966.sh
++ pip install sparqlwrapper
+Collecting sparqlwrapper
+  Downloading SPARQLWrapper-2.0.0-py3-none-any.whl (28 kB)
+Requirement already satisfied: rdflib>=6.1.1 in /usr/local/lib/python3.9/dist-packages (from sparqlwrapper) (6.2.0)
+Requirement already satisfied: isodate in /usr/local/lib/python3.9/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (0.6.1)
+Requirement already satisfied: pyparsing in /usr/local/lib/python3.9/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (3.0.9)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (52.0.0)
+Requirement already satisfied: six in /usr/local/lib/python3.9/dist-packages (from isodate->rdflib>=6.1.1->sparqlwrapper) (1.16.0)
+Installing collected packages: sparqlwrapper
+Successfully installed sparqlwrapper-2.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 query.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/SPARQLWrapper/Wrapper.py", line 926, in _query
+    response = urlopener(request)
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/query_diaspora/query.py", line 52, in <module>
+    results = sparql.queryAndConvert()
+  File "/usr/local/lib/python3.9/dist-packages/SPARQLWrapper/Wrapper.py", line 967, in queryAndConvert
+    res = self.query()
+  File "/usr/local/lib/python3.9/dist-packages/SPARQLWrapper/Wrapper.py", line 960, in query
+    return QueryResult(self._query())
+  File "/usr/local/lib/python3.9/dist-packages/SPARQLWrapper/Wrapper.py", line 932, in _query
+    raise EndPointNotFound(e.read())
+SPARQLWrapper.SPARQLExceptions.EndPointNotFound: EndPointNotFound: It was not possible to connect to the given endpoint: check it is correct. 
+
+Response:
+b'Unknown repository: Diaspora'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

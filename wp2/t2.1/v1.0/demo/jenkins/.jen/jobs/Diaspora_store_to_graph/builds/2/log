@@ -1,0 +1,10 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_store_to_graph
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[diaspora_store_to_graph] $ /bin/sh -xe /tmp/jenkins2424103020683293950.sh
++ python store.py
+/tmp/jenkins2424103020683293950.sh: 2: python: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
