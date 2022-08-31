@@ -86,6 +86,8 @@ transforming into RDF triples, storing the triples in the triple store of choice
      2. Run the command:
 
      ```
+     pip3 install python-jenkins
+     pip3 install jenkinsapi
      python3 automate.py
      
      ```
