@@ -1,6 +1,6 @@
 # Containerized version of the Bacdive Database
 
-This is the contarized version of the RDF counterpart of the Bacdive database produced by TIB in the context of the DIASPora project.
+This is the containerized version of the RDF counterpart of the Bacdive database produced by TIB in the context of the DIASPora project.
 
 In order to automate the transformation process and control the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline has been employed.
 
