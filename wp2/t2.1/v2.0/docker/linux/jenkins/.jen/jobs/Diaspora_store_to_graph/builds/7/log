@@ -1,0 +1,41 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_store_to_graph
+[diaspora_store_to_graph] $ /bin/sh -xe /tmp/jenkins5281525291839964262.sh
++ pip3 install requests
+Requirement already satisfied: requests in /usr/local/lib/python3.9/dist-packages (2.28.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/dist-packages (from requests) (3.3)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.9/dist-packages (from requests) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests) (2022.6.15)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests) (1.26.11)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 store.py
+../diaspora_rdf_map/Mapping/output/cell_morphology.nt
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/requests/models.py", line 434, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "/usr/local/lib/python3.9/dist-packages/urllib3/util/url.py", line 397, in parse_url
+    return six.raise_from(LocationParseError(source_url), None)
+  File "<string>", line 3, in raise_from
+urllib3.exceptions.LocationParseError: Failed to parse: http://localhost:graphdb/repositories/Diaspora/statements
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_store_to_graph/store.py", line 48, in <module>
+    response = requests.post('http://localhost:graphdb/repositories/Diaspora/statements', data=rdf.encode('utf-8'), headers = headers)
+  File "/usr/local/lib/python3.9/dist-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/requests/sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+  File "/usr/local/lib/python3.9/dist-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/usr/local/lib/python3.9/dist-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/usr/local/lib/python3.9/dist-packages/requests/models.py", line 436, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: http://localhost:graphdb/repositories/Diaspora/statements
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

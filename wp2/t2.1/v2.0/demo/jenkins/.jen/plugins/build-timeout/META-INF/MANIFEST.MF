@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.332.3
+Plugin-Dependencies: naginator:1.18.1;resolution:=optional,token-macro
+ :293.v283932a_0a_b_49
+Implementation-Title: Build Timeout
+Long-Name: Build Timeout
+Implementation-Version: 1.21
+Group-Id: org.jenkins-ci.plugins
+Minimum-Java-Version: 1.8
+Plugin-License-Name: The MIT License (MIT)
+Specification-Title: Build Timeout
+Plugin-ScmUrl: https://github.com/jenkinsci/build-timeout-plugin
+Plugin-Version: 1.21
+Jenkins-Version: 2.332.3
+Url: https://github.com/jenkinsci/build-timeout-plugin
+Short-Name: build-timeout
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-Developers: 
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.2
+Specification-Version: 1.21
+

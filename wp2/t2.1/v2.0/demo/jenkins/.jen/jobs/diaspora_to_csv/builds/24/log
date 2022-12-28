@@ -1,0 +1,54 @@
+Started by user [8mha:////4KUMFlbveTuw2CrO3ffXNdXpt+NlAScdR1M+KzoPh3GjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/diaspora_to_csv/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins3318280687589063286.sh
++ pip install -r ./requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: mysql_connector in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 2)) (2.2.9)
+Requirement already satisfied: natsort==8.1.0 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 3)) (8.1.0)
+Requirement already satisfied: numpy==1.20.1 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 4)) (1.20.1)
+Requirement already satisfied: pandas==1.2.4 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 5)) (1.2.4)
+Requirement already satisfied: rdflib==6.1.1 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 6)) (6.1.1)
+Requirement already satisfied: requests==2.27.1 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 7)) (2.27.1)
+Requirement already satisfied: SPARQLWrapper==2.0.0 in /var/jenkins_home/.local/lib/python3.9/site-packages (from -r ./requirements.txt (line 8)) (2.0.0)
+Requirement already satisfied: python-dateutil>=2.7.3 in /var/jenkins_home/.local/lib/python3.9/site-packages (from pandas==1.2.4->-r ./requirements.txt (line 5)) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /var/jenkins_home/.local/lib/python3.9/site-packages (from pandas==1.2.4->-r ./requirements.txt (line 5)) (2022.1)
+Requirement already satisfied: isodate in /var/jenkins_home/.local/lib/python3.9/site-packages (from rdflib==6.1.1->-r ./requirements.txt (line 6)) (0.6.1)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from rdflib==6.1.1->-r ./requirements.txt (line 6)) (52.0.0)
+Requirement already satisfied: pyparsing in /var/jenkins_home/.local/lib/python3.9/site-packages (from rdflib==6.1.1->-r ./requirements.txt (line 6)) (3.0.9)
+Requirement already satisfied: certifi>=2017.4.17 in /var/jenkins_home/.local/lib/python3.9/site-packages (from requests==2.27.1->-r ./requirements.txt (line 7)) (2022.6.15)
+Requirement already satisfied: idna<4,>=2.5 in /var/jenkins_home/.local/lib/python3.9/site-packages (from requests==2.27.1->-r ./requirements.txt (line 7)) (3.3)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /var/jenkins_home/.local/lib/python3.9/site-packages (from requests==2.27.1->-r ./requirements.txt (line 7)) (1.26.10)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /var/jenkins_home/.local/lib/python3.9/site-packages (from requests==2.27.1->-r ./requirements.txt (line 7)) (2.0.12)
+Requirement already satisfied: six>=1.5 in /var/jenkins_home/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas==1.2.4->-r ./requirements.txt (line 5)) (1.16.0)
++ python3 db_to_csv.py
+Traceback (most recent call last):
+  File "/var/jenkins_home/jobs/diaspora_to_csv/workspace/db_to_csv.py", line 11, in <module>
+    import pandas as pd 
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/pandas/__init__.py", line 16, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/usr/bin/python3"
+  * The NumPy version is: "1.20.1"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: No module named 'numpy.core._multiarray_umath'
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

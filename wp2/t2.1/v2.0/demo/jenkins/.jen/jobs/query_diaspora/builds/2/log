@@ -1,0 +1,11 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/query_diaspora
+[query_diaspora] $ /bin/sh -xe /tmp/jenkins14814297199983732819.sh
++ python3 query.py
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/query_diaspora/query.py", line 4, in <module>
+    from SPARQLWrapper import SPARQLWrapper, XML, JSON, TURTLE, CSV
+ModuleNotFoundError: No module named 'SPARQLWrapper'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

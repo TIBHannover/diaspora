@@ -1,0 +1,10 @@
+2022-08-09 12:07:32 WARNING space problem , table_name:strains , col_name:designation
+2022-08-09 12:07:33 WARNING line break problem , table_name:strains , col_name:full_scientific_name
+2022-08-09 12:07:33 WARNING space problem , table_name:strains , col_name:full_scientific_name
+2022-08-09 12:07:33 WARNING line break problem , table_name:strains , col_name:strain_number
+2022-08-09 12:07:33 WARNING space problem , table_name:strains , col_name:strain_number
+2022-08-09 12:12:08 WARNING space problem , table_name:strains , col_name:designation
+2022-08-09 12:12:08 WARNING line break problem , table_name:strains , col_name:full_scientific_name
+2022-08-09 12:12:08 WARNING space problem , table_name:strains , col_name:full_scientific_name
+2022-08-09 12:12:08 WARNING line break problem , table_name:strains , col_name:strain_number
+2022-08-09 12:12:08 WARNING space problem , table_name:strains , col_name:strain_number

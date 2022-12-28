@@ -1,0 +1,17 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_rdf_map
+[diaspora_rdf_map] $ /bin/sh -xe /tmp/jenkins6273250485676812029.sh
++ python3 rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py:73: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config1.readfp(open('../diaspora_to_csv/tables.properties'))
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map
+/var/jenkins_home/workspace/diaspora_rdf_map
++ cd SDM-RDFizer/rdfizer
++ python3 run_rdfizer.py /var/jenkins_home/workspace/diaspora_rdf_map/configfile.ini
+'Graph' object has no attribute 'load'
+Could not parse /var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/cell_morphology.ttl as a mapping file
+Aborting...
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

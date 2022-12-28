@@ -1,0 +1,11 @@
+Started by user [8mha:////4KCF45KL6qgZxBvqJcSYTk2FLBRZJx/hkmR8Y7HV+01QAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins8581620573993076967.sh
++ python3 db_to_csv.py
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 11, in <module>
+    import pandas as pd 
+ModuleNotFoundError: No module named 'pandas'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,14 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/validate_diaspora
+[validate_diaspora] $ /bin/sh -xe /tmp/jenkins8733564080462012409.sh
++ python3 validate_query.py
+.
+/var/jenkins_home/workspace/Query_diaspora/expected_result
+/var/jenkins_home/workspace/Query_diaspora/actual_result
+query1.ttl
+query1.ttl
+['/var/jenkins_home/workspace/Query_diaspora/expected_result/query1.ttl', '/var/jenkins_home/workspace/Query_diaspora/actual_result/query1.ttl']
+start_validating
+false
+Finished: SUCCESS

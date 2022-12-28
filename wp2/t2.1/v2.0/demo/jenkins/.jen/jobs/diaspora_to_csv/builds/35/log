@@ -1,0 +1,8 @@
+Started by user [8mha:////4KCF45KL6qgZxBvqJcSYTk2FLBRZJx/hkmR8Y7HV+01QAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins1143326267359585667.sh
++ pip install -r requirements.txt
+/tmp/jenkins1143326267359585667.sh: 2: pip: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
