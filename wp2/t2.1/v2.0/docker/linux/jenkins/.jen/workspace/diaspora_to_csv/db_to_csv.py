@@ -84,7 +84,7 @@ mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
     passwd = '8227',
-    database= "diaspora2")
+    database= "diaspora_v2")
 
 
 # print(mydb)
