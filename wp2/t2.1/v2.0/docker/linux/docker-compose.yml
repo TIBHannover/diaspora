@@ -5,29 +5,29 @@
 services:
 
 
-  # jenkins:
-    # build: ./jenkins
-    # image: jenkins
+  jenkins:
+    build: ./jenkins
+    image: jenkins
 
-    # ports:
-      # - "8080:8080"
-      # - "50000:50000" 
+    ports:
+      - "8080:8080"
+      - "50000:50000" 
       
-    # privileged: true
+    privileged: true
     
-    # user: root
+    user: root
     
 
     
-    # volumes:
-      # - ./jenkins/.jen:/var/jenkins_home
+    volumes:
+      - ./jenkins/.jen:/var/jenkins_home
 
 
-  # graphdb:
-    # build: ./graphdb
-    # image: graphdb
-    # ports:
-      # - "7200:7200"
+  graphdb:
+    build: ./graphdb
+    image: graphdb
+    ports:
+      - "7200:7200"
 
   db:
     build: ./mysql
