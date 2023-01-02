@@ -80,11 +80,16 @@ config.readfp(open('./tables.properties'))
     # database= 'diaspora',
     # auth_plugin='mysql_native_password')
     
+
+
 mydb = mysql.connector.connect(
-    host = 'localhost',
+    host = 'db',
+   # port = '3306',
     user = 'root',
-    passwd = '8227',
-    database= "diaspora_v2")
+    passwd = 'root',
+    database= 'diaspora_v2',
+    auth_plugin='mysql_native_password')
+
 
 
 # print(mydb)
