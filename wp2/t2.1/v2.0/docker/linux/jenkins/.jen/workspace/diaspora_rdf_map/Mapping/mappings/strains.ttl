@@ -108,15 +108,58 @@
     rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{BacDive_ID}" ]
     ] ;
 
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_reference_import;
-    # rr:objectMap [ rml:reference "ID_reference_import" ]
-    # ] ;
-
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
-    ] .
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cell_morphology;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap2>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_colony_morphology;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap3>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ].
+
+
+
+
+    <TripleMap2>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/cell_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+     rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/cell_morphology/{ID_cell_morphology}"; 
+    rr:class bacdive:Cell_morphology ].
+
+    
+    <TripleMap3>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}"; 
+    rr:class bacdive:Colony_morphology ].
 
   
 

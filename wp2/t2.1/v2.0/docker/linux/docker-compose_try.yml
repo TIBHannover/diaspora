@@ -1,0 +1,26 @@
+services:
+  db:
+    build: ./mysql
+    environment:
+      MYSQL_DATABASE: diaspora_v2
+      MYSQL_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+    image: mysql
+    ports:
+    - 42333:3306
+  graphdb:
+    build: ./graphdb
+    image: graphdb
+    ports:
+    - 7200:7200
+  jenkins:
+    build: ./jenkins
+    image: jenkins
+    ports:
+    - 8080:8080
+    - 50000:50000
+    priviledged: true
+    user: root
+    volumes:
+    - ./jenkins/.jen:/var/jenkins_home
