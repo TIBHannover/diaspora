@@ -3,6 +3,15 @@
 /* These styles will only be picked up on Jenkins >=2.239
 /* ------------------------------------------------------------------------------------------------------------------- */
 
+:root {
+    --bs-nav-tabs-border-width: 0;
+}
+
+.modal {
+    --bs-modal-color: var(--text-color);
+    --bs-modal-bg: var(--background);
+}
+
 body {
     background-color: var(--background);
     color: var(--text-color);
@@ -31,15 +40,27 @@ pre {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
-/* Bootstrap Carousel                                                                                                  */
+/* Bootstrap tabs in Jenkins style                                                                                                  */
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-.carousel-control-prev {
-    width: 20px;
+.tabBar {
+    list-style: none;
 }
 
-.carousel-control-next {
-    width: 20px;
+.tabBar .tab a.active {
+    background: var(--tabs-item-background--selected);
+    color: var(--tabs-item-foreground--selected);
+    cursor: default;
+    z-index: 2;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* Bootstrap carousel                                                                                                  */
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.carousel-control-prev, .carousel-control-next {
+    width: 15px;
+    fill: var(--text-color);
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -47,24 +68,42 @@ pre {
 /* ------------------------------------------------------------------------------------------------------------------- */
 .card {
     background-color: var(--background);
+    border-radius: calc(var(--table-border-radius) + 2px);
+    border-width: 5px;
+    border-color: var(--table-background);
     color: var(--text-color);
     font-size: inherit;
 }
 
-.card-title {
-    font-size: 1.2rem;
+.card-header {
+    font-size: 1.1rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    background: var(--table-background);
+    border-bottom: var(--table-background);
 }
 
-.icon-right {
+.card-header-title {
+    margin-right: auto;
+}
+
+.icon-right  {
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin: auto;
+}
+
+.icon-border {
     float: right;
-    fill: var(--fa-image-color);
+    background: var(--item-background--active);
+    border-radius: 100%;
     height: 48px;
     width: 48px;
-    position: absolute;
-    right: 25px;
-    top: 10px;
+    content: "";
+    pointer-events: none;
+    position: relative;
+    display: flex;
 }
 
 .tooltip-inner {

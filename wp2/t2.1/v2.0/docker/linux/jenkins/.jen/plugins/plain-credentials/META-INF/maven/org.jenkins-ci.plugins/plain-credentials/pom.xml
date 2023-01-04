@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>plain-credentials</artifactId>
-  <version>139.ved2b_9cf7587b</version>
+  <version>143.v1b_df8b_d3b_e48</version>
   <packaging>hpi</packaging>
   <name>Plain Credentials Plugin</name>
   <description>Allows use of plain strings and files as credentials.</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/plain-credentials-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/plain-credentials-plugin.git</developerConnection>
-    <tag>ed2b9cf7587ba579c9042b5dea78568202b145cb</tag>
+    <tag>1bdf8bd3be48400d05f1822b837d2b576cf05d67</tag>
     <url>https://github.com/jenkinsci/plain-credentials-plugin</url>
   </scm>
   <distributionManagement>

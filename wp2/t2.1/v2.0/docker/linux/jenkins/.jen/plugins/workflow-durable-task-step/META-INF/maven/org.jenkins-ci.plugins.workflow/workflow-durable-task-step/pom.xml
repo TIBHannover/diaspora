@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-durable-task-step</artifactId>
-  <version>1199.v02b_9244f8064</version>
+  <version>1217.v38306d8fa_b_5c</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Nodes and Processes</name>
   <description>Pipeline steps locking agents and workspaces, and running external processes that may survive a Jenkins restart or agent reconnection.</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/workflow-durable-task-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-durable-task-step-plugin.git</developerConnection>
-    <tag>02b9244f80649fbaee72813c4c1aec0f0da9bca7</tag>
+    <tag>38306d8fab5c35e0b048eb477e9ac6aa7f123074</tag>
     <url>https://github.com/jenkinsci/workflow-durable-task-step-plugin</url>
   </scm>
   <distributionManagement>
@@ -65,19 +65,19 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>durable-task</artifactId>
-      <version>496.va67c6f9eefa7</version>
+      <version>500.v8927d9fd99d8</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-api</artifactId>
-      <version>1182.v41475e53ea_43</version>
+      <version>1200.v8005c684b_a_c6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-support</artifactId>
-      <version>820.vd1a_6cc65ef33</version>
+      <version>838.va_3a_087b_4055b</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -89,13 +89,13 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>structs</artifactId>
-      <version>318.va_f3ccb_729b_71</version>
+      <version>324.va_f5d6774f3a_d</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>scm-api</artifactId>
-      <version>608.vfa_f971c5a_a_e9</version>
+      <version>621.vda_a_b_055e58f7</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -126,7 +126,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -148,13 +148,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.28</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>3.35</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

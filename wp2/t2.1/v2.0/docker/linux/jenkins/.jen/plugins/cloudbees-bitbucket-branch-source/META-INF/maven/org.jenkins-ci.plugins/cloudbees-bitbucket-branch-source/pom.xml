@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>cloudbees-bitbucket-branch-source</artifactId>
-  <version>785.ve724eb_44e286</version>
+  <version>791.vb_eea_a_476405b</version>
   <packaging>hpi</packaging>
   <name>Bitbucket Branch Source Plugin</name>
   <description>Discover and build Bitbucket Cloud and Bitbucket Server pull requests and branches and send status
@@ -38,7 +38,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/bitbucket-branch-source-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/bitbucket-branch-source-plugin.git</developerConnection>
-    <tag>e724eb44e2866af003da7ee9bc40f564310d3b67</tag>
+    <tag>beeaa476405b0bec0baca219874e5436d7873f83</tag>
     <url>https://github.com/jenkinsci/bitbucket-branch-source-plugin</url>
   </scm>
   <distributionManagement>
@@ -67,13 +67,13 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>scm-api</artifactId>
-      <version>620.v0a_5b_1f8054c0</version>
+      <version>621.vda_a_b_055e58f7</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>git</artifactId>
-      <version>4.11.4</version>
+      <version>4.11.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -146,7 +146,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -168,13 +168,13 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.32</version>
+        <version>3.34</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>
         <groupId>org.kohsuke.stapler</groupId>
         <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>1.19</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

@@ -1,0 +1,18 @@
+Started by upstream project "[8mha:////4DqpYtamEh1Kj6fZelSZDYC8OqIresBqvMdk/sI8VmdXAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP2UzMTigvyixPiilLT43MQCfQBfAkAKywAAAA==[0mdiaspora_rdf_map" build number [8mha:////4OXe1uRj35sf19s2ke/XPRYD0Wv4oHqXZD/w+MQYHlCeAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYJ/az8JP2UzMTigvyixPiilLT43MQCfSMLABwAYgjNAAAA[0m28
+originally caused by:
+ Started by upstream project "[8mha:////4NbwmPIkFL5eKoMQklB/20gMziZmD3aPV6K2kEwdfHwPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2UzMTigvyixPiS/Pjk4jJ9ACjzxjvKAAAA[0mdiaspora_to_csv" build number [8mha:////4KVtCbUOZHuscGUPX41ti0yB/gv5ugUK48q/7nkNNW+tAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgYJ/az8JP2UzMTigvyixPiS/Pjk4jJ9QwMTALUDlybNAAAA[0m104
+ originally caused by:
+  Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Diaspora_store_to_graph
+[Diaspora_store_to_graph] $ /bin/sh -xe /tmp/jenkins10630314630089187889.sh
++ python3 store.py
+<Response [400]>
+../diaspora_rdf_map/Mapping/output/cell_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output/colony_morphology.nt
+<Response [204]>
+../diaspora_rdf_map/Mapping/output/strains.nt
+<Response [204]>
+Triggering a new build of [8mha:////4G7sFKYZgNjD9c/010CU1ymcrJOtRNELFD5no4NN4clvAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JP3C0tSiyviUzMTigvyiRH0AngYcRskAAAA=[0mquery_diaspora
+Finished: SUCCESS

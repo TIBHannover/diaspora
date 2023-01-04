@@ -1,23 +1,21 @@
 Manifest-Version: 1.0
-Hudson-Version: 2.277.4
-Implementation-Title: antisamy-markup-formatter
-Long-Name: OWASP Markup Formatter Plugin
-Implementation-Version: 2.7
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: OWASP Markup Formatter Plugin
+Specification-Version: 0.0
+Implementation-Title: OWASP Markup Formatter Plugin
+Implementation-Version: 155.v795fb_8702324
 Group-Id: org.jenkins-ci.plugins
-Minimum-Java-Version: 1.8
-Plugin-License-Name: MIT
-Specification-Title: Sanitize HTML markup in user-submitted text to be
-  displayed on the Jenkins UI.
-Plugin-ScmUrl: https://github.com/jenkinsci/antisamy-markup-formatter-
- plugin
-Plugin-Version: 2.7
-Jenkins-Version: 2.277.4
-Url: https://github.com/jenkinsci/antisamy-markup-formatter-plugin
 Short-Name: antisamy-markup-formatter
-Plugin-License-Url: https://opensource.org/licenses/MIT
+Long-Name: OWASP Markup Formatter Plugin
+Url: https://github.com/jenkinsci/antisamy-markup-formatter-plugin
 Compatible-Since-Version: 2.0
+Plugin-Version: 155.v795fb_8702324
+Hudson-Version: 2.277.4
+Jenkins-Version: 2.277.4
 Plugin-Developers: 
-Extension-Name: antisamy-markup-formatter
-Build-Jdk-Spec: 1.8
-Created-By: Maven Archiver 3.5.1
+Plugin-License-Name: MIT
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/antisamy-markup-formatter-pl
+ ugin
 

@@ -4,13 +4,13 @@ Build-Jdk-Spec: 11
 Specification-Title: Durable Task Plugin
 Specification-Version: 0.0
 Implementation-Title: Durable Task Plugin
-Implementation-Version: 500.v8927d9fd99d8
+Implementation-Version: 503.v57154d18d478
 Group-Id: org.jenkins-ci.plugins
 Short-Name: durable-task
 Long-Name: Durable Task Plugin
 Url: https://github.com/jenkinsci/durable-task-plugin
 Minimum-Java-Version: 1.8
-Plugin-Version: 500.v8927d9fd99d8
+Plugin-Version: 503.v57154d18d478
 Hudson-Version: 2.289.1
 Jenkins-Version: 2.289.1
 Plugin-Developers: 

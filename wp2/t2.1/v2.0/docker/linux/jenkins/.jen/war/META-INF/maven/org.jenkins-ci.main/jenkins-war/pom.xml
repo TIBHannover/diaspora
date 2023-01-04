@@ -27,7 +27,7 @@ THE SOFTWARE.
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.main</groupId>
   <artifactId>jenkins-war</artifactId>
-  <version>2.363</version>
+  <version>2.385</version>
   <packaging>war</packaging>
   <name>Jenkins war</name>
   <description>Creates a war file. Also includes additional static web resources, such as images, CSS, JavaScript, and some HTML files.</description>
@@ -45,44 +45,34 @@ THE SOFTWARE.
       <name>Jenkins advisories list</name>
       <subscribe>jenkinsci-advisories+subscribe@googlegroups.com</subscribe>
       <unsubscribe>jenkinsci-advisories+unsubscribe@googlegroups.com</unsubscribe>
+      <archive>https://groups.google.com/g/jenkinsci-advisories</archive>
     </mailingList>
     <mailingList>
       <name>Jenkins developer discussion list</name>
       <subscribe>jenkinsci-dev+subscribe@googlegroups.com</subscribe>
       <unsubscribe>jenkinsci-dev+unsubscribe@googlegroups.com</unsubscribe>
       <post>jenkinsci-dev@googlegroups.com</post>
-      <archive>http://jenkins.361315.n4.nabble.com/Jenkins-dev-f387835.html</archive>
-      <otherArchives>
-        <otherArchive>http://hudson.361315.n4.nabble.com/Hudson-dev-f387835.html</otherArchive>
-      </otherArchives>
-    </mailingList>
-    <mailingList>
-      <name>Jenkins issues list</name>
-      <subscribe>jenkinsci-issues+subscribe@googlegroups.com</subscribe>
-      <unsubscribe>jenkinsci-issues+unsubscribe@googlegroups.com</unsubscribe>
+      <archive>https://groups.google.com/g/jenkinsci-dev</archive>
     </mailingList>
     <mailingList>
       <name>Jenkins user discussion list</name>
       <subscribe>jenkinsci-users+subscribe@googlegroups.com</subscribe>
       <unsubscribe>jenkinsci-users+unsubscribe@googlegroups.com</unsubscribe>
       <post>jenkinsci-users@googlegroups.com</post>
-      <archive>http://jenkins.361315.n4.nabble.com/Jenkins-users-f361316.html</archive>
-      <otherArchives>
-        <otherArchive>http://hudson.361315.n4.nabble.com/Hudson-users-f361316.html</otherArchive>
-      </otherArchives>
+      <archive>https://groups.google.com/g/jenkinsci-users</archive>
     </mailingList>
     <mailingList>
       <name>Jenkins Japanese user discussion list</name>
       <subscribe>jenkinsci-ja+subscribe@googlegroups.com</subscribe>
       <unsubscribe>jenkinsci-ja+unsubscribe@googlegroups.com</unsubscribe>
       <post>jenkinsci-ja@googlegroups.com</post>
-      <archive>http://jenkinsci.361315.n4.nabble.com/Jenkins-ja-f361157.html</archive>
+      <archive>https://groups.google.com/g/jenkinsci-ja</archive>
     </mailingList>
   </mailingLists>
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/jenkins.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/jenkins.git</developerConnection>
-    <tag>jenkins-2.363</tag>
+    <tag>jenkins-2.385</tag>
     <url>https://github.com/jenkinsci/jenkins</url>
   </scm>
   <issueManagement>
@@ -107,19 +97,19 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>cli</artifactId>
-      <version>2.363</version>
+      <version>2.385</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>remoting</artifactId>
-      <version>3046.v38db_38a_b_7a_86</version>
+      <version>3085.vc4c6977c075a</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.363</version>
+      <version>2.385</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -139,26 +129,20 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>websocket-jetty10</artifactId>
-      <version>2.363</version>
+      <version>2.385</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>websocket-jetty9</artifactId>
-      <version>2.363</version>
+      <version>2.385</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
-      <version>1.7.36</version>
+      <version>2.0.6</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>[0]</version>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
   <repositories>

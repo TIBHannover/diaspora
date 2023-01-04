@@ -4,12 +4,12 @@ Build-Jdk-Spec: 11
 Specification-Title: Pipeline: Basic Steps
 Specification-Version: 0.0
 Implementation-Title: Pipeline: Basic Steps
-Implementation-Version: 991.v43d80fea_ff66
+Implementation-Version: 994.vd57e3ca_46d24
 Group-Id: org.jenkins-ci.plugins.workflow
 Short-Name: workflow-basic-steps
 Long-Name: Pipeline: Basic Steps
 Url: https://github.com/jenkinsci/workflow-basic-steps-plugin
-Plugin-Version: 991.v43d80fea_ff66
+Plugin-Version: 994.vd57e3ca_46d24
 Hudson-Version: 2.332.1
 Jenkins-Version: 2.332.1
 Plugin-Dependencies: jakarta-mail-api:2.0.0-6,workflow-api:1188.v0016b_4

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-stage-step</artifactId>
-  <version>293.v200037eefcd5</version>
+  <version>296.v5f6908f017a_5</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Stage Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-stage-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-stage-step-plugin.git</developerConnection>
-    <tag>200037eefcd50981d8370a45c197326d76616a56</tag>
+    <tag>5f6908f017a5b81e52cd0c106ac1f72a6b758b58</tag>
     <url>https://github.com/jenkinsci/pipeline-stage-step-plugin</url>
   </scm>
   <distributionManagement>
@@ -36,19 +36,19 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-api</artifactId>
-      <version>1143.v2d42f1e9dea_5</version>
+      <version>1192.v2d0deb_19d212</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-step-api</artifactId>
-      <version>622.vb_8e7c15b_c95a_</version>
+      <version>639.v6eca_cd8c04a_a_</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.289.1</version>
+      <version>2.346.1</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -95,13 +95,13 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.27</version>
+        <version>3.32</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>
         <groupId>org.kohsuke.stapler</groupId>
         <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>1.18</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

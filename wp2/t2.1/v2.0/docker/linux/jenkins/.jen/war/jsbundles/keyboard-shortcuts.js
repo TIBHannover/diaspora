@@ -2,29 +2,39 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 7816:
+/***/ 7110:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var hotkeys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1119);
+/* harmony import */ var hotkeys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2863);
 
 window.addEventListener("load", () => {
   const searchBar = document.querySelector("#search-box");
-  searchBar.placeholder = searchBar.placeholder + " (".concat(translateModifierKeysForUsersPlatform("CMD+K").replace("CMD", "⌘"), ")");
+  searchBar.placeholder = searchBar.placeholder + ` (${translateModifierKeysForUsersPlatform("CMD+K").replace("CMD", "⌘")})`;
   (0,hotkeys_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(translateModifierKeysForUsersPlatform("CMD+K"), () => {
-    searchBar.focus(); // Returning false stops the event and prevents default browser events
+    searchBar.focus();
 
+    // Returning false stops the event and prevents default browser events
     return false;
   });
+  const pageSearchBar = document.querySelectorAll(".jenkins-search__input");
+  if (pageSearchBar.length === 1) {
+    (0,hotkeys_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)("/", () => {
+      pageSearchBar[0].focus();
+
+      // Returning false stops the event and prevents default browser events
+      return false;
+    });
+  }
 });
+
 /**
  * Given a keyboard shortcut, e.g. CMD+K, replace any included modifier keys for the user's
  * platform e.g. output will be CMD+K for macOS/iOS, CTRL+K for Windows/Linux
  * @param {string} keyboardShortcut The shortcut to translate
  */
-
 function translateModifierKeysForUsersPlatform(keyboardShortcut) {
   const useCmdKey = navigator.platform.toUpperCase().indexOf("MAC") >= 0 || navigator.platform.toUpperCase() === "IPHONE" || navigator.platform.toUpperCase() === "IPAD";
-  return keyboardShortcut.replace(/CMD|CTRL/ig, useCmdKey ? "CMD" : "CTRL");
+  return keyboardShortcut.replace(/CMD|CTRL/gi, useCmdKey ? "CMD" : "CTRL");
 }
 
 /***/ })
@@ -192,7 +202,7 @@ function translateModifierKeysForUsersPlatform(keyboardShortcut) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(7816); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(7110); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

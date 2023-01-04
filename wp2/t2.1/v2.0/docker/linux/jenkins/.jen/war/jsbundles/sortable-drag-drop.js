@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 5944:
+/***/ 5164:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var sortablejs_modular_sortable_core_esm_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6032);
@@ -16,16 +16,17 @@
  * corresponds to the sortable.js file that deals with table sorting.
  */
 
+
 sortablejs_modular_sortable_core_esm_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"].mount */ .ZP.mount(new sortablejs_modular_sortable_core_esm_js__WEBPACK_IMPORTED_MODULE_0__/* .AutoScroll */ .lK());
-
 function registerSortableDragDrop(e) {
-  if (!e || !e.classList.contains('with-drag-drop')) return false; // eslint-disable-next-line no-unused-vars
-
-  const sortableElement = new sortablejs_modular_sortable_core_esm_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .ZP(e, {
-    draggable: '.repeated-chunk',
-    handle: '.dd-handle',
-    ghostClass: 'repeated-chunk--sortable-ghost',
-    chosenClass: 'repeated-chunk--sortable-chosen',
+  if (!e || !e.classList.contains("with-drag-drop")) {
+    return false;
+  }
+  new sortablejs_modular_sortable_core_esm_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .ZP(e, {
+    draggable: ".repeated-chunk",
+    handle: ".dd-handle",
+    ghostClass: "repeated-chunk--sortable-ghost",
+    chosenClass: "repeated-chunk--sortable-chosen",
     forceFallback: true,
     // Do not use html5 drag & drop behaviour because it does not work with autoscroll
     scroll: true,
@@ -33,19 +34,18 @@ function registerSortableDragDrop(e) {
     onChoose: function (event) {
       const draggableDiv = event.item;
       const height = draggableDiv.clientHeight;
-      draggableDiv.style.height = "".concat(height, "px");
+      draggableDiv.style.height = `${height}px`;
     },
     onUnchoose: function (event) {
-      event.item.style.removeProperty('height');
+      event.item.style.removeProperty("height");
     }
   });
 }
+
 /*
  * Expose the function to register drag & drop components to the window objects
  * so that other widgets can use it (repeatable, hetero-list)
  */
-
-
 window.registerSortableDragDrop = registerSortableDragDrop;
 
 /***/ })
@@ -213,7 +213,7 @@ window.registerSortableDragDrop = registerSortableDragDrop;
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(5944); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(5164); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

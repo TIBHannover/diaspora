@@ -1,0 +1,357 @@
+2023-01-04 15:07:44 WARNING line break problem , table_name:strains , col_name:full_scientific_name ,id:140096 ol_value:Bythopirellula goksoeyrii J. E. Storesund
+Lise Ovreas new_value:Bythopirellula goksoeyrii J. E. StoresundLise Ovreas
+2023-01-04 15:07:44 WARNING line break problem , table_name:strains , col_name:full_scientific_name ,id:160436 ol_value:Rhodococcus spongiicola Zhang, D., Su, Z.-Y., Li, L., Tang, W.-Z.
+ new_value:Rhodococcus spongiicola Zhang, D., Su, Z.-Y., Li, L., Tang, W.-Z.
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:8729 old_value:peptone-yeast 
+extract-glucose broth new_value:peptone-yeast extract-glucose broth
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:8738 old_value:Fastidious Anaerobe
+Agar with 5 % horse blood new_value:Fastidious AnaerobeAgar with 5 % horse blood
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:8972 old_value:Trypticase-Phytone-yeast 
+extract agar new_value:Trypticase-Phytone-yeast extract agar
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9075 old_value:1% Tween 80 supplemented sheep 
+blood agar new_value:1% Tween 80 supplemented sheep blood agar
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9085 old_value:Columbia blood agar base
+supplemented with 5% defibrinated sheep blood new_value:Columbia blood agar basesupplemented with 5% defibrinated sheep blood
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9087 old_value:Columbia blood agar supplemented with 5 %
+sheep blood, BHI agar and trypticase soy agar new_value:Columbia blood agar supplemented with 5 %sheep blood, BHI agar and trypticase soy agar
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9088 old_value:Columbia blood agar
+supplemented with 5% sheep blood new_value:Columbia blood agarsupplemented with 5% sheep blood
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9096 old_value:ISP 5 medium, trypticase/soy agar and
+Mueller-Hinton agar new_value:ISP 5 medium, trypticase/soy agar andMueller-Hinton agar
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_name ,id:9470 old_value:Reasoner’s
+2A agar (R2A, Difco) new_value:Reasoner’s2A agar (R2A, Difco)
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:115 old_value:Medium: 5006
+Name:              
+Composition      (g/l)
+Sucrose	3,0
+Dextrin	15,0
+Meat extract	1,0
+Yeast extract	2,0
+Tryptone soy broth (Oxoid)	5,0
+NaCl	0,5
+K2HPO4    0,5
+MgSO4 x 7 H2O	0,5
+FeSO4 x 7 H2O	0,01
+Agar    20,0 
+Preparation: 
+Sterilisation:
+            20 minutes at 121°C  
+pH before sterilisation: 
+ 7,3 
+Usage: 
+Maintenance 
+Organisms:
+All Actinomycetes new_value:Medium: 5006Name:              Composition      (g/l)Sucrose	3,0Dextrin	15,0Meat extract	1,0Yeast extract	2,0Tryptone soy broth (Oxoid)	5,0NaCl	0,5K2HPO4    0,5MgSO4 x 7 H2O	0,5FeSO4 x 7 H2O	0,01Agar    20,0 Preparation: Sterilisation:            20 minutes at 121°C  pH before sterilisation:  7,3 Usage: Maintenance Organisms:All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:116 old_value:Name: ISP 2 / Yeast Malt Agar (5265); 5265
+Composition 
+Malt extract 10.0 g/l
+Yeast extract 4.0 g/l
+Glucose 4.0 g/l
+Agar 15.0 g/l
+Preparation:
+Sterilisation: 20 minutes at 121°C
+pH before sterilisation: 7.0
+Usage: Maintenance and Taxonomy
+Organisms: All Actinomycetes new_value:Name: ISP 2 / Yeast Malt Agar (5265); 5265Composition Malt extract 10.0 g/lYeast extract 4.0 g/lGlucose 4.0 g/lAgar 15.0 g/lPreparation:Sterilisation: 20 minutes at 121°CpH before sterilisation: 7.0Usage: Maintenance and TaxonomyOrganisms: All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:117 old_value:Name: ISP 3; 5315
+Composition 
+Dog oat flakes 20.0 g/l
+Trace element solution (5314) 2.5 ml/l 
+Agar 18.0 g/l
+Preparation: Oat flakes are cooked for 20 minutes, trace element solution and agar are added (in the case of non rolled oat flakes the suspension has to bee filtrated).
+Sterilisation: 20 minutes at 121°C
+pH before sterilisation: 7.8
+Usage: Maintenance and taxonomy (e.g. SEM As liquid medium for metabolite production)
+Organisms: All Actinomycetes
+
+Trace element solution 5314
+
+Name:  Trace element solution 5314; 5314                
+Composition
+CaCl2 x H2O    3.0 g/l
+Fe-III-citrate    1.0 g/l
+MnSO4    0.2 g/l
+ZnCl2     0.1 g/l
+CuSO4 x 5 H2O 0.025 g/l
+Sodium tetra borate  0.2 g/l
+CoCl2 x 6 H2O 0.004 g/l
+Sodium molybdate   0.01 g/l
+Preparation: Use double destillated water. 
+Sterilisation: 20 minutes at 121°C 
+pH before sterilisation: 
+Usage: Trace element solution for different media 
+Organisms: new_value:Name: ISP 3; 5315Composition Dog oat flakes 20.0 g/lTrace element solution (5314) 2.5 ml/l Agar 18.0 g/lPreparation: Oat flakes are cooked for 20 minutes, trace element solution and agar are added (in the case of non rolled oat flakes the suspension has to bee filtrated).Sterilisation: 20 minutes at 121°CpH before sterilisation: 7.8Usage: Maintenance and taxonomy (e.g. SEM As liquid medium for metabolite production)Organisms: All ActinomycetesTrace element solution 5314Name:  Trace element solution 5314; 5314                CompositionCaCl2 x H2O    3.0 g/lFe-III-citrate    1.0 g/lMnSO4    0.2 g/lZnCl2     0.1 g/lCuSO4 x 5 H2O 0.025 g/lSodium tetra borate  0.2 g/lCoCl2 x 6 H2O 0.004 g/lSodium molybdate   0.01 g/lPreparation: Use double destillated water. Sterilisation: 20 minutes at 121°C pH before sterilisation: Usage: Trace element solution for different media Organisms:
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:118 old_value:Name: ISP 4; DSM 547
+
+Solution I:
+Difco soluble starch, 10.0 g. 
+Make a paste of the starch with a small amount of cold distilled water and bring to a volume of 500 ml.
+
+Solution II:
+CaCO3	2.0	g
+K2HPO4 (anhydrous)	1.0	g
+MgSO4 x 7 H2O	1.0	g
+NaCl	1.0	g
+(NH4)2SO4	2.0	g
+Distilled water	500.0 ml
+Trace salt solution (see below)	1.0	ml
+
+The pH should be between 7.0 and 7.4. Do not adjust if it is within this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by steaming at 100°C for 10 to 20 min.
+
+Trace element solution:
+FeSO4 x 7 H2O	0.1	g
+MnCl2 x 4 H2O	0.1	g
+ZnSO4 x 7 H2O	0.1	g
+Distilled water	100.0 ml new_value:Name: ISP 4; DSM 547Solution I:Difco soluble starch, 10.0 g. Make a paste of the starch with a small amount of cold distilled water and bring to a volume of 500 ml.Solution II:CaCO3	2.0	gK2HPO4 (anhydrous)	1.0	gMgSO4 x 7 H2O	1.0	gNaCl	1.0	g(NH4)2SO4	2.0	gDistilled water	500.0 mlTrace salt solution (see below)	1.0	mlThe pH should be between 7.0 and 7.4. Do not adjust if it is within this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by steaming at 100°C for 10 to 20 min.Trace element solution:FeSO4 x 7 H2O	0.1	gMnCl2 x 4 H2O	0.1	gZnSO4 x 7 H2O	0.1	gDistilled water	100.0 ml
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:120 old_value:Name: ISP 6 (5318)
+Composition
+Peptone 15.0 g/l
+Proteose peptose 5.0 g/l
+Ferric ammonium citrate 0.5 g/l
+Sodium glycerophosphate 1.0 g/l
+Sodium thiosulfate 0.08 g/l
+Yeast extract 1.0 g/l
+Agar 15.0 g/l
+Sterilisation:
+20 minutes at 121°C
+pH before sterilisation:
+Usage: Production of melanoid pigments
+Organisms:
+All Actinomycetes new_value:Name: ISP 6 (5318)CompositionPeptone 15.0 g/lProteose peptose 5.0 g/lFerric ammonium citrate 0.5 g/lSodium glycerophosphate 1.0 g/lSodium thiosulfate 0.08 g/lYeast extract 1.0 g/lAgar 15.0 g/lSterilisation:20 minutes at 121°CpH before sterilisation:Usage: Production of melanoid pigmentsOrganisms:All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:121 old_value:Name: ISP 7 (5322)
+Composition 
+Glycerol 15.0 g/l
+L-Tyrosine 0.5 g/l
+L-Asparagine 1.0 g/l
+K2HPO4 0.5 g/l
+NaCl 0.5 g/l
+FeSO4 x 7 H2O 0.01 g/l
+Trace element solution 5343 1.0 ml/l
+Agar 20.0
+Sterilisation:
+20 minutes at 121°C
+pH before sterilisation:
+7.3
+Usage:
+Production of melanoid pigments
+Organisms:
+All Actinomycetes new_value:Name: ISP 7 (5322)Composition Glycerol 15.0 g/lL-Tyrosine 0.5 g/lL-Asparagine 1.0 g/lK2HPO4 0.5 g/lNaCl 0.5 g/lFeSO4 x 7 H2O 0.01 g/lTrace element solution 5343 1.0 ml/lAgar 20.0Sterilisation:20 minutes at 121°CpH before sterilisation:7.3Usage:Production of melanoid pigmentsOrganisms:All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:130 old_value:Name: ISP 5 (5323)
+Composition 
+L-Asparagine 1.0 g/l
+Glycerol 10.0 g/l
+K2HPO4 1.0 g/l
+Salt solution (see preparation) 1.0 ml/l
+Agar 20.0 g/l
+Preparation:
+Salt solution
+1.0 g FeSO4 x 7 H2O 
+1.0 g MnCl2 x 4 H2O
+1.0 g ZNSO4 x 7 H2O 
+in 100 ml water
+Sterilisation:
+20 minutes at 121°C
+pH before sterilisation:
+7.2
+Usage:
+Maintenance and taxonomy
+Organisms:
+All Actinomycetes new_value:Name: ISP 5 (5323)Composition L-Asparagine 1.0 g/lGlycerol 10.0 g/lK2HPO4 1.0 g/lSalt solution (see preparation) 1.0 ml/lAgar 20.0 g/lPreparation:Salt solution1.0 g FeSO4 x 7 H2O 1.0 g MnCl2 x 4 H2O1.0 g ZNSO4 x 7 H2O in 100 ml waterSterilisation:20 minutes at 121°CpH before sterilisation:7.2Usage:Maintenance and taxonomyOrganisms:All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:146 old_value:Name: Synthetically suter medium (5337) with and without tyrosine - 
+see Kutzner,H.J., R. M. Kroppensted and F. Korn-Wendisch. (1986)
+Composition:      
+Glycerol 15.0 g/l
+Tyrosine 1.0 (optional, see preparation comment)
+L-arginine 5.0 g/l
+L-glutamic acid 5.0 g/l
+L-methionine    0.3 g/l
+L-isoleucine    0.3 g/l
+K2HPO4    0.5 g/l
+MgSO4 x 7 H2O 0.2 g/l 
+Agar 20.0  g/l    
+Trace element solution (5341) 1.0 ml
+
+Composition of Trace element solution (5341):
+CuSO4 x 5 H2O 10.0 g/l
+CaCl2 x 2 H2O 10.0 g/l 
+FeSO4 x 7 H2O 10.0 g/l 
+ZnSO4 x 7 H2O 10.0 g/l 
+MnSO4 x 7 H2O 40.0 g/l
+
+Preparation: 
+Control medium is prepared without tyrosine 
+Sterilisation: 
+20 minutes at 121°C 
+pH before sterilisation: 
+Usage: Production of melanoid pigment 
+Organisms: All Actinomycetes new_value:Name: Synthetically suter medium (5337) with and without tyrosine - see Kutzner,H.J., R. M. Kroppensted and F. Korn-Wendisch. (1986)Composition:      Glycerol 15.0 g/lTyrosine 1.0 (optional, see preparation comment)L-arginine 5.0 g/lL-glutamic acid 5.0 g/lL-methionine    0.3 g/lL-isoleucine    0.3 g/lK2HPO4    0.5 g/lMgSO4 x 7 H2O 0.2 g/l Agar 20.0  g/l    Trace element solution (5341) 1.0 mlComposition of Trace element solution (5341):CuSO4 x 5 H2O 10.0 g/lCaCl2 x 2 H2O 10.0 g/l FeSO4 x 7 H2O 10.0 g/l ZnSO4 x 7 H2O 10.0 g/l MnSO4 x 7 H2O 40.0 g/lPreparation: Control medium is prepared without tyrosine Sterilisation: 20 minutes at 121°C pH before sterilisation: Usage: Production of melanoid pigment Organisms: All Actinomycetes
+2023-01-04 15:07:47 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:750 old_value:Name: Brain Heart Infusion (BHI) Agar; 5425
+Composition:
+Calf brain infusion 200.0 g/l
+Beef heart infusion 250.0 g/l
+Casein (meat) peptone 10.0 g/l
+Glucose 2.0 g/l
+NaCl 5.0 g/l
+Na2HPO4 2.5 g/l
+Agar 15.0 g/l 
+Preparation: 
+Sterilisation: 20 minutes at 121°C 
+pH before sterilisation: 7.4 
+Usage: Maintenance and revitalization 
+Organisms: Dermatophilus congolensis, Nocardia brasieliensis, N. asteroides, Rhodococcus equi, R. fascians, R. rhodochrous, Streptomyces thermoviol aceus subsp. apingens, Coryneform species new_value:Name: Brain Heart Infusion (BHI) Agar; 5425Composition:Calf brain infusion 200.0 g/lBeef heart infusion 250.0 g/lCasein (meat) peptone 10.0 g/lGlucose 2.0 g/lNaCl 5.0 g/lNa2HPO4 2.5 g/lAgar 15.0 g/l Preparation: Sterilisation: 20 minutes at 121°C pH before sterilisation: 7.4 Usage: Maintenance and revitalization Organisms: Dermatophilus congolensis, Nocardia brasieliensis, N. asteroides, Rhodococcus equi, R. fascians, R. rhodochrous, Streptomyces thermoviol aceus subsp. apingens, Coryneform species
+2023-01-04 15:07:49 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:2918 old_value:Name: Middlebrook 7H9 (MB7H9) Broth Base
+Composition:
+Middelbrook 7H9 Broth Base 4.7 g/l  
+Glycerol    2.0 g/l
+Casaminoacids   11.0 g/l 
+Yeast extract   5.5 g/l
+Tween80 (20%)   2.5 g/l 
+OADC-Enrichment     100 ml
+Agar    15.0 g/l 
+
+Preparation: Dissolve in Milli-Q-H2O. Before Use add 10% OADC stock solution
+Sterilisation: 20 minutes at 121°C 
+pH before sterilisation: 
+Usage:
+Maintenance and revitalization 
+Organisms: 
+Mycobacteria 
+
+OADC stock solution
+old broth-name: OADC-Stock 
+Composition:  
+Bovine Serum Albumin, fraction V 5 %
+1% Oleic Acid in 0.2N NaOH 5ml
+Glucose 2 % 
+NaCl 0.85 % 
+Comments: 
+Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. 
+Sterilisation: 20 minutes Temperature:121°C
+PH before: 
+PH after: 
+Biological details Culture type: 
+suitable for: Mycobacteria new_value:Name: Middlebrook 7H9 (MB7H9) Broth BaseComposition:Middelbrook 7H9 Broth Base 4.7 g/l  Glycerol    2.0 g/lCasaminoacids   11.0 g/l Yeast extract   5.5 g/lTween80 (20%)   2.5 g/l OADC-Enrichment     100 mlAgar    15.0 g/l Preparation: Dissolve in Milli-Q-H2O. Before Use add 10% OADC stock solutionSterilisation: 20 minutes at 121°C pH before sterilisation: Usage:Maintenance and revitalization Organisms: Mycobacteria OADC stock solutionold broth-name: OADC-Stock Composition:  Bovine Serum Albumin, fraction V 5 %1% Oleic Acid in 0.2N NaOH 5mlGlucose 2 % NaCl 0.85 % Comments: Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. Sterilisation: 20 minutes Temperature:121°CPH before: PH after: Biological details Culture type: suitable for: Mycobacteria
+2023-01-04 15:07:49 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:2924 old_value:Name: Middlebrook 7H10 (MB7H10) Broth Base
+Composition: amount in percent 
+Middlebrook 7H10 Agar 1.9% 
+Glycerol 0.5% 
+OADC-Enrichment in ml (NL5633) 10ml
+Comments: Add broth base and glycerol to ddh2O. Adjust volumes. Autoclave. Cool to 42°C. Add OADC-stock. 
+Sterilisation: 20 minutes Temperature:121°C
+PH before: 
+PH after: 
+Biological details Culture type: 
+suitable for: Mycobacteria 
+
+OADC stock solution
+old broth-name: OADC-Stock 
+Composition:  
+Bovine Serum Albumin, fraction V 5 %
+1% Oleic Acid in 0.2N NaOH 5ml
+Glucose 2 % 
+NaCl 0.85 % 
+Comments: Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. 
+Sterilisation: 20 minutes Temperature:121°C
+PH before: 
+PH after: 
+Biological details Culture type: 
+suitable for: Mycobacteria new_value:Name: Middlebrook 7H10 (MB7H10) Broth BaseComposition: amount in percent Middlebrook 7H10 Agar 1.9% Glycerol 0.5% OADC-Enrichment in ml (NL5633) 10mlComments: Add broth base and glycerol to ddh2O. Adjust volumes. Autoclave. Cool to 42°C. Add OADC-stock. Sterilisation: 20 minutes Temperature:121°CPH before: PH after: Biological details Culture type: suitable for: Mycobacteria OADC stock solutionold broth-name: OADC-Stock Composition:  Bovine Serum Albumin, fraction V 5 %1% Oleic Acid in 0.2N NaOH 5mlGlucose 2 % NaCl 0.85 % Comments: Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. Sterilisation: 20 minutes Temperature:121°CPH before: PH after: Biological details Culture type: suitable for: Mycobacteria
+2023-01-04 15:07:49 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:2925 old_value:Name: Middlebrook 7H11 (MB7H11) Broth Base
+Composition: 
+Middlebrook 7H11 Agar 2%
+Glycerol 0.5% 
+OADC-Enrichment 10ml
+Comments: Add broth base and glycerol to ddH2O. Adjust volumes. Autoclave. Cool to 42°C. Add OADC-Stock. 
+Sterilisation: 20 minutes Temperature:121°C 
+PH before: 
+PH after: 
+Biological details Culture type: 
+suitable for: Mycobacteria 
+
+OADC stock solution
+old broth-name: OADC-Stock 
+Composition:  
+Bovine Serum Albumin, fraction V 5 %
+1% Oleic Acid in 0.2N NaOH 5ml
+Glucose 2 % 
+NaCl 0.85 % 
+Comments: Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. 
+Sterilisation: 20 minutes Temperature:121°C
+PH before: 
+PH after: 
+Biological details Culture type: 
+suitable for: Mycobacteria new_value:Name: Middlebrook 7H11 (MB7H11) Broth BaseComposition: Middlebrook 7H11 Agar 2%Glycerol 0.5% OADC-Enrichment 10mlComments: Add broth base and glycerol to ddH2O. Adjust volumes. Autoclave. Cool to 42°C. Add OADC-Stock. Sterilisation: 20 minutes Temperature:121°C PH before: PH after: Biological details Culture type: suitable for: Mycobacteria OADC stock solutionold broth-name: OADC-Stock Composition:  Bovine Serum Albumin, fraction V 5 %1% Oleic Acid in 0.2N NaOH 5mlGlucose 2 % NaCl 0.85 % Comments: Melt 1% Oleic Acid in 65°C water bath. Dissolve all ingredients in 700ml of ddH2O. Adjust volume to 1L. Filter sterilize and store at 4°C. -To make 1% Oleic Acid in 0.2N NaOH: Dissolve 5g oleic acid (ampule) in 500ml 0.2N NaOH (300ml ddH2O + 20ml NaOH + adjust volume to 500ml). Heat solution to 55°C for oleic acid to melt. Store at -20°C in 50ml aliquots. There is no need to sterilize this. Sterilisation: 20 minutes Temperature:121°CPH before: PH after: Biological details Culture type: suitable for: Mycobacteria
+2023-01-04 15:07:50 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:4368 old_value:Name: DSM 776; MICROLUNATUS MEDIUM
+Glucose	0.5	g
+Peptone	0.5	g
+Yeast extract	0.5	g
+Na glutamate	0.5	g
+KH2PO4	0.5	g
+(NH4)2SO4	0.1	g
+MgSO4 x 7 H2O	0.1	g
+Distilled water	1000.0	ml
+
+Adjust pH to 7.0. new_value:Name: DSM 776; MICROLUNATUS MEDIUMGlucose	0.5	gPeptone	0.5	gYeast extract	0.5	gNa glutamate	0.5	gKH2PO4	0.5	g(NH4)2SO4	0.1	gMgSO4 x 7 H2O	0.1	gDistilled water	1000.0	mlAdjust pH to 7.0.
+2023-01-04 15:07:52 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:6214 old_value:Name: ISP 4; DSM 547
+
+Solution I:
+Difco soluble starch, 10.0 g. 
+Make a paste of the starch with a small amount of cold distilled water and bring to a volume of 500 ml.
+
+Solution II:
+CaCO3	2.0	g
+K2HPO4 (anhydrous)	1.0	g
+MgSO4 x 7 H2O	1.0	g
+NaCl	1.0	g
+(NH4)2SO4	2.0	g
+Distilled water	500.0 ml
+Trace salt solution (see below)	1.0	ml
+
+The pH should be between 7.0 and 7.4. Do not adjust if it is within this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by steaming at 100°C for 10 to 20 min.
+
+Trace element solution:
+FeSO4 x 7 H2O	0.1	g
+MnCl2 x 4 H2O	0.1	g
+ZnSO4 x 7 H2O	0.1	g
+Distilled water	100.0 ml
+ new_value:Name: ISP 4; DSM 547Solution I:Difco soluble starch, 10.0 g. Make a paste of the starch with a small amount of cold distilled water and bring to a volume of 500 ml.Solution II:CaCO3	2.0	gK2HPO4 (anhydrous)	1.0	gMgSO4 x 7 H2O	1.0	gNaCl	1.0	g(NH4)2SO4	2.0	gDistilled water	500.0 mlTrace salt solution (see below)	1.0	mlThe pH should be between 7.0 and 7.4. Do not adjust if it is within this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by steaming at 100°C for 10 to 20 min.Trace element solution:FeSO4 x 7 H2O	0.1	gMnCl2 x 4 H2O	0.1	gZnSO4 x 7 H2O	0.1	gDistilled water	100.0 ml
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:7887 old_value:Ingredients:
+Casitone(Difco) 0.3%
+yeast extract 0.1%
+CaCl2 0.1%
+Agar 1.5%
+
+Preparation / Remarks:
+pH 7.2
+autoclaved new_value:Ingredients:Casitone(Difco) 0.3%yeast extract 0.1%CaCl2 0.1%Agar 1.5%Preparation / Remarks:pH 7.2autoclaved
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:7889 old_value:Baker's yeast 0.2%
+CaCl<SUB>2</SUB> x 2 H<SUB>2</SUB>O 0.1%
+MgSO<SUB>4</SUB> x 7 H<SUB>2</SUB>O 0.15%
+Agar (Difco) 1,5%
+Vitamin B<SUB>12</SUB> 0.50    g/ml
+Agar (Difco) 1,5%
+Vitamin B<SUB>7</SUB>(Biotin) 0.50    g/ml
+Distilled water 1000.00    ml
+
+Sterilize vitamins separately by filtration. Prepare and store yeast cells as autoclaved stocksuspension (5 g baker's yeast/100 ml distilled water, adjust  pH to 6.5 and autoclave). Adjust pH of medium to 7.2 with KOH before, and after autoclaving and cooling to 50°C (use pH-indicator paper). new_value:Baker's yeast 0.2%CaCl<SUB>2</SUB> x 2 H<SUB>2</SUB>O 0.1%MgSO<SUB>4</SUB> x 7 H<SUB>2</SUB>O 0.15%Agar (Difco) 1,5%Vitamin B<SUB>12</SUB> 0.50    g/mlAgar (Difco) 1,5%Vitamin B<SUB>7</SUB>(Biotin) 0.50    g/mlDistilled water 1000.00    mlSterilize vitamins separately by filtration. Prepare and store yeast cells as autoclaved stocksuspension (5 g baker's yeast/100 ml distilled water, adjust  pH to 6.5 and autoclave). Adjust pH of medium to 7.2 with KOH before, and after autoclaving and cooling to 50°C (use pH-indicator paper).
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:8688 old_value:4 g yeast extract, 4 g tryptone, 50 g glucose, 0.55 g K2HPO4, 0.425 g KCl, 0.125 g CaCl2, 0.125 g MgSO4, 0.0025 g  FeCl3, 0.0025 g MnSO4, 0.022 g bromocresol green and 15 g agar per 1l distilled water 
+
+ 
+ new_value:4 g yeast extract, 4 g tryptone, 50 g glucose, 0.55 g K2HPO4, 0.425 g KCl, 0.125 g CaCl2, 0.125 g MgSO4, 0.0025 g  FeCl3, 0.0025 g MnSO4, 0.022 g bromocresol green and 15 g agar per 1l distilled water  
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:8696 old_value:mineral base (RM2; Hiraishi & Kitamura, 1984), 0,3% sodium gluconate as the sole carbon source and 0.1% yeast extract as the growth factor
+factor new_value:mineral base (RM2; Hiraishi & Kitamura, 1984), 0,3% sodium gluconate as the sole carbon source and 0.1% yeast extract as the growth factorfactor
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:8816 old_value:5 g peptone, 1 g yeast
+extract, 0.1 g FePO 4, 6 g agar in 750 ml North Sea water and
+250 ml distilled water new_value:5 g peptone, 1 g yeastextract, 0.1 g FePO 4, 6 g agar in 750 ml North Sea water and250 ml distilled water
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:9272 old_value:6g yeast extract, 2.9g K2HPO4, 2.1g urea, 1.5g KH2PO4 , 2.9g trisodium citrate dihydrate,
+1.0g cysteine hydrochloride monohydrate, 10 g MOPS, 0.1
+g MgCl2.6H2O, 0.015g CaCl2.2H2O, 0.125mg FeSO4 .7H2O
+and 0.01 % resazurin new_value:6g yeast extract, 2.9g K2HPO4, 2.1g urea, 1.5g KH2PO4 , 2.9g trisodium citrate dihydrate,1.0g cysteine hydrochloride monohydrate, 10 g MOPS, 0.1g MgCl2.6H2O, 0.015g CaCl2.2H2O, 0.125mg FeSO4 .7H2Oand 0.01 % resazurin
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:9510 old_value:1 mM MgSO4 , 1 mM CaCl2 , 1 ml/l trace element
+solution, 1 ml/l vitamin B12 solution, 0.2 % (w/v) sodium pyruvate new_value:1 mM MgSO4 , 1 mM CaCl2 , 1 ml/l trace elementsolution, 1 ml/l vitamin B12 solution, 0.2 % (w/v) sodium pyruvate
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:9512 old_value:casamino acids (Difco) 7.50 g/L, yeast extract (Difco) 10 g/l,
+sodium citrate 3 g/L, MgSO 4x7H2O 20 g/L, KCl 2 g/L, FeCl2x4H2O 0.036 g/L and NaCl 200 g/L, pH 7.5 new_value:casamino acids (Difco) 7.50 g/L, yeast extract (Difco) 10 g/l,sodium citrate 3 g/L, MgSO 4x7H2O 20 g/L, KCl 2 g/L, FeCl2x4H2O 0.036 g/L and NaCl 200 g/L, pH 7.5
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:medium_composition ,id:14470 old_value:1.0 % (w/v) Hipolypepton, 0.2 % (w/v) yeast extract, 0.1 % (w/v) MgSO4.7H2O,
+1.5 % (w/v) agar; pH 7.0 supplemented with 3.0 % (w/v) NaCl new_value:1.0 % (w/v) Hipolypepton, 0.2 % (w/v) yeast extract, 0.1 % (w/v) MgSO4.7H2O,1.5 % (w/v) agar; pH 7.0 supplemented with 3.0 % (w/v) NaCl
+2023-01-04 15:07:53 WARNING line break problem , table_name:colony_morphology , col_name:colony_color ,id:9296 old_value:Creamwhite to
+yellowish new_value:Creamwhite toyellowish

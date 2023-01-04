@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>checks-api</artifactId>
-  <version>1.7.5</version>
+  <version>1.8.1</version>
   <packaging>hpi</packaging>
   <name>Checks API plugin</name>
   <description>Defines an API for Jenkins to publish checks to SCM platforms.</description>
@@ -26,7 +26,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/checks-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/checks-api-plugin.git</developerConnection>
-    <tag>v1.7.5</tag>
+    <tag>v1.8.1</tag>
     <url>https://github.com/jenkinsci/checks-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -43,13 +43,13 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>plugin-util-api</artifactId>
-      <version>2.17.0</version>
+      <version>2.20.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>display-url-api</artifactId>
-      <version>2.3.5</version>
+      <version>2.3.6</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -61,18 +61,30 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-support</artifactId>
-      <version>813.vb_d7c3d2984a_0</version>
+      <version>839.v35e2736cfd5c</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>commons-lang3-api</artifactId>
+      <version>3.12.0-36.vd97de6465d5b_</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>commons-text-api</artifactId>
+      <version>1.10.0-27.vb_fa_3896786a_7</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.319.3</version>
+      <version>2.346.3</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
-          <artifactId>servlet-api</artifactId>
           <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -83,16 +95,9 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -114,13 +119,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.32</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.18</version>
+        <version>3.35</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

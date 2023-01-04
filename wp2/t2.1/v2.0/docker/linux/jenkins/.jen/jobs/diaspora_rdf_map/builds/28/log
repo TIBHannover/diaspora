@@ -1,0 +1,36 @@
+Started by upstream project "[8mha:////4NbwmPIkFL5eKoMQklB/20gMziZmD3aPV6K2kEwdfHwPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2UzMTigvyixPiS/Pjk4jJ9ACjzxjvKAAAA[0mdiaspora_to_csv" build number [8mha:////4KVtCbUOZHuscGUPX41ti0yB/gv5ugUK48q/7nkNNW+tAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgYJ/az8JP2UzMTigvyixPiS/Pjk4jJ9QwMTALUDlybNAAAA[0m104
+originally caused by:
+ Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_rdf_map
+[diaspora_rdf_map] $ /bin/sh -xe /tmp/jenkins11442529975385863309.sh
++ python3 rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py:73: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config1.readfp(open('../diaspora_to_csv/tables.properties'))
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map
+/var/jenkins_home/workspace/diaspora_rdf_map
++ cd SDM-RDFizer/rdfizer
++ python3 run_rdfizer.py ../../configfile.ini
+Semantifying cell_morphology...
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap1
+Semantifying strains...
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap1
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap2
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap3
+Semantifying colony_morphology...
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap1
+Successfully semantified colony_morphology.
+
+Triggering a new build of [8mha:////4Bera1cDne2h6MBNh29kJJy0hfuZKsy6qBXen/DTuE1nAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzxEgZZ/az8JH2XzMTigvyixPjikvyi1PiS/Pj0osSCDH0AOq6BxNIAAAA=[0mDiaspora_store_to_graph
+Finished: SUCCESS

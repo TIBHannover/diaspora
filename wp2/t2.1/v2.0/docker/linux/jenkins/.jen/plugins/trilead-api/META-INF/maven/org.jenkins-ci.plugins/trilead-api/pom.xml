@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>trilead-api</artifactId>
-  <version>1.71.v9e7860a_67a_df</version>
+  <version>2.84.v72119de229b_7</version>
   <packaging>hpi</packaging>
   <name>Trilead API Plugin</name>
   <description>This plugin provides access to Trilead without having to bundle Trilead in Jenkins core</description>
@@ -30,9 +30,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/trilead-api-plugin.git</connection>
+    <connection>scm:git:https://github.com/jenkinsci/trilead-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/trilead-api-plugin.git</developerConnection>
-    <tag>9e7860a67adf1ce0ad5f9c15e33da26a6b00f0ea</tag>
+    <tag>72119de229b7c4ecaa8f4febaaf0f020ba30d35d</tag>
     <url>https://github.com/jenkinsci/trilead-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -49,7 +49,7 @@
     <dependency>
       <groupId>org.jenkins-ci</groupId>
       <artifactId>trilead-ssh2</artifactId>
-      <version>build-217-jenkins-231.vda_87ca_d57ecf</version>
+      <version>build-217-jenkins-247.v708a_8b_14f4b_a</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -67,7 +67,7 @@
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.319</version>
+      <version>2.361</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -83,16 +83,9 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -114,13 +107,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.28</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>3.35</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

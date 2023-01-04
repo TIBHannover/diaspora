@@ -2,22 +2,22 @@ Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Created-By: Apache Maven
 Built-By: olamy
-Build-Jdk: 11.0.16
+Build-Jdk: 11.0.17
 Extension-Name: blueocean-pipeline-api-impl
 Specification-Title: The Jenkins Plugins Parent POM Project
 Implementation-Title: blueocean-pipeline-api-impl
-Implementation-Version: 1.25.6
+Implementation-Version: 1.26.0
 Group-Id: io.jenkins.blueocean
 Short-Name: blueocean-pipeline-api-impl
 Long-Name: Pipeline implementation for Blue Ocean
 Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueoce
  an/doc/BlueOcean.adoc
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.25.6
+Plugin-Version: 1.26.0
 Hudson-Version: 2.277.4
 Jenkins-Version: 2.277.4
-Plugin-Dependencies: blueocean-commons:1.25.6,blueocean-pipeline-scm-a
- pi:1.25.6,blueocean-rest-impl:1.25.6,workflow-api:2.47,workflow-cps:2
+Plugin-Dependencies: blueocean-commons:1.26.0,blueocean-pipeline-scm-a
+ pi:1.26.0,blueocean-rest-impl:1.26.0,workflow-api:2.47,workflow-cps:2
  .94,workflow-durable-task-step:2.40,workflow-job:2.41,workflow-multib
  ranch:2.26,workflow-step-api:2.24,workflow-support:3.8,branch-api:2.7
  .0,credentials:2.6.1,git:4.8.3,github-branch-source:2.6.0,htmlpublish

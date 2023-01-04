@@ -8,23 +8,18 @@ rowSelectionControllers.forEach(headerCheckbox => {
   const moreOptionsDropdown = table.querySelector(".jenkins-table__checkbox-dropdown");
   const moreOptionsAllButton = table.querySelector("[data-select='all']");
   const moreOptionsNoneButton = table.querySelector("[data-select='none']");
-
   if (tableCheckboxes.length === 0) {
     headerCheckbox.disabled = true;
-
     if (moreOptionsButton) {
       moreOptionsButton.disabled = true;
     }
   }
-
   const allCheckboxesSelected = () => {
     return tableCheckboxes.length === [...tableCheckboxes].filter(e => e.checked).length;
   };
-
   const anyCheckboxesSelected = () => {
     return [...tableCheckboxes].filter(e => e.checked).length > 0;
   };
-
   tableCheckboxes.forEach(checkbox => {
     checkbox.addEventListener("change", () => {
       updateIcon();
@@ -43,27 +38,22 @@ rowSelectionControllers.forEach(headerCheckbox => {
     tableCheckboxes.forEach(e => e.checked = false);
     updateIcon();
   });
-
   function updateIcon() {
     headerCheckbox.classList.remove("jenkins-table__checkbox--all");
     headerCheckbox.classList.remove("jenkins-table__checkbox--indeterminate");
     moreOptionsDropdown === null || moreOptionsDropdown === void 0 ? void 0 : moreOptionsDropdown.classList.remove("jenkins-table__checkbox-dropdown--visible");
-
     if (allCheckboxesSelected()) {
       headerCheckbox.classList.add("jenkins-table__checkbox--all");
       return;
     }
-
     if (anyCheckboxesSelected()) {
       headerCheckbox.classList.add("jenkins-table__checkbox--indeterminate");
     }
   }
-
   document.addEventListener("click", event => {
     if (moreOptionsDropdown !== null && moreOptionsDropdown !== void 0 && moreOptionsDropdown.contains(event.target) || event.target === moreOptionsButton) {
       return;
     }
-
     moreOptionsDropdown === null || moreOptionsDropdown === void 0 ? void 0 : moreOptionsDropdown.classList.remove("jenkins-table__checkbox-dropdown--visible");
   });
   moreOptionsButton === null || moreOptionsButton === void 0 ? void 0 : moreOptionsButton.addEventListener("click", () => {
