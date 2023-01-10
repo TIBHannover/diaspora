@@ -535,17 +535,6 @@
     ];
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_sequence;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap40>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-    rr:predicateObjectMap [
     rr:predicate  bacdive:has_spore_formation;
     rr:objectMap[
         rr:parentTriplesMap <TripleMap41>;
@@ -1068,17 +1057,6 @@
       rr:subjectMap 
      [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
     rr:class bacdive:Risk_assessment   ].
-
-    <TripleMap40>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/sequence/{ID_sequence}"; 
-    rr:class bacdive:Sequence   ].
 
     
     <TripleMap41>
