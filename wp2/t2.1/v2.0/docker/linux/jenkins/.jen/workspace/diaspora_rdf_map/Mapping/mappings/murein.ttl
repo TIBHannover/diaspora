@@ -36,8 +36,8 @@
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_FK_tbl_mureins_micro;
-        rr:objectMap [ rml:reference "FK_tbl_mureins_micro"]
+        rr:predicate  bacdive:has_FK_tbl_strains_micro;
+        rr:objectMap [ rml:reference "FK_tbl_strains_micro"]
     ] ;
 
     rr:predicateObjectMap [
