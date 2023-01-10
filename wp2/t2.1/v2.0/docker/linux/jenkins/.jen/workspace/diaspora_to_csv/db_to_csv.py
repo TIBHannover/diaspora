@@ -306,7 +306,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -369,7 +369,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -461,7 +461,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -530,7 +530,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -599,7 +599,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -668,7 +668,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -759,7 +759,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
