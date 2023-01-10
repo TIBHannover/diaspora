@@ -793,7 +793,7 @@
     <TripleMap16>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chas.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_cam.csv";
     rml:referenceFormulation ql:CSV
     ];
 
