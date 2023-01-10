@@ -749,7 +749,7 @@
      <TripleMap12>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20e.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20ne.csv";
     rml:referenceFormulation ql:CSV
     ];
 
@@ -841,7 +841,7 @@
     <TripleMap20>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_id32sta.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_list.csv";
     rml:referenceFormulation ql:CSV
     ];
 
@@ -1146,5 +1146,5 @@
     ];
 
       rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_ph}"; 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
     rr:class bacdive:Culture_ph  ].
