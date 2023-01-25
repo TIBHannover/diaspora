@@ -1,7 +1,6 @@
 
 
 
-
 services:
 
 
@@ -11,14 +10,14 @@ services:
 
     ports:
       - "8080:8080"
-      - "50000:50000" 
-      
-    privileged: true
-    
-    user: root
-    
+      - "50000:50000"
 
-    
+    privileged: true
+
+    user: root
+
+
+
     volumes:
       - ./jenkins/.jen:/var/jenkins_home
 
@@ -30,8 +29,10 @@ services:
       - "7200:7200"
 
   db:
-    build: ./mysql
+  #  build: ./mysql
     image: mysql
+    volumes:
+      - ./data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: diaspora_v2
@@ -39,6 +40,6 @@ services:
         MYSQL_PASSWORD: pass
     ports:
       - "42333:3306"
-  
-    
+
+
 
