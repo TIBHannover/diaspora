@@ -1,0 +1,62 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/countries.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/countries/{country_id}"; 
+    rr:class bacdive:Countries ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_code;
+        rr:objectMap [ rml:reference "code"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_name;
+        rr:objectMap [ rml:reference "name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_full_name;
+        rr:objectMap [ rml:reference "full_name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_iso3;
+    rr:objectMap [ rml:reference "iso3" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_number;
+    rr:objectMap [ rml:reference "number" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_continent_code;
+    rr:objectMap [ rml:reference "continent_code" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_display_order;
+    rr:objectMap [ rml:reference "display_order" ]
+    ] .
+
