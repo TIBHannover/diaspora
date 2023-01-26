@@ -23,7 +23,7 @@ services:
 
 
   graphdb:
-    build: ./graphdb
+    #build: ./graphdb
     image: graphdb
     ports:
       - "7200:7200"
@@ -31,8 +31,8 @@ services:
   db:
   #  build: ./mysql
     image: mysql
-    volumes:
-      - ./data:/var/lib/mysql
+  #  volumes:
+   #   - ./data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: diaspora_v2
