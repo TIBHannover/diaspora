@@ -1256,7 +1256,7 @@
     ];
 
       rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/countries/{id}"; 
+     [ rr:template "http://kg.bacdive.dsmz.de/countries/{country_id}"; 
     rr:class bacdive:Country  ].
 
       <TripleMap52>
@@ -1267,5 +1267,5 @@
     ];
 
       rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/continents/{id}"; 
+     [ rr:template "http://kg.bacdive.dsmz.de/continents/{code}"; 
     rr:class bacdive:Continent  ].
