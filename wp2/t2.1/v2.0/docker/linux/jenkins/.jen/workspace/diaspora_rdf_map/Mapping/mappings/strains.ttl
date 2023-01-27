@@ -657,29 +657,9 @@
             rr:parent "ID_strains";
         ];
     ] ;
-    ];
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_countries;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap51>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_continents;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap52>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
     ].
+
+
 
 
 
@@ -1248,24 +1228,4 @@
      [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
     rr:class bacdive:Ed_pathways  ].
 
-    <TripleMap51>
-    a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/countries.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/countries/{country_id}"; 
-    rr:class bacdive:Country  ].
-
-      <TripleMap52>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/continents.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/continents/{code}"; 
-    rr:class bacdive:Continent  ].

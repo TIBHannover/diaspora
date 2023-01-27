@@ -24,15 +24,15 @@ services:
 
   graphdb:
     #build: ./graphdb
-    image: graphdb
+    image: ontotext/graphdb:9.11.2-se
     ports:
       - "7200:7200"
 
   db:
   #  build: ./mysql
     image: mysql
-  #  volumes:
-   #   - ./data:/var/lib/mysql
+    volumes:
+      - ./data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: diaspora_v2
