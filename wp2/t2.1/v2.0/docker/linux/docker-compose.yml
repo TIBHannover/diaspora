@@ -28,7 +28,7 @@ services:
 
   graphdb:
     #build: ./graphdb
-    image: ontotext/graphdb:9.11.2-se
+    image: khaller/graphdb-free
     ports:
       - "7200:7200"
 
