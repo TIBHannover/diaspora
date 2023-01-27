@@ -612,51 +612,6 @@
             rr:parent "ID_strains";
         ];
     ] ;
-    ];
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_sequence_16s;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap47>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_sequence_genomes;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap48>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-    
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_literature;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap49>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_ed_pathways;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap50>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
     ].
 
 
@@ -1182,50 +1137,5 @@
       rr:subjectMap 
      [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
     rr:class bacdive:Culture_ph  ].
-
-    <TripleMap47>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_16s.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence}"; 
-    rr:class bacdive:Sequence_16s  ].
-
-
-   <TripleMap48>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_genomes.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/sequence_genomes/{ID_sequence}"; 
-    rr:class bacdive:Sequence_genomes  ].
-
-    <TripleMap49>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/literature.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
-    rr:class bacdive:Sequence_genomes  ].
-
-    <TripleMap50>
-    a rr:TriplesMap;
-
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
-    rml:referenceFormulation ql:CSV
-    ];
-
-      rr:subjectMap 
-     [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
-    rr:class bacdive:Ed_pathways  ].
 
 
