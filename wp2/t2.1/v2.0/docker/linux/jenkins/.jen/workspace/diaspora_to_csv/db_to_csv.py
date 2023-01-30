@@ -87,7 +87,7 @@ mydb = mysql.connector.connect(
    # port = '3306',
     user = 'root',
     passwd = 'root',
-    database= 'rohit',
+    database= 'diaspora_v2',
     auth_plugin='mysql_native_password')
 
 
