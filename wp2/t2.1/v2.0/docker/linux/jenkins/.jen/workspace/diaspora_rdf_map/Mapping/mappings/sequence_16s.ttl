@@ -22,7 +22,7 @@
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence_16s}"; 
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence}"; 
     rr:class bacdive:Sequence_16s ];
 
     rr:predicateObjectMap [
