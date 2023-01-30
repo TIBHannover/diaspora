@@ -1185,4 +1185,4 @@
     
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/sequence_genomes/{ID_sequence}"; 
-    rr:class bacdive:Sequence_genomes ];
+    rr:class bacdive:Sequence_genomes ].
