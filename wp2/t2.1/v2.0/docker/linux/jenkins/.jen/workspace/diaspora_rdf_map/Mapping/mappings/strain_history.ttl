@@ -25,10 +25,10 @@
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
     rr:class bacdive:Strain_history ];
 
-    rr:predicateObjectMap [
-        rr:predicate  bacdive:has_history;
-        rr:objectMap [ rml:reference "history"]
-    ] ;
+    # rr:predicateObjectMap [
+    #     rr:predicate  bacdive:has_history;
+    #     rr:objectMap [ rml:reference "history"]
+    # ] ;
 
         
     rr:predicateObjectMap [
