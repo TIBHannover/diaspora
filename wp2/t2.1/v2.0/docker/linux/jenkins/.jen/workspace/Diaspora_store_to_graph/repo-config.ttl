@@ -8,7 +8,7 @@
 @prefix owlim: <http://www.ontotext.com/trree/owlim#>.
 
 [] a rep:Repository ;
-    rep:repositoryID "Diaspora_v2" ;
+    rep:repositoryID "Diaspora_v1" ;
     rdfs:label "rdf transformation of bacdive database" ;
     rep:repositoryImpl [
       rep:repositoryType "graphdb:SailRepository" ;

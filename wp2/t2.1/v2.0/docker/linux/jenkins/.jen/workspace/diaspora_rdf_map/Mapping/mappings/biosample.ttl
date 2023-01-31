@@ -182,16 +182,16 @@
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
+    ] ;
+
+
+
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
     ] .
-
-
-
-
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_strain;
-    # rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
-    # ] .
     
 
     # rr:predicateObjectMap [

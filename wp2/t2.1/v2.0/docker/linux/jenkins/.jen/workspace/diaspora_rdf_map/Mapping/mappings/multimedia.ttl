@@ -94,10 +94,10 @@
     
    
 
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_strain;
-    # rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
-    # ] ;
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
+    ] ;
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_manual_annotation;
