@@ -39,7 +39,7 @@ services:
       - ./data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: root
-        MYSQL_DATABASE: diaspora_v2
+        MYSQL_DATABASE: diaspora_v1
         MYSQL_USER: user
         MYSQL_PASSWORD: pass
     ports:
