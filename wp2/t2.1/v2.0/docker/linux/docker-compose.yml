@@ -33,7 +33,6 @@ services:
       - "7200:7200"
 
   db:
-  #  build: ./mysql
     image: mysql
     volumes:
       - ./data:/var/lib/mysql
