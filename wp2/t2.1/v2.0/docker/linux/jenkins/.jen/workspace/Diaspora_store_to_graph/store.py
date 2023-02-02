@@ -60,7 +60,7 @@ for i_path in dirs:
         
     
     
-        response = requests.post('http://graphdb:7200/repositories/Diaspora_v2/statements', data=rdf.encode('utf-8'), headers = headers)
+        response = requests.post('http://graphdb:7200/repositories/Diaspora_v1/statements', data=rdf.encode('utf-8'), headers = headers)
     
         print(response)
     
