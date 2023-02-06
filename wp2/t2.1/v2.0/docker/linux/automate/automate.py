@@ -14,7 +14,7 @@ import requests
 
 # Jenkins Authentication URL
 
-JENKINS_URL = 'http://localhost:8080'
+JENKINS_URL = 'http://diaspora21.service.tib.eu:8080/'
 JENKINS_USERNAME = "rohit"
 JENKINS_PASSWORD = "rohit"
 
