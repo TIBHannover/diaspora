@@ -27,7 +27,7 @@ THE SOFTWARE.
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.main</groupId>
   <artifactId>jenkins-war</artifactId>
-  <version>2.385</version>
+  <version>2.390</version>
   <packaging>war</packaging>
   <name>Jenkins war</name>
   <description>Creates a war file. Also includes additional static web resources, such as images, CSS, JavaScript, and some HTML files.</description>
@@ -61,18 +61,11 @@ THE SOFTWARE.
       <post>jenkinsci-users@googlegroups.com</post>
       <archive>https://groups.google.com/g/jenkinsci-users</archive>
     </mailingList>
-    <mailingList>
-      <name>Jenkins Japanese user discussion list</name>
-      <subscribe>jenkinsci-ja+subscribe@googlegroups.com</subscribe>
-      <unsubscribe>jenkinsci-ja+unsubscribe@googlegroups.com</unsubscribe>
-      <post>jenkinsci-ja@googlegroups.com</post>
-      <archive>https://groups.google.com/g/jenkinsci-ja</archive>
-    </mailingList>
   </mailingLists>
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/jenkins.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/jenkins.git</developerConnection>
-    <tag>jenkins-2.385</tag>
+    <tag>jenkins-2.390</tag>
     <url>https://github.com/jenkinsci/jenkins</url>
   </scm>
   <issueManagement>
@@ -97,19 +90,19 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>cli</artifactId>
-      <version>2.385</version>
+      <version>2.390</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>remoting</artifactId>
-      <version>3085.vc4c6977c075a</version>
+      <version>3107.v665000b_51092</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.385</version>
+      <version>2.390</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -129,13 +122,13 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>websocket-jetty10</artifactId>
-      <version>2.385</version>
+      <version>2.390</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>websocket-jetty9</artifactId>
-      <version>2.385</version>
+      <version>2.390</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

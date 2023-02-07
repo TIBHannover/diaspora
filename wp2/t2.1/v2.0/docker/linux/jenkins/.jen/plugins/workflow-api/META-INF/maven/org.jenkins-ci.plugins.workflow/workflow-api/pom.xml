@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-api</artifactId>
-  <version>1200.v8005c684b_a_c6</version>
+  <version>1208.v0cc7c6e0da_9e</version>
   <packaging>hpi</packaging>
   <name>Pipeline: API</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/workflow-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-api-plugin.git</developerConnection>
-    <tag>8005c684bac63d6193195d8f868a051f508e7f30</tag>
+    <tag>0cc7c6e0da9e89b4ed99edf8e830990014fca727</tag>
     <url>https://github.com/jenkinsci/workflow-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -59,19 +59,19 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-step-api</artifactId>
-      <version>625.vd896b_f445a_f8</version>
+      <version>639.v6eca_cd8c04a_a_</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>scm-api</artifactId>
-      <version>608.vfa_f971c5a_a_e9</version>
+      <version>631.v9143df5b_e4a_a</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>jenkins-core</artifactId>
-      <version>2.332.1</version>
+      <version>2.361.4</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -85,20 +85,6 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.mojo</groupId>
-      <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.22</version>
-      <scope>provided</scope>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
@@ -118,7 +104,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.34</version>
+        <version>3.38</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-cps</artifactId>
-  <version>3601.v9b_36a_d99e1cc</version>
+  <version>3611.v201b_d9f9eb_f7</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Groovy</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -42,7 +42,7 @@
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/workflow-cps-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-cps-plugin.git</developerConnection>
-    <tag>9b36ad99e1ccd380d8e2e1701be862ea0761e295</tag>
+    <tag>201bd9f9ebf7a73a733d6ffb10673193ebcf8ac1</tag>
     <url>https://github.com/jenkinsci/workflow-cps-plugin</url>
   </scm>
   <distributionManagement>
@@ -120,24 +120,12 @@
     <dependency>
       <groupId>com.cloudbees</groupId>
       <artifactId>groovy-cps</artifactId>
-      <version>3601.v9b_36a_d99e1cc</version>
+      <version>3611.v201b_d9f9eb_f7</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
           <groupId>com.google.guava</groupId>
           <artifactId>guava</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.ui</groupId>
-      <artifactId>ace-editor</artifactId>
-      <version>1.1</version>
-      <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.servlet</groupId>
-          <artifactId>servlet-api</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

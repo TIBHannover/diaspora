@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-stage-step</artifactId>
-  <version>296.v5f6908f017a_5</version>
+  <version>305.ve96d0205c1c6</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Stage Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-stage-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-stage-step-plugin.git</developerConnection>
-    <tag>5f6908f017a5b81e52cd0c106ac1f72a6b758b58</tag>
+    <tag>e96d0205c1c6372e116487d0eb209d8210903576</tag>
     <url>https://github.com/jenkinsci/pipeline-stage-step-plugin</url>
   </scm>
   <distributionManagement>

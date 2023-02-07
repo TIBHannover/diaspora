@@ -1,0 +1,30 @@
+ID_kit_api_rID32A_meta,cupule,cupule_Name_Kit,name_bacdive,reaction_name,external_Link,ID_microbiol,substrate,ID_CHEBI,CAS,kegg_comp,brenda_ligand,enzyme,EC_number,last_change
+1,1,URE,URE,Urease/urea hydrolysis,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.1.5,URE_rID32A,Urea,16199.0,57-13-6,C00086,116.0,Urease,3.5.1.5,2016-03-22 13:53:27
+2,2,ADH (Arg),ADH (Arg),Arginine dihydrolase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.3.6,ADH_rID32A,L-arginine,16467.0,74-79-3 ,C00062,123.0,arginine deiminase,3.5.3.6,2016-03-22 13:53:27
+3,3,alphaGAL,alpha GAL,alpha-Galactosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.22,alphaGAL_rID32A,4-Nitrophenyl-alpha-D-galactoside,546840.0,7493-95-0,,140899.0,alpha-galactosidase,3.2.1.22,2016-03-22 13:53:27
+4,4,betaGAL,beta GAL,beta-Galactosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.23,betaGAL_rID32A,4-Nitrophenyl-beta-D-galactoside,355715.0,3150-24-1,C04452,2595.0,beta-galactosidase,3.2.1.23,2016-03-22 13:53:27
+5,5,betaGP,beta GP,beta-Galactosidase 6-phosphate,,betaGP_rID32A,4-Nitrophenyl 6-O-phosphono-beta-D-galactosid,90128.0,,,18458.0,,,2016-03-22 13:53:27
+6,6,alphaGLU,alpha GLU,alpha-Glucosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.20,alphaGLU_rID32A,4-Nitrophenyl alpha-D-glucopyranoside ,,3767-28-0 ,,1313.0,alpha-glucosidase,3.2.1.20,2016-03-22 13:53:27
+7,7,betaGLU,beta GLU,beta-Glucosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.21,betaGLU_rID32A,4-Nitrophenyl beta-D-glucopyranoside,,2492-87-7,,510.0,beta-glucosidase,3.2.1.21,2016-03-22 13:53:27
+8,8,alphaARA,alpha ARA,alpha-Arabinosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.55,alphaARA_rID32A,4-Nitrophenyl alpha-L-arabinofuranoside ,,6892-58-6,,2174.0,non-reducing end alpha-L-arabinofuranosidase,3.2.1.55,2016-03-22 13:53:27
+9,9,betaGUR,beta GUR,beta-Glucuronidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.31,betaGUR_rID32A,4-Nitrophenyl beta-D-glucuronide ,,10344-94-2,,6225.0,beta-glucuronidase,3.2.1.31,2016-03-22 13:53:27
+10,10,betaNAG,beta NAG,beta-N-Acetyl-beta-glucosaminidase,,betaNAG_rID32A,4-Nitrophenyl N-acetyl-beta-D-glucosaminide,,3459-18-5,,1000.0,,,2016-03-22 13:53:27
+11,11,MNE,MNE,Fermentation of D-mannose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00159,MNE_rID32A,D-mannose,16024.0,3458-28-4,C00159,216.0,,,2016-03-22 13:53:27
+12,12,RAF,RAF,Fermentation of raffinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00492,RAF_rID32A,D-raffinose (raffinose),16634.0,512-69-6,C00492,48961.0,,,2016-03-22 13:53:27
+13,13,GDC,GDC,Glutamate decarboxylase,http://www.brenda-enzymes.org/enzyme.php?ecno=4.1.1.15,GDC_rID32A,L-glutamic acid,16015.0,56-86-0,C00025,1163.0,Glutamat decarboxylase,4.1.1.15,2016-03-22 13:53:27
+14,14,alphaFUC,alpha FUC,alpha-Fucosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.51,alphaFUC_rID32A,4-Nitrophenyl alpha-L-fucopyranoside ,,10231-84-2,,609.0,alpha-L-fucosidase,3.2.1.51,2016-03-22 13:53:27
+15,15,NIT,NIT,Reduction of nitrate,,NIT_rID32A,Potassium nitrate,63043.0,7757-79-1,,32713.0,,,2016-03-22 13:53:27
+16,16,IND,IND,Indole production,http://www.brenda-enzymes.org/enzyme.php?ecno=4.1.99.1,IND_rID32A,L-tryptophan,16828.0,73-22-3,C00078,119.0,tryptophanase,4.1.99.1,2016-03-22 13:53:27
+17,17,PAL,PAL,Alkaline phosphatase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.1.3.1,PAL_rID32A,2-naphthyl phosphate,,14463-68-4 ,,3239.0,alkaline phosphatase,3.1.3.1,2016-03-22 13:53:27
+18,18,ArgA,ArgA,L-arginine arylamidase,,ArgA_rID32A,L-arginine beta-naphthylamide hydrochloride,,18905-73-2,,5870.0,,,2016-03-22 13:53:27
+19,19,ProA,ProA,Proline arylamidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.4.11.5,ProA_rID32A,L-proline beta-naphthylamide,,97216-16-5,,161450.0,prolyl aminopeptidase,3.4.11.5,2016-03-22 13:53:27
+20,20,LGA,LGA,Leucyl glycin arylamidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.4.11.1,LGA_rID32A,Leu-Gly beta-naphthylamide,,100930-00-5,,93905.0,leucyl aminopeptidase,3.4.11.1,2016-03-22 13:53:27
+21,21,PheA,PheA,Phenylalanine arylamidase,,PheA_rID32A,L-phenylalanine beta-naphthylamide ,,740-57-8,,21979.0,,,2016-03-22 13:53:27
+22,22,LeuA,LeuA,Leucine arylamidase,,LeuA_rID32A,L-Leucine beta-naphthylamide,,732-85-4,,5869.0,,,2016-03-22 13:53:27
+23,23,PyrA,PyrA,Pyrrolidonyl arylamidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.4.19.3,PyrA_rID32A,L-pyroglutamic acid 2-naphthylamide ,,22155-91-5,,161451.0,pyroglutamyl-peptidase I,3.4.19.3,2016-03-22 13:53:27
+24,24,TyrA,TyrA,Tyrosine arylamidase,,TyrA_rID32A,L-tyrosine beta-naphthylamide ,,4357-95-3,,17962.0,,,2016-03-22 13:53:27
+25,25,AlaA,AlaA,Alanine arylamidase,,AlaA_rID32A,L-alanine-L-alanine beta-naphthylamide ,,,,6480.0,,,2016-03-22 13:53:27
+26,26,GlyA,GlyA,Glycin arylamidase,,GlyA_rID32A,Glycine beta-naphthylamide,,1208-12-04,,154739.0,,,2016-03-22 13:53:27
+27,27,HisA,HisA,Histidine arylamidase,,HisA_rID32A,L-histidine beta-naphthylamide,,7424-15-9,,47937.0,,,2016-03-22 13:53:27
+28,28,GGA,GGA,Glutamyl-glutamate arylamidase,,GGA_rID32A,L-glutamy-L-glutamate beta-naphthylamide,,,,,,,2016-03-22 13:53:27
+29,29,SerA,SerA,Serine arylamidase,,SerA_rID32A,L-serine beta-naphthylamide,,888-74-4,,95002.0,,,2016-03-22 13:53:27

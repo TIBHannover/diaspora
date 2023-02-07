@@ -1,21 +1,21 @@
 Manifest-Version: 1.0
-Hudson-Version: 2.332.1
-Plugin-Dependencies: javax-activation-api:1.2.0-5
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: JAXB plugin
+Specification-Version: 2.3
 Implementation-Title: JAXB plugin
-Long-Name: JAXB plugin
-Implementation-Version: 2.3.7-1
+Implementation-Version: 2.3.8-1
 Group-Id: io.jenkins.plugins
+Short-Name: jaxb
+Long-Name: JAXB plugin
+Url: https://github.com/jenkinsci/jaxb-plugin
+Plugin-Version: 2.3.8-1
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: javax-activation-api:1.2.0-5
+Plugin-Developers: 
 Support-Dynamic-Loading: true
 Plugin-License-Name: MIT
-Specification-Title: JAXB plugin
-Plugin-ScmUrl: https://github.com/jenkinsci/jaxb-plugin
-Plugin-Version: 2.3.7-1
-Jenkins-Version: 2.332.1
-Url: https://github.com/jenkinsci/jaxb-plugin
-Short-Name: jaxb
 Plugin-License-Url: https://opensource.org/licenses/MIT
-Plugin-Developers: 
-Build-Jdk-Spec: 1.8
-Created-By: Maven Archiver 3.6.0
-Specification-Version: 2.3
+Plugin-ScmUrl: https://github.com/jenkinsci/jaxb-plugin
 
