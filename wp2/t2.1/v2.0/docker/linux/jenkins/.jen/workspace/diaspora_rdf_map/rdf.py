@@ -38,7 +38,7 @@ config.set('default','main_directory', main )
 
 config.add_section('datasets')
 
-number = str(68)
+number = str(72)
 
 output_folder = '${default:main_directory}/Mapping/output' 
 

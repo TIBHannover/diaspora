@@ -17,48 +17,43 @@
 <TripleMap1>
     a rr:TriplesMap;
 
-    rml:logicalSource [ rml:source "../../../diaspora_to_csv/enzymes.csv";
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_16s.csv";
     rml:referenceFormulation ql:CSV
     ];
     
 
-    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/enzymes/{ID_enzymes}"; 
-    rr:class bacdive:Enzyme ];
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence}"; 
+    rr:class bacdive:Sequence_16s ];
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_enzyme;
-        rr:objectMap [ rml:reference "enzyme"]
+        rr:predicate  bacdive:has_sequence_acc;
+        rr:objectMap [ rml:reference "sequence_acc"]
     ] ;
     
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_activity;
-        rr:objectMap [ rml:reference "activity" ]
+        rr:predicate  bacdive:has_tax_id;
+        rr:objectMap [ rml:reference "tax_id" ]
     ] ;
 
     rr:predicateObjectMap [
-        rr:predicate  bacdive:has_ec_number;
-        rr:objectMap [ rml:reference "ec_number" ]
+        rr:predicate  bacdive:has_sequence_length;
+        rr:objectMap [ rml:reference "sequence_length" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_exoenzyme;
-    rr:objectMap [ rml:reference "exoenzyme" ]
+    rr:predicate  bacdive:has_sequence_name;
+    rr:objectMap [ rml:reference "sequence_name" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_production;
-    rr:objectMap [ rml:reference "production" ]
+    rr:predicate  bacdive:has_link_db;
+    rr:objectMap [ rml:reference "link_db" ]
     ] ;
 
     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_reference;
-    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}" ]
+    rr:predicate  bacdive:has_silva;
+    rr:objectMap [ rml:reference "silva" ]
     ] ;
-
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_strain;
-    # rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
-    # ] ;
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_manual_annotation;
@@ -68,6 +63,11 @@
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_last_change;
     rr:objectMap [ rml:reference "last_change" ]
+    ] ;
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_reference;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}" ]
     ] .
 
-   
