@@ -1,0 +1,21 @@
+ID_kit_api_zym_ec,cupule,Enzyme_Name_Kit,name_bacdive,Substrate,EC,EC1,EC2,EC3,EC4,BRENDA_Link,ID_microbiol,ID_CHEBI,CAS,kegg_comp,brenda_ligand,last_change
+8,8,Cystine arylamidase,Cystine arylamidase,L-cystyl-2-naphthylamide,,0,0,0,0,,test_8_ZYM,90426.0,65322-97-6,,140239.0,2016-03-22 13:55:28
+9,9,Trypsin,Trypsin,N-benzoyl-DL-arginine-2-naphthylamide,3.4.21.4,3,4,21,4,http://brenda-enzymes.org/enzyme.php?ecno=3.4.21.4,test_9_ZYM,,0913-04-02,,140372.0,2016-03-22 13:55:28
+10,10,alpha-Chymotrypsin,alpha- Chymotrypsin,N-glutaryl-phenylalanine-2-naphthylamide,3.4.21.1,3,4,21,1,http://brenda-enzymes.org/enzyme.php?ecno=3.4.21.1,test_10_ZYM,,,,,2016-03-22 13:55:28
+11,11,Acid phosphatase,Acid phosphatase,2-naphthyl phosphate,3.1.3.2,3,1,3,2,http://brenda-enzymes.org/enzyme.php?ecno=3.1.3.2,test_11_ZYM,,14463-68-4 ,,3239.0,2016-03-22 13:55:28
+12,12,Naphthol-AS-BI-phosphohydrolase,Naphthol-AS-BI-phosphohydrolase,Naphthol-AS-BI-phosphate,,0,0,0,0,,test_12_ZYM,,1919-91-1,,,2016-03-22 13:55:28
+13,13,alpha-Galactosidase,alpha- Galactosidase,6-Br-2-naphthyl-alphaD-galactpyranoside,3.2.1.22,3,2,1,22,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.22,test_13_ZYM,,25997-59-5,,30620.0,2016-03-22 13:55:28
+14,14,beta-Galactosidase,beta- Galactosidase,2-naphthyl-betaD-galactpyranoside,3.2.1.23,3,2,1,23,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.23,test_14_ZYM,,312693-81-5,,104616.0,2016-03-22 13:55:28
+15,15,beta-Glucuronidase,beta- Glucuronidase,Naphthol-AS-BI-betaD-glucuronide,3.2.1.31,3,2,1,31,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.31,test_15_ZYM,,37-87-6 ,,117476.0,2016-03-22 13:55:28
+16,16,alpha-Glucosidase,alpha- Glucosidase,2-naphthyl-alphaD-glucopyranoside,3.2.1.20,3,2,1,20,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.20,test_16_ZYM,,25320-79-0,,,2016-03-22 13:55:28
+17,17,beta-Glucosidase,beta- Glucosidase,6-Br-2-naphthyl-betaD-glucopyranoside,3.2.1.21,3,2,1,21,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.21,test_17_ZYM,, 15548-61-5 ,,34777.0,2016-03-22 13:55:28
+18,18,N-acetyl-beta-glucosaminidase,N-acetyl-beta- glucosaminidase,1-naphthyl-N-acetyl-betaD-glucosaminide,3.2.1.52,3,2,1,52,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.52,test_18_ZYM,,10329-98-3,,,2016-03-22 13:55:28
+19,19,alpha-Mannosidase,alpha- Mannosidase,6-Br-2-naphthyl-alphaD-mannopyranoside,3.2.1.24,3,2,1,24,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.24,test_19_ZYM,,15548-61-5,,102326.0,2016-03-22 13:55:28
+20,20,alpha-Fucosidase,alpha- Fucosidase,2-naphthyl-alphaL-fucopyranoside,3.2.1.51,3,2,1,51,http://brenda-enzymes.org/enzyme.php?ecno=3.2.1.51,test_20_ZYM,,,,,2016-03-22 13:55:28
+6,6,Leucine arylamidase,Leucine arylamidase,L-leucyl-2-naphthylamide,,0,0,0,0,,test_6_ZYM,,732-85-4,,5869.0,2016-03-22 13:55:28
+7,7,Valine arylamidase,Valine arylamidase,L-valyl-2-naphthylamide,,0,0,0,0,,test_7_ZYM,,729-24-8 ,,140265.0,2016-03-22 13:55:28
+5,5,Lipase (C 14),Lipase (C 14),2-naphthyl myristate,3.1.1.3,3,1,1,3,http://brenda-enzymes.org/enzyme.php?ecno=3.1.1.3,test_5_ZYM,,7262-80-8,,,2016-03-22 13:55:28
+4,4,Esterase Lipase (C 8),Esterase Lipase (C 8),2-naphtyl caprylate,,0,0,0,0,,test_4_ZYM,,10251-17-9,,166501.0,2016-03-22 13:55:28
+3,3,Esterase (C 4),Esterase (C 4),2-naphthyl butyrate,3.1.1.1,3,1,1,1,http://brenda-enzymes.org/enzyme.php?ecno=3.1.1.1,test_3_ZYM,,5856-33-7,,46958.0,2016-03-22 13:55:28
+1,1,Control,Control,,,0,0,0,0,,test_1_ZYM,,,,,2016-03-22 13:55:28
+2,2,Alkaline phosphatase,Alkaline phosphatase,2-naphthyl phosphate,3.1.3.1,3,1,3,1,http://brenda-enzymes.org/enzyme.php?ecno=3.1.3.1,test_2_ZYM,,14463-68-4 ,,3239.0,2016-03-22 13:55:28

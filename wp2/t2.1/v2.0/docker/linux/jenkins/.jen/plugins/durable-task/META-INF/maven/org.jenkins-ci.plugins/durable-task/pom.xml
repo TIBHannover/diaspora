@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>durable-task</artifactId>
-  <version>503.v57154d18d478</version>
+  <version>504.vb10d1ae5ba2f</version>
   <packaging>hpi</packaging>
   <name>Durable Task Plugin</name>
   <description>Library offering an extension point for processes which can run outside of Jenkins yet be monitored.</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/durable-task-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/durable-task-plugin.git</developerConnection>
-    <tag>57154d18d47827b2f0d9dab8fcf673373e088a21</tag>
+    <tag>b10d1ae5ba2f1f1169b24cc8ecc69815992c8fc5</tag>
     <url>https://github.com/jenkinsci/durable-task-plugin</url>
   </scm>
   <distributionManagement>
@@ -36,7 +36,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>lib-durable-task</artifactId>
-      <version>36.vd73d2d3299d1</version>
+      <version>37.vdf81f899d803</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
