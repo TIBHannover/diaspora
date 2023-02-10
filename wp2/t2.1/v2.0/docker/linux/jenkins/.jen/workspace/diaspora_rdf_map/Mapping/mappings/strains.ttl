@@ -634,7 +634,19 @@
             rr:parent "ID_strains";
         ];
     ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_literature;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap49>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
     ].
+
 
 
 
@@ -1178,5 +1190,18 @@
       rr:subjectMap 
      [ rr:template "http://kg.bacdive.dsmz.de/sequence_genomes/{ID_sequence}"; 
     rr:class bacdive:Sequence_genomes  ].
+
+    
+   <TripleMap49>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/literature.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
+    rr:class bacdive:Literature  ].
+
 
 
