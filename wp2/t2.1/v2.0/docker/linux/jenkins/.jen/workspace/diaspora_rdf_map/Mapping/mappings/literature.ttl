@@ -23,7 +23,7 @@
     
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
-    rr:class bacdive:literature ];
+    rr:class bacdive:Literature ];
 
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_pubmed_ID;
