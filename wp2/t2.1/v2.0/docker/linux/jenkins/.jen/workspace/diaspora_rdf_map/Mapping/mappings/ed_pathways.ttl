@@ -32,7 +32,7 @@
     
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_pathways;
-        rr:objectMap [ rml:reference "pathways" ]
+        rr:objectMap [ rml:reference "pathway" ]
     ] ;
 
     rr:predicateObjectMap [
