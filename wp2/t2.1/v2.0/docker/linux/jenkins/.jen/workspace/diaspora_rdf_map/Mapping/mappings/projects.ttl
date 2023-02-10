@@ -1,0 +1,77 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/projects.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/projects/{ID_projects}"; 
+    rr:class bacdive:Projects ];
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_name;
+        rr:objectMap [ rml:reference "name"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_url;
+        rr:objectMap [ rml:reference "url" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_shortname;
+        rr:objectMap [ rml:reference "shortname" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_description;
+    rr:objectMap [ rml:reference "description" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_source_URL;
+    rr:objectMap [ rml:reference "source_URL" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_logo;
+    rr:objectMap [ rml:reference "logo" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_public;
+    rr:objectMap [ rml:reference "public" ]
+    ] ;
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_contact;
+    rr:objectMap [ rml:reference "contact" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_json;
+    rr:objectMap [ rml:reference "json" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_timestamp;
+    rr:objectMap [ rml:reference "timestamp" ]
+    ] .

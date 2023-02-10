@@ -645,7 +645,20 @@
             rr:parent "ID_strains";
         ];
     ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_ed_pathways;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap50>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
     ].
+
+
 
 
 
@@ -1202,5 +1215,16 @@
       rr:subjectMap 
      [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
     rr:class bacdive:Literature  ].
+
+   <TripleMap50>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
+    rr:class bacdive:Ed_pathways ].
 
 
