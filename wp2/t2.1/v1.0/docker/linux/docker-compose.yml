@@ -32,7 +32,7 @@ services:
 
   graphdb:
     build: ./graphdb
-    image: graphdb
+    image: ontotext/graphdb
     ports:
       - "7200:7200"
 

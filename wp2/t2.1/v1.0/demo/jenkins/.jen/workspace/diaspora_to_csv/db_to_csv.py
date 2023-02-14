@@ -22,7 +22,7 @@ import configparser
 import time
 
 import mysql.connector
-import pymysql.cursors
+# import pymysql.cursors
 
 import logging
 
@@ -171,6 +171,8 @@ for each_section in config.sections():
             
             for col in result.columns:
                 if result[col].dtype == np.object_:
+                    print('j')
+                    print(result[col])
                     
                     a = (result[col].str.contains(r"\n"))
                     b = (result[col].str.contains(r'  '))
