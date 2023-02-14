@@ -1,6 +1,6 @@
 BD_table,"Priority (10 is high)",short description,Foreign Keys,version_1
-cell_morphology,10,morphology data like size/shape/gram stain and motility,ID_strains/ID_reference,yes;;;;;;;;;;
-colony_morphology,10,""Colony shape and colour, incubation time, hemolysis"",ID_strains/ID_reference,yes";;;;;;;;;;
+cell_morphology,10,morphology data like size/shape/gram stain and motility,ID_strains/ID_reference,yes
+colony_morphology,10,""Colony shape and colour, incubation time, hemolysis"",ID_strains/ID_reference,yes
 culture_pH,10,data on pH values,ID_strains/ID_reference,yes;;;;;;;;;;
 culture_temp,10,data on temperature values,ID_strains/ID_reference,yes;;;;;;;;;;
 halophily,10,halophilic data,ID_strains/ID_reference,yes;;;;;;;;;;
