@@ -18,7 +18,7 @@ reference_lit,,,,no;;;;;;;;;;
 risk_assessment,8,data on pathogenicity and risk assessment,ID_strains/ID_reference,yes;;;;;;;;;;
 spore_formation,8,data on spore formation ability of the bacteria,ID_strains/ID_reference,yes;;;;;;;;;;
 culture_medium,7,"Medium data for cultivation, not standardized data",ID_strains/ID_reference,yes;;;;;;;;;;
-met_test,7,"Metabolite test data: methyl red, Voges-Proskauer, Indole and Citrate"",ID_strains/ID_reference,yes;;;;;;;;;;
+met_test,7,"Metabolite test data: methyl red, Voges-Proskauer, Indole and Citrate",ID_strains/ID_reference,yes;;;;;;;;;;
 nutrition_type,7,"Nutrition type, rather general data on the nutrition of a bacterium",ID_strains/ID_reference,yes;;;;;;;;;;
 GC_content,6,GC content of the DNA,ID_strains/ID_reference,yes;;;;;;;;;;
 multicellular_morphology,6,"data on multicellular complex building ability, not standardized",ID_strains/ID_reference,yes;;;;;;;;;;
