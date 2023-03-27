@@ -1,0 +1,26 @@
+Started by upstream project "[8mha:////4NbwmPIkFL5eKoMQklB/20gMziZmD3aPV6K2kEwdfHwPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP2UzMTigvyixPiS/Pjk4jJ9ACjzxjvKAAAA[0mdiaspora_to_csv" build number [8mha:////4EweQ+TYuDpAXp5a+MklTil6yNKkIGl6UWgkIjw7zB+lAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgYJ/az8JP2UzMTigvyixPiS/Pjk4jJ9QwNjABaW87jNAAAA[0m103
+originally caused by:
+ Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_rdf_map
+[diaspora_rdf_map] $ /bin/sh -xe /tmp/jenkins10856304810475754209.sh
++ python3 rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py:73: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config1.readfp(open('../diaspora_to_csv/tables.properties'))
+/var/jenkins_home/workspace/diaspora_rdf_map/rdf.py
+/var/jenkins_home/workspace/diaspora_rdf_map
+/var/jenkins_home/workspace/diaspora_rdf_map
++ cd SDM-RDFizer/rdfizer
++ python3 run_rdfizer.py ../../configfile.ini
+Semantifying cell_morphology...
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap1
+Semantifying strains...
+
+
+TM: file:///var/jenkins_home/workspace/diaspora_rdf_map/Mapping/mappings/TripleMap1
+Successfully semantified strains.
+
+Triggering a new build of [8mha:////4I6EUdLvrJiHMBEgs6xhTEJDKnDCeTgO90TWLNLgf7SgAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzxEgZZ/az8JP2UzMTigvyixPjikvyi1PiS/Pj0osSCDH0AQFBXOtIAAAA=[0mdiaspora_store_to_graph
+Finished: SUCCESS

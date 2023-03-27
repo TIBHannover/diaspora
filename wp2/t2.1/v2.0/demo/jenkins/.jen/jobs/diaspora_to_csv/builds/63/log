@@ -1,0 +1,37 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins8549303513578847811.sh
++ pip install pandas
+Requirement already satisfied: pandas in /usr/local/lib/python3.9/dist-packages (1.4.3)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2022.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /usr/local/lib/python3.9/dist-packages (from pandas) (2.8.2)
+Requirement already satisfied: numpy>=1.18.5 in /usr/local/lib/python3.9/dist-packages (from pandas) (1.23.1)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:56: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/network.py", line 509, in open_connection
+    self.sock.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 69, in <module>
+    mydb = mysql.connector.connect(
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/__init__.py", line 179, in connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 95, in __init__
+    self.connect(**kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/abstracts.py", line 716, in connect
+    self._open_connection()
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/connection.py", line 206, in _open_connection
+    self._socket.open_connection()
+  File "/usr/local/lib/python3.9/dist-packages/mysql/connector/network.py", line 511, in open_connection
+    raise errors.InterfaceError(
+mysql.connector.errors.InterfaceError: 2003: Can't connect to MySQL server on 'db:42333' (111 Connection refused)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

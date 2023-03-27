@@ -1,0 +1,15 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/query_diaspora
+[query_diaspora] $ /bin/sh -xe /tmp/jenkins4158246853462254479.sh
++ pip install sparqlwrapper
+Requirement already satisfied: sparqlwrapper in /usr/local/lib/python3.9/dist-packages (2.0.0)
+Requirement already satisfied: rdflib>=6.1.1 in /usr/local/lib/python3.9/dist-packages (from sparqlwrapper) (6.2.0)
+Requirement already satisfied: isodate in /usr/local/lib/python3.9/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (0.6.1)
+Requirement already satisfied: pyparsing in /usr/local/lib/python3.9/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (3.0.9)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from rdflib>=6.1.1->sparqlwrapper) (52.0.0)
+Requirement already satisfied: six in /usr/local/lib/python3.9/dist-packages (from isodate->rdflib>=6.1.1->sparqlwrapper) (1.16.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 query.py
+[a rdflib:ConjunctiveGraph;rdflib:storage [a rdflib:Store;rdfs:label 'Memory']]
+Finished: SUCCESS
