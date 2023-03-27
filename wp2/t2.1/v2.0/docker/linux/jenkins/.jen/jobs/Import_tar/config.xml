@@ -24,7 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker cp diaspora.tar.gz linux-db-1:/tmp/diasp1/diaspora</command>
+      <command>docker cp diaspora_v2.tar.gz linux-db-1:/tmp/diasp3/diaspora3</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
