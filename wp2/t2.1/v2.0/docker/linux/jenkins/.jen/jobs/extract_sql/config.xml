@@ -24,7 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker exec linux-db-1 bash -c &quot;tar xvf /tmp/diasp1/diaspora -C /tmp/diasp1/&quot;</command>
+      <command>docker exec linux-db-1 bash -c &quot;tar xvf /tmp/diasp3/diaspora3 -C /tmp/diasp3/&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

@@ -24,7 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker exec linux-db-1 mysql -u root -proot -e &apos;show databases; create database diaspora_v1;&apos;  </command>
+      <command>docker exec linux-db-1 mysql -u root -proot -e &apos;show databases; create database diaspora_v3;&apos;  </command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

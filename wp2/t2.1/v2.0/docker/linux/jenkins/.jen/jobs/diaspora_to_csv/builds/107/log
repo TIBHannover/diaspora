@@ -1,0 +1,57 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/diaspora_to_csv
+[diaspora_to_csv] $ /bin/sh -xe /tmp/jenkins7415347551995781279.sh
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:62: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:96: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:160: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+  for h ,g in result[col].iteritems():
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py:127: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+('diaspora_v3',)
+select * from strains
+[]
+['140096']
+['140096']
+['140096', '160436']
+select ID_projects, name, url, shortname, description, source_URL, logo, public, contact, timestamp from projects
+select * from tolerance
+select * from reference
+select * from enzymes
+select * from pigmentation
+select * from sequence_genomes
+select * from sequence_16S
+select * from literature
+select * from biosample
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/diaspora_to_csv/db_to_csv.py", line 772, in <module>
+    if result[col].dtype == np.object_ or np.int:
+  File "/usr/local/lib/python3.9/dist-packages/numpy/__init__.py", line 305, in __getattr__
+    raise AttributeError(__former_attrs__[attr])
+AttributeError: module 'numpy' has no attribute 'int'.
+`np.int` was a deprecated alias for the builtin `int`. To avoid this error in existing code, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

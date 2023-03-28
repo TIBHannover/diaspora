@@ -24,7 +24,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>docker exec linux-db-1 sh -c &quot;mysql -u root -proot -D diaspora_v1 &lt; /tmp/diasp1/live_import_191205.sql&quot;</command>
+      <command>docker exec linux-db-1 sh -c &quot;mysql -u root -proot -D diaspora_v3 &lt; /tmp/diasp3/bacdive_220930.sql&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
