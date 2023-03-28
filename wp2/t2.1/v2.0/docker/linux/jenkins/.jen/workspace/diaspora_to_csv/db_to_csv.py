@@ -72,37 +72,39 @@ config.readfp(open('./tables.properties'))
 # print(table1)
 
 
+# mydb = mysql.connector.connect(
+    # host = 'db',
+    # # port = '3306',
+    # user = 'root',
+    # passwd = 'root',
+    # database= 'diaspora',
+    # auth_plugin='mysql_native_password')
+    
+
+
 mydb = mysql.connector.connect(
     host = 'db',
-    # port = '3306',
+   # port = '3306',
     user = 'root',
     passwd = 'root',
     database= 'diaspora_v3',
     auth_plugin='mysql_native_password')
-    
-# mydb = mysql.connector.connect(
-    # host = 'localhost',
-    # user = 'root',
-    # passwd = '8227',
-    # database= "diaspora_v3")
 
 
 # print(mydb)
 
 # Define the SQL query
-query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
+#query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
 
 # Execute the query and retrieve the results as a DataFrame
-df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
+df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v3'", mydb)
 
 df.index.name = 'charac_id'
 
 df.to_csv('characterstics.csv')
 
 
-# Convert the result to a list of table names
-
-
+# print(mydb)
 
 mycursor = mydb.cursor()
 
@@ -316,7 +318,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -379,7 +381,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -461,7 +463,7 @@ for each_section in config.sections():
           
             results.to_csv(each_key+".csv", index=False)
             # time.sleep(10)
-            with open(each_key+".csv",'r',errors="ignore") as f:
+            with open(each_key+".csv",'r',encoding="utf8") as f:
                 data = f.read()
                 # print(data)
            
@@ -471,7 +473,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -540,7 +542,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -609,7 +611,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -678,7 +680,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
@@ -769,7 +771,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int:
+                if result[col].dtype == np.object_ or np.int64:
                     
                     
                     
