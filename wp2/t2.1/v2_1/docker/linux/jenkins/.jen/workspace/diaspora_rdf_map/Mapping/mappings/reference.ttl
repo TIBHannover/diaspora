@@ -1,0 +1,156 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+
+
+
+
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/reference.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}"; 
+    rr:class bacdive:Reference ];
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cross_reference;
+        rr:objectMap [ rml:reference "ID_cross_reference"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_pubmed_ID;
+        rr:objectMap [ rml:reference "pubmed_ID"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_DOI;
+        rr:objectMap [ rml:reference "DOI" ]
+    ] ;
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_ISBN;
+        rr:objectMap [ rml:reference "ISBN" ]
+    ] ;
+
+    # rr:predicateObjectMap [
+    #     rr:predicate  bacdive:has_title;
+    #     rr:objectMap [ rml:reference "title" ]
+    # ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  dc:Title;
+        rr:objectMap [ rml:reference "title" ]
+    ] ;
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_authors;
+    # rr:objectMap [ rml:reference "authors" ]
+    # ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  dct:author;
+    rr:objectMap [ rml:reference "authors" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_volume;
+    rr:objectMap [ rml:reference "volume" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_year;
+    rr:objectMap [ rml:reference "year" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_first_page;
+    rr:objectMap [ rml:reference "first_page" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_page;
+    rr:objectMap [ rml:reference "last_page" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_journal_full_name;
+    rr:objectMap [ rml:reference "journal_full_name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_journal_abbreviation;
+    rr:objectMap [ rml:reference "journal_abbreviation" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_book_title;
+    rr:objectMap [ rml:reference "book_title" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_editor;
+    rr:objectMap [ rml:reference "editor" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_publisher;
+    rr:objectMap [ rml:reference "publisher" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_catalogue_ID;
+    rr:objectMap [ rml:reference "catalogue_ID" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_catalogue_institution;
+    rr:objectMap [ rml:reference "catalogue_institution" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_doc_type;
+    rr:objectMap [ rml:reference "doc_type" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_URL;
+    rr:objectMap [ rml:reference "URL" ]
+    ] ;
+
+    #  rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_reference_import;
+    # rr:objectMap [ rml:reference "ID_reference_import" ]
+    # ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] .
+   
+
+
+
