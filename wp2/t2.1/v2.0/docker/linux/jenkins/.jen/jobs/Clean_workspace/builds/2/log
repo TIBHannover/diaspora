@@ -1,8 +1,0 @@
-Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
-Running as SYSTEM
-Building in workspace /var/jenkins_home/workspace/Clean_workspace
-[Clean_workspace] $ /bin/sh -xe /tmp/jenkins13714110514135784219.sh
-+ cd ..
-+ cd diaspora_rdf_map/Mapping/output
-+ rm biosample.nt cell_morphology.nt colony_morphology.nt compound_production.nt culture_collection.nt culture_medium.nt culture_ph.nt culture_temp.nt enzymes.nt fa_meta.nt fa_profile.nt gc_content.nt halophily.nt is_link.nt kit_api_20a.nt kit_api_20a_meta.nt kit_api_20e.nt kit_api_20e_meta.nt kit_api_20ne.nt kit_api_20ne_meta.nt kit_api_20str.nt kit_api_20str_meta.nt kit_api_50chac.nt kit_api_50chac_meta.nt kit_api_50chas.nt kit_api_50chas_meta.nt kit_api_cam.nt kit_api_cam_meta.nt kit_api_coryne.nt kit_api_coryne_meta.nt kit_api_id32e.nt kit_api_id32e_meta.nt kit_api_id32sta.nt kit_api_id32sta_meta.nt kit_api_list.nt kit_api_list_meta.nt kit_api_nh.nt kit_api_nh_meta.nt kit_api_rid32a.nt kit_api_rid32a_meta.nt kit_api_rid32str.nt kit_api_rid32str_meta.nt kit_api_sta.nt kit_api_sta_meta.nt kit_api_zym.nt kit_api_zym_ec.nt met_antibiogram.nt met_antibiogram_meta.nt met_antibiotica.nt met_production.nt met_test.nt met_util.nt multicellular_morphology.nt multimedia.nt murein.nt nutrition_type.nt observation.nt origin.nt oxygen_tolerance.nt pigmentation.nt reference.nt risk_assessment.nt sequence.nt spore_formation.nt strain_history.nt strain_synonyms.nt strains.nt tolerance.nt
-Finished: SUCCESS
