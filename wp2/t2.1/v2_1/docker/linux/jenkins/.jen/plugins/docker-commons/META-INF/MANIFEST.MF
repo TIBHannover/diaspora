@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.263.1
+Plugin-Dependencies: authentication-tokens:1.4,credentials-binding:1.2
+ 7,credentials:2.6.1,structs:1.23,pipeline-model-extensions:1.9.3;reso
+ lution:=optional
+Implementation-Title: Docker Commons Plugin
+Long-Name: Docker Commons Plugin
+Implementation-Version: 1.21
+Group-Id: org.jenkins-ci.plugins
+Plugin-License-Name: MIT License
+Specification-Title: Docker Commons Plugin
+Plugin-ScmUrl: http://github.com/jenkinsci/docker-commons-plugin
+Plugin-Version: 1.21
+Jenkins-Version: 2.263.1
+Url: https://github.com/jenkinsci/docker-commons-plugin
+Short-Name: docker-commons
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-Developers: 
+Plugin-Class: org.jenkinsci.plugins.docker.commons.DockerCommonsPlugin
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.6.0
+Specification-Version: 1.21
+

@@ -1,0 +1,20 @@
+Started by upstream project "[8mha:////4EUzyMoxXfRr4c8T51eSOO6g06NbRtQddewSYrMG/zguAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JP3UipKixOSS+OLCHH0ACO1i9MYAAAA=[0mextract_sql" build number [8mha:////4N1Za0WUkqZZYjTidUPrCegK1gw64UiJdDL44wPePG+dAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQAygGfpZ+Un6qRUlRYnJJfHFhTn6RgD7Pb8gxwAAAA==[0m2
+originally caused by:
+ Started by upstream project "[8mha:////4FscRT2Wy68KYy7eK/V/VJOW2t5UzmB42FLVvWWi8d6cAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH3P3IL8opL4ksQifQD9TT3+xQAAAA==[0mImport_tar" build number [8mha:////4B7/AQvwdqAc7K4mH9quC98xY9qIpcicdVlMHtl1XN11AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwkfc/cgvyikviSxCJ9EwCglfqBxgAAAA==[0m4
+ originally caused by:
+  Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Create_database
+[Create_database] $ /bin/sh -xe /tmp/jenkins6205009470711191416.sh
++ docker exec linux-db-1 mysql -u root -proot -e show databases; create database diaspora_v3;
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Database
+diaspora_v1
+diaspora_v2
+information_schema
+mysql
+performance_schema
+sys
+ERROR 3680 (HY000) at line 1: Failed to create schema directory 'diaspora_v3' (errno: 2 - No such file or directory)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

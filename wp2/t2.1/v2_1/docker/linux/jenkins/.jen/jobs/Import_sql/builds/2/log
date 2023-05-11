@@ -1,0 +1,7 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Import_sql
+[Import_sql] $ /bin/sh -xe /tmp/jenkins2526748739176787101.sh
++ docker exec linux-db-1 sh -c mysql -u root -proot -D diaspora_v1 < /tmp/diasp1/live_import_191205.sql
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Finished: SUCCESS

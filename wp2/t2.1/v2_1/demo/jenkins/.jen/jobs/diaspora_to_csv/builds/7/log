@@ -1,0 +1,11 @@
+Started by user [8mha:////4KUMFlbveTuw2CrO3ffXNdXpt+NlAScdR1M+KzoPh3GjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/diaspora_to_csv/workspace
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[workspace] $ /bin/sh -xe /tmp/jenkins4588225983070704377.sh
++ pip install -r ./requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: './requirements.txt'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

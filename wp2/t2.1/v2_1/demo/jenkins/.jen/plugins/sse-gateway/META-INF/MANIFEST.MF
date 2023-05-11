@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Server Sent Events (SSE) Gateway Plugin
+Specification-Version: 1.26
+Implementation-Title: Server Sent Events (SSE) Gateway Plugin
+Implementation-Version: 1.26
+Group-Id: org.jenkins-ci.plugins
+Short-Name: sse-gateway
+Long-Name: Server Sent Events (SSE) Gateway Plugin
+Url: https://github.com/jenkinsci/sse-gateway-plugin
+Plugin-Version: 1.26
+Hudson-Version: 2.361
+Jenkins-Version: 2.361
+Plugin-Dependencies: pubsub-light:1.17
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/sse-gateway-plugin
+

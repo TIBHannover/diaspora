@@ -1,0 +1,77 @@
+Started by user [8mha:////4KUMFlbveTuw2CrO3ffXNdXpt+NlAScdR1M+KzoPh3GjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/diaspora_to_csv/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins17576143361720262069.sh
++ pip install -r ./requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+Collecting mysql_connector_repackaged==0.3.1
+  Using cached mysql-connector-repackaged-0.3.1.tar.gz (132 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting natsort==8.1.0
+  Using cached natsort-8.1.0-py3-none-any.whl (37 kB)
+Collecting numpy==1.20.1
+  Using cached numpy-1.20.1-cp39-cp39-manylinux2010_x86_64.whl (15.4 MB)
+Collecting pandas==1.2.4
+  Using cached pandas-1.2.4-cp39-cp39-manylinux1_x86_64.whl (9.7 MB)
+Collecting rdflib==6.1.1
+  Downloading rdflib-6.1.1-py3-none-any.whl (482 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 482.8/482.8 kB 2.9 MB/s eta 0:00:00
+Collecting requests==2.27.1
+  Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 389.8 kB/s eta 0:00:00
+Collecting SPARQLWrapper==2.0.0
+  Downloading SPARQLWrapper-2.0.0-py3-none-any.whl (28 kB)
+Collecting pytz>=2017.3
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 503.5/503.5 kB 3.2 MB/s eta 0:00:00
+Collecting python-dateutil>=2.7.3
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 2.7 MB/s eta 0:00:00
+Collecting pyparsing
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 1.1 MB/s eta 0:00:00
+Collecting isodate
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 748.6 kB/s eta 0:00:00
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from rdflib==6.1.1->-r ./requirements.txt (line 6)) (52.0.0)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.6.15-py3-none-any.whl (160 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.2/160.2 kB 2.9 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 2.0 MB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.10-py2.py3-none-any.whl (139 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.2/139.2 kB 1.7 MB/s eta 0:00:00
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting six>=1.5
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: mysql_connector_repackaged
+  Building wheel for mysql_connector_repackaged (setup.py): started
+  Building wheel for mysql_connector_repackaged (setup.py): finished with status 'done'
+  Created wheel for mysql_connector_repackaged: filename=mysql_connector_repackaged-0.3.1-py3-none-any.whl size=44728 sha256=9375cdaae5f3b7d32c24700f7d72516e38ba866f1a5048d06d774ff2a726abd7
+  Stored in directory: /var/jenkins_home/.cache/pip/wheels/3b/f1/80/adb83b2899cd6c428d786dd3549484b99eb8c3a541de679c0b
+Successfully built mysql_connector_repackaged
+Installing collected packages: pytz, mysql_connector_repackaged, urllib3, six, pyparsing, numpy, natsort, idna, charset-normalizer, certifi, requests, python-dateutil, isodate, rdflib, pandas, SPARQLWrapper
+  WARNING: The scripts f2py, f2py3 and f2py3.9 are installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script natsort is installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script normalizer is installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts csv2rdf, rdf2dot, rdfgraphisomorphism, rdfpipe and rdfs2dot are installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script rqw is installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed SPARQLWrapper-2.0.0 certifi-2022.6.15 charset-normalizer-2.0.12 idna-3.3 isodate-0.6.1 mysql_connector_repackaged-0.3.1 natsort-8.1.0 numpy-1.20.1 pandas-1.2.4 pyparsing-3.0.9 python-dateutil-2.8.2 pytz-2022.1 rdflib-6.1.1 requests-2.27.1 six-1.16.0 urllib3-1.26.10
++ python3 db_to_csv.py
+Traceback (most recent call last):
+  File "/var/jenkins_home/jobs/diaspora_to_csv/workspace/db_to_csv.py", line 27, in <module>
+    import mysql.connector
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/mysql/connector/__init__.py", line 34, in <module>
+    import _version
+ModuleNotFoundError: No module named '_version'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
