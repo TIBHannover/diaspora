@@ -87,7 +87,7 @@ mydb = mysql.connector.connect(
    # port = '3306',
     user = 'root',
     passwd = 'root',
-    database= 'diaspora_v2_1',
+    database= 'diaspora_v2',
     auth_plugin='mysql_native_password')
 
 
@@ -97,7 +97,7 @@ mydb = mysql.connector.connect(
 #query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
 
 # Execute the query and retrieve the results as a DataFrame
-df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2_1'", mydb)
+df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
 
 df.index.name = 'charac_id'
 
