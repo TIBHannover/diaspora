@@ -653,7 +653,7 @@
             rr:parent "ID_strains";
         ];
     ] ;
-    ].
+    ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_ed_pathways;
