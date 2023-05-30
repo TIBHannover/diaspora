@@ -485,28 +485,28 @@
     ] ;
     ];
 
-    # rr:predicateObjectMap [
-    # rr:predicate  bacdive:has_observation;
-    # rr:objectMap[
-    #     rr:parentTriplesMap <TripleMap35>;
-    #     rr:joinCondition [
-    #         rr:child "ID_strains";
-    #         rr:parent "ID_strains";
-    #     ];
-    # ] ;
-    # ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_observation;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap35>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_oxygen_tolerance;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap36>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_oxygen_tolerance;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap36>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_pigmentation;
@@ -520,51 +520,51 @@
     ];
 
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_risk_assessment;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap38>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_risk_assessment;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap38>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_spore_formation;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap39>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
-
-
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_strain_history;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap40>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_spore_formation;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap39>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_strain_synonyms;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap41>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain_history;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap40>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain_synonyms;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap41>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_tolerance;
@@ -588,38 +588,38 @@
     ] ;
     ];
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_compound_production;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap44>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_compound_production;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap44>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_culture_medium;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap45>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_culture_medium;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap45>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_culture_ph;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap46>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ];
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_culture_ph;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap46>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_sequence_16s;
@@ -655,16 +655,16 @@
     ] ;
     ].
 
-#     rr:predicateObjectMap [
-#     rr:predicate  bacdive:has_ed_pathways;
-#     rr:objectMap[
-#         rr:parentTriplesMap <TripleMap50>;
-#         rr:joinCondition [
-#             rr:child "ID_strains";
-#             rr:parent "ID_strains";
-#         ];
-#     ] ;
-#     ].
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_ed_pathways;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap50>;
+        rr:joinCondition [
+            rr:child "ID_strains";
+            rr:parent "ID_strains";
+        ];
+    ] ;
+    ].
 
 
     <TripleMap51>
@@ -1179,28 +1179,28 @@
 #      [ rr:template "http://kg.bacdive.dsmz.de/nutrition_type/{ID_nutrition_type}"; 
 #     rr:class bacdive:Nutrition_type   ].
 
-#     # <TripleMap35>
-#     # a rr:TriplesMap;
+    # <TripleMap35>
+    # a rr:TriplesMap;
 
-#     # rml:logicalSource [ rml:source "../../../diaspora_to_csv/observation.csv";
-#     # rml:referenceFormulation ql:CSV
-#     # ];
+    # rml:logicalSource [ rml:source "../../../diaspora_to_csv/observation.csv";
+    # rml:referenceFormulation ql:CSV
+    # ];
 
-#     #   rr:subjectMap 
-#     #  [ rr:template "http://kg.bacdive.dsmz.de/observation/{ID_observation}"; 
-#     # rr:class bacdive:Observation   ].
+    #   rr:subjectMap 
+    #  [ rr:template "http://kg.bacdive.dsmz.de/observation/{ID_observation}"; 
+    # rr:class bacdive:Observation   ].
 
 
-# #     <TripleMap36>
-# #     a rr:TriplesMap;
+    <TripleMap36>
+    a rr:TriplesMap;
 
-# #     rml:logicalSource [ rml:source "../../../diaspora_to_csv/oxygen_tolerance.csv";
-# #     rml:referenceFormulation ql:CSV
-# #     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/oxygen_tolerance.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-# #       rr:subjectMap 
-# #      [ rr:template "http://kg.bacdive.dsmz.de/oxygen_tolerance/{ID_oxygen_tolerance}"; 
-# #     rr:class bacdive:Oxygen_tolerance   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/oxygen_tolerance/{ID_oxygen_tolerance}"; 
+    rr:class bacdive:Oxygen_tolerance   ].
 
 #     <TripleMap37>
 #     a rr:TriplesMap;
@@ -1213,52 +1213,52 @@
 #      [ rr:template "http://kg.bacdive.dsmz.de/pigmentation/{ID_pigmentation}"; 
 #     rr:class bacdive:Pigmentation   ].
 
-# #     <TripleMap38>
-# #     a rr:TriplesMap;
+    <TripleMap38>
+    a rr:TriplesMap;
 
-# #     rml:logicalSource [ rml:source "../../../diaspora_to_csv/risk_assessment.csv";
-# #     rml:referenceFormulation ql:CSV
-# #     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/risk_assessment.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-# #       rr:subjectMap 
-# #      [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
-# #     rr:class bacdive:Risk_assessment   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
+    rr:class bacdive:Risk_assessment   ].
 
-# #     <TripleMap39>
-# #     a rr:TriplesMap;
+    <TripleMap39>
+    a rr:TriplesMap;
 
-# #     rml:logicalSource [ rml:source "../../../diaspora_to_csv/spore_formation.csv";
-# #     rml:referenceFormulation ql:CSV
-# #     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/spore_formation.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-# #       rr:subjectMap 
-# #      [ rr:template "http://kg.bacdive.dsmz.de/spore_formation/{ID_spore_formation}"; 
-# #     rr:class bacdive:Spore_formation   ].
-
-    
-# #     <TripleMap40>
-# #     a rr:TriplesMap;
-
-# #     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_history.csv";
-# #     rml:referenceFormulation ql:CSV
-# #     ];
-
-# #       rr:subjectMap 
-# #      [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
-# #     rr:class bacdive:Strain_history   ].
-
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/spore_formation/{ID_spore_formation}"; 
+    rr:class bacdive:Spore_formation   ].
 
     
-# #     <TripleMap41>
-# #     a rr:TriplesMap;
+    <TripleMap40>
+    a rr:TriplesMap;
 
-# #     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_synonyms.csv";
-# #     rml:referenceFormulation ql:CSV
-# #     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_history.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-# #       rr:subjectMap 
-# #      [ rr:template "http://kg.bacdive.dsmz.de/strain_synonyms/{ID_strain_synonyms}"; 
-# #     rr:class bacdive:Strain_synonyms   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
+    rr:class bacdive:Strain_history   ].
+
+
+    
+    <TripleMap41>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_synonyms.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/strain_synonyms/{ID_strain_synonyms}"; 
+    rr:class bacdive:Strain_synonyms   ].
 
 
 
@@ -1284,38 +1284,38 @@
     #  [ rr:template "http://kg.bacdive.dsmz.de/biosample/{ID_biosample}"; 
     # rr:class bacdive:Biosample  ].
 
-#     <TripleMap44>
-#     a rr:TriplesMap;
+    <TripleMap44>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/compound_production.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/compound_production.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/compound_production/{ID_compound_production}"; 
-#     rr:class bacdive:Compound_production  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/compound_production/{ID_compound_production}"; 
+    rr:class bacdive:Compound_production  ].
 
-#     <TripleMap45>
-#     a rr:TriplesMap;
+    <TripleMap45>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_medium.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_medium.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/culture_medium/{ID_culture_medium}"; 
-#     rr:class bacdive:Culture_medium  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_medium/{ID_culture_medium}"; 
+    rr:class bacdive:Culture_medium  ].
 
-#     <TripleMap46>
-#     a rr:TriplesMap;
+    <TripleMap46>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
-#     rr:class bacdive:Culture_ph  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
+    rr:class bacdive:Culture_ph  ].
 
     # <TripleMap47>
     # a rr:TriplesMap;
@@ -1351,14 +1351,14 @@
     #  [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
     # rr:class bacdive:Sequence_genomes  ].
 
-#     <TripleMap50>
-#     a rr:TriplesMap;
+    <TripleMap50>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
-#     rr:class bacdive:Ed_pathways  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
+    rr:class bacdive:Ed_pathways  ].
 
