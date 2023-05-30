@@ -120,370 +120,370 @@
     rr:objectMap [ rml:reference "last_change" ]
     ] ;
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_cell_morphology;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap2>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_cell_morphology;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap2>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_colony_morphology;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap3>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
-
-
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_culture_temp;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap4>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_colony_morphology;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap3>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_enzymes;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap5>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_culture_temp;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap4>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_fa_profile;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap6>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_gc_content;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap7>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_enzymes;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap5>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_halophily;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap8>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_fa_profile;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap6>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_is_link;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap9>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_gc_content;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap7>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_20a;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap10>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_halophily;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap8>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_20e;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap11>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_is_link;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap9>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_20ne;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap12>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_20a;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap10>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_20e;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap11>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
+
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_20ne;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap12>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
  
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_20str;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap13>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_20str;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap13>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_50chac;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap14>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_50chac;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap14>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_50chas;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap15>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_50chas;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap15>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_cam;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap16>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_cam;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap16>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_coryne;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap17>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_coryne;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap17>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_id32e;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap18>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_id32e;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap18>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_id32sta;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap19>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_id32sta;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap19>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_list;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap20>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_list;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap20>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_nh;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap21>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_nh;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap21>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_rid32a;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap22>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_rid32a;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap22>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_rid32str;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap23>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_rid32str;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap23>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_sta;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap24>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_sta;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap24>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_kit_api_zym;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap25>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_kit_api_zym;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap25>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_met_antibiogram;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap26>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_met_antibiogram;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap26>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-     rr:predicateObjectMap [
-    rr:predicate  bacdive:has_met_antibiotica;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap27>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    #  rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_met_antibiotica;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap27>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_met_production;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap28>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_met_production;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap28>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_met_test;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap29>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_met_test;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap29>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_met_util;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap30>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_met_util;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap30>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_multicellular_morphology;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap31>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_multicellular_morphology;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap31>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_multimedia;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap32>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_multimedia;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap32>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_murein;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap33>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_murein;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap33>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_nutrition_type;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap34>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_nutrition_type;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap34>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_observation;
@@ -566,27 +566,27 @@
     ] ;
     ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_tolerance;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap42>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_tolerance;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap42>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_biosample;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap43>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_biosample;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap43>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_compound_production;
@@ -621,39 +621,39 @@
     ] ;
     ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_sequence_16s;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap47>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_sequence_16s;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap47>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_sequence_genomes;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap48>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_sequence_genomes;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap48>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
     
-    rr:predicateObjectMap [
-    rr:predicate  bacdive:has_literature;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap49>;
-        rr:joinCondition [
-            rr:child "ID_strains";
-            rr:parent "ID_strains";
-        ];
-    ] ;
-    ];
+    # rr:predicateObjectMap [
+    # rr:predicate  bacdive:has_literature;
+    # rr:objectMap[
+    #     rr:parentTriplesMap <TripleMap49>;
+    #     rr:joinCondition [
+    #         rr:child "ID_strains";
+    #         rr:parent "ID_strains";
+    #     ];
+    # ] ;
+    # ];
 
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_ed_pathways;
