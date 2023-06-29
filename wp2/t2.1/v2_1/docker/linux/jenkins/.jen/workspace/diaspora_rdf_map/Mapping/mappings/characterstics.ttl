@@ -29,7 +29,7 @@
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/characterstics/{charac_id}"; 
     rr:class bacdive:Characterstics;
-    rr:graph  "http://example.com/characterstics"
+    rr:graph  "http://kg.bacdive.dsmz.de/characterstics"
     ];
     
 
