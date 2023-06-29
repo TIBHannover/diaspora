@@ -35,6 +35,6 @@
 
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_characterstics;
-        rr:objectMap [ rml:reference "table_name" ];
+        rr:objectMap [ rml:reference "TABLE_NAME" ];
     ] .
 
