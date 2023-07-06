@@ -859,7 +859,7 @@ for each_section in config.sections():
             
             
             for col in result.columns:
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_:
                     a = (result[col].str.contains(r"\n"))
                      
                     if a.any() == True:
@@ -891,7 +891,7 @@ for each_section in config.sections():
             
             
             for col in result.columns:
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_:
                     a = (result[col].str.contains(r"\n"))
                     
                     if a.any() == True:
