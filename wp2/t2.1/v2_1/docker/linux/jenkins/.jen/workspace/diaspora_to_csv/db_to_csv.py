@@ -63,40 +63,18 @@ config.readfp(open('./tables.properties'))
 
 ''' taking tables name '''
 
-# table1 = config.get('TABLES','materials_dataset')
-
-# ''' taking queries '''
-
-# query1 = config.get('QUERIES','query1')
-
-# print(table1)
-
-
-# mydb = mysql.connector.connect(
-    # host = 'db',
-    # # port = '3306',
-    # user = 'root',
-    # passwd = 'root',
-    # database= 'diaspora',
-    # auth_plugin='mysql_native_password')
     
 
 
 mydb = mysql.connector.connect(
     host = 'db',
-   # port = '3306',
     user = 'root',
     passwd = 'root',
     database= 'diaspora_v2',
     auth_plugin='mysql_native_password')
 
 
-# print(mydb)
 
-# Define the SQL query
-#query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
-
-# Execute the query and retrieve the results as a DataFrame
 df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
 
 df.index.name = 'charac_id'
@@ -123,8 +101,6 @@ for each_section in config.sections():
        
         print(query)
             
-  
-        # query = 'select * from materials_dataset' 
         
         results = pd.read_sql_query(query, mydb)
         results.to_csv(each_key+".csv", index=False)
@@ -134,12 +110,10 @@ for each_section in config.sections():
     
         if each_key == 'strains':
 
-            
-            # results['method'].dtype == np.object_
-            # results['method'] = results['method'].str.replace('\n','')
+        
           
             results.to_csv(each_key+".csv", index=False)
-            # time.sleep(10)
+         
             with open(each_key+".csv",'r',encoding="utf8") as f:
                 data = f.read()
                 
@@ -153,12 +127,11 @@ for each_section in config.sections():
 
             
             for col in result.columns:
-                # print(col)
+              
                if result[col].dtype == np.object_ or np.int64:
                     
                     
-                    
-                    # print((result[col]))
+               
                     for h ,g in result[col].iteritems():
                         try:
                             
