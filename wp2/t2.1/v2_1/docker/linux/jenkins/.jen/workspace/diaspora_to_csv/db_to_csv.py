@@ -72,19 +72,19 @@ config.readfp(open('./tables.properties'))
 # print(table1)
 
 
-# mydb = mysql.connector.connect(
-    # host = 'db',
-    # # port = '3306',
-    # user = 'root',
-    # passwd = 'root',
-    # database= 'diaspora',
-    # auth_plugin='mysql_native_password')
-    
 mydb = mysql.connector.connect(
-    host = 'localhost',
+    host = 'db',
+    # port = '3306',
     user = 'root',
-    passwd = '8227',
-    database= "diaspora_v2")
+    passwd = 'root',
+    database= 'diaspora_v2',
+    auth_plugin='mysql_native_password')
+    
+# mydb = mysql.connector.connect(
+    # host = 'localhost',
+    # user = 'root',
+    # passwd = '8227',
+    # database= "diaspora_v2")
 
 
 # print(mydb)
