@@ -80,21 +80,17 @@ config.readfp(open('./tables.properties'))
     # database= 'diaspora',
     # auth_plugin='mysql_native_password')
     
-
-
 mydb = mysql.connector.connect(
-    host = 'db',
-   # port = '3306',
+    host = 'localhost',
     user = 'root',
-    passwd = 'root',
-    database= 'diaspora_v2',
-    auth_plugin='mysql_native_password')
+    passwd = '8227',
+    database= "diaspora_v2")
 
 
 # print(mydb)
 
 # Define the SQL query
-#query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
+query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
 
 # Execute the query and retrieve the results as a DataFrame
 df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
@@ -104,7 +100,9 @@ df.index.name = 'charac_id'
 df.to_csv('characterstics.csv')
 
 
-# print(mydb)
+# Convert the result to a list of table names
+
+
 
 mycursor = mydb.cursor()
 
@@ -223,6 +221,9 @@ for each_section in config.sections():
                         
                         result[col] = result[col].str.replace('\n','')   
                         result[col] = result[col].str.replace('  ','')
+                        result[col] = result[col].str.replace(' ','_')
+                        result[col] = result[col].str.replace('(','_')
+                        result[col] = result[col].str.replace(')','_')
                     except:
                         pass
                     
@@ -318,7 +319,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -381,7 +382,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -463,7 +464,7 @@ for each_section in config.sections():
           
             results.to_csv(each_key+".csv", index=False)
             # time.sleep(10)
-            with open(each_key+".csv",'r',encoding="utf8") as f:
+            with open(each_key+".csv",'r',errors="ignore") as f:
                 data = f.read()
                 # print(data)
            
@@ -473,7 +474,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -542,7 +543,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -611,7 +612,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -680,7 +681,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -771,7 +772,7 @@ for each_section in config.sections():
             
             for col in result.columns:
                 # print(col)
-                if result[col].dtype == np.object_ or np.int64:
+                if result[col].dtype == np.object_ or np.int:
                     
                     
                     
@@ -843,8 +844,63 @@ for each_section in config.sections():
 
             result.to_csv(each_key +".csv", index=False) 
             
+        elif each_key == 'enzymes':
             
+            
+           
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r', encoding="utf8") as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            
+            
+            for col in result.columns:
+                if result[col].dtype == np.object_:
+                    a = (result[col].str.contains(r"\n"))
+                     
+                    if a.any() == True:
+                        print(col,'true')
+                        log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                
+                    # result[col] = result[col].str.replace('  ','')
+                    result[col] = result[col].str.replace('\n','')
+                    result[col] = result[col].str.replace('  ','')
+                    result[col] = result[col].str.replace(' ','_')
+                    result[col] = result[col].str.replace('(','_')
+                    result[col] = result[col].str.replace(')','_')
+            result.to_csv(each_key+".csv", index=False)    
 
+        elif each_key == 'pigmentation':
+                
+                
+            
+                results.to_csv(each_key+".csv", index=False)
+                # time.sleep(10)
+                with open(each_key+".csv",'r', encoding="utf8") as f:
+                    data = f.read()
+                    # print(data)
+            
+                result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+                
+                
+                for col in result.columns:
+                    if result[col].dtype == np.object_:
+                        a = (result[col].str.contains(r"\n"))
+                        
+                        if a.any() == True:
+                            print(col,'true')
+                            log_one.warning('line break problem' + ' , ' + 'table_name:' + each_key + ' , ' + 'col_name:' + col)
+                    
+                        # result[col] = result[col].str.replace('  ','')
+                        result[col] = result[col].str.replace('\n','')
+                        result[col] = result[col].str.replace('  ','')
+                        result[col] = result[col].str.replace(' ','_')
+                        result[col] = result[col].str.replace('(','_')
+                        result[col] = result[col].str.replace(')','_')
+                result.to_csv(each_key+".csv", index=False)    
 
 logging.shutdown()       
 

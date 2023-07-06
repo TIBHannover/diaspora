@@ -43,7 +43,7 @@
    
     rr:predicateObjectMap [
     rr:predicate  bacdive:has_ordo;
-    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/ordos/{ordo}}" ]
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/ordos/{ordo}" ]
     ] ;
 
     rr:predicateObjectMap [
@@ -806,559 +806,559 @@
 
 
 
-#     <TripleMap2>
-#     a rr:TriplesMap;
+    <TripleMap2>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/cell_morphology.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/cell_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#      rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/cell_morphology/{ID_cell_morphology}"; 
-#     rr:class bacdive:Cell_morphology ].
+     rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/cell_morphology/{ID_cell_morphology}"; 
+    rr:class bacdive:Cell_morphology ].
 
     
-#     <TripleMap3>
-#     a rr:TriplesMap;
+    <TripleMap3>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/colony_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}"; 
-#     rr:class bacdive:Colony_morphology ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/colony_morphology/{ID_colony_morphology}"; 
+    rr:class bacdive:Colony_morphology ].
 
-#     <TripleMap4>
-#     a rr:TriplesMap;
+    <TripleMap4>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_temp.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_temp.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/culture_temp/{ID_culture_temp}"; 
-#     rr:class bacdive:Culture_temp ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_temp/{ID_culture_temp}"; 
+    rr:class bacdive:Culture_temp ].
 
   
-#   <TripleMap5>
-#     a rr:TriplesMap;
+  <TripleMap5>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/enzymes.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/enzymes.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/enzymes/{enzyme}"; 
-#     rr:class bacdive:Enzyme ].
-
-
-#    <TripleMap6>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/fa_profile.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/fa_profiles/{FA_name}"; 
-#     rr:class bacdive:Fa_profile ].
-
-#     <TripleMap7>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/gc_content.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/gc_content/{ID_GC_content}"; 
-#     rr:class bacdive:Gc_content ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/enzymes/{enzyme}"; 
+    rr:class bacdive:Enzyme ].
 
 
-#   <TripleMap8>
-#     a rr:TriplesMap;
+   <TripleMap6>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/halophily.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/fa_profile.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/halophily/{ID_halophily}"; 
-#     rr:class bacdive:Halophily ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/fa_profiles/{FA_name}"; 
+    rr:class bacdive:Fa_profile ].
+
+    <TripleMap7>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/gc_content.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/gc_content/{ID_GC_content}"; 
+    rr:class bacdive:Gc_content ].
 
 
-#    <TripleMap9>
-#     a rr:TriplesMap;
+  <TripleMap8>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/is_link.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/halophily.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/is_link/{PK_IS_link}"; 
-#     rr:class bacdive:Is_link ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/halophily/{ID_halophily}"; 
+    rr:class bacdive:Halophily ].
 
 
-#     <TripleMap10>
-#     a rr:TriplesMap;
+   <TripleMap9>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20a.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/is_link.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20a/{ID_kit_api_20A}"; 
-#     rr:class bacdive:Kit_api_20a ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/is_link/{PK_IS_link}"; 
+    rr:class bacdive:Is_link ].
 
-#      <TripleMap11>
-#     a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20e.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap10>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20e/{ID_kit_api_20E}"; 
-#     rr:class bacdive:Kit_api_20e ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20a.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#      <TripleMap12>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20a/{ID_kit_api_20A}"; 
+    rr:class bacdive:Kit_api_20a ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20ne.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+     <TripleMap11>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20ne/{ID_kit_api_20NE}"; 
-#     rr:class bacdive:Kit_api_20ne ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20e.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#     <TripleMap13>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20e/{ID_kit_api_20E}"; 
+    rr:class bacdive:Kit_api_20e ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20str.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+     <TripleMap12>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20str/{ID_kit_api_20STR}"; 
-#     rr:class bacdive:Kit_api_20str  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20ne.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#     <TripleMap14>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20ne/{ID_kit_api_20NE}"; 
+    rr:class bacdive:Kit_api_20ne ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chac.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap13>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chac/{ID_kit_api_50CHac}"; 
-#     rr:class bacdive:Kit_api_50CHac  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_20str.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#    <TripleMap15>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_20str/{ID_kit_api_20STR}"; 
+    rr:class bacdive:Kit_api_20str  ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chas.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap14>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chas/{ID_kit_api_50CHas}"; 
-#     rr:class bacdive:Kit_api_50CHas  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chac.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chac/{ID_kit_api_50CHac}"; 
+    rr:class bacdive:Kit_api_50CHac  ].
+
+   <TripleMap15>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chas.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chas/{ID_kit_api_50CHas}"; 
+    rr:class bacdive:Kit_api_50CHas  ].
  
-#     <TripleMap16>
-#     a rr:TriplesMap;
+    <TripleMap16>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_cam.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_cam.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chas/{ID_kit_api_CAM}"; 
-#     rr:class bacdive:Kit_api_cam  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chas/{ID_kit_api_CAM}"; 
+    rr:class bacdive:Kit_api_cam  ].
 
-#     <TripleMap17>
-#     a rr:TriplesMap;
+    <TripleMap17>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_coryne.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_coryne.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_coryne/{ID_kit_api_coryne}"; 
-#     rr:class bacdive:Kit_api_coryne  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_coryne/{ID_kit_api_coryne}"; 
+    rr:class bacdive:Kit_api_coryne  ].
 
 
   
-#     <TripleMap18>
-#     a rr:TriplesMap;
+    <TripleMap18>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_id32e.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_id32e.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_id32e/{ID_kit_api_ID32E}"; 
-#     rr:class bacdive:Kit_api_id32e   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_id32e/{ID_kit_api_ID32E}"; 
+    rr:class bacdive:Kit_api_id32e   ].
 
 
-#     <TripleMap19>
-#     a rr:TriplesMap;
+    <TripleMap19>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_id32sta.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_id32sta.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_id32sta/{ID_kit_api_ID32STA}"; 
-#     rr:class bacdive:Kit_api_id32sta   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_id32sta/{ID_kit_api_ID32STA}"; 
+    rr:class bacdive:Kit_api_id32sta   ].
 
     
-#     <TripleMap20>
-#     a rr:TriplesMap;
+    <TripleMap20>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_list.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_list.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_list/{ID_kit_api_LIST}"; 
-#     rr:class bacdive:Kit_api_list   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_list/{ID_kit_api_LIST}"; 
+    rr:class bacdive:Kit_api_list   ].
 
-#     <TripleMap21>
-#     a rr:TriplesMap;
+    <TripleMap21>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_nh.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_nh.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_nh/{ID_kit_api_NH}"; 
-#     rr:class bacdive:Kit_api_nh   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_nh/{ID_kit_api_NH}"; 
+    rr:class bacdive:Kit_api_nh   ].
 
-#     <TripleMap22>
-#     a rr:TriplesMap;
+    <TripleMap22>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_rid32a.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_rid32a.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_rid32a/{ID_kit_api_rID32A}"; 
-#     rr:class bacdive:Kit_api_rid32a   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_rid32a/{ID_kit_api_rID32A}"; 
+    rr:class bacdive:Kit_api_rid32a   ].
 
-#     <TripleMap23>
-#     a rr:TriplesMap;
+    <TripleMap23>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_rid32str.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_rid32str.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_rid32str/{ID_kit_api_rID32STR}"; 
-#     rr:class bacdive:Kit_api_rid32STR   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_rid32str/{ID_kit_api_rID32STR}"; 
+    rr:class bacdive:Kit_api_rid32STR   ].
 
-#     <TripleMap24>
-#     a rr:TriplesMap;
+    <TripleMap24>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_sta.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_sta.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_sta/{ID_kit_api_STA}"; 
-#     rr:class bacdive:Kit_api_sta   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_sta/{ID_kit_api_STA}"; 
+    rr:class bacdive:Kit_api_sta   ].
 
-#     <TripleMap25>
-#     a rr:TriplesMap;
+    <TripleMap25>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_zym.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_zym.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/kit_api_zym/{ID_kit_api_zym}"; 
-#     rr:class bacdive:Kit_api_zym   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/kit_api_zym/{ID_kit_api_zym}"; 
+    rr:class bacdive:Kit_api_zym   ].
 
-#     <TripleMap26>
-#     a rr:TriplesMap;
+    <TripleMap26>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_antibiogram.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_antibiogram.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/met_antibiogram/{ID_met_antibiogram}"; 
-#     rr:class bacdive:Met_antibiogram   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/met_antibiogram/{ID_met_antibiogram}"; 
+    rr:class bacdive:Met_antibiogram   ].
 
-#       <TripleMap27>
-#     a rr:TriplesMap;
+      <TripleMap27>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_antibiotica.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_antibiotica.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/met_antibiotica/{ID_met_antibiotica}"; 
-#     rr:class bacdive:Met_antibiotica   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/met_antibiotica/{ID_met_antibiotica}"; 
+    rr:class bacdive:Met_antibiotica   ].
 
-#     <TripleMap28>
-#     a rr:TriplesMap;
+    <TripleMap28>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_production.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_production.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/met_production/{ID_met_production}"; 
-#     rr:class bacdive:Met_production   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/met_production/{ID_met_production}"; 
+    rr:class bacdive:Met_production   ].
 
-#     <TripleMap29>
-#     a rr:TriplesMap;
+    <TripleMap29>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_test.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_test.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/met_test/{ID_met_test}"; 
-#     rr:class bacdive:Met_test   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/met_test/{ID_met_test}"; 
+    rr:class bacdive:Met_test   ].
 
-#     <TripleMap30>
-#     a rr:TriplesMap;
+    <TripleMap30>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_util.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/met_util.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/met_util/{ID_met_util}"; 
-#     rr:class bacdive:Met_util   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/met_util/{ID_met_util}"; 
+    rr:class bacdive:Met_util   ].
 
-#     <TripleMap31>
-#     a rr:TriplesMap;
+    <TripleMap31>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/multicellular_morphology.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/multicellular_morphology.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/multicellular_morphology/{ID_multicellular_morphology}"; 
-#     rr:class bacdive:Multicellular_morphology   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/multicellular_morphology/{ID_multicellular_morphology}"; 
+    rr:class bacdive:Multicellular_morphology   ].
 
-#     <TripleMap32>
-#     a rr:TriplesMap;
+    <TripleMap32>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/multimedia.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/multimedia.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/multimedia/{ID_multimedia}"; 
-#     rr:class bacdive:Multimedia   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/multimedia/{ID_multimedia}"; 
+    rr:class bacdive:Multimedia   ].
 
-#     <TripleMap33>
-#     a rr:TriplesMap;
+    <TripleMap33>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/murein.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/murein.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/murein/{ID_murein}"; 
-#     rr:class bacdive:Murein   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/murein/{ID_murein}"; 
+    rr:class bacdive:Murein   ].
 
-#     <TripleMap34>
-#     a rr:TriplesMap;
+    <TripleMap34>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/nutrition_type.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/nutrition_type.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/nutrition_type/{ID_nutrition_type}"; 
-#     rr:class bacdive:Nutrition_type   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/nutrition_type/{ID_nutrition_type}"; 
+    rr:class bacdive:Nutrition_type   ].
 
-#     <TripleMap35>
-#     a rr:TriplesMap;
+    <TripleMap35>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/observation.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/observation.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/observation/{ID_observation}"; 
-#     rr:class bacdive:Observation   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/observation/{ID_observation}"; 
+    rr:class bacdive:Observation   ].
 
 
-#     <TripleMap36>
-#     a rr:TriplesMap;
+    <TripleMap36>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/oxygen_tolerance.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/oxygen_tolerance.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/oxygen_tolerance/{ID_oxygen_tolerance}"; 
-#     rr:class bacdive:Oxygen_tolerance   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/oxygen_tolerance/{ID_oxygen_tolerance}"; 
+    rr:class bacdive:Oxygen_tolerance   ].
 
-#     <TripleMap37>
-#     a rr:TriplesMap;
+    <TripleMap37>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/pigmentation.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/pigmentation.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/pigmentations/{pigment_name}"; 
-#     rr:class bacdive:Pigmentation   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/pigmentations/{pigment_name}"; 
+    rr:class bacdive:Pigmentation   ].
 
-#     <TripleMap38>
-#     a rr:TriplesMap;
+    <TripleMap38>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/risk_assessment.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/risk_assessment.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
-#     rr:class bacdive:Risk_assessment   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/risk_assessment/{ID_risk_assessment}"; 
+    rr:class bacdive:Risk_assessment   ].
 
-#     <TripleMap39>
-#     a rr:TriplesMap;
+    <TripleMap39>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/spore_formation.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/spore_formation.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/spore_formation/{ID_spore_formation}"; 
-#     rr:class bacdive:Spore_formation   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/spore_formation/{ID_spore_formation}"; 
+    rr:class bacdive:Spore_formation   ].
 
     
-#     <TripleMap40>
-#     a rr:TriplesMap;
+    <TripleMap40>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_history.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_history.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
-#     rr:class bacdive:Strain_history   ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/strain_history/{ID_strain_history}"; 
+    rr:class bacdive:Strain_history   ].
 
 
     
-#     <TripleMap41>
-#     a rr:TriplesMap;
+    <TripleMap41>
+    a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_synonyms.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/strain_synonyms.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/strain_synonyms/{ID_strain_synonyms}"; 
-#     rr:class bacdive:Strain_synonyms   ].
-
-
-
-#     <TripleMap42>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/tolerance.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/tolerance/{ID_tolerance}"; 
-#     rr:class bacdive:Tolerance   ].
-
-#     <TripleMap43>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/biosample.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/biosample/{ID_biosample}"; 
-#     rr:class bacdive:Biosample  ].
-
-#     <TripleMap44>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/compound_production.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/compound_production/{ID_compound_production}"; 
-#     rr:class bacdive:Compound_production  ].
-
-#     <TripleMap45>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_medium.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/culture_medium/{ID_culture_medium}"; 
-#     rr:class bacdive:Culture_medium  ].
-
-#     <TripleMap46>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
-#     rr:class bacdive:Culture_ph  ].
-
-#     <TripleMap47>
-#     a rr:TriplesMap;
-
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_16s.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
-
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence}"; 
-#     rr:class bacdive:Sequence_16s  ].
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/strain_synonyms/{ID_strain_synonyms}"; 
+    rr:class bacdive:Strain_synonyms   ].
 
 
-#    <TripleMap48>
-#     a rr:TriplesMap;
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_genomes.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap42>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/sequence_genomes/{ID_sequence}"; 
-#     rr:class bacdive:Sequence_genomes  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/tolerance.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#     <TripleMap49>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/tolerance/{ID_tolerance}"; 
+    rr:class bacdive:Tolerance   ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/literature.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap43>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
-#     rr:class bacdive:Sequence_genomes  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/biosample.csv";
+    rml:referenceFormulation ql:CSV
+    ];
 
-#     <TripleMap50>
-#     a rr:TriplesMap;
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/biosample/{ID_biosample}"; 
+    rr:class bacdive:Biosample  ].
 
-#     rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
-#     rml:referenceFormulation ql:CSV
-#     ];
+    <TripleMap44>
+    a rr:TriplesMap;
 
-#       rr:subjectMap 
-#      [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
-#     rr:class bacdive:Ed_pathways  ].
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/compound_production.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/compound_production/{ID_compound_production}"; 
+    rr:class bacdive:Compound_production  ].
+
+    <TripleMap45>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_medium.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_medium/{ID_culture_medium}"; 
+    rr:class bacdive:Culture_medium  ].
+
+    <TripleMap46>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/culture_ph.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/culture_ph/{ID_culture_pH}"; 
+    rr:class bacdive:Culture_ph  ].
+
+    <TripleMap47>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_16s.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/sequence_16s/{ID_sequence}"; 
+    rr:class bacdive:Sequence_16s  ].
+
+
+   <TripleMap48>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/sequence_genomes.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/sequence_genomes/{ID_sequence}"; 
+    rr:class bacdive:Sequence_genomes  ].
+
+    <TripleMap49>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/literature.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/literature/{literature_id}"; 
+    rr:class bacdive:Sequence_genomes  ].
+
+    <TripleMap50>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/ed_pathways.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+      rr:subjectMap 
+     [ rr:template "http://kg.bacdive.dsmz.de/ed_pathways/{id}"; 
+    rr:class bacdive:Ed_pathways  ].
 

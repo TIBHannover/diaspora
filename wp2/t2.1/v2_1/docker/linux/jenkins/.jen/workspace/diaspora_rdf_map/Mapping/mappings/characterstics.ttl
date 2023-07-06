@@ -29,12 +29,12 @@
 
     rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/characterstics/{charac_id}"; 
     rr:class bacdive:Characterstics;
-    rr:graph  "http://kg.bacdive.dsmz.de/characterstics"
+    rr:graph  "http://example.com/characterstics"
     ];
     
 
     rr:predicateObjectMap [
         rr:predicate  bacdive:has_characterstics;
-        rr:objectMap [ rml:reference "TABLE_NAME" ];
+        rr:objectMap [ rml:reference "table_name" ];
     ] .
 
