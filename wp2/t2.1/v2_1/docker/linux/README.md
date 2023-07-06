@@ -62,13 +62,13 @@ transforming into RDF triples, storing the triples in the triple store of choice
 
  3. Clone the GitHub repository to `local_repo_path` 
     ```
-     git clone https://github.com/TIBHannover/diaspora.git
+     git clone -b Diaspora_v2_1 https://github.com/TIBHannover/diaspora.git
     ```
 
  4. Access repository:
 
   ```
-     cd diaspora/wp2/t2.1/v1.0/docker/linux
+     cd diaspora/wp2/t2.1/v2_1/docker/linux
      
   ```
  5. Run the command:
