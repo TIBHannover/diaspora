@@ -90,7 +90,7 @@ mydb = mysql.connector.connect(
 # print(mydb)
 
 # Define the SQL query
-query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
+#query = "SELECT table_name FROM information_schema.tables WHERE table_schema = diaspora_v2"
 
 # Execute the query and retrieve the results as a DataFrame
 df = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = 'diaspora_v2'", mydb)
