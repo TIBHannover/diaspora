@@ -80,7 +80,7 @@ transforming into RDF triples, storing the triples in the triple store of choice
     1. Once all the docker is running, go to folder:
     
      ```
-     cd diaspora/wp2/t2.1/v1.0/docker/linux/automate
+     cd diaspora/wp2/t2.1/v2_1/docker/linux/automate
      
      ```
      2. Run the command:
