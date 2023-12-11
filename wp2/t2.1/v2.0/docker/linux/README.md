@@ -97,7 +97,7 @@ transforming into RDF triples, storing the triples in the triple store of choice
   7. Accessing GraphDB repository.
      once, all the jobs are executed go to: 
       ```
-      http://localhost:7200/     
+      http://localhost:7200 or http://"URL of the server":7200     
       ```
       and here in the repository named "Diaspora", all the transformed RDF triples are stored
      
