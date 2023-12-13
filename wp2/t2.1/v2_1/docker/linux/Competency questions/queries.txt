@@ -41,7 +41,7 @@ Question 2) what are all the species present in the database
       ?species a bacdive:Species;
             rdfs:label ?species_name.
                                            
-                           
+                           }
         
     
        
