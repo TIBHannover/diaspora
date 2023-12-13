@@ -105,4 +105,29 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
      Approx. 22 million triples are stored in the repository "Diapora_v2_1" .
      
  
- 
+ # Understanding BacDive Knowledge Graph:
+
+
+   In the BacDive database everything is centered around strains, so the data can be explored by doing the query which explores everything that is linked to strain:
+
+   ![sparql4](https://github.com/TIBHannover/diaspora/assets/55106484/90c30728-b793-4002-b2fd-547c64ad9b34)
+
+   This query will give information about the characteristics related to strain.
+
+   Output looks like this:
+   
+   ![Capture5](https://github.com/TIBHannover/diaspora/assets/55106484/c1408d80-6638-49d8-a92f-6606c7bece5e)
+
+   Foy visualizing any subject can be copied and put in the easy graph under visual graph section
+
+   ![st2](https://github.com/TIBHannover/diaspora/assets/55106484/7c880695-dbed-4c96-80ae-0b839695d2cc)
+
+   by doing this, visualization can be done in the same way as discussed in the previous query:
+
+   
+  ![Capture7](https://github.com/TIBHannover/diaspora/assets/55106484/db8296b5-6027-4748-ab95-1b941aafea50)
+
+
+  any node can be expanded by double clicking it and all the characteristics that are associated with it can be visualized. 
+  By single clicking the node all the information 
+  associated with the node can be seen on the right hand side bar
