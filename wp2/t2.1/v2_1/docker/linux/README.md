@@ -5,15 +5,14 @@ This is the containerized version of the RDF counterpart of the Bacdive database
 In order to automate the transformation process and control the input tables as well as the intermediate and final outputs, a CI/CD automation pipeline has been employed.
 
 The pipeline is maintained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. 
-The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning,
-transforming into RDF triples, storing the triples in the triple store of choice, and querying and validating the triples. 
+The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Bacdive database, converting into csv, cleaning, transforming into RDF triples, storing the triples in the triple store of choice, querying and validating the triples. 
 
-# In order to run the pipeline and the steps following software and language have been used:
+# In order to run the pipeline and the steps following have been used:
            1 Python
            2 MySQL workbench
            3 Jenkins 
            4 GraphDB 
-  In order to install the following software, docker compose has been used which makes the installation of the software much easier and maintainable. 
+  To install the software, docker compose has been used which makes the installation of the software much easier and maintainable. 
 
 # Installation prerequisites:
 
@@ -56,7 +55,7 @@ transforming into RDF triples, storing the triples in the triple store of choice
      
  # Executing the docker compose:
  
- 1. Create a local path for the Git repository e.g., in C:\Users\<your_user>\github\projects. This will be used as `local_repo_path` in the next steps:
+ 1. Create a local path for the Git repository e.g., in C:\Users\<user>\github\projects. This will be used as `local_repo_path` in the next steps:
 
  2. Change to `local_repo_path` 
 
@@ -97,10 +96,9 @@ transforming into RDF triples, storing the triples in the triple store of choice
   7. Accessing GraphDB repository.
      once, all the jobs are executed go to: 
       ```
-      http://localhost:7200/     
+      http://server_url:7200 (replace server url with the actual url of the server or localhost if the application is deployed on the local)
       ```
-      and here in the repository named "Diaspora", all the transformed RDF triples are stored
-     
+      and here in the repository named "Diaspora_v2_1", all the transformed RDF triples are stored.
      
  
  
