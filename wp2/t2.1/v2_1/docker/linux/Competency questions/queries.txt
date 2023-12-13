@@ -19,6 +19,7 @@ WHERE {
 }
 
 
+
 Question 2) what are all the species present in the database 
 
     PREFIX owl: <http://www.w3.org/2002/07/owl#> 
