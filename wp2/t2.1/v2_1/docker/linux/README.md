@@ -53,7 +53,7 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
        
           ```
      
- # Executing the docker compose:
+ # Deploying the pipeline:
  
  1. Create a local path for the Git repository e.g., in C:\Users\<user>\github\projects. This will be used as `local_repo_path` in the next steps:
 
@@ -98,7 +98,11 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
       ```
       http://server_url:7200 (replace server url with the actual url of the server or localhost if the application is deployed on the local)
       ```
-      and here in the repository named "Diaspora_v2_1", all the transformed RDF triples are stored.
+      and here in the repository named "Diaspora_v2_1", all the transformed RDF triples are stored:
+
+     ![diaspora](https://github.com/TIBHannover/diaspora/assets/55106484/0f599536-a563-4c8a-8881-c2e553e45bf6)
+
+     Approx. 22 million triples are stored in the repository "Diapora_v2_1" .
      
  
  
