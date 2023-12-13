@@ -1,0 +1,157 @@
+Question 1) what are characteristics present in the database
+
+query: PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX bacdive: <http://kg.bacdive.dsmz.de/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+
+SELECT ?characterstics
+FROM NAMED <http://example.com/characterstics> 
+WHERE {
+  GRAPH <http://example.com/characterstics>   {
+     ?charac_id a bacdive:Characterstics;
+      bacdive:has_characterstics ?characterstics.
+  }
+}
+
+
+Question 2) what are all the species present in the database 
+
+    PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+    PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+    PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+    PREFIX bacdive: <http://kg.bacdive.dsmz.de/>
+    PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+    
+    select ?species_name
+    
+    where 
+    {
+        
+      ?strain_id a bacdive:Strain;
+      bacdive:has_species ?species. 
+      
+      ?species a bacdive:Species;
+            rdfs:label ?species_name.
+                                           
+                           
+        
+    
+       
+Question 3)  How are spore_formation ( ability =1/type=endospore) and gram staining (cell_morphology/gram_stain=positive) related. Maybe related to the Genus Bacillus      (strains/genus=bacillus)
+
+ PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX bacdive: <http://kg.bacdive.dsmz.de/>
+select distinct ?strain
+where{
+
+     ?strain a bacdive:Strain;
+
+        bacdive:has_cell_morphology ?cell;
+       bacdive:has_spore_formation ?spore;
+       
+       optional {?z bacdive:has_genus "Bacillus". }
+    
+      ?spore a bacdive:Spore_formation;
+        bacdive:has_ability "1";
+        bacdive:has_type "endospore".
+
+      ?cell a bacdive:Cell_morphology;
+       bacdive:has_gram_stain "positive".
+  
+    
+
+  
+}   
+
+Question 4)  How are risk_assessment/pathogen human and met_antibiotica/ab_resistant (1) related. Possibly connected to culture temp (test_type=optimum) or strains (genus=Staphylococcus).
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX bacdive: <http://kg.bacdive.dsmz.de/>
+
+select distinct ?strain  ?pathogenicity_human ?ab_resistant 
+
+where
+{
+    
+    ?strain a bacdive:Strain;
+         bacdive:has_risk_assessment ?risk;
+         bacdive:has_met_antibiotica ?met;
+         bacdive:has_culture_temp ?culture_temp;
+         optional { ?strain bacdive:has_genus "Staphylococcus". }
+       ?risk a bacdive:Risk_assessment;
+        bacdive:has_pathogenicity_human ?pathogenicity_human.
+    ?met a bacdive:Met_antibiotica;
+       bacdive:has_ab_resistant ?ab_resistant.
+     ?culture_temp a bacdive:Culture_temp;
+       bacdive:has_test_type "optimum".
+
+    }
+       
+
+Question 5) How are cultivation pH (rgEND < 6.00 + ability=positive) and the origin classification (is_link) related.
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX bacdive: <http://kg.bacdive.dsmz.de/>
+
+select distinct ?strain ?rg1 ?origin ?cat1_id  ?cat2_id ?cat3_id ?cat1 ?cat2 ?cat3 ?origin_sample_type
+
+    {
+    
+    ?strain a bacdive:Strain;
+         bacdive:has_culture_ph ?culture_ph;
+         bacdive:has_is_link ?link.
+    
+    ?culture_ph a bacdive:Culture_pH;
+        bacdive:has_rgEnd ?rg;
+        bacdive:has_ability "positive". 
+
+ ?link a bacdive:Is_link.
+    optional {
+      ?link   bacdive:has_origin ?origin;
+              bacdive:has_Cat1_link ?cat1_id.}
+       
+     ?cat1_id a bacdive:Is_cat1;
+       bacdive:has_cat1 ?cat1.
+    
+ ?cat2_id a bacdive:Is_cat2;
+       bacdive:has_cat2 ?cat2.
+    
+    
+      
+       ?cat3_id a bacdive:Is_cat3;
+       bacdive:has_cat3 ?cat3.
+
+       
+     ?origin a bacdive:Origin;
+            bacdive:has_sample_type ?origin_sample_type
+
+    
+       
+    BIND(STRDT(STR(?rg), xsd:float) AS ?rg1)
+    filter( ?rg1 < "6.00"^^xsd:float)
+ }  
+
