@@ -90,7 +90,7 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
      python3 automate.py
      
      ```
-     This script contains python file to run all the jobs of jenkins pipeline, this script will take the names of the jobs that we want to run from the file jobs.properties
+     This script contains python file to run all the jobs of jenkins pipeline, this script will take the names of the jobs from the file jobs.properties
      which is alsp present in the automate folder.
   
   7. Accessing GraphDB repository.
@@ -118,7 +118,7 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
    
    ![Capture5](https://github.com/TIBHannover/diaspora/assets/55106484/c1408d80-6638-49d8-a92f-6606c7bece5e)
 
-   Foy visualizing any subject can be copied and put in the easy graph under visual graph section
+   Foy visualizing any subject can be copied and put in the easy graph under visual graph section:
 
    ![st2](https://github.com/TIBHannover/diaspora/assets/55106484/7c880695-dbed-4c96-80ae-0b839695d2cc)
 
@@ -130,4 +130,4 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
 
   any node can be expanded by double clicking it and all the characteristics that are associated with it can be visualized. 
   By single clicking the node all the information 
-  associated with the node can be seen on the right hand side bar
+  associated with the node can be seen on the right hand side bar.
