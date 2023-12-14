@@ -1,4 +1,4 @@
-# Containerized version of the Bacdive Database
+# Containerized version of the [Bacdive](https://bacdive.dsmz.de/) Database
 
 This is the containerized version of the RDF counterpart of the Bacdive database produced by TIB in the context of the DIASPora project.
 
@@ -145,7 +145,7 @@ BacDive knowledge graph can also be linked to other bioinformatics Sparql endpoi
 
 The information from uniprot can be combined with bacDive database using federated query for better outcomes, which will enhance the overall productivity of the bioinformatics domain.
 
-(Federated query)[https://github.com/TIBHannover/diaspora/blob/Diaspora_v2_1/wp2/t2.1/v2_1/docker/linux/Competency%20questions/federated_query.txt) contains a federated query between (BacDive)[https://bacdive.dsmz.de/] and (Uniprot)[https://www.uniprot.org/].
+[Federated query](https://github.com/TIBHannover/diaspora/blob/Diaspora_v2_1/wp2/t2.1/v2_1/docker/linux/Competency%20questions/federated_query.txt) contains a federated query between BacDive and Uniprot.
 
 For example:
 
