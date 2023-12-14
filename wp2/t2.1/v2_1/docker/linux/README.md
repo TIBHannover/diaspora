@@ -151,6 +151,8 @@ For example:
 
 ![fede](https://github.com/TIBHannover/diaspora/assets/55106484/c3a1884c-23b2-4230-84f8-a8dbf9d8663c)
 
+In the above query, the results from uniprot and bacdive are combined using service clause which is a way to do federated search. 
+
 Outcome of above query looks like this:
 
 ![fede1](https://github.com/TIBHannover/diaspora/assets/55106484/e2bb6254-b303-4757-84ab-4750d4faae81)
