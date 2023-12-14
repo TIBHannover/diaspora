@@ -145,7 +145,7 @@ BacDive knowledge graph can also be linked to other bioinformatics Sparql endpoi
 
 The information from uniprot can be combined with bacDive database using federated query for better outcomes, which will enhance the overall productivity of the bioinformatics domain.
 
-(federated query)[
+(Federated query)[https://github.com/TIBHannover/diaspora/blob/Diaspora_v2_1/wp2/t2.1/v2_1/docker/linux/Competency%20questions/federated_query.txt) contains a federated query between (BacDive)[https://bacdive.dsmz.de/] and (Uniprot)[https://www.uniprot.org/].
 
 For example:
 
