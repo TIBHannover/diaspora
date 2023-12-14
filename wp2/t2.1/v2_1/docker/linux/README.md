@@ -131,3 +131,26 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
   any node can be expanded by double clicking it and all the characteristics that are associated with it can be visualized. 
   By single clicking the node all the information 
   associated with the node can be seen on the right hand side bar.
+
+  ### Competency questions
+
+     Competency question folder contains few queries that can be used to query BacDive knowledge graph. 
+
+# Federated Search
+
+  
+SPARQL is a fundamental part of the Semantic Web technology stack. It enables the retrieval and integration of data from various sources that expose RDF data, promoting data interoperability and integration. For example, it can be used to query data from multiple RDF sources.
+
+BacDive knowledge graph can also be linked to other bioinformatics Sparql endpoints such as [Uniprot](https://www.uniprot.org/). 
+
+The information from uniprot can be combined with bacDive database using federated query for better outcomes, which will enhance the overall productivity of the bioinformatics domain.
+
+For example:
+
+![fede](https://github.com/TIBHannover/diaspora/assets/55106484/c3a1884c-23b2-4230-84f8-a8dbf9d8663c)
+
+Outcome of above query looks like this:
+
+![fede1](https://github.com/TIBHannover/diaspora/assets/55106484/e2bb6254-b303-4757-84ab-4750d4faae81)
+
+  
