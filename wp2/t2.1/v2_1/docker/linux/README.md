@@ -122,7 +122,7 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
 
    ![st2](https://github.com/TIBHannover/diaspora/assets/55106484/7c880695-dbed-4c96-80ae-0b839695d2cc)
 
-   by doing this, visualization can be done in the same way as discussed in the previous query:
+   by doing this, visualization can be done:
 
    
   ![Capture7](https://github.com/TIBHannover/diaspora/assets/55106484/db8296b5-6027-4748-ab95-1b941aafea50)
