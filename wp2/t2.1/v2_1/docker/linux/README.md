@@ -132,9 +132,9 @@ The pipeline is composed of a sequence of steps, each performing a set of relate
   By single clicking the node all the information 
   associated with the node can be seen on the right hand side bar.
 
-  ### Competency questions
 
-     Competency question folder contains few queries that can be used to query BacDive knowledge graph. 
+
+[Competency question folder](https://github.com/TIBHannover/diaspora/tree/Diaspora_v2_1/wp2/t2.1/v2_1/docker/linux/Competency%20questions) contains few queries that can be used to query BacDive knowledge graph. 
 
 # Federated Search
 
