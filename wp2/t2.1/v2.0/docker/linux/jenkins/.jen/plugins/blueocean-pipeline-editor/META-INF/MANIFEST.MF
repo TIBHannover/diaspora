@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Blue Ocean Pipeline Editor
+Specification-Version: 1.27
+Implementation-Title: Blue Ocean Pipeline Editor
+Implementation-Version: 1.27.1
+Group-Id: io.jenkins.blueocean
+Short-Name: blueocean-pipeline-editor
+Long-Name: Blue Ocean Pipeline Editor
+Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean
+ /doc/BlueOcean.adoc
+Plugin-Version: 1.27.1
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: blueocean-commons:1.27.1,blueocean-dashboard:1.27.1
+ ,blueocean-pipeline-api-impl:1.27.1,blueocean-rest:1.27.1,pipeline-mode
+ l-definition:2.2118.v31fd5b_9944b_5
+Plugin-Developers: Josh McDonald:sophistifunk:,Keith Zantow:kzantow:,And
+ rew Bayer:abayer:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin
+

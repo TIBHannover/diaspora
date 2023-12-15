@@ -1,0 +1,304 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@prefix bacdive: <http://kg.bacdive.dsmz.de/>.
+
+
+
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../diaspora_to_csv/kit_api_50chas.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+    
+
+    rr:subjectMap [ rr:template "http://kg.bacdive.dsmz.de/kit_api_50chas/{ID_kit_api_50CHas}"; 
+    rr:class bacdive:Kit_api_50CHas ];
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cupule_1;
+        rr:objectMap [ rml:reference "cupule_1"]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cupule_2;
+        rr:objectMap [ rml:reference "cupule_2"]
+    ] ;
+    
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cupule_3;
+        rr:objectMap [ rml:reference "cupule_3" ]
+    ] ;
+
+     rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cupule_4;
+        rr:objectMap [ rml:reference "cupule_4" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  bacdive:has_cupule_5;
+        rr:objectMap [ rml:reference "cupule_5" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_6;
+    rr:objectMap [ rml:reference "cupule_6" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_7;
+    rr:objectMap [ rml:reference "cupule_7" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_8;
+    rr:objectMap [ rml:reference "cupule_8" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_9;
+    rr:objectMap [ rml:reference "cupule_9" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_10;
+    rr:objectMap [ rml:reference "cupule_10" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_11;
+    rr:objectMap [ rml:reference "cupule_11" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_12;
+    rr:objectMap [ rml:reference "cupule_12" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_13;
+    rr:objectMap [ rml:reference "cupule_13" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_14;
+    rr:objectMap [ rml:reference "cupule_14" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_15;
+    rr:objectMap [ rml:reference "cupule_15" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_16;
+    rr:objectMap [ rml:reference "cupule_16" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_17;
+    rr:objectMap [ rml:reference "cupule_17" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_18;
+    rr:objectMap [ rml:reference "cupule_18" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_19;
+    rr:objectMap [ rml:reference "cupule_19" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_20;
+    rr:objectMap [ rml:reference "cupule_20" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_21;
+    rr:objectMap [ rml:reference "cupule_21" ]
+    ] ;
+
+     rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_22;
+    rr:objectMap [ rml:reference "cupule_22" ]
+    ] ;
+
+
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_23;
+    rr:objectMap [ rml:reference "cupule_23" ]
+    ] ;
+
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_24;
+    rr:objectMap [ rml:reference "cupule_24" ]
+    ] ;
+
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_25;
+    rr:objectMap [ rml:reference "cupule_25" ]
+    ] ;
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_26;
+    rr:objectMap [ rml:reference "cupule_26" ]
+    ] ;
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_27;
+    rr:objectMap [ rml:reference "cupule_27" ]
+    ] ;
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_28;
+    rr:objectMap [ rml:reference "cupule_28" ]
+    ] ;
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_29;
+    rr:objectMap [ rml:reference "cupule_29" ]
+    ] ;
+        rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_30;
+    rr:objectMap [ rml:reference "cupule_30" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_31;
+    rr:objectMap [ rml:reference "cupule_31" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_32;
+    rr:objectMap [ rml:reference "cupule_32" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_33;
+    rr:objectMap [ rml:reference "cupule_33" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_34;
+    rr:objectMap [ rml:reference "cupule_34" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_35;
+    rr:objectMap [ rml:reference "cupule_35" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_36;
+    rr:objectMap [ rml:reference "cupule_36" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_37;
+    rr:objectMap [ rml:reference "cupule_37" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_38;
+    rr:objectMap [ rml:reference "cupule_38" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_39;
+    rr:objectMap [ rml:reference "cupule_39" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_40;
+    rr:objectMap [ rml:reference "cupule_40" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_41;
+    rr:objectMap [ rml:reference "cupule_41" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_42;
+    rr:objectMap [ rml:reference "cupule_42" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_43;
+    rr:objectMap [ rml:reference "cupule_43" ]
+    ] ;
+
+       rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_44;
+    rr:objectMap [ rml:reference "cupule_44" ]
+    ] ;
+
+          rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_45;
+    rr:objectMap [ rml:reference "cupule_45" ]
+    ] ;
+
+
+      rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_46;
+    rr:objectMap [ rml:reference "cupule_46" ]
+    ] ;
+
+
+      rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_47;
+    rr:objectMap [ rml:reference "cupule_47" ]
+    ] ;
+
+
+      rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_48;
+    rr:objectMap [ rml:reference "cupule_48" ]
+    ] ;
+
+
+      rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_49;
+    rr:objectMap [ rml:reference "cupule_49" ]
+    ] ;
+
+
+      rr:predicateObjectMap [
+    rr:predicate  bacdive:has_cupule_50;
+    rr:objectMap [ rml:reference "cupule_50" ]
+    ] ;
+
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_reference;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/reference/{ID_reference}" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_strain;
+    rr:objectMap [ rr:template "http://kg.bacdive.dsmz.de/strains/{ID_strains}" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_manual_annotation;
+    rr:objectMap [ rml:reference "manual_annotation" ]
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  bacdive:has_last_change;
+    rr:objectMap [ rml:reference "last_change" ]
+    ] .
+
+
+
+
+
+

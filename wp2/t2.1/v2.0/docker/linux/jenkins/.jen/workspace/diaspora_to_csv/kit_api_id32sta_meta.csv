@@ -1,0 +1,27 @@
+ID_kit_api_ID32STA_meta,cupule,cupule_Name_Kit,name_bacdive,reaction_name,external_Link,ID_microbiol,substrate,ID_CHEBI,CAS,kegg_comp,brenda_ligand,enzyme,EC_number,last_change
+1,1,URE,URE,Urease/urea hydrolysis,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.1.5,URE_ID32STA,Urea,16199.0,57-13-6,C00086,116,Urease,3.5.1.5,2016-03-22 13:51:17
+2,2,ADH (Arg),ADH (Arg),Arginine dihydrolase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.5.3.6,ADH_ID32STA,L-arginine,16467.0,74-79-3 ,C00062,123,arginine deiminase,3.5.3.6,2016-03-22 13:51:17
+3,3,ODC,ODC,Ornithine decarboxylase,http://www.brenda-enzymes.org/enzyme.php?ecno=4.1.1.17,ODC_ID32STA,L-ornithine,15729.0,70-26-8 ,C00077,192,ornithine decarboxylase,4.1.1.17,2016-03-22 13:51:17
+4,4,ESC,ESC,Esculin hydrolysis,http://www.genome.jp/dbget-bin/www_bget?cpd:C09264,ESC_ID32STA,Esculin ferric citrate,4853.0,531-75-9,C09264,3339,beta-glucosidase,3.2.1.21,2016-03-22 13:51:17
+5,5,GLU,GLU,Fermentation of D-glucose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00031,GLU_ID32STA,D-glucose,17634.0,50-99-7,C00031,35,,,2016-03-22 13:51:17
+6,6,FRU,FRU,Fermentation of D-fructose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00095,FRU_ID32STA,D-fructose,15824.0,57-48-7 ,C00095,117,,,2016-03-22 13:51:17
+7,7,MNE,MNE,Fermentation of D-mannose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00159,MNE_ID32STA,D-mannose,16024.0,3458-28-4,C00159,216,,,2016-03-22 13:51:17
+8,8,MAL,MAL,Fermentation of maltose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00208,MAL_ID32STA,D-maltose (maltose),17306.0,69-79-4,C00208,1168,,,2016-03-22 13:51:17
+9,9,LAC,LAC,Fermentation of lactose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00243,LAC_ID32STA,D-lactose (lactose),17716.0,63-42-3,C00243,3242,,,2016-03-22 13:51:17
+10,10,TRE,TRE,Fermentation of trehalose,http://www.genome.jp/dbget-bin/www_bget?cpd:C01083,TRE_ID32STA,D-trehalose (trehalose),16551.0,99-20-7,C01083,587,,,2016-03-22 13:51:17
+11,11,MAN,MAN,Fermentation of D-mannitol,http://www.genome.jp/dbget-bin/www_bget?cpd:C00392,MAN_ID32STA,D-mannitol,16899.0,69-65-8,C00392,495,,,2016-03-22 13:51:17
+12,12,RAF,RAF,Fermentation of raffinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00492,RAF_ID32STA,D-raffinose (raffinose),16634.0,512-69-6,C00492,48961,,,2016-03-22 13:51:17
+13,13,RIB,RIB,Fermentation of D-ribose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00121,RIB_ID32STA,D-ribose,16988.0,50-69-1,C00121,292,,,2016-03-22 13:51:17
+14,14,CEL,CEL,Fermentation of cellobiose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00185,CEL_ID32STA,D-cellobiose (cellobiose),17057.0,528-50-7,C00185,1716,,,2016-03-22 13:51:17
+15,15,NIT,NIT,Reduction of nitrate,,NIT_ID32STA,Potassium nitrate,63043.0,7757-79-1,,32713,,,2016-03-22 13:51:17
+16,16,VP,VP,Acetoin production (Voges Proskauer test),,VP_ID32STA,sodium pyruvate,50144.0,113-24-6,,1728,,,2016-03-22 13:51:17
+17,17,betaGAL,beta GAL,beta-Galactosidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.23,betaGAL_ID32STA,2-Naphthyl-beta-D-galactopyranoside,,312693-81-5 ,,104616,beta-galactosidase,3.2.1.23,2016-03-22 13:51:17
+18,18,ArgA,ArgA,L-arginine arylamidase,,ArgA_ID32STA,L-arginine beta-naphthylamide hydrochloride,,18905-73-2 ,,5870,,,2016-03-22 13:51:17
+19,19,PAL,PAL,Alkaline phosphatase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.1.3.1,PAL_ID32STA,2-naphthyl phosphate,,14463-68-4 ,,3239,alkaline phosphatase,3.1.3.1,2016-03-22 13:51:17
+20,20,PyrA,PyrA,Pyrrolidonyl arylamidase,,PyrA_ID32STA,L-pyroglutamic acid 2-naphthylamide ,,22155-91-5 ,,161451,pyroglutamyl-peptidase I,3.4.19.3,2016-03-22 13:51:17
+21,21,NOVO,NOVO,Novobiocin resistance,http://www.genome.jp/dbget-bin/www_bget?cpd:C05080,NOVO_ID32STA,Novobiocin,28368.0,303-81-1,C05080,1758,,,2016-03-22 13:51:17
+22,22,SAC,SAC,Fermentation of sucrose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00089,SAC_ID32STA,D-saccharose (sucrose),17992.0,57-50-1,C00089,55,,,2016-03-22 13:51:17
+23,23,NAG,NAG,Fermentation of N-acetyl-glucosamine,http://www.genome.jp/dbget-bin/www_bget?cpd:C00140,NAG_ID32STA,N-acetyl-D-glucosamine,506227.0,7512-17-6 ,C00140,300,,,2016-03-22 13:51:17
+24,24,TUR,TUR,Fermentation of turanose,http://www.genome.jp/dbget-bin/www_bget?cpd:C19636,TUR_ID32STA,D-turanose (turanose),32528.0,547-25-1,C19636,2099,,,2016-03-22 13:51:17
+25,25,ARA,ARA,Fermentation of arabinose,http://www.genome.jp/dbget-bin/www_bget?cpd:C00259,ARA_ID32STA,L-arabinose,30849.0,147-81-9,C00259,206,,,2016-03-22 13:51:17
+26,26,betaGUR,beta GUR,beta-Glucuronidase,http://www.brenda-enzymes.org/enzyme.php?ecno=3.2.1.31,betaGUR_ID32STA,4-Nitrophenyl beta-D-glucuronide ,,10344-94-2 ,,6225,beta-glucuronidase,3.2.1.31,2016-03-22 13:51:17

@@ -1,0 +1,37 @@
+ID_met_antibiogram_meta,metabolite_antibiogram,ID_DIN_antibiogram,ID_OXOID_antibiogram,column_met_antibiogram,Quantity_antibiogram,Unit_antibiogram,chebi_ID,last_change
+1,Penicillin G,PEN,P,P_antibiogram,6,µg (disc),18208,2017-03-29 13:06:04
+2,Oxacillin,OXA,OX,OX_antibiogram,5,µg (disc),7809,2017-03-29 13:06:04
+3,Ampicillin,AMP,AMP,AMP_antibiogram,10,µg (disc),28971,2017-03-29 13:06:04
+4,Ticarcillin,TIC,TIC,TIC_antibiogram,75,µg (disc),9587,2017-03-29 13:06:04
+5,Mezlocillin,MZL,MEZ,MEZ_antibiogram,30,µg (disc),6919,2017-03-29 13:06:04
+6,Cefalotin,CTN,KF,KF_antibiogram,30,µg (disc),124991,2017-03-29 13:06:04
+7,Cefazolin,CEZ,KZ,KZ_antibiogram,30,µg (disc),474053,2017-03-29 13:06:04
+8,Cefotaxime,CTX,CTX,CTX_antibiogram,30,µg (disc),204928,2017-03-29 13:06:04
+9,Aztreonam,AZT,ATM,ATM_antibiogram,30,µg (disc),161680,2017-03-29 13:06:04
+10,Imipenem,IMP,IPM,IPM_antibiogram,10,µg (disc),471744,2017-03-29 13:06:04
+11,Tetracycline,TET,TE,TE_antibiogram,30,µg (disc),27902,2017-03-29 13:06:04
+12,Chloramphenicol,CMP,C,C_antibiogram,30,µg (disc),17698,2017-03-29 13:06:04
+13,Gentamycin,GEN,CN,CN_antibiogram,10,µg (disc),17833,2017-03-29 13:06:04
+14,Amikacin,AMK,AK,AK_antibiogram,30,µg (disc),2637,2017-03-29 13:06:04
+15,Vancomycin,VAN,VA,VA_antibiogram,30,µg (disc),28001,2017-03-29 13:06:04
+16,Erythromycin,ERY,E,E_antibiogram,15,µg (disc),48923,2017-03-29 13:06:04
+17,Lincomycin,LIN,MY,MY_antibiogram,15,µg (disc),6472,2017-03-29 13:06:04
+18,Ofloxacin,OFX,OFX,OFX_antibiogram,5,µg (disc),7731,2017-03-29 13:06:04
+19,Norfloxacin,NOR,NOR,NOR_antibiogram,10,µg (disc),100246,2017-03-29 13:06:04
+20,Colistin,COL,CT,CT_antibiogram,10,µg (disc),37943,2017-03-29 13:06:04
+21,Pipemidic acid,PIM,PIP,PIP_antibiogram,20,µg (disc),75250,2017-03-29 13:06:04
+22,Nitrofurantoin,NFT,F,F_antibiogram,100,µg (disc),71415,2017-03-29 13:06:04
+23,Bacitracin,BAC ,B,B_antibiogram,10,Unit,28669,2017-03-29 13:06:04
+24,Polymyxin B,POL ,PB,PB_antibiogram,300,Unit,8309,2017-03-29 13:06:04
+25,Kanamycin,K   ,K,K_antibiogram,30,µg (disc),6104,2017-03-29 13:06:04
+26,Neomycin,N   ,N,N_antibiogram,30,µg (disc),7507,2017-03-29 13:06:04
+27,Doxycycline,DOC,DO,DO_antibiogram,30,µg (disc),50845,2017-03-29 13:06:04
+28,Ceftriaxone,,CRO,CRO_antibiogram,30,µg (disc),29007,2017-03-29 13:06:04
+29,Clindamycin,CLI,DA,DA_antibiogram,10,µg (disc),3745,2017-03-29 13:06:04
+30,Fosfomycin,,FOS,FOS_antibiogram,50,µg (disc),28915,2017-03-29 13:06:04
+31,Moxifloxacin,,MXF,MXF_antibiogram,5,µg (disc),63611,2017-03-29 13:06:04
+32,Linezolid,,LZD,LZD_antibiogram,10,µg (disc),63607,2017-03-29 13:06:04
+33,Nystatin,,NS,NS_antibiogram,100,Unit,7660,2017-03-29 13:06:04
+34,Quinupristin/Dalfopristin,,QD,QD_antibiogram,15,µg (disc),,2017-03-29 13:06:04
+35,Teicoplanin,,TEC,TEC_antibiogram,30,µg (disc),29687,2017-03-29 13:06:04
+36,Piperacillin/Tazobactam,PIT,TZP,TZP_antibiogram,40,µg (disc),,2017-03-29 13:06:04

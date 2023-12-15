@@ -1,0 +1,74 @@
+Started by user [8mha:////4KUMFlbveTuw2CrO3ffXNdXpt+NlAScdR1M+KzoPh3GjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/diaspora_to_csv/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins12108829634986590741.sh
++ pip install -r ./requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+Collecting Flask==1.1.2
+  Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.6/94.6 kB 506.2 kB/s eta 0:00:00
+Collecting jenkins==1.0.2
+  Downloading jenkins-1.0.2.tar.gz (8.2 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting jenkinsapi==0.3.11
+  Downloading jenkinsapi-0.3.11-py2.py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.0/135.0 kB 1.7 MB/s eta 0:00:00
+Collecting mysql_connector_repackaged==0.3.1
+  Downloading mysql-connector-repackaged-0.3.1.tar.gz (132 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.6/132.6 kB 899.1 kB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting natsort==8.1.0
+  Downloading natsort-8.1.0-py3-none-any.whl (37 kB)
+Collecting numpy==1.20.1
+  Downloading numpy-1.20.1-cp39-cp39-manylinux2010_x86_64.whl (15.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.4/15.4 MB 3.1 MB/s eta 0:00:00
+Collecting pandas==1.2.4
+  Downloading pandas-1.2.4-cp39-cp39-manylinux1_x86_64.whl (9.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 3.0 MB/s eta 0:00:00
+Collecting psycopg2==2.9.3
+  Downloading psycopg2-2.9.3.tar.gz (380 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 380.6/380.6 kB 2.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [23 lines of output]
+      running egg_info
+      creating /tmp/pip-pip-egg-info-uux3kvkk/psycopg2.egg-info
+      writing /tmp/pip-pip-egg-info-uux3kvkk/psycopg2.egg-info/PKG-INFO
+      writing dependency_links to /tmp/pip-pip-egg-info-uux3kvkk/psycopg2.egg-info/dependency_links.txt
+      writing top-level names to /tmp/pip-pip-egg-info-uux3kvkk/psycopg2.egg-info/top_level.txt
+      writing manifest file '/tmp/pip-pip-egg-info-uux3kvkk/psycopg2.egg-info/SOURCES.txt'
+      
+      Error: pg_config executable not found.
+      
+      pg_config is required to build psycopg2 from source.  Please add the directory
+      containing pg_config to the $PATH or specify the full executable path with the
+      option:
+      
+          python setup.py build_ext --pg-config /path/to/pg_config build ...
+      
+      or with the pg_config option in 'setup.cfg'.
+      
+      If you prefer to avoid building psycopg2 from source, please install the PyPI
+      'psycopg2-binary' package instead.
+      
+      For further information please check the 'doc/src/install.rst' file (also at
+      <https://www.psycopg.org/docs/install.html>).
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
